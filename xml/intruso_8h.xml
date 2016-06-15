@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="intruso_8h" kind="file">
+    <compoundname>intruso.h</compoundname>
+    <includes refid="personaje_8h" local="no">personaje.h</includes>
+    <includes local="no">typeinfo</includes>
+    <includes refid="planta_8h" local="yes">planta.h</includes>
+    <includes refid="puerta_8h" local="yes">puerta.h</includes>
+    <includedby refid="cargador_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/cargador.h</includedby>
+    <includedby refid="intruso_8cpp" local="yes">Desktop/academia_lp2/EC3_LPII/src/intruso.cpp</includedby>
+    <incdepgraph>
+      <node id="278">
+        <label>list</label>
+      </node>
+      <node id="263">
+        <label>queue</label>
+      </node>
+      <node id="260">
+        <label>Desktop/academia_lp2/EC3_LPII/src/intruso.h</label>
+        <link refid="intruso.h"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+        <childnode refid="268" relation="include">
+        </childnode>
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+      </node>
+      <node id="274">
+        <label>sala.h</label>
+        <link refid="sala_8h-source"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
+        </childnode>
+      </node>
+      <node id="271">
+        <label>puerta.h</label>
+        <link refid="puerta_8h-source"/>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="273" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="265">
+        <label>fstream</label>
+      </node>
+      <node id="277">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="275">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="276" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>planta.h</label>
+        <link refid="planta_8h-source"/>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
+        </childnode>
+        <childnode refid="274" relation="include">
+        </childnode>
+        <childnode refid="275" relation="include">
+        </childnode>
+        <childnode refid="277" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="278" relation="include">
+        </childnode>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="268">
+        <label>typeinfo</label>
+      </node>
+      <node id="270">
+        <label>vector</label>
+      </node>
+      <node id="264">
+        <label>stack</label>
+      </node>
+      <node id="267">
+        <label>cstdlib</label>
+      </node>
+      <node id="266">
+        <label>llave.h</label>
+        <link refid="llave_8h-source"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+      <node id="262">
+        <label>iostream</label>
+      </node>
+      <node id="261">
+        <label>personaje.h</label>
+        <link refid="personaje_8h-source"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="264" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+      </node>
+      <node id="272">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+      </node>
+      <node id="276">
+        <label>set</label>
+      </node>
+      <node id="273">
+        <label>lista.h</label>
+        <link refid="lista_8h-source"/>
+        <childnode refid="262" relation="include">
+        </childnode>
+        <childnode refid="267" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="279">
+        <label>Desktop/academia_lp2/EC3_LPII/src/intruso.h</label>
+        <link refid="intruso.h"/>
+        <childnode refid="280" relation="include">
+        </childnode>
+      </node>
+      <node id="280">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+        <childnode refid="282" relation="include">
+        </childnode>
+        <childnode refid="283" relation="include">
+        </childnode>
+      </node>
+      <node id="282">
+        <label>Desktop/academia_lp2/EC3_LPII/src/estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="281" relation="include">
+        </childnode>
+      </node>
+      <node id="281">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+      <node id="283">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classIntruso" prot="public">Intruso</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>INTRUSO_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INTRUSO_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;personaje.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;typeinfo&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;planta.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;puerta.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="classIntruso" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classIntruso" kindref="compound">Intruso</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPersonaje" kindref="compound">Personaje</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntruso_1f36bc9ec8ef7b46e9335c6842908a527" kindref="member">Intruso</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntruso_1f36bc9ec8ef7b46e9335c6842908a527" kindref="member">Intruso</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ids,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idp);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_106a5d236e669e5add8b1c6472303133e" kindref="member">mostrar</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_1979c89c596d92d8ce69b8af5e556d62d" kindref="member">escribeLog</ref>(ofstream<sp/>&amp;<sp/>f);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_16d239cda2dc32af27e50ba84524e4179" kindref="member">caminoMinimo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>origen,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>destino,<ref refid="classplanta" kindref="compound">planta</ref><sp/>*pl);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_12898ae82386e99d361f6f131122b7be1" kindref="member">ruta</ref><sp/>(ofstream<sp/>&amp;<sp/>f);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_10f0142b1852ed9f0431af335d3ff6f14" kindref="member">escribeLogRuta</ref>(ofstream<sp/>&amp;<sp/>f);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_1dee71b00225e294086d8980625a32ab3" kindref="member">accionUno</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_16fef0ae823fdabc05796413f53d073e5" kindref="member">accionDos</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_152e521cc66983d5a9f20f3424818e6e4" kindref="member">accionTres</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_199e215b1df4387b629f25349378d3bbb" kindref="member">accionCuatro</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntruso_1947673866dbb60c76b40eff5ab139bcd" kindref="member">~Intruso</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/intruso.h"/>
+  </compounddef>
+</doxygen>

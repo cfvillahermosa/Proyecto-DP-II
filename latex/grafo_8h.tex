@@ -1,0 +1,94 @@
+\hypertarget{grafo_8h}{
+\section{Desktop/academia\_\-lp2/EC3\_\-LPII/src/grafo.h File Reference}
+\label{grafo_8h}\index{Desktop/academia\_\-lp2/EC3\_\-LPII/src/grafo.h@{Desktop/academia\_\-lp2/EC3\_\-LPII/src/grafo.h}}
+}
+Declaracion de la clase grafo. 
+
+{\tt \#include $<$iostream$>$}\par
+{\tt \#include $<$cstdlib$>$}\par
+{\tt \#include $<$queue$>$}\par
+{\tt \#include $<$set$>$}\par
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \textbf{TipoArco}
+\item 
+class \hyperlink{classGrafo}{Grafo}
+\begin{CompactList}\small\item\em Esta clase define un grafo. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Defines}
+\begin{CompactItemize}
+\item 
+\hypertarget{grafo_8h_729057a178ee98af9ded64aaabc786be}{
+\#define \textbf{MAXVERT}~200}
+\label{grafo_8h_729057a178ee98af9ded64aaabc786be}
+
+\item 
+\hypertarget{grafo_8h_f076440f216f5a40a11563e489f04932}{
+\#define \textbf{INFINITO}~9999}
+\label{grafo_8h_f076440f216f5a40a11563e489f04932}
+
+\item 
+\hypertarget{grafo_8h_eff54931f8088d31b7efb96f3ec47098}{
+\#define \textbf{NO\_\-VALOR}~-1}
+\label{grafo_8h_eff54931f8088d31b7efb96f3ec47098}
+
+\item 
+\#define \hyperlink{grafo_8h_9eeb8ade5c948220247864bf58da2272}{DEPURAR}~0
+\item 
+\#define \hyperlink{grafo_8h_4c758869d4ed860db7c6a48f88601c67}{DEPURAR\_\-MSG}(msg)~if (DEPURAR)\{ cout$<$$<$msg; cin.get();\}
+\end{CompactItemize}
+\subsection*{Typedefs}
+\begin{CompactItemize}
+\item 
+\hypertarget{grafo_8h_6a99a7ad424f10e03cd56b48dc4c695e}{
+typedef int \textbf{TipoNodoGrafo}}
+\label{grafo_8h_6a99a7ad424f10e03cd56b48dc4c695e}
+
+\item 
+\hypertarget{grafo_8h_2e8af4d6cbb1eabfbff65a59a9df8516}{
+typedef int \textbf{TipoArcoGrafo}}
+\label{grafo_8h_2e8af4d6cbb1eabfbff65a59a9df8516}
+
+\item 
+\hypertarget{grafo_8h_bed687de7008e513fbbb6a508534e56b}{
+typedef TipoArcoGrafo \textbf{TipoMatrizAdyacencia} \mbox{[}MAXVERT\mbox{]}\mbox{[}MAXVERT\mbox{]}}
+\label{grafo_8h_bed687de7008e513fbbb6a508534e56b}
+
+\item 
+\hypertarget{grafo_8h_9edce5941c20ba5daf42809231fb1a27}{
+typedef TipoNodoGrafo \textbf{TipoVectorNodos} \mbox{[}MAXVERT\mbox{]}}
+\label{grafo_8h_9edce5941c20ba5daf42809231fb1a27}
+
+\item 
+\hypertarget{grafo_8h_62d8e454f77fac83210e8afb8ed27919}{
+typedef set$<$ TipoNodoGrafo $>$ \textbf{TipoCjtoNodos}}
+\label{grafo_8h_62d8e454f77fac83210e8afb8ed27919}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Declaracion de la clase grafo. 
+
+\begin{Desc}
+\item[Author:]{\bf Profesores} LPII \par
+ {\bf Asignatura} Laboratorio de Programacion II \par
+ {\bf Curso} 07/08 (revisado 08/09) \end{Desc}
+
+
+\subsection{Define Documentation}
+\hypertarget{grafo_8h_9eeb8ade5c948220247864bf58da2272}{
+\index{grafo.h@{grafo.h}!DEPURAR@{DEPURAR}}
+\index{DEPURAR@{DEPURAR}!grafo.h@{grafo.h}}
+\subsubsection[DEPURAR]{\setlength{\rightskip}{0pt plus 5cm}\#define DEPURAR~0}}
+\label{grafo_8h_9eeb8ade5c948220247864bf58da2272}
+
+
+Variable constante utilizada para mostrar o no mensajes de depuracion de programa \hypertarget{grafo_8h_4c758869d4ed860db7c6a48f88601c67}{
+\index{grafo.h@{grafo.h}!DEPURAR\_\-MSG@{DEPURAR\_\-MSG}}
+\index{DEPURAR\_\-MSG@{DEPURAR\_\-MSG}!grafo.h@{grafo.h}}
+\subsubsection[DEPURAR\_\-MSG]{\setlength{\rightskip}{0pt plus 5cm}\#define DEPURAR\_\-MSG(msg)~if (DEPURAR)\{ cout$<$$<$msg; cin.get();\}}}
+\label{grafo_8h_4c758869d4ed860db7c6a48f88601c67}
+
+
+Macro utilizada para mostrar mensajes de depuracion de programa y retener los mensajes en pantalla 

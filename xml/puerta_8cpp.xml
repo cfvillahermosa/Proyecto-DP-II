@@ -1,0 +1,253 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="puerta_8cpp" kind="file">
+    <compoundname>puerta.cpp</compoundname>
+    <includes refid="puerta_8h" local="yes">puerta.h</includes>
+    <incdepgraph>
+      <node id="494">
+        <label>Desktop/academia_lp2/EC3_LPII/src/puerta.cpp</label>
+        <link refid="puerta.cpp"/>
+        <childnode refid="495" relation="include">
+        </childnode>
+      </node>
+      <node id="495">
+        <label>puerta.h</label>
+        <link refid="puerta_8h-source"/>
+        <childnode refid="496" relation="include">
+        </childnode>
+        <childnode refid="498" relation="include">
+        </childnode>
+        <childnode refid="500" relation="include">
+        </childnode>
+        <childnode refid="501" relation="include">
+        </childnode>
+      </node>
+      <node id="501">
+        <label>fstream</label>
+      </node>
+      <node id="499">
+        <label>cstdlib</label>
+      </node>
+      <node id="500">
+        <label>llave.h</label>
+        <link refid="llave_8h-source"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+      </node>
+      <node id="497">
+        <label>iostream</label>
+      </node>
+      <node id="496">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+      </node>
+      <node id="498">
+        <label>lista.h</label>
+        <link refid="lista_8h-source"/>
+        <childnode refid="497" relation="include">
+        </childnode>
+        <childnode refid="499" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="puerta_8cpp_1490c20cc328bef002a79831d7d649b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;f, puerta &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classpuerta" kindref="compound">puerta</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &quot;&lt;&lt;&quot; de mi clase Puerta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase Puerta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" line="193" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="193" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;puerta.h&quot;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><ref refid="classpuerta_1dae189c1b2be845ba10b3335e4c3b91d" kindref="member">puerta::puerta</ref>()</highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>arbolCerradura=NULL;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>arbolLlavesProbadas=NULL;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>lcs=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Lista&lt;Llave*&gt;;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>estadoCerradura=</highlight><highlight class="stringliteral">&quot;no_configurada&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>alturaMaxima=-1;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><ref refid="classpuerta_1207e0983ca66391ee628453dffcf619f" kindref="member">puerta::~puerta</ref>()</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpuerta_1e2bcee3940c85671615c2331bba3b755" kindref="member">eliminarlista</ref>(lcs);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>lcs;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpuerta_1d4d085f48f3b014afbba4113510b63d8" kindref="member">liberarArbol</ref>(arbolLlavesProbadas);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>arbolLlavesProbadas;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>arbolCerradura;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><ref refid="classpuerta_1dae189c1b2be845ba10b3335e4c3b91d" kindref="member">puerta::puerta</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/>ec,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>alt)</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>estadoCerradura=ec;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>alturaMaxima=alt;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1facb52e11a8a2b23437d4d0821187edc" kindref="member">puerta::getAlturaMaxima</ref>()</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>alturaMaxima;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="54"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_14dbec0518d2dfbf78e636ea18352cfe1" kindref="member">puerta::setAlturaMaxima</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>alturaMaxima=a;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="63"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1c7020654ddeefc2cdfd937fd5d3f6749" kindref="member">puerta::setEstadoCerradura</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>e)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>estadoCerradura=e;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classpuerta_13c87fcb19f24d5348db587f0c6a9b27d" kindref="member">puerta::getEstadoCerradura</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>estadoCerradura;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1fc919a28f4751159e5109ec43e691e0e" kindref="member">puerta::configurarPuerta</ref>(Lista<sp/>&lt;<sp/>Llave<sp/>*<sp/>&gt;<sp/>*<sp/>l)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;moverInicio();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!l-&gt;finLista()){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lcs-&gt;insertarOrdenado(l-&gt;consultar());</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;avanzar();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_18c3078b9245cb0fbc37e7f1b662be74b" kindref="member">puerta::cerrar</ref>()</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpuerta_1c7020654ddeefc2cdfd937fd5d3f6749" kindref="member">setEstadoCerradura</ref>(</highlight><highlight class="stringliteral">&quot;cerrada&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpuerta_1d4d085f48f3b014afbba4113510b63d8" kindref="member">liberarArbol</ref>(arbolLlavesProbadas);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>arbolLlavesProbadas;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>arbolCerradura;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arbolLlavesProbadas=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classArbol" kindref="compound" tooltip="Esta clase define un Árbol Binario de Búsqueda.">Arbol&lt;Llave*&gt;</ref>();</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arbolCerradura=</highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classArbol" kindref="compound" tooltip="Esta clase define un Árbol Binario de Búsqueda.">Arbol&lt;Llave*&gt;</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lcs-&gt;moverInicio();</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!lcs-&gt;finLista()){</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arbolCerradura-&gt;<ref refid="classArbol_19f2895622e071f4c6e6ca02c0191d552" kindref="member">insertar</ref>(lcs-&gt;consultar());</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lcs-&gt;avanzar();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arbolCerradura=arbolCerradura-&gt;balancear();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//(arbolCerradura-&gt;numNodosNoHojas()<sp/>&gt;=<sp/>arbolCerradura-&gt;numHojas())<sp/><sp/>&amp;&amp;<sp/>(<sp/>//arbolCerradura-&gt;altura()<sp/>&lt;<sp/>alturaMaxima<sp/>)</highlight></codeline>
+<codeline lineno="117"><highlight class="comment"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1a70c9e4a8a59555d1ba15caff7849497" kindref="member">puerta::abrir</ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>*<sp/>l)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="classpuerta_13c87fcb19f24d5348db587f0c6a9b27d" kindref="member">getEstadoCerradura</ref>()!=</highlight><highlight class="stringliteral">&quot;abierta&quot;</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!arbolLlavesProbadas-&gt;<ref refid="classArbol_19f2895622e071f4c6e6ca02c0191d552" kindref="member">insertar</ref>(l)){</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>l;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(arbolCerradura-&gt;<ref refid="classArbol_1315fc4e5ad1b7940acda871feadc82c0" kindref="member">pertenece</ref>(l)){</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arbolCerradura-&gt;<ref refid="classArbol_18a14a3c40b5280a03fc17a24f5f005dd" kindref="member">borrar</ref>(l);</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>arbolCerradura=arbolCerradura-&gt;balancear();</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(arbolCerradura-&gt;<ref refid="classArbol_108dc2d243b213fe87a8972d60704b398" kindref="member">numNodosNoHojas</ref>()<sp/>&gt;=<sp/>arbolCerradura-&gt;<ref refid="classArbol_12b86fa8d1632daa86c9302e16c0a7fd0" kindref="member">numHojas</ref>())<sp/><sp/>&amp;&amp;<sp/>(<sp/>arbolCerradura-&gt;<ref refid="classArbol_1f1e00998d1764ccc5eb998419855338c" kindref="member">altura</ref>()<sp/>&lt;<sp/>alturaMaxima<sp/>)<sp/>){</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpuerta_1c7020654ddeefc2cdfd937fd5d3f6749" kindref="member">setEstadoCerradura</ref>(</highlight><highlight class="stringliteral">&quot;abierta&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classpuerta_19f108f67092846743458195fca60d6ca" kindref="member">puerta::siEstaLlaveProbada</ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>*<sp/>l)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(arbolLlavesProbadas-&gt;<ref refid="classArbol_1315fc4e5ad1b7940acda871feadc82c0" kindref="member">pertenece</ref>(l))</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="161"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1d4d085f48f3b014afbba4113510b63d8" kindref="member">puerta:: liberarArbol</ref><sp/>(Arbol<sp/>&lt;Llave*&gt;<sp/><sp/>*&amp;<sp/>arbol){</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classArbol" kindref="compound" tooltip="Esta clase define un Árbol Binario de Búsqueda.">Arbol&lt;Llave*&gt;</ref><sp/>*aux;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(arbol!=NULL<sp/>&amp;&amp;<sp/>!arbol-&gt;<ref refid="classArbol_17eccfbbe02911216fe285138347a8556" kindref="member">vacio</ref>())</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(aux<sp/>=<sp/>arbol-&gt;<ref refid="classArbol_1da5f40bff1e6a6a0174a749d309bcb1c" kindref="member">hijoIzq</ref>())</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpuerta_1d4d085f48f3b014afbba4113510b63d8" kindref="member">liberarArbol</ref>(aux);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>arbol-&gt;<ref refid="classArbol_1e7c912144568cd72804c893ffbe06415" kindref="member">raiz</ref>();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(aux<sp/>=<sp/>arbol-&gt;<ref refid="classArbol_1d433925e246961a80e690e46f9977780" kindref="member">hijoDer</ref>())</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpuerta_1d4d085f48f3b014afbba4113510b63d8" kindref="member">liberarArbol</ref>(aux);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="178"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1e2bcee3940c85671615c2331bba3b755" kindref="member">puerta::eliminarlista</ref>(Lista<sp/>&lt;Llave*&gt;<sp/>*<sp/>&amp;<sp/>l){</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>l-&gt;moverInicio();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!l-&gt;finLista()){</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>l-&gt;consultar();</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>l-&gt;avanzar();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">ostream<sp/>&amp;<sp/><ref refid="classpuerta_1490c20cc328bef002a79831d7d649b47" kindref="member">operator &lt;&lt; </ref>(ostream<sp/>&amp;<sp/>f,<sp/><ref refid="classpuerta" kindref="compound">puerta</ref><sp/>&amp;<sp/>p){</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;el<sp/>estado<sp/>de<sp/>la<sp/>puerta<sp/>es:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;p.<ref refid="classpuerta_13c87fcb19f24d5348db587f0c6a9b27d" kindref="member">getEstadoCerradura</ref>()&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1db48cb6b90ccdc012aa488850ac458b1" kindref="member">puerta::escribirFichero</ref>(ofstream<sp/>&amp;<sp/>f)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;(puerta:&quot;</highlight><highlight class="normal">&lt;&lt;<ref refid="classpuerta_13c87fcb19f24d5348db587f0c6a9b27d" kindref="member">getEstadoCerradura</ref>()&lt;&lt;</highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">&lt;&lt;alturaMaxima&lt;&lt;</highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpuerta_1be41e285663cf9f509e6fe0583ba4202" kindref="member">escribirInordenLlaves</ref>(f,arbolLlavesProbadas);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="216"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1be41e285663cf9f509e6fe0583ba4202" kindref="member">puerta::escribirInordenLlaves</ref>(ofstream<sp/>&amp;<sp/>f,Arbol<sp/>&lt;Llave*&gt;<sp/>*&amp;<sp/>arbol)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classArbol" kindref="compound" tooltip="Esta clase define un Árbol Binario de Búsqueda.">Arbol&lt;Llave*&gt;</ref><sp/>*aux;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!arbol-&gt;<ref refid="classArbol_17eccfbbe02911216fe285138347a8556" kindref="member">vacio</ref>())</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(aux<sp/>=<sp/>arbol-&gt;<ref refid="classArbol_1da5f40bff1e6a6a0174a749d309bcb1c" kindref="member">hijoIzq</ref>())</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpuerta_1be41e285663cf9f509e6fe0583ba4202" kindref="member">escribirInordenLlaves</ref>(f,aux);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>arbol-&gt;<ref refid="classArbol_1e7c912144568cd72804c893ffbe06415" kindref="member">raiz</ref>()-&gt;getIdentificador();</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(aux<sp/>=<sp/>arbol-&gt;<ref refid="classArbol_1d433925e246961a80e690e46f9977780" kindref="member">hijoDer</ref>())</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classpuerta_1be41e285663cf9f509e6fe0583ba4202" kindref="member">escribirInordenLlaves</ref>(f,aux);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="227"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp"/>
+  </compounddef>
+</doxygen>

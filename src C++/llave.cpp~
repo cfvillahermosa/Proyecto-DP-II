@@ -1,0 +1,136 @@
+#include "llave.h"
+
+Llave::Llave()
+{
+    identificador=-1;
+}
+
+
+Llave::~Llave()
+{
+}
+
+void Llave::setIdentificador(int n)
+{
+    identificador=n;
+}
+
+int Llave::getIdentificador()
+{
+    return identificador;
+}
+
+Llave::Llave(int n)
+{
+    identificador=n;
+}
+
+int Llave::operator ==(Llave & l)
+{
+    if(identificador==l.identificador)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator ==(int n)
+{
+    if(identificador==n)
+        return true;
+    else
+        return false;
+}
+
+ostream & operator <<(ostream & f,Llave & l){
+    f<<"el identificador de la llave es: "<<l.identificador<<endl;
+    return f;
+}
+
+int Llave::operator <(Llave & l)
+{
+    if(identificador < l.identificador)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator >(Llave & l)
+{
+    if(identificador > l.identificador)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator !=(Llave & l)
+{
+    if(identificador !=l.identificador)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator <= (Llave & l)
+{
+    if(identificador <=l.identificador)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator >=(Llave & l)
+{
+    if(identificador >= l.identificador)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator <(int n)
+{
+    if(identificador <n)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator >(int n)
+{
+    if(identificador > n)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator !=(int n)
+{
+    if(identificador != n)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator <=(int n)
+{
+    if(identificador <= n)
+        return true;
+    else
+        return false;
+}
+
+int Llave::operator >=(int n)
+{
+    if(identificador >= n)
+        return true;
+    else
+        return false;
+}
+
+Llave::Llave(const Llave & l)
+{
+    identificador=l.identificador;
+}
+
+
+
+

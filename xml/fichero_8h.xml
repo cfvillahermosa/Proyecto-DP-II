@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="fichero_8h" kind="file">
+    <compoundname>fichero.h</compoundname>
+    <includes local="no">fstream</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">string</includes>
+    <includedby refid="cargador_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/cargador.h</includedby>
+    <includedby refid="fichero_8cpp" local="yes">Desktop/academia_lp2/EC3_LPII/src/fichero.cpp</includedby>
+    <incdepgraph>
+      <node id="189">
+        <label>string</label>
+      </node>
+      <node id="187">
+        <label>fstream</label>
+      </node>
+      <node id="188">
+        <label>iostream</label>
+      </node>
+      <node id="186">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.h</label>
+        <link refid="fichero.h"/>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="191">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="193">
+        <label>Desktop/academia_lp2/EC3_LPII/src/estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="192" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+      <node id="190">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.h</label>
+        <link refid="fichero.h"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classFicheroCarga" prot="public">FicheroCarga</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="fichero_8h_136e4c5a07c063f5e1dff1855dfedca71" prot="public" static="no">
+        <name>MAXCAMPOS</name>
+        <initializer>8</initializer>
+        <briefdescription>
+<para>Constante con el número máximo de campos de una línea del fichero de configuración. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/fichero.h" line="24" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/fichero.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Práctica 2007-2008. Declaracion de la clase <ref refid="classFicheroCarga" kindref="compound">FicheroCarga</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para><bold>Profesores</bold> LPII <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programación II <linebreak/>
+ <bold>Curso</bold> 07/08 -- Revisado en Curso 08/09 </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>FICHERO_H</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>FICHERO_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="fichero_8h_136e4c5a07c063f5e1dff1855dfedca71" refkind="member"><highlight class="preprocessor">#define<sp/>MAXCAMPOS<sp/>8</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classCargador" kindref="compound" tooltip="La misión de esta clase es cargar el sistema con los elementos del fichero de configuración...">Cargador</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="classFicheroCarga" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classFicheroCarga" kindref="compound" tooltip="Esta clase carga el sistema con los elementos indicados en el fichero de configuración...">FicheroCarga</ref>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>trocearLinea(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>linea,</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>vCampos[<ref refid="fichero_8h_136e4c5a07c063f5e1dff1855dfedca71" kindref="member" tooltip="Constante con el número máximo de campos de una línea del fichero de configuración...">MAXCAMPOS</ref>]);</highlight><highlight class="comment">//tiene<sp/>una<sp/>linea<sp/>que<sp/>es<sp/>un<sp/>string,<sp/>vuelva<sp/>ese<sp/>string<sp/>en<sp/>un<sp/>vector<sp/>de<sp/>string<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classFicheroCarga_1d7a3e4e6e3eeb749fe151ce6763cc9c4" kindref="member">procesarFichero</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nombre,<sp/><ref refid="classCargador" kindref="compound" tooltip="La misión de esta clase es cargar el sistema con los elementos del fichero de configuración...">Cargador</ref>&amp;<sp/>cargador);</highlight><highlight class="comment">//le<sp/>pasamos<sp/>un<sp/>string<sp/>que<sp/>es<sp/>el<sp/>nombre<sp/>del<sp/>fichero<sp/>y<sp/>lo<sp/>que<sp/>hace<sp/>es<sp/>que<sp/>cada<sp/>vez<sp/>que<sp/>encuentre<sp/>una<sp/>linea<sp/>correcta<sp/>trocea<sp/>ese<sp/>linea,<sp/>llama<sp/>al<sp/>trocear<sp/>linea<sp/>y<sp/>despues<sp/>de<sp/>trocear<sp/>la<sp/>linea<sp/>llama<sp/>a<sp/>la<sp/>clase<sp/>cargador</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/fichero.h"/>
+  </compounddef>
+</doxygen>

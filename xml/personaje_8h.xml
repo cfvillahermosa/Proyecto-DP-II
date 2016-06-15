@@ -1,0 +1,202 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="personaje_8h" kind="file">
+    <compoundname>personaje.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">stack</includes>
+    <includes local="no">fstream</includes>
+    <includes refid="llave_8h" local="yes">llave.h</includes>
+    <includedby refid="intruso_8h" local="no">Desktop/academia_lp2/EC3_LPII/src/intruso.h</includedby>
+    <includedby refid="sala_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/sala.h</includedby>
+    <includedby refid="miembro_8h" local="no">Desktop/academia_lp2/EC3_LPII/src/miembro.h</includedby>
+    <includedby refid="personaje_8cpp" local="yes">Desktop/academia_lp2/EC3_LPII/src/personaje.cpp</includedby>
+    <incdepgraph>
+      <node id="436">
+        <label>queue</label>
+      </node>
+      <node id="438">
+        <label>fstream</label>
+      </node>
+      <node id="437">
+        <label>stack</label>
+      </node>
+      <node id="440">
+        <label>cstdlib</label>
+      </node>
+      <node id="439">
+        <label>llave.h</label>
+        <link refid="llave_8h-source"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="440" relation="include">
+        </childnode>
+      </node>
+      <node id="435">
+        <label>iostream</label>
+      </node>
+      <node id="434">
+        <label>Desktop/academia_lp2/EC3_LPII/src/personaje.h</label>
+        <link refid="personaje.h"/>
+        <childnode refid="435" relation="include">
+        </childnode>
+        <childnode refid="436" relation="include">
+        </childnode>
+        <childnode refid="437" relation="include">
+        </childnode>
+        <childnode refid="438" relation="include">
+        </childnode>
+        <childnode refid="439" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="449">
+        <label>Desktop/academia_lp2/EC3_LPII/src/miembro.h</label>
+        <link refid="miembro_8h-source"/>
+        <childnode refid="450" relation="include">
+        </childnode>
+        <childnode refid="451" relation="include">
+        </childnode>
+      </node>
+      <node id="451">
+        <label>Desktop/academia_lp2/EC3_LPII/src/trabajador.h</label>
+        <link refid="trabajador_8h-source"/>
+        <childnode refid="443" relation="include">
+        </childnode>
+      </node>
+      <node id="442">
+        <label>Desktop/academia_lp2/EC3_LPII/src/intruso.h</label>
+        <link refid="intruso_8h-source"/>
+        <childnode refid="443" relation="include">
+        </childnode>
+      </node>
+      <node id="443">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+        <childnode refid="446" relation="include">
+        </childnode>
+      </node>
+      <node id="447">
+        <label>Desktop/academia_lp2/EC3_LPII/src/sala.h</label>
+        <link refid="sala_8h-source"/>
+        <childnode refid="448" relation="include">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>Desktop/academia_lp2/EC3_LPII/src/lider.h</label>
+        <link refid="lider_8h-source"/>
+        <childnode refid="443" relation="include">
+        </childnode>
+      </node>
+      <node id="448">
+        <label>Desktop/academia_lp2/EC3_LPII/src/planta.h</label>
+        <link refid="planta_8h-source"/>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="445" relation="include">
+        </childnode>
+      </node>
+      <node id="445">
+        <label>Desktop/academia_lp2/EC3_LPII/src/estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="444" relation="include">
+        </childnode>
+      </node>
+      <node id="441">
+        <label>Desktop/academia_lp2/EC3_LPII/src/personaje.h</label>
+        <link refid="personaje.h"/>
+        <childnode refid="442" relation="include">
+        </childnode>
+        <childnode refid="447" relation="include">
+        </childnode>
+        <childnode refid="449" relation="include">
+        </childnode>
+      </node>
+      <node id="444">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+      <node id="446">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classPersonaje" prot="public">Personaje</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PERSONAJE_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PERSONAJE_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llave.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="classPersonaje" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classPersonaje" kindref="compound">Personaje</ref>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>marca;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>nombre;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>turno;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idsala;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idplanta;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>queue<sp/>&lt;int&gt;<sp/>secuencia;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>stack<sp/>&lt;Llave*&gt;<sp/>*juegollaves;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPersonaje_19238a75aae652b20dd423e85cfa1ee17" kindref="member">Personaje</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPersonaje_19238a75aae652b20dd423e85cfa1ee17" kindref="member">Personaje</ref><sp/>(<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ids,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idp<sp/>);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1475630fe753b7fb80a2472c558d99169" kindref="member">setMarca</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_136e1ba57799adb58163bec5a4f0015e0" kindref="member">getMarca</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_12e84ee485f46b434f1d23558ad3eb7c9" kindref="member">setNombre</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1801e7fe38d0727d3219e51e916e2ce67" kindref="member">getNombre</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<sp/>n);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1de04da7a674a165aeaa09566b219a828" kindref="member">setTurno</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1425c743df0309deab48e9575d715eed9" kindref="member">getTurno</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_143a551a88fe3c6d4458719135992114b" kindref="member">setIdSala</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ids);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" kindref="member">getIdSala</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1361e72e69c915f6e0c7d2c5e82ae0744" kindref="member">setIdPlanta</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idp);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1f388d329d466b136c60fa26c6c4800a7" kindref="member">getIdPlanta</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_11ad939228d858b75826ddb4effa67ceb" kindref="member">liberarMemoriaPila</ref>(stack<sp/>&lt;Llave*&gt;<sp/>*&amp;lis);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_16ede7d70599342ba61eb034027a41f2a" kindref="member">insertarPila</ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>*l);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_18880afa570d1f919516e2810b2226b08" kindref="member">cojerLlave</ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>*&amp;l);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_127166f7a52fcfb3570e0dc20f37a2402" kindref="member">pilaVacia</ref><sp/>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_166ec23478444efc795d29734cc010809" kindref="member">insertarCola</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//sobrecargas<sp/>==<sp/>,&lt;,&gt;,&lt;=,&gt;=</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1786951aff09e227527d3da60338effec" kindref="member">TodasAcciones</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_10454b75ccc8f7e33f03e2cfb2c59e725" kindref="member">accionUno</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1af7763eb6099390038b7833129a1ef9f" kindref="member">accionDos</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_185c25ff0362bf4f4f5e69965c1ae4cfb" kindref="member">accionTres</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_13aed5959a6a829819e0b0a6dcca9c2e4" kindref="member">accionCuatro</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1f6dc20013805229005dfb87fc6f273b5" kindref="member">ruta</ref><sp/>(ofstream<sp/>&amp;<sp/>f);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_186fe4a1ff708072d98c6be42bbd512ea" kindref="member">escribeLog</ref>(ofstream<sp/>&amp;<sp/>f);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1e9f6bd8027b8a5c2e660a327d9e513ca" kindref="member">mostrar</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_10b3c25862a6081aaee96e77c08edda29" kindref="member">~Personaje</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_15870893672c215b1d99594233f7f5fd0" kindref="member">operator == </ref>(<ref refid="classPersonaje" kindref="compound">Personaje</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_17717f9a6ad3d7b68a5c953930510f575" kindref="member">operator &gt; </ref>(<ref refid="classPersonaje" kindref="compound">Personaje</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1e55182c2fd21118b27c5e911f800c1d6" kindref="member">operator &lt; </ref>(<ref refid="classPersonaje" kindref="compound">Personaje</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_15b7fbb10c092e6f953738fa54a380e33" kindref="member">operator &gt;= </ref>(<ref refid="classPersonaje" kindref="compound">Personaje</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1824156240864cc79a8b7319985eaec58" kindref="member">operator &lt;= </ref>(<ref refid="classPersonaje" kindref="compound">Personaje</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classPersonaje_1be7f26619dd67133806688d4306d877e" kindref="member">operator != </ref>(<ref refid="classPersonaje" kindref="compound">Personaje</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h"/>
+  </compounddef>
+</doxygen>

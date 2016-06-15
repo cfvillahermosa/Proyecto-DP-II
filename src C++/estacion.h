@@ -1,0 +1,39 @@
+#ifndef ESTACION_H
+#define ESTACION_H
+
+#include "cargador.h"
+#include "planta.h"
+
+/**
+	@author Carlos,,, <carlos@carlos-linux>
+*/
+class Estacion{
+    vector <planta*> vec;
+    static Estacion * miEstacion;
+    Estacion();
+    int turnosimulacion;
+    queue <Personaje*> salaprisioneros;
+    queue <Personaje*> desalojados;
+public:
+    
+    
+    
+    void insertarVector(planta *p);
+    void generar(ofstream & f);
+    void insertarPersonajeEstacion(Personaje *p);
+    void obtenerPlanta(int idp,planta*&p);
+    int totalPlantas();
+    static Estacion *obtenerMiEstacion();
+    void calcularRutaPlantasEstacion(ofstream & f);
+    void insertarSalaPrisioneros( Personaje * per );
+    
+    void setTurnoSimulacion(int t);
+    void accionesPersonajesPlanta();
+    int getTurnoSimulacion();
+    void insertarDesalojado(Personaje *p);
+    void escribeLogDesalojados(ofstream & f);
+    ~Estacion();
+
+};
+
+#endif

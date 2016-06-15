@@ -1,0 +1,359 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classArbol" kind="class" prot="public">
+    <compoundname>Arbol</compoundname>
+    <includes refid="arbol_8h" local="no">arbol.h</includes>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classArbol_14c3a2344872032f3c36a1e8b8837379f" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T Arbol&lt; T &gt;::datoRaiz</definition>
+        <argsstring></argsstring>
+        <name>datoRaiz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="38" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArbol_1871d116699f6a404aeee2fde67c0c26d" prot="private" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+        <definition>Arbol* Arbol&lt; T &gt;::hIzq</definition>
+        <argsstring></argsstring>
+        <name>hIzq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="39" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArbol_11b6f03cd0740e46a17ca5de6c0fc1958" prot="private" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+        <definition>Arbol * Arbol&lt; T &gt;::hDer</definition>
+        <argsstring></argsstring>
+        <name>hDer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="39" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classArbol_1d7abdeed27bdb42a6aed35a5b177de8d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::esVacio</definition>
+        <argsstring></argsstring>
+        <name>esVacio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="40" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classArbol_1925eeb72223ee175cc9c7620a89461c7" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::borrarOrden</definition>
+        <argsstring>(T &amp;dato)</argsstring>
+        <name>borrarOrden</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="41" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="70" bodyend="144"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classArbol_15612a2aa65ab954ec9ae442fdadef9de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Arbol&lt; T &gt;::Arbol</definition>
+        <argsstring>()</argsstring>
+        <name>Arbol</name>
+        <briefdescription>
+<para>ÁRBOL GENÉRICO. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="43" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="62" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_12487eb1849b924a28ce56ee9b7c34236" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Arbol&lt; T &gt;::Arbol</definition>
+        <argsstring>(Arbol *hIzq, T &amp;datoRaiz, Arbol *hDer)</argsstring>
+        <name>Arbol</name>
+        <param>
+          <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+          <declname>hIzq</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>datoRaiz</declname>
+        </param>
+        <param>
+          <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+          <declname>hDer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="44" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="146" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1da5f40bff1e6a6a0174a749d309bcb1c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::hijoIzq</definition>
+        <argsstring>()</argsstring>
+        <name>hijoIzq</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="45" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="155" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1d433925e246961a80e690e46f9977780" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref> *</type>
+        <definition>Arbol&lt; T &gt; * Arbol&lt; T &gt;::hijoDer</definition>
+        <argsstring>()</argsstring>
+        <name>hijoDer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="46" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="160" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1e7c912144568cd72804c893ffbe06415" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; Arbol&lt; T &gt;::raiz</definition>
+        <argsstring>()</argsstring>
+        <name>raiz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="47" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="164" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_17eccfbbe02911216fe285138347a8556" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::vacio</definition>
+        <argsstring>()</argsstring>
+        <name>vacio</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="48" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="168" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_19f2895622e071f4c6e6ca02c0191d552" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::insertar</definition>
+        <argsstring>(T &amp;dato)</argsstring>
+        <name>insertar</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="49" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="172" bodyend="201"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1315fc4e5ad1b7940acda871feadc82c0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Arbol&lt; T &gt;::pertenece</definition>
+        <argsstring>(T &amp;dato)</argsstring>
+        <name>pertenece</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="50" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="203" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_18a14a3c40b5280a03fc17a24f5f005dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Arbol&lt; T &gt;::borrar</definition>
+        <argsstring>(T &amp;dato)</argsstring>
+        <name>borrar</name>
+        <param>
+          <type>T &amp;</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="51" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="226" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1b45032ed929d7b2ea5d0860fb318d944" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::numNodos</definition>
+        <argsstring>()</argsstring>
+        <name>numNodos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="52" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="248" bodyend="254"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_12b86fa8d1632daa86c9302e16c0a7fd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::numHojas</definition>
+        <argsstring>()</argsstring>
+        <name>numHojas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="53" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="256" bodyend="267"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_108dc2d243b213fe87a8972d60704b398" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::numNodosNoHojas</definition>
+        <argsstring>()</argsstring>
+        <name>numNodosNoHojas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="54" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="269" bodyend="271"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1f1e00998d1764ccc5eb998419855338c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::altura</definition>
+        <argsstring>()</argsstring>
+        <name>altura</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="55" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="273" bodyend="282"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_1079dfb7fbda3ce6bc7c584830948ec55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Arbol&lt; T &gt;::maximo</definition>
+        <argsstring>(int n, int m)</argsstring>
+        <name>maximo</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="56" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="301" bodyend="306"/>
+      </memberdef>
+      <memberdef kind="function" id="classArbol_18110e3f6fcd750c5755f8127604b6b7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Arbol&lt; T &gt;::~Arbol</definition>
+        <argsstring>()</argsstring>
+        <name>~Arbol</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="57" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="286" bodyend="299"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase define un Árbol Binario de Búsqueda. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>T</label>
+      </node>
+      <node id="1">
+        <label>Arbol&lt; T &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="1" relation="usage">
+          <edgelabel>hDer
+hIzq</edgelabel>
+        </childnode>
+        <childnode refid="2" relation="usage">
+          <edgelabel>datoRaiz</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" line="37" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/arbol.h" bodystart="36" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classArbol_1f1e00998d1764ccc5eb998419855338c" prot="public" virt="non-virtual"><scope>Arbol</scope><name>altura</name></member>
+      <member refid="classArbol_15612a2aa65ab954ec9ae442fdadef9de" prot="public" virt="non-virtual"><scope>Arbol</scope><name>Arbol</name></member>
+      <member refid="classArbol_12487eb1849b924a28ce56ee9b7c34236" prot="public" virt="non-virtual"><scope>Arbol</scope><name>Arbol</name></member>
+      <member refid="classArbol_18a14a3c40b5280a03fc17a24f5f005dd" prot="public" virt="non-virtual"><scope>Arbol</scope><name>borrar</name></member>
+      <member refid="classArbol_1925eeb72223ee175cc9c7620a89461c7" prot="private" virt="non-virtual"><scope>Arbol</scope><name>borrarOrden</name></member>
+      <member refid="classArbol_14c3a2344872032f3c36a1e8b8837379f" prot="private" virt="non-virtual"><scope>Arbol</scope><name>datoRaiz</name></member>
+      <member refid="classArbol_1d7abdeed27bdb42a6aed35a5b177de8d" prot="private" virt="non-virtual"><scope>Arbol</scope><name>esVacio</name></member>
+      <member refid="classArbol_11b6f03cd0740e46a17ca5de6c0fc1958" prot="private" virt="non-virtual"><scope>Arbol</scope><name>hDer</name></member>
+      <member refid="classArbol_1d433925e246961a80e690e46f9977780" prot="public" virt="non-virtual"><scope>Arbol</scope><name>hijoDer</name></member>
+      <member refid="classArbol_1da5f40bff1e6a6a0174a749d309bcb1c" prot="public" virt="non-virtual"><scope>Arbol</scope><name>hijoIzq</name></member>
+      <member refid="classArbol_1871d116699f6a404aeee2fde67c0c26d" prot="private" virt="non-virtual"><scope>Arbol</scope><name>hIzq</name></member>
+      <member refid="classArbol_19f2895622e071f4c6e6ca02c0191d552" prot="public" virt="non-virtual"><scope>Arbol</scope><name>insertar</name></member>
+      <member refid="classArbol_1079dfb7fbda3ce6bc7c584830948ec55" prot="public" virt="non-virtual"><scope>Arbol</scope><name>maximo</name></member>
+      <member refid="classArbol_12b86fa8d1632daa86c9302e16c0a7fd0" prot="public" virt="non-virtual"><scope>Arbol</scope><name>numHojas</name></member>
+      <member refid="classArbol_1b45032ed929d7b2ea5d0860fb318d944" prot="public" virt="non-virtual"><scope>Arbol</scope><name>numNodos</name></member>
+      <member refid="classArbol_108dc2d243b213fe87a8972d60704b398" prot="public" virt="non-virtual"><scope>Arbol</scope><name>numNodosNoHojas</name></member>
+      <member refid="classArbol_1315fc4e5ad1b7940acda871feadc82c0" prot="public" virt="non-virtual"><scope>Arbol</scope><name>pertenece</name></member>
+      <member refid="classArbol_1e7c912144568cd72804c893ffbe06415" prot="public" virt="non-virtual"><scope>Arbol</scope><name>raiz</name></member>
+      <member refid="classArbol_17eccfbbe02911216fe285138347a8556" prot="public" virt="non-virtual"><scope>Arbol</scope><name>vacio</name></member>
+      <member refid="classArbol_18110e3f6fcd750c5755f8127604b6b7b" prot="public" virt="non-virtual"><scope>Arbol</scope><name>~Arbol</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

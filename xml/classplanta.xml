@@ -1,0 +1,1416 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classplanta" kind="class" prot="public">
+    <compoundname>planta</compoundname>
+    <includes refid="planta_8h" local="no">planta.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classplanta_14568b1074c34ab26aae103614cdae979" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classsala" kindref="compound">sala</ref> * &gt;</type>
+        <definition>vector&lt;sala*&gt; planta::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="16" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classplanta_11567e74077230f7c3b927ca55cd18257" prot="private" static="no" mutable="no">
+        <type><ref refid="classpuerta" kindref="compound">puerta</ref> *</type>
+        <definition>puerta* planta::p</definition>
+        <argsstring></argsstring>
+        <name>p</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="17" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classplanta_172f3cf37b38e369aa834714b4cb77864" prot="private" static="no" mutable="no">
+        <type><ref refid="classGrafo" kindref="compound">Grafo</ref></type>
+        <definition>Grafo planta::g</definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="18" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classplanta_14c59fb46ec3dcb661c6b340037da3ad6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int planta::idplanta</definition>
+        <argsstring></argsstring>
+        <name>idplanta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="19" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classplanta_171d9c8459763d1e9b51af9868c0621fd" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int planta::salaentrada</definition>
+        <argsstring></argsstring>
+        <name>salaentrada</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="20" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classplanta_12437aa05b9a6efa0821017352df9b6c2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int planta::salasalida</definition>
+        <argsstring></argsstring>
+        <name>salasalida</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="21" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classplanta_10c335bb0d8978a79c2d250992aa75b10" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int planta::nllaves</definition>
+        <argsstring></argsstring>
+        <name>nllaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="22" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classplanta_1bfbe315d1244a9e2b4664a7055371a71" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int planta::anchoplanta</definition>
+        <argsstring></argsstring>
+        <name>anchoplanta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="23" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classplanta_1c9d2d41714b7b75cfeddcd8484568f78" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int planta::altoplanta</definition>
+        <argsstring></argsstring>
+        <name>altoplanta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="24" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classplanta_14c93b85a355bf29b1613cc22f0ed0f46" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>planta::planta</definition>
+        <argsstring>()</argsstring>
+        <name>planta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de mi clase <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="26" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="8" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1e6a56480cf07955e354043f1221177fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>planta::planta</definition>
+        <argsstring>(int idp, int se, int ss, int nll, int anch, int alt)</argsstring>
+        <name>planta</name>
+        <param>
+          <type>int</type>
+          <declname>idp</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>se</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ss</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nll</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>anch</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de mi clase <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo idplanta de mi clase Planta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>se</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un prametro de entrada del tipo entero asociado al atributo salaentrada de mi clase Planta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ss</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo salasalida de mi clase Planta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nll</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo nllaves e mi clase <ref refid="classplanta" kindref="compound">planta</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>anch</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo anchoplanta de mi clase Planta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo altoplanta de mi clase Planta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="27" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="34" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1cd23abae2d6e377abe25d48d850f7319" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::setIdPlanta</definition>
+        <argsstring>(int n)</argsstring>
+        <name>setIdPlanta</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor n al atributo idplanta de mi clase <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="28" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_16e9b552f6542f68eca605ed69a283980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int planta::getIdPlanta</definition>
+        <argsstring>()</argsstring>
+        <name>getIdPlanta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor de mi atributo idplanta de mi clase Planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un entero correspondiente con el valor del atributo idplanta de mi clase Planta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="29" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1b322da5e5360a302601c15c98748213c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::setSalaEntrada</definition>
+        <argsstring>(int n)</argsstring>
+        <name>setSalaEntrada</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor n al atributo salaentrada de mi clase <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="30" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="90" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_19ea0125af87508895b27bc0c2235e42a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int planta::getSalaEntrada</definition>
+        <argsstring>()</argsstring>
+        <name>getSalaEntrada</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el entero asociado al valor del atributo salaentrada de mi clase PLanta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna el entero correspondiente al atributo salaentrada de mi clase Planta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="31" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="99" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_13a3256c74ea714e55de672068d05ec4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::setSalaSalida</definition>
+        <argsstring>(int n)</argsstring>
+        <name>setSalaSalida</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor n al atributo salasalida de mi clase <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="32" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="108" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1dbb3b23569c310dcd01163e09674009c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int planta::getSalaSalida</definition>
+        <argsstring>()</argsstring>
+        <name>getSalaSalida</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo devuelve el valor asociado a mi atributo salasalida de mi clase Planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna el entero correspondiente al atributo salasalida de mi clase Planta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="33" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="117" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_14b11a7bc1bd000f01a7af5da1df7a285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::setNLlaves</definition>
+        <argsstring>(int n)</argsstring>
+        <name>setNLlaves</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo establece un valor al atributo nllaves de mi clase Planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="34" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_15087143df250ee8686a3c5387961f01e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int planta::getNLlaves</definition>
+        <argsstring>()</argsstring>
+        <name>getNLlaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor del atributo nllaves de mi clase Planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve el entero correspondiente a mi atributo nllaves de mi clase PLanta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="35" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="188" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1aa7dd29c052394b78b67d7be90bbb3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::setAnchoPlanta</definition>
+        <argsstring>(int n)</argsstring>
+        <name>setAnchoPlanta</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor n al atributo anchoplanta de mi clase <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="36" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1ef93598d5bca7e2235035a07147f4bbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int planta::getAnchoPlanta</definition>
+        <argsstring>()</argsstring>
+        <name>getAnchoPlanta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor asociado al atributo anchoplanta de mi clase Planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve un valor del tipo entero correspondiente al atributo anchoplanta de mi clase PLanta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="37" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="206" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1935647ba7aa07152ac9a4a5bf0ec92fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::setAltoPlanta</definition>
+        <argsstring>(int n)</argsstring>
+        <name>setAltoPlanta</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor n al atributo altoplanta de mi clase <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="38" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="215" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_13d9fad702134aa5718b9d00ae11d7646" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int planta::getAltoPlanta</definition>
+        <argsstring>()</argsstring>
+        <name>getAltoPlanta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor asociado a mi atributo altoplanta de mi clase PLanta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>devuelve el valor correspondiente a mi atributo altoplanta de mi clase Planta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="39" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="224" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1dd824feb63f74fa79c07b35292b6164d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::calcularPosiblesVecinos</definition>
+        <argsstring>(sala *s, list&lt; TipoArco &gt; &amp;larcos)</argsstring>
+        <name>calcularPosiblesVecinos</name>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>list&lt; TipoArco &gt; &amp;</type>
+          <declname>larcos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo calcula los posibles vecinos de una <ref refid="classsala" kindref="compound">sala</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada (puntero) de la clase Sala </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>larcos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo lista (ED STL) que almacena datos del tipo TipoArco </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="41" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="128" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_18f751a6905970cdc9922b9662b33f24c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::vecinosTodasSalas</definition>
+        <argsstring>(list&lt; TipoArco &gt; &amp;larcos)</argsstring>
+        <name>vecinosTodasSalas</name>
+        <param>
+          <type>list&lt; TipoArco &gt; &amp;</type>
+          <declname>larcos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que calcula los vecinos de cada una de las salas de mi vector de salas de mi clase Planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>larcos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo list (ED STL) que almacena datos del tipo TipoArco </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="42" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="158" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1878639aab40d24f515031619abbd7a61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::insertarVector</definition>
+        <argsstring>(sala *s)</argsstring>
+        <name>insertarVector</name>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta en mi vector de salas de mi clase <ref refid="classplanta" kindref="compound">planta</ref> un puntero a una instancia de mi clase Sala <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada puntero a una instancia de la clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="44" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="170" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_18ba7df6396d9bad77c0f65a729e85ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::insertarNodoGrafo</definition>
+        <argsstring>(TipoNodoGrafo n)</argsstring>
+        <name>insertarNodoGrafo</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta un nodo nuevo en el grafo de mi clase Planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo TipoNodoGrafo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="45" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="233" bodyend="236"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1c97835a31f875ecdc01f33517dfc71d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::obtenerCeldaVector</definition>
+        <argsstring>(int i, sala *&amp;s)</argsstring>
+        <name>obtenerCeldaVector</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *&amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo me devuelve un puntero a una <ref refid="classsala" kindref="compound">sala</ref> correspondiente con la posicion i <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de salida del tipo instancia a la clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="46" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="243" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1af4bebbde71513fa6496c3f60d0214f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::algoritmoKruskal</definition>
+        <argsstring>(list&lt; TipoArco &gt; &amp;l)</argsstring>
+        <name>algoritmoKruskal</name>
+        <param>
+          <type>list&lt; TipoArco &gt; &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza el algoritmo de kruskal <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo list (ED STL) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="48" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="252" bodyend="283"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1b4ffd08f4b41a91e0f1ad667e2e9014f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::pintarEstructura</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>pintarEstructura</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que pinta en mi registro.log la estructura de cada <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="49" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="289" bodyend="327"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1d9f49ae6d392d9f7de7320140c87b285" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::generarAtajos</definition>
+        <argsstring>()</argsstring>
+        <name>generarAtajos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que genera los atajos correspondientes hasta llegar al 5% del total de salas que posee el vector de salas de mi clase PLanta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="51" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="333" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1894574ebadf95dc0fd29a692f4c8e563" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool planta::AtajoNorte</definition>
+        <argsstring>(sala *s)</argsstring>
+        <name>AtajoNorte</name>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que calcula los atajos por el norte <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de la clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true en caso de que haya atajo por el norte y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="52" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="355" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_16f30a6db1b7f9796a8608348bb438efb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool planta::AtajoSur</definition>
+        <argsstring>(sala *s)</argsstring>
+        <name>AtajoSur</name>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que calcula los atajos por el sur <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de la clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true en caso de que haya atajo por el sur y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="53" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="390" bodyend="419"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1289d62512ce27210c8d2b065c2e1ad7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool planta::AtajoOeste</definition>
+        <argsstring>(sala *s)</argsstring>
+        <name>AtajoOeste</name>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que calcula los atajos por el oeste <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de la clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true en caso de que haya atajo por el oeste y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="54" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="425" bodyend="454"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_19de280e30bde3f6acd5f758567f39ad6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool planta::AtajoEste</definition>
+        <argsstring>(sala *s)</argsstring>
+        <name>AtajoEste</name>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que calcula los atajos por el este <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de la clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true en caso de que haya atajo por el este y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="55" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="460" bodyend="489"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_16420d2f76781945da90ff6187967694d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool planta::siHayAtajo</definition>
+        <argsstring>(sala *s)</argsstring>
+        <name>siHayAtajo</name>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo booleano que me indica la existencia o no de un atajo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de la clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true en caso de que haya atajo y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="56" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="495" bodyend="529"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_18fab738328778b64c683e169a2aa58dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::generarPlanta</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>generarPlanta</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga de generar todo lo corespondiente a la <ref refid="classplanta" kindref="compound">planta</ref> en el registro.log <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="58" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="535" bodyend="548"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_199d7ef1836db1ae602104e1878f5f430" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::repartoLlaves</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>repartoLlaves</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga de repartir las llaves por las distintas salas <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="59" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="554" bodyend="605"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_15a10e66e70a71d957e1dde4a019b8280" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::establecerCondicionApertura</definition>
+        <argsstring>(int ap)</argsstring>
+        <name>establecerCondicionApertura</name>
+        <param>
+          <type>int</type>
+          <declname>ap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece la condicion de apertura de la <ref refid="classpuerta" kindref="compound">puerta</ref> de mi clase PLanta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="61" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="643" bodyend="646"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_112c7cfe94fb585ff80db86046756e3d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::salasMasFrecuentadas</definition>
+        <argsstring>(TipoNodoGrafo v, TipoCjtoNodos visitados)</argsstring>
+        <name>salasMasFrecuentadas</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>v</declname>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type>TipoCjtoNodos</type>
+          <declname>visitados</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga de aumentar las frecuencias de las salas de mi vector de salas de mi clase PLanta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo TipoNodoGrafo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>visitados</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo TipoCjtoNodos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="63" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="612" bodyend="637"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1b2856a872a24f50fb52dd6b35e878c55" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::insertarPersonajeSala</definition>
+        <argsstring>(Personaje *p)</argsstring>
+        <name>insertarPersonajeSala</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga de repartir las llaves por las distintas salas <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="65" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="652" bodyend="657"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_19d424f5bb63dbae72f7f3ed6906d7095" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int planta::totalSalas</definition>
+        <argsstring>()</argsstring>
+        <name>totalSalas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el tamaño de mi vector de salas de mi clase PLanta ( es decir, el numero de salas de cada <ref refid="classplanta" kindref="compound">planta</ref>) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="67" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="663" bodyend="666"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_140ec013e3c503f0675c688c5dce3828a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::pintarPersonajes</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>pintarPersonajes</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga de pintar todos los personajes de cada <ref refid="classsala" kindref="compound">sala</ref> en mi registro.log ( pinta un entero si hay mas de un personaje o su marca en caso de que solo haya un personaje) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="69" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="674" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_12e62f6407ca66f91c2ef10647ec5f869" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::siguienteGrafo</definition>
+        <argsstring>(int origen, int destino, int &amp;sig)</argsstring>
+        <name>siguienteGrafo</name>
+        <param>
+          <type>int</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>destino</declname>
+        </param>
+        <param>
+          <type>int &amp;</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que me devuelve el entero correspondiente al nodo siguiente entre los nodos origen y destino <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero que determina donde empieza mi camino </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero que determina donde termina mi camino </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de salida del tipo entero que me devuelve el entero correspondiente al nodo siguiente que se encuentra entre los nodos origen y destino </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="71" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="736" bodyend="739"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1d11674698b9703b7c570643723ced5fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::calcularRutaSalasPlanta</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>calcularRutaSalasPlanta</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que calcula las rutas de todos los personajes que estan incluidos dentro de cada <ref refid="classsala" kindref="compound">sala</ref> de mi vector de salas de mi clase PLanta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="73" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="745" bodyend="750"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1afb5b4511eeaa66b208cb6ec08c60a9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::calcularVecinosReales</definition>
+        <argsstring>(sala *s)</argsstring>
+        <name>calcularVecinosReales</name>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que calcula los vecinos reales correspondientes a la <ref refid="classsala" kindref="compound">sala</ref> s <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de la clase Sala que es mi <ref refid="classsala" kindref="compound">sala</ref> de referencia para calcular sus vecinos reales </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="74" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="756" bodyend="806"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_140af5c175ab9b779d8aceebc0c4361c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::calcularVecinosRealesTodasSalas</definition>
+        <argsstring>()</argsstring>
+        <name>calcularVecinosRealesTodasSalas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que repite la funcion anterior para cada una de mis salas de mi vector de salas de mi clase PLanta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="75" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="812" bodyend="816"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1d66544ed0d0c8f20a98d7c8ce401a43f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::obtenerPuerta</definition>
+        <argsstring>(puerta *&amp;puer)</argsstring>
+        <name>obtenerPuerta</name>
+        <param>
+          <type><ref refid="classpuerta" kindref="compound">puerta</ref> *&amp;</type>
+          <declname>puer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que me copia en puer el atributo p de mi clase <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>puer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de salida del tipo puntero a instancia de la clase Puerta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="77" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="823" bodyend="826"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1015d9890a348a62c9680edaec54c3975" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::accionesPersonajesSalas</definition>
+        <argsstring>()</argsstring>
+        <name>accionesPersonajesSalas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga de realizar las acciones correspondientes a los personajes de cada <ref refid="classsala" kindref="compound">sala</ref> de mi vector de salas <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="78" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="832" bodyend="837"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1715eedf1f6fab5d7daa52a2b7cbb2744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void planta::escribeLogPlanta</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>escribeLogPlanta</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga escribir en mi registro.log la informacion correspondiente a Planta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="79" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="843" bodyend="874"/>
+      </memberdef>
+      <memberdef kind="function" id="classplanta_1a86392313eeb2f2c217454abf0c7e216" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>planta::~planta</definition>
+        <argsstring>()</argsstring>
+        <name>~planta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de mi clase <ref refid="classplanta" kindref="compound">planta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="84" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.cpp" bodystart="57" bodyend="63"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Carlos,,, &lt;carlos-linux&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="67">
+        <label>Lista&lt; T &gt;::TipoNodo</label>
+        <childnode refid="67" relation="usage">
+          <edgelabel>siguiente
+anterior</edgelabel>
+        </childnode>
+        <childnode refid="64" relation="usage">
+          <edgelabel>dato</edgelabel>
+        </childnode>
+      </node>
+      <node id="64">
+        <label>T</label>
+      </node>
+      <node id="61">
+        <label>puerta</label>
+        <link refid="classpuerta"/>
+        <childnode refid="62" relation="usage">
+          <edgelabel>arbolLlavesProbadas
+arbolCerradura</edgelabel>
+        </childnode>
+        <childnode refid="66" relation="usage">
+          <edgelabel>lcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="63">
+        <label>Arbol&lt; T &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="63" relation="usage">
+          <edgelabel>hDer
+hIzq</edgelabel>
+        </childnode>
+        <childnode refid="64" relation="usage">
+          <edgelabel>datoRaiz</edgelabel>
+        </childnode>
+      </node>
+      <node id="62">
+        <label>Arbol&lt; Llave * &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="63" relation="usage">
+          <edgelabel>hDer
+hIzq</edgelabel>
+        </childnode>
+        <childnode refid="65" relation="usage">
+          <edgelabel>datoRaiz</edgelabel>
+        </childnode>
+      </node>
+      <node id="65">
+        <label>Llave</label>
+        <link refid="classLlave"/>
+      </node>
+      <node id="59">
+        <label>planta</label>
+        <link refid="classplanta"/>
+        <childnode refid="60" relation="usage">
+          <edgelabel>g</edgelabel>
+        </childnode>
+        <childnode refid="61" relation="usage">
+          <edgelabel>p</edgelabel>
+        </childnode>
+      </node>
+      <node id="60">
+        <label>Grafo</label>
+        <link refid="classGrafo"/>
+      </node>
+      <node id="66">
+        <label>Lista&lt; Llave * &gt;</label>
+        <childnode refid="67" relation="usage">
+          <edgelabel>pInteres
+fin
+inicio</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" line="15" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/planta.h" bodystart="15" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classplanta_1015d9890a348a62c9680edaec54c3975" prot="public" virt="non-virtual"><scope>planta</scope><name>accionesPersonajesSalas</name></member>
+      <member refid="classplanta_1af4bebbde71513fa6496c3f60d0214f3" prot="public" virt="non-virtual"><scope>planta</scope><name>algoritmoKruskal</name></member>
+      <member refid="classplanta_1c9d2d41714b7b75cfeddcd8484568f78" prot="private" virt="non-virtual"><scope>planta</scope><name>altoplanta</name></member>
+      <member refid="classplanta_1bfbe315d1244a9e2b4664a7055371a71" prot="private" virt="non-virtual"><scope>planta</scope><name>anchoplanta</name></member>
+      <member refid="classplanta_19de280e30bde3f6acd5f758567f39ad6" prot="public" virt="non-virtual"><scope>planta</scope><name>AtajoEste</name></member>
+      <member refid="classplanta_1894574ebadf95dc0fd29a692f4c8e563" prot="public" virt="non-virtual"><scope>planta</scope><name>AtajoNorte</name></member>
+      <member refid="classplanta_1289d62512ce27210c8d2b065c2e1ad7f" prot="public" virt="non-virtual"><scope>planta</scope><name>AtajoOeste</name></member>
+      <member refid="classplanta_16f30a6db1b7f9796a8608348bb438efb" prot="public" virt="non-virtual"><scope>planta</scope><name>AtajoSur</name></member>
+      <member refid="classplanta_1dd824feb63f74fa79c07b35292b6164d" prot="public" virt="non-virtual"><scope>planta</scope><name>calcularPosiblesVecinos</name></member>
+      <member refid="classplanta_1d11674698b9703b7c570643723ced5fd" prot="public" virt="non-virtual"><scope>planta</scope><name>calcularRutaSalasPlanta</name></member>
+      <member refid="classplanta_1afb5b4511eeaa66b208cb6ec08c60a9e" prot="public" virt="non-virtual"><scope>planta</scope><name>calcularVecinosReales</name></member>
+      <member refid="classplanta_140af5c175ab9b779d8aceebc0c4361c2" prot="public" virt="non-virtual"><scope>planta</scope><name>calcularVecinosRealesTodasSalas</name></member>
+      <member refid="classplanta_1715eedf1f6fab5d7daa52a2b7cbb2744" prot="public" virt="non-virtual"><scope>planta</scope><name>escribeLogPlanta</name></member>
+      <member refid="classplanta_15a10e66e70a71d957e1dde4a019b8280" prot="public" virt="non-virtual"><scope>planta</scope><name>establecerCondicionApertura</name></member>
+      <member refid="classplanta_172f3cf37b38e369aa834714b4cb77864" prot="private" virt="non-virtual"><scope>planta</scope><name>g</name></member>
+      <member refid="classplanta_1d9f49ae6d392d9f7de7320140c87b285" prot="public" virt="non-virtual"><scope>planta</scope><name>generarAtajos</name></member>
+      <member refid="classplanta_18fab738328778b64c683e169a2aa58dc" prot="public" virt="non-virtual"><scope>planta</scope><name>generarPlanta</name></member>
+      <member refid="classplanta_13d9fad702134aa5718b9d00ae11d7646" prot="public" virt="non-virtual"><scope>planta</scope><name>getAltoPlanta</name></member>
+      <member refid="classplanta_1ef93598d5bca7e2235035a07147f4bbe" prot="public" virt="non-virtual"><scope>planta</scope><name>getAnchoPlanta</name></member>
+      <member refid="classplanta_16e9b552f6542f68eca605ed69a283980" prot="public" virt="non-virtual"><scope>planta</scope><name>getIdPlanta</name></member>
+      <member refid="classplanta_15087143df250ee8686a3c5387961f01e" prot="public" virt="non-virtual"><scope>planta</scope><name>getNLlaves</name></member>
+      <member refid="classplanta_19ea0125af87508895b27bc0c2235e42a" prot="public" virt="non-virtual"><scope>planta</scope><name>getSalaEntrada</name></member>
+      <member refid="classplanta_1dbb3b23569c310dcd01163e09674009c" prot="public" virt="non-virtual"><scope>planta</scope><name>getSalaSalida</name></member>
+      <member refid="classplanta_14c59fb46ec3dcb661c6b340037da3ad6" prot="private" virt="non-virtual"><scope>planta</scope><name>idplanta</name></member>
+      <member refid="classplanta_18ba7df6396d9bad77c0f65a729e85ec6" prot="public" virt="non-virtual"><scope>planta</scope><name>insertarNodoGrafo</name></member>
+      <member refid="classplanta_1b2856a872a24f50fb52dd6b35e878c55" prot="public" virt="non-virtual"><scope>planta</scope><name>insertarPersonajeSala</name></member>
+      <member refid="classplanta_1878639aab40d24f515031619abbd7a61" prot="public" virt="non-virtual"><scope>planta</scope><name>insertarVector</name></member>
+      <member refid="classplanta_10c335bb0d8978a79c2d250992aa75b10" prot="private" virt="non-virtual"><scope>planta</scope><name>nllaves</name></member>
+      <member refid="classplanta_1c97835a31f875ecdc01f33517dfc71d4" prot="public" virt="non-virtual"><scope>planta</scope><name>obtenerCeldaVector</name></member>
+      <member refid="classplanta_1d66544ed0d0c8f20a98d7c8ce401a43f" prot="public" virt="non-virtual"><scope>planta</scope><name>obtenerPuerta</name></member>
+      <member refid="classplanta_11567e74077230f7c3b927ca55cd18257" prot="private" virt="non-virtual"><scope>planta</scope><name>p</name></member>
+      <member refid="classplanta_1b4ffd08f4b41a91e0f1ad667e2e9014f" prot="public" virt="non-virtual"><scope>planta</scope><name>pintarEstructura</name></member>
+      <member refid="classplanta_140ec013e3c503f0675c688c5dce3828a" prot="public" virt="non-virtual"><scope>planta</scope><name>pintarPersonajes</name></member>
+      <member refid="classplanta_14c93b85a355bf29b1613cc22f0ed0f46" prot="public" virt="non-virtual"><scope>planta</scope><name>planta</name></member>
+      <member refid="classplanta_1e6a56480cf07955e354043f1221177fe" prot="public" virt="non-virtual"><scope>planta</scope><name>planta</name></member>
+      <member refid="classplanta_199d7ef1836db1ae602104e1878f5f430" prot="public" virt="non-virtual"><scope>planta</scope><name>repartoLlaves</name></member>
+      <member refid="classplanta_171d9c8459763d1e9b51af9868c0621fd" prot="private" virt="non-virtual"><scope>planta</scope><name>salaentrada</name></member>
+      <member refid="classplanta_12437aa05b9a6efa0821017352df9b6c2" prot="private" virt="non-virtual"><scope>planta</scope><name>salasalida</name></member>
+      <member refid="classplanta_112c7cfe94fb585ff80db86046756e3d9" prot="public" virt="non-virtual"><scope>planta</scope><name>salasMasFrecuentadas</name></member>
+      <member refid="classplanta_1935647ba7aa07152ac9a4a5bf0ec92fd" prot="public" virt="non-virtual"><scope>planta</scope><name>setAltoPlanta</name></member>
+      <member refid="classplanta_1aa7dd29c052394b78b67d7be90bbb3c3" prot="public" virt="non-virtual"><scope>planta</scope><name>setAnchoPlanta</name></member>
+      <member refid="classplanta_1cd23abae2d6e377abe25d48d850f7319" prot="public" virt="non-virtual"><scope>planta</scope><name>setIdPlanta</name></member>
+      <member refid="classplanta_14b11a7bc1bd000f01a7af5da1df7a285" prot="public" virt="non-virtual"><scope>planta</scope><name>setNLlaves</name></member>
+      <member refid="classplanta_1b322da5e5360a302601c15c98748213c" prot="public" virt="non-virtual"><scope>planta</scope><name>setSalaEntrada</name></member>
+      <member refid="classplanta_13a3256c74ea714e55de672068d05ec4d" prot="public" virt="non-virtual"><scope>planta</scope><name>setSalaSalida</name></member>
+      <member refid="classplanta_12e62f6407ca66f91c2ef10647ec5f869" prot="public" virt="non-virtual"><scope>planta</scope><name>siguienteGrafo</name></member>
+      <member refid="classplanta_16420d2f76781945da90ff6187967694d" prot="public" virt="non-virtual"><scope>planta</scope><name>siHayAtajo</name></member>
+      <member refid="classplanta_19d424f5bb63dbae72f7f3ed6906d7095" prot="public" virt="non-virtual"><scope>planta</scope><name>totalSalas</name></member>
+      <member refid="classplanta_14568b1074c34ab26aae103614cdae979" prot="private" virt="non-virtual"><scope>planta</scope><name>v</name></member>
+      <member refid="classplanta_18f751a6905970cdc9922b9662b33f24c" prot="public" virt="non-virtual"><scope>planta</scope><name>vecinosTodasSalas</name></member>
+      <member refid="classplanta_1a86392313eeb2f2c217454abf0c7e216" prot="public" virt="non-virtual"><scope>planta</scope><name>~planta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

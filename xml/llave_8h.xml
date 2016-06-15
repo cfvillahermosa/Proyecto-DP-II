@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="llave_8h" kind="file">
+    <compoundname>llave.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includedby refid="puerta_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/puerta.h</includedby>
+    <includedby refid="sala_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/sala.h</includedby>
+    <includedby refid="personaje_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/personaje.h</includedby>
+    <includedby refid="llave_8cpp" local="yes">Desktop/academia_lp2/EC3_LPII/src/llave.cpp</includedby>
+    <incdepgraph>
+      <node id="347">
+        <label>cstdlib</label>
+      </node>
+      <node id="345">
+        <label>Desktop/academia_lp2/EC3_LPII/src/llave.h</label>
+        <link refid="llave.h"/>
+        <childnode refid="346" relation="include">
+        </childnode>
+        <childnode refid="347" relation="include">
+        </childnode>
+      </node>
+      <node id="346">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="358">
+        <label>Desktop/academia_lp2/EC3_LPII/src/miembro.h</label>
+        <link refid="miembro_8h-source"/>
+        <childnode refid="359" relation="include">
+        </childnode>
+        <childnode refid="360" relation="include">
+        </childnode>
+      </node>
+      <node id="360">
+        <label>Desktop/academia_lp2/EC3_LPII/src/trabajador.h</label>
+        <link refid="trabajador_8h-source"/>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="351">
+        <label>Desktop/academia_lp2/EC3_LPII/src/intruso.h</label>
+        <link refid="intruso_8h-source"/>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="352">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+        <childnode refid="355" relation="include">
+        </childnode>
+      </node>
+      <node id="356">
+        <label>Desktop/academia_lp2/EC3_LPII/src/sala.h</label>
+        <link refid="sala_8h-source"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+      </node>
+      <node id="349">
+        <label>Desktop/academia_lp2/EC3_LPII/src/puerta.h</label>
+        <link refid="puerta_8h-source"/>
+        <childnode refid="350" relation="include">
+        </childnode>
+        <childnode refid="351" relation="include">
+        </childnode>
+      </node>
+      <node id="359">
+        <label>Desktop/academia_lp2/EC3_LPII/src/lider.h</label>
+        <link refid="lider_8h-source"/>
+        <childnode refid="352" relation="include">
+        </childnode>
+      </node>
+      <node id="350">
+        <label>Desktop/academia_lp2/EC3_LPII/src/planta.h</label>
+        <link refid="planta_8h-source"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="354" relation="include">
+        </childnode>
+      </node>
+      <node id="354">
+        <label>Desktop/academia_lp2/EC3_LPII/src/estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="353" relation="include">
+        </childnode>
+      </node>
+      <node id="348">
+        <label>Desktop/academia_lp2/EC3_LPII/src/llave.h</label>
+        <link refid="llave.h"/>
+        <childnode refid="349" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="357" relation="include">
+        </childnode>
+      </node>
+      <node id="357">
+        <label>Desktop/academia_lp2/EC3_LPII/src/personaje.h</label>
+        <link refid="personaje_8h-source"/>
+        <childnode refid="351" relation="include">
+        </childnode>
+        <childnode refid="356" relation="include">
+        </childnode>
+        <childnode refid="358" relation="include">
+        </childnode>
+      </node>
+      <node id="353">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+      <node id="355">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classLlave" prot="public">Llave</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LLAVE_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LLAVE_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="classLlave" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLlave" kindref="compound">Llave</ref>{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>identificador;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLlave_1a2f4f79518899176f8760ce8d0cc6c26" kindref="member">Llave</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLlave_1c80fb30127165c307bc38873545e57fc" kindref="member">setIdentificador</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_121a4a576a987126d469a6eecb167aed1" kindref="member">getIdentificador</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLlave_1a2f4f79518899176f8760ce8d0cc6c26" kindref="member">Llave</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_13ed579466201fc80172774d871ece003" kindref="member">operator == </ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>&amp;<sp/>l);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_1932475670e3d7c9e47ca0837d829a7eb" kindref="member">operator &lt; </ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>&amp;<sp/>l);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_1be84640478b66d4114fc5995b7981dfb" kindref="member">operator &gt; </ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>&amp;<sp/>l);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_1da6d6ec0cb9dc0c04b2b39d4a0dd9128" kindref="member">operator !=</ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>&amp;<sp/>l);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_182d40399d2418c8e117f62f7df6ee95c" kindref="member">operator &lt;= </ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>&amp;l);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_1ad93df44517e7d51ceef30182afb8232" kindref="member">operator &gt;= </ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>&amp;<sp/>l);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_13ed579466201fc80172774d871ece003" kindref="member">operator ==</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_1932475670e3d7c9e47ca0837d829a7eb" kindref="member">operator &lt; </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_1be84640478b66d4114fc5995b7981dfb" kindref="member">operator &gt; </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_1da6d6ec0cb9dc0c04b2b39d4a0dd9128" kindref="member">operator != </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_182d40399d2418c8e117f62f7df6ee95c" kindref="member">operator &lt;= </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classLlave_1ad93df44517e7d51ceef30182afb8232" kindref="member">operator &gt;= </ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>ostream<sp/>&amp;<sp/><ref refid="classLlave_1749fde97e089059539e396738c36b7d3" kindref="member">operator &lt;&lt; </ref>(ostream<sp/>&amp;<sp/>f,<sp/><ref refid="classLlave" kindref="compound">Llave</ref><sp/>&amp;<sp/>l);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLlave_1a2f4f79518899176f8760ce8d0cc6c26" kindref="member">Llave</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound">Llave</ref><sp/>&amp;<sp/>l);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLlave_1b0e13e4c7afa757571506ac3d04e5df2" kindref="member">~Llave</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h"/>
+  </compounddef>
+</doxygen>

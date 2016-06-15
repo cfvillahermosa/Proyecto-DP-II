@@ -1,0 +1,663 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classLider" kind="class" prot="public">
+    <compoundname>Lider</compoundname>
+    <basecompoundref refid="classMiembro" prot="public" virt="non-virtual">Miembro</basecompoundref>
+    <includes refid="lider_8h" local="no">lider.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLider_170eb8e22a6ee992547300cdda4bb50bf" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Lider::secuenciaorientaciones</definition>
+        <argsstring></argsstring>
+        <name>secuenciaorientaciones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="14" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLider_1752a83ebb773db5090bc192591a5814a" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Lider::movimiento</definition>
+        <argsstring></argsstring>
+        <name>movimiento</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="15" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLider_18b51b94a25f0c234a2f42a525e38a394" prot="private" static="no" mutable="no">
+        <type>set&lt; <ref refid="classPersonaje" kindref="compound">Personaje</ref> * &gt;</type>
+        <definition>set&lt;Personaje*&gt; Lider::grupo</definition>
+        <argsstring></argsstring>
+        <name>grupo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="16" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLider_1bbdd9719261866f4f316620b4319d7e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lider::Lider</definition>
+        <argsstring>()</argsstring>
+        <name>Lider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de mi clase lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="19" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_116da42712d18eb29d78b81613f3d916d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lider::Lider</definition>
+        <argsstring>(char m, string n, int t, int ids, int idp, string sec, char mov)</argsstring>
+        <name>Lider</name>
+        <param>
+          <type>char</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ids</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idp</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>sec</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>mov</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de mi clase lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un caracter correspondiente a la marca de mi personaje de tipo lider </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es una cadena correspondiente al nombre de mi personaje del tipo lider </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un entero correspondiente al turno de mi personaje del tipo lider </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un entero correspondiente al identificador de la <ref refid="classsala" kindref="compound">sala</ref> de mi personaje del tipo lider </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un entero correspondiente al identificador de la <ref refid="classplanta" kindref="compound">planta</ref> de mi personaje del tipo lider </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es una cadena que se corresponde con la secuencia de orientaciones que sigue mi personaje del tipo lider </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mov</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un caracter que se corresponde con el movimiento asociado a mi personaje del tipo lider </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="20" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="50" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_18b7b93efc0b6cecbab4ae82992ebcd11" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lider::setMovimiento</definition>
+        <argsstring>(char m)</argsstring>
+        <name>setMovimiento</name>
+        <param>
+          <type>char</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece a mi atributo movimiento el valor de m <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo caracter que establece el movimiento de mi personaje de tipo lider </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="21" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="116" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_12fb77f30c5ebb7bce39dc7ee4711d4d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char Lider::getMovimiento</definition>
+        <argsstring>()</argsstring>
+        <name>getMovimiento</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el caracter correspondiente al movimiento de mi personaje de tipo lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un caracter que se corresponde con el movimiento asociado a mi personaje de tipo lider </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="22" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="125" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_184acf3920a695ab792f9bbcb494ea7c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lider::setSecuenciaOrientaciones</definition>
+        <argsstring>(string s)</argsstring>
+        <name>setSecuenciaOrientaciones</name>
+        <param>
+          <type>string</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que asigna a mi atributo secuenciaorientaciones la cadena s <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="23" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_138d5268d1d780494277063ce96c52881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lider::getSecuenciaOrientaciones</definition>
+        <argsstring>(string &amp;s)</argsstring>
+        <name>getSecuenciaOrientaciones</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve en s la cadena correspondiente a mi atributo secuenciaorientaciones <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida que almacena la cadena secuenciaorientaciones </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="24" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="145" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_1125acbb3a1432f217efdc9826a2b8d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Lider::mostrar</definition>
+        <argsstring>()</argsstring>
+        <name>mostrar</name>
+        <reimplements refid="classMiembro_128498c7229e81e64d0cb7ea69515dca0">mostrar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra por pantalla el tipo de personaje que se trata, en este caso , es un lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="25" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_1fcd179370f87dbc08bf6619ff9742f66" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Lider::escribeLog</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>escribeLog</name>
+        <reimplements refid="classPersonaje_186fe4a1ff708072d98c6be42bbd512ea">escribeLog</reimplements>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que escribe en mi registro.log la informacion de mi personaje de tipo lider y además escribo la informacion correspondiente a los personajes que se encuentran en el atributo grupo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>aqui hago el log de cada miembro que hay en su grupo </para>        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="26" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="61" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_16b98929df0d59cd29b85e6fb8aeb36f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Lider::ruta</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>ruta</name>
+        <reimplements refid="classPersonaje_1f6dc20013805229005dfb87fc6f273b5">ruta</reimplements>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que calcula la ruta de mi personaje de tipo lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="27" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="84" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_187a0b4fca538efa5c9b7d01992f362e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lider::actualizarMovimiento</definition>
+        <argsstring>()</argsstring>
+        <name>actualizarMovimiento</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo actualiza el movimiento de mi personaje de tipo lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="28" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="154" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_19b40d8d989e80fbfd39a17bac209b73e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Lider::recorrerVecinos</definition>
+        <argsstring>(int ids, stack&lt; char &gt; &amp;secorientaciones, stack&lt; int &gt; &amp;idvecinos, set&lt; int &gt; &amp;vecinos)</argsstring>
+        <name>recorrerVecinos</name>
+        <param>
+          <type>int</type>
+          <declname>ids</declname>
+        </param>
+        <param>
+          <type>stack&lt; char &gt; &amp;</type>
+          <declname>secorientaciones</declname>
+        </param>
+        <param>
+          <type>stack&lt; int &gt; &amp;</type>
+          <declname>idvecinos</declname>
+          <defname>idsalas</defname>
+        </param>
+        <param>
+          <type>set&lt; int &gt; &amp;</type>
+          <declname>vecinos</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo booleano que calcula los vecinos de mi personaje de tipo lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero correspondiente al identificador de la <ref refid="classsala" kindref="compound">sala</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>secorientaciones</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo stack (pila) que almacena los caracteres correspondiente a la posicion cardinal de los vecinos que se van obteniendo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idsalas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo stack(pila) que almacena los enteros correspondientes a los identificadores de las salas de los vecinos donde se mueve mi personaje de tipo lider </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vecinos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo set (conjunto) de enteros que almacena los enteros correspondientes a los identificadores de las salas de los vecinos de mi personaje de tipo lider</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true si el personaje del tipo lider alcanza la <ref refid="classsala" kindref="compound">sala</ref> de salida de la <ref refid="classplanta" kindref="compound">planta</ref> y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="29" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="181" bodyend="222"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_14643215eb946b9bd002d6882c5a24aeb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lider::escribeLogRuta</definition>
+        <argsstring>(ofstream &amp;f, stack&lt; char &gt; &amp;s, stack&lt; int &gt; &amp;idsalas)</argsstring>
+        <name>escribeLogRuta</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>stack&lt; char &gt; &amp;</type>
+          <declname>s</declname>
+          <defname>sec</defname>
+        </param>
+        <param>
+          <type>stack&lt; int &gt; &amp;</type>
+          <declname>idsalas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que escribe en mi registro.log toda la informacion correspondiente a la ruta de mi personaje del tipo lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo stack(pila) de caracteres que almacena las posiciones cardinales del movimiento de mi personaje del tipo lider </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idsalas</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo stack (pila) que almacena los enteros correspondientes a los identificadores de las salas donde se mueve mi personaje del tipo lider </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="30" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="230" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_12729cb612e6ca2d2750f48b85743107e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Lider::accionUno</definition>
+        <argsstring>()</argsstring>
+        <name>accionUno</name>
+        <reimplements refid="classPersonaje_10454b75ccc8f7e33f03e2cfb2c59e725">accionUno</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza la accion uno del lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>aqui pruebo con cada una de las llaves que llevan los miembros en el grupo (sólo con la 1ª de cada uno) </para>        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="31" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="261" bodyend="298"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_151fb2d9c6dfe283a13d61b8f546068f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Lider::accionDos</definition>
+        <argsstring>()</argsstring>
+        <name>accionDos</name>
+        <reimplements refid="classPersonaje_1af7763eb6099390038b7833129a1ef9f">accionDos</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo realiza la accion dos del lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+<para>Si estoy en la <ref refid="classsala" kindref="compound">sala</ref> de salida y la <ref refid="classpuerta" kindref="compound">puerta</ref> está cerrada NO me puedo mover </para>        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="32" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="304" bodyend="350"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_1993a29f5a5615bd8a41dfe550dfccb61" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Lider::accionTres</definition>
+        <argsstring>()</argsstring>
+        <name>accionTres</name>
+        <reimplements refid="classPersonaje_185c25ff0362bf4f4f5e69965c1ae4cfb">accionTres</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo realiza la accion tres del lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="33" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="356" bodyend="388"/>
+      </memberdef>
+      <memberdef kind="function" id="classLider_164481cdebf71c9b28ec7aef689fed43e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Lider::~Lider</definition>
+        <argsstring>()</argsstring>
+        <name>~Lider</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de mi clase lider <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="34" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.cpp" bodystart="18" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Carlos,,, &lt;carlos-linux&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="28">
+        <label>Miembro</label>
+        <link refid="classMiembro"/>
+        <childnode refid="29" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>Lider</label>
+        <link refid="classLider"/>
+        <childnode refid="28" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>Personaje</label>
+        <link refid="classPersonaje"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="31">
+        <label>Miembro</label>
+        <link refid="classMiembro"/>
+        <childnode refid="32" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>Lider</label>
+        <link refid="classLider"/>
+        <childnode refid="31" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>Personaje</label>
+        <link refid="classPersonaje"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" line="13" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h" bodystart="12" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classMiembro_1b286484cab275d7754c6ce2b513fdc9a" prot="public" virt="virtual"><scope>Lider</scope><name>accionCuatro</name></member>
+      <member refid="classLider_151fb2d9c6dfe283a13d61b8f546068f3" prot="public" virt="virtual"><scope>Lider</scope><name>accionDos</name></member>
+      <member refid="classLider_1993a29f5a5615bd8a41dfe550dfccb61" prot="public" virt="virtual"><scope>Lider</scope><name>accionTres</name></member>
+      <member refid="classLider_12729cb612e6ca2d2750f48b85743107e" prot="public" virt="virtual"><scope>Lider</scope><name>accionUno</name></member>
+      <member refid="classLider_187a0b4fca538efa5c9b7d01992f362e6" prot="public" virt="non-virtual"><scope>Lider</scope><name>actualizarMovimiento</name></member>
+      <member refid="classPersonaje_18880afa570d1f919516e2810b2226b08" prot="public" virt="non-virtual"><scope>Lider</scope><name>cojerLlave</name></member>
+      <member refid="classLider_1fcd179370f87dbc08bf6619ff9742f66" prot="public" virt="virtual"><scope>Lider</scope><name>escribeLog</name></member>
+      <member refid="classLider_14643215eb946b9bd002d6882c5a24aeb" prot="public" virt="non-virtual"><scope>Lider</scope><name>escribeLogRuta</name></member>
+      <member refid="classPersonaje_1f388d329d466b136c60fa26c6c4800a7" prot="public" virt="non-virtual"><scope>Lider</scope><name>getIdPlanta</name></member>
+      <member refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" prot="public" virt="non-virtual"><scope>Lider</scope><name>getIdSala</name></member>
+      <member refid="classPersonaje_136e1ba57799adb58163bec5a4f0015e0" prot="public" virt="non-virtual"><scope>Lider</scope><name>getMarca</name></member>
+      <member refid="classLider_12fb77f30c5ebb7bce39dc7ee4711d4d2" prot="public" virt="non-virtual"><scope>Lider</scope><name>getMovimiento</name></member>
+      <member refid="classPersonaje_1801e7fe38d0727d3219e51e916e2ce67" prot="public" virt="non-virtual"><scope>Lider</scope><name>getNombre</name></member>
+      <member refid="classLider_138d5268d1d780494277063ce96c52881" prot="public" virt="non-virtual"><scope>Lider</scope><name>getSecuenciaOrientaciones</name></member>
+      <member refid="classPersonaje_1425c743df0309deab48e9575d715eed9" prot="public" virt="non-virtual"><scope>Lider</scope><name>getTurno</name></member>
+      <member refid="classLider_18b51b94a25f0c234a2f42a525e38a394" prot="private" virt="non-virtual"><scope>Lider</scope><name>grupo</name></member>
+      <member refid="classPersonaje_18160f258ed0b5836b1173cbef638bde3" prot="protected" virt="non-virtual"><scope>Lider</scope><name>idplanta</name></member>
+      <member refid="classPersonaje_131a8a079b785a74622cc8dd51a9f745c" prot="protected" virt="non-virtual"><scope>Lider</scope><name>idsala</name></member>
+      <member refid="classPersonaje_166ec23478444efc795d29734cc010809" prot="public" virt="non-virtual"><scope>Lider</scope><name>insertarCola</name></member>
+      <member refid="classPersonaje_16ede7d70599342ba61eb034027a41f2a" prot="public" virt="non-virtual"><scope>Lider</scope><name>insertarPila</name></member>
+      <member refid="classPersonaje_1e98a94dc9f84d09e3a62266d5cac700c" prot="protected" virt="non-virtual"><scope>Lider</scope><name>juegollaves</name></member>
+      <member refid="classPersonaje_11ad939228d858b75826ddb4effa67ceb" prot="public" virt="non-virtual"><scope>Lider</scope><name>liberarMemoriaPila</name></member>
+      <member refid="classLider_1bbdd9719261866f4f316620b4319d7e6" prot="public" virt="non-virtual"><scope>Lider</scope><name>Lider</name></member>
+      <member refid="classLider_116da42712d18eb29d78b81613f3d916d" prot="public" virt="non-virtual"><scope>Lider</scope><name>Lider</name></member>
+      <member refid="classPersonaje_18f20063ad43d9f85a6d1f0022d32e0b4" prot="protected" virt="non-virtual"><scope>Lider</scope><name>marca</name></member>
+      <member refid="classMiembro_1d5ad341737a1f4631694393c99204d91" prot="public" virt="non-virtual"><scope>Lider</scope><name>Miembro</name></member>
+      <member refid="classMiembro_1d90b29c63638e16aa8f83f978cb7ec47" prot="public" virt="non-virtual"><scope>Lider</scope><name>Miembro</name></member>
+      <member refid="classLider_1125acbb3a1432f217efdc9826a2b8d8f" prot="public" virt="virtual"><scope>Lider</scope><name>mostrar</name></member>
+      <member refid="classLider_1752a83ebb773db5090bc192591a5814a" prot="private" virt="non-virtual"><scope>Lider</scope><name>movimiento</name></member>
+      <member refid="classPersonaje_10c1fedf7d7ec93a6ca1d38aa6a79b7e2" prot="protected" virt="non-virtual"><scope>Lider</scope><name>nombre</name></member>
+      <member refid="classPersonaje_1be7f26619dd67133806688d4306d877e" prot="public" virt="non-virtual"><scope>Lider</scope><name>operator!=</name></member>
+      <member refid="classPersonaje_1e55182c2fd21118b27c5e911f800c1d6" prot="public" virt="non-virtual"><scope>Lider</scope><name>operator&lt;</name></member>
+      <member refid="classPersonaje_1824156240864cc79a8b7319985eaec58" prot="public" virt="non-virtual"><scope>Lider</scope><name>operator&lt;=</name></member>
+      <member refid="classPersonaje_15870893672c215b1d99594233f7f5fd0" prot="public" virt="non-virtual"><scope>Lider</scope><name>operator==</name></member>
+      <member refid="classPersonaje_17717f9a6ad3d7b68a5c953930510f575" prot="public" virt="non-virtual"><scope>Lider</scope><name>operator&gt;</name></member>
+      <member refid="classPersonaje_15b7fbb10c092e6f953738fa54a380e33" prot="public" virt="non-virtual"><scope>Lider</scope><name>operator&gt;=</name></member>
+      <member refid="classPersonaje_19238a75aae652b20dd423e85cfa1ee17" prot="public" virt="non-virtual"><scope>Lider</scope><name>Personaje</name></member>
+      <member refid="classPersonaje_1a86eafddc218e8afa94f989b3642bcbd" prot="public" virt="non-virtual"><scope>Lider</scope><name>Personaje</name></member>
+      <member refid="classPersonaje_127166f7a52fcfb3570e0dc20f37a2402" prot="public" virt="non-virtual"><scope>Lider</scope><name>pilaVacia</name></member>
+      <member refid="classLider_19b40d8d989e80fbfd39a17bac209b73e" prot="public" virt="non-virtual"><scope>Lider</scope><name>recorrerVecinos</name></member>
+      <member refid="classLider_16b98929df0d59cd29b85e6fb8aeb36f1" prot="public" virt="virtual"><scope>Lider</scope><name>ruta</name></member>
+      <member refid="classPersonaje_1ea1a86738c789e65792ed745039bce46" prot="protected" virt="non-virtual"><scope>Lider</scope><name>secuencia</name></member>
+      <member refid="classLider_170eb8e22a6ee992547300cdda4bb50bf" prot="private" virt="non-virtual"><scope>Lider</scope><name>secuenciaorientaciones</name></member>
+      <member refid="classPersonaje_1361e72e69c915f6e0c7d2c5e82ae0744" prot="public" virt="non-virtual"><scope>Lider</scope><name>setIdPlanta</name></member>
+      <member refid="classPersonaje_143a551a88fe3c6d4458719135992114b" prot="public" virt="non-virtual"><scope>Lider</scope><name>setIdSala</name></member>
+      <member refid="classPersonaje_1475630fe753b7fb80a2472c558d99169" prot="public" virt="non-virtual"><scope>Lider</scope><name>setMarca</name></member>
+      <member refid="classLider_18b7b93efc0b6cecbab4ae82992ebcd11" prot="public" virt="non-virtual"><scope>Lider</scope><name>setMovimiento</name></member>
+      <member refid="classPersonaje_12e84ee485f46b434f1d23558ad3eb7c9" prot="public" virt="non-virtual"><scope>Lider</scope><name>setNombre</name></member>
+      <member refid="classLider_184acf3920a695ab792f9bbcb494ea7c8" prot="public" virt="non-virtual"><scope>Lider</scope><name>setSecuenciaOrientaciones</name></member>
+      <member refid="classPersonaje_1de04da7a674a165aeaa09566b219a828" prot="public" virt="non-virtual"><scope>Lider</scope><name>setTurno</name></member>
+      <member refid="classPersonaje_1786951aff09e227527d3da60338effec" prot="public" virt="non-virtual"><scope>Lider</scope><name>TodasAcciones</name></member>
+      <member refid="classPersonaje_10bce8e11746271ccf72035ea3da1138e" prot="protected" virt="non-virtual"><scope>Lider</scope><name>turno</name></member>
+      <member refid="classLider_164481cdebf71c9b28ec7aef689fed43e" prot="public" virt="non-virtual"><scope>Lider</scope><name>~Lider</name></member>
+      <member refid="classMiembro_1d8af12663ae1b9a195d05b4f700726c3" prot="public" virt="non-virtual"><scope>Lider</scope><name>~Miembro</name></member>
+      <member refid="classPersonaje_10b3c25862a6081aaee96e77c08edda29" prot="public" virt="virtual"><scope>Lider</scope><name>~Personaje</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

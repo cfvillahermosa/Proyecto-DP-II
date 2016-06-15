@@ -1,0 +1,165 @@
+#include "puerta.h"
+
+puerta::puerta()
+{
+    arbolCerradura=NULL;
+    arbolLlavesProbadas=NULL;
+    lcs=new Lista<Llave*>;
+    estadoCerradura="no_configurada";
+    alturaMaxima=-1;
+}
+
+
+puerta::~puerta()
+{
+    eliminarlista(lcs);
+    delete lcs;
+    liberarArbol(arbolLlavesProbadas);
+    delete arbolLlavesProbadas;
+    delete arbolCerradura;
+}
+
+puerta::puerta(string  ec, int  alt)
+{
+    estadoCerradura=ec;
+    alturaMaxima=alt;
+}
+
+int puerta::getAlturaMaxima()
+{
+    return alturaMaxima;
+}
+
+void puerta::setAlturaMaxima(int a)
+{
+    alturaMaxima=a;
+}
+
+void puerta::setEstadoCerradura(string e)
+{
+    estadoCerradura=e;
+}
+
+string puerta::getEstadoCerradura()
+{
+    return estadoCerradura;
+}
+
+void puerta::configurarPuerta(Lista < Llave * > * l)
+{
+    l->moverInicio();
+    while(!l->finLista()){
+        lcs->insertarOrdenado(l->consultar());
+        l->avanzar();
+    }
+}
+
+void puerta::cerrar()
+{
+        setEstadoCerradura("cerrada");
+        liberarArbol(arbolLlavesProbadas);
+        delete arbolLlavesProbadas;
+        delete arbolCerradura;
+        arbolLlavesProbadas=new Arbol<Llave*>();
+        arbolCerradura=new Arbol<Llave*>();
+        lcs->moverInicio();
+        while(!lcs->finLista()){
+            arbolCerradura->insertar(lcs->consultar());
+            lcs->avanzar();
+            
+        }
+        arbolCerradura=arbolCerradura->balancear();
+        
+}
+//(arbolCerradura->numNodosNoHojas() >= arbolCerradura->numHojas())  && ( //arbolCerradura->altura() < alturaMaxima )
+
+bool puerta::abrir(Llave * l)
+{
+    if(getEstadoCerradura()!="abierta"){
+        if(!arbolLlavesProbadas->insertar(l)){
+            delete l;
+            return false;
+        }
+        else{
+            if(arbolCerradura->pertenece(l)){
+                arbolCerradura->borrar(l);
+                arbolCerradura=arbolCerradura->balancear();
+                if( (arbolCerradura->numNodosNoHojas() >= arbolCerradura->numHojas())  && ( arbolCerradura->altura() < alturaMaxima ) ){
+                    setEstadoCerradura("abierta");
+                    return true;
+                    
+                }
+                else
+                    return false;
+            
+            }
+            else
+                return false; 
+        }
+
+    }
+    return true;
+}
+
+bool puerta::siEstaLlaveProbada(Llave * l)
+{
+    if(arbolLlavesProbadas->pertenece(l))
+        return true;
+    else
+        return false;
+}
+
+void puerta:: liberarArbol (Arbol <Llave*>  *& arbol){
+    Arbol<Llave*> *aux;
+    if (arbol!=NULL && !arbol->vacio())
+    {
+        if (aux = arbol->hijoIzq())
+            liberarArbol(aux);
+        delete arbol->raiz();
+        if (aux = arbol->hijoDer())
+            liberarArbol(aux);
+        
+    }
+}
+
+void puerta::eliminarlista(Lista <Llave*> * & l){
+    l->moverInicio();
+    while(!l->finLista()){
+        
+        delete l->consultar();
+        
+        l->avanzar();
+    }   
+}
+
+ostream & operator << (ostream & f, puerta & p){
+    f<<"el estado de la puerta es: "<<p.getEstadoCerradura()<<endl;
+    return f;
+}
+
+
+void puerta::escribirFichero(ofstream & f)
+{
+        f<<"(puerta:"<<getEstadoCerradura()<<":"<<alturaMaxima<<":";
+        escribirInordenLlaves(f,arbolLlavesProbadas);
+        f<<")"<<endl;
+        
+}
+
+void puerta::escribirInordenLlaves(ofstream & f,Arbol <Llave*> *& arbol)
+{
+    Arbol<Llave*> *aux;
+    if (!arbol->vacio())
+    {
+        if (aux = arbol->hijoIzq())
+            escribirInordenLlaves(f,aux);
+        f<<" "<< arbol->raiz()->getIdentificador();
+        if (aux = arbol->hijoDer())
+            escribirInordenLlaves(f,aux);
+    }
+}
+
+
+
+
+

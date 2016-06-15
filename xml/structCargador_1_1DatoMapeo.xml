@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="structCargador_1_1DatoMapeo" kind="struct" prot="private">
+    <compoundname>Cargador::DatoMapeo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structCargador_1_1DatoMapeo_1d0f55f3ae583ea2f4a8e6ff13daf5c5d" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Cargador::DatoMapeo::nombre[50]</definition>
+        <argsstring>[50]</argsstring>
+        <name>nombre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="54" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structCargador_1_1DatoMapeo_1a56e5ac7164123a67edc77a9fbaf1424" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Cargador::DatoMapeo::numCampos</definition>
+        <argsstring></argsstring>
+        <name>numCampos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="55" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="53" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" bodystart="52" bodyend="56"/>
+    <listofallmembers>
+      <member refid="structCargador_1_1DatoMapeo_1d0f55f3ae583ea2f4a8e6ff13daf5c5d" prot="public" virt="non-virtual"><scope>Cargador::DatoMapeo</scope><name>nombre</name></member>
+      <member refid="structCargador_1_1DatoMapeo_1a56e5ac7164123a67edc77a9fbaf1424" prot="public" virt="non-virtual"><scope>Cargador::DatoMapeo</scope><name>numCampos</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

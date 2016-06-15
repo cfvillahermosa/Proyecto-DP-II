@@ -1,0 +1,434 @@
+\hypertarget{classsala}{
+\section{sala Class Reference}
+\label{classsala}\index{sala@{sala}}
+}
+{\tt \#include $<$sala.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classsala_780a8c359e96eaf55403409c019d536a}{sala} ()
+\item 
+\hyperlink{classsala_265933f2f255cbce1f724d1c07957d69}{sala} (int id, int m, int f)
+\item 
+void \hyperlink{classsala_6e2f990c9e2b6fe2c08ba3853e5299c4}{setIdentificadorSala} (int id)
+\item 
+int \hyperlink{classsala_d6eb9a00920ec3f7eee7134d478ddf76}{getIdentificadorSala} ()
+\item 
+void \hyperlink{classsala_74d517148cdcaf0aa1a58bc877f9c910}{setMarcaSala} (int m)
+\item 
+int \hyperlink{classsala_099a7d79e8142f14dacfcc869f5557c3}{getMarcaSala} ()
+\item 
+void \hyperlink{classsala_ae7603393ce64c66c0d954e7ba452260}{setFrecuenciaSala} (int f)
+\item 
+int \hyperlink{classsala_24c1c2cf672362b9e82d0584cd63af97}{getFrecuenciaSala} ()
+\item 
+void \hyperlink{classsala_68552d6940a68c2a4cd4351f38acf546}{escribeLog} (ofstream \&f)
+\item 
+void \hyperlink{classsala_468ec985fcba82e578dd81de0102dede}{mostrar} ()
+\item 
+void \hyperlink{classsala_43d8051f7213fd82d30b5b7b56043877}{insertarLista} (\hyperlink{classLlave}{Llave} $\ast$l)
+\item 
+void \hyperlink{classsala_83833f513f3f53033e6e8fc3cacded73}{insertarCola} (\hyperlink{classPersonaje}{Personaje} $\ast$p)
+\item 
+void \hyperlink{classsala_306fe8573f4ed40792d59a7f9e580b30}{devolverPrimerPersonaje} (\hyperlink{classPersonaje}{Personaje} $\ast$\&per)
+\item 
+void \hyperlink{classsala_6bf07428f9bca5ff621845ac18b34ee4}{borrarElementoCola} ()
+\item 
+bool \hyperlink{classsala_0b13578fe6d2a10d6102920dfc9216b0}{siHayPersonajes} ()
+\item 
+bool \hyperlink{classsala_deee4cbad1198682fd86962d35aea256}{siHayLlaves} ()
+\item 
+void \hyperlink{classsala_f02e9b4d4608076a48e51f2c4ddf87d4}{escribeLogConEspacio} (ofstream \&f)
+\item 
+int \hyperlink{classsala_096e4d5f4a0389e546d97167c3c24f81}{cuantosPersonajes} ()
+\item 
+void \hyperlink{classsala_3717b76f3e6c98efd83fda02da5a1a06}{devolverFrente} (\hyperlink{classPersonaje}{Personaje} $\ast$\&p)
+\item 
+void \hyperlink{classsala_0c2411487cc9256b0ce9acfff8d48ded}{calcularRutaPersonajeSala} (ofstream \&f)
+\item 
+void \hyperlink{classsala_18ca39a6c0fea0cc2a0d155304b007fb}{volcarVectorVecinos} (vector$<$ \hyperlink{classsala}{sala} $\ast$ $>$ \&v)
+\item 
+void \hyperlink{classsala_c6ee6cab664ae4efa88eb4b7779b1498}{devolverCardinalVecino} (char c, \hyperlink{classsala}{sala} $\ast$\&v)
+\item 
+void \hyperlink{classsala_376c8d9684f212f6e8a8d8316f2ab733}{devolverPimeroLista} (\hyperlink{classLlave}{Llave} $\ast$\&l)
+\item 
+void \hyperlink{classsala_feef4f1219a7a014f58415eae0ff2e2b}{accionesColaPersonajes} ()
+\item 
+\hyperlink{classsala_108d16054e4c939568ab2c301a5cea83}{$\sim$sala} ()
+\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+\hypertarget{classsala_a48720e6448a633e51018e837eb49890}{
+class \textbf{compararFrecuencias}}
+\label{classsala_a48720e6448a633e51018e837eb49890}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[Author:]Carlos,,, $<$carlos-linux$>$ \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsala_780a8c359e96eaf55403409c019d536a}{
+\index{sala@{sala}!sala@{sala}}
+\index{sala@{sala}!sala@{sala}}
+\subsubsection[sala]{\setlength{\rightskip}{0pt plus 5cm}sala::sala ()}}
+\label{classsala_780a8c359e96eaf55403409c019d536a}
+
+
+Constructor por defecto de mi clase \hyperlink{classsala}{sala} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_265933f2f255cbce1f724d1c07957d69}{
+\index{sala@{sala}!sala@{sala}}
+\index{sala@{sala}!sala@{sala}}
+\subsubsection[sala]{\setlength{\rightskip}{0pt plus 5cm}sala::sala (int {\em id}, \/  int {\em m}, \/  int {\em f})}}
+\label{classsala_265933f2f255cbce1f724d1c07957d69}
+
+
+Constructor parametrizado de mi clase Sala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em id}]es un parametro de entrada del tipo entero asociado al valor del atributo idsala de mi clase Sala \item[{\em m}]es un parametro de entrada del tipo entero asociado al valor del atributo marca de mi clase \hyperlink{classsala}{sala} \item[{\em f}]es un parametro de entrada del tipo entero asociado al valor del atributo frecuencia de mi clase \hyperlink{classsala}{sala} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_108d16054e4c939568ab2c301a5cea83}{
+\index{sala@{sala}!$\sim$sala@{$\sim$sala}}
+\index{$\sim$sala@{$\sim$sala}!sala@{sala}}
+\subsubsection[$\sim$sala]{\setlength{\rightskip}{0pt plus 5cm}sala::$\sim$sala ()}}
+\label{classsala_108d16054e4c939568ab2c301a5cea83}
+
+
+Destructor de mi clase \hyperlink{classsala}{sala} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsala_6e2f990c9e2b6fe2c08ba3853e5299c4}{
+\index{sala@{sala}!setIdentificadorSala@{setIdentificadorSala}}
+\index{setIdentificadorSala@{setIdentificadorSala}!sala@{sala}}
+\subsubsection[setIdentificadorSala]{\setlength{\rightskip}{0pt plus 5cm}void sala::setIdentificadorSala (int {\em id})}}
+\label{classsala_6e2f990c9e2b6fe2c08ba3853e5299c4}
+
+
+Metodo que establece el valor de id a mi atributo idsala de mi clase \hyperlink{classsala}{sala} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em id}]es un parametro de entrada del tipo entero asociado al valor del atributo idsala de mi clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_d6eb9a00920ec3f7eee7134d478ddf76}{
+\index{sala@{sala}!getIdentificadorSala@{getIdentificadorSala}}
+\index{getIdentificadorSala@{getIdentificadorSala}!sala@{sala}}
+\subsubsection[getIdentificadorSala]{\setlength{\rightskip}{0pt plus 5cm}int sala::getIdentificadorSala ()}}
+\label{classsala_d6eb9a00920ec3f7eee7134d478ddf76}
+
+
+Metodo que devuelve el valor entero de mi atributo idsala de mi clase \hyperlink{classsala}{sala} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]retorna el valor entero correspondiente al atributo idsala de mi clase \hyperlink{classsala}{sala} \end{Desc}
+\hypertarget{classsala_74d517148cdcaf0aa1a58bc877f9c910}{
+\index{sala@{sala}!setMarcaSala@{setMarcaSala}}
+\index{setMarcaSala@{setMarcaSala}!sala@{sala}}
+\subsubsection[setMarcaSala]{\setlength{\rightskip}{0pt plus 5cm}void sala::setMarcaSala (int {\em m})}}
+\label{classsala_74d517148cdcaf0aa1a58bc877f9c910}
+
+
+Metodo que establece el valor de m a mi atributo marca de mi clase \hyperlink{classsala}{sala} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em m}]es un parametro de entrada del tipo int asociado al valor del atributo marca de mi clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_099a7d79e8142f14dacfcc869f5557c3}{
+\index{sala@{sala}!getMarcaSala@{getMarcaSala}}
+\index{getMarcaSala@{getMarcaSala}!sala@{sala}}
+\subsubsection[getMarcaSala]{\setlength{\rightskip}{0pt plus 5cm}int sala::getMarcaSala ()}}
+\label{classsala_099a7d79e8142f14dacfcc869f5557c3}
+
+
+Metodo que devuelve el valor del atributo marca de mi clase Sala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna el entero asociado al atributo marca de mi clase \hyperlink{classsala}{sala} \end{Desc}
+\hypertarget{classsala_ae7603393ce64c66c0d954e7ba452260}{
+\index{sala@{sala}!setFrecuenciaSala@{setFrecuenciaSala}}
+\index{setFrecuenciaSala@{setFrecuenciaSala}!sala@{sala}}
+\subsubsection[setFrecuenciaSala]{\setlength{\rightskip}{0pt plus 5cm}void sala::setFrecuenciaSala (int {\em f})}}
+\label{classsala_ae7603393ce64c66c0d954e7ba452260}
+
+
+Metodo que establece el valor de f a mi atributo frecuencia de mi clase \hyperlink{classsala}{sala} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un parametro de entrada del tipo entero asociado al valor del atributo frecuencia de mi clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_24c1c2cf672362b9e82d0584cd63af97}{
+\index{sala@{sala}!getFrecuenciaSala@{getFrecuenciaSala}}
+\index{getFrecuenciaSala@{getFrecuenciaSala}!sala@{sala}}
+\subsubsection[getFrecuenciaSala]{\setlength{\rightskip}{0pt plus 5cm}int sala::getFrecuenciaSala ()}}
+\label{classsala_24c1c2cf672362b9e82d0584cd63af97}
+
+
+Metodo que devuelve el valor entero asociado al atributo frecuencia de mi clase \hyperlink{classsala}{sala} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna el valor entero asociado al atributo frecuencia de mi clase \hyperlink{classsala}{sala} \end{Desc}
+\hypertarget{classsala_68552d6940a68c2a4cd4351f38acf546}{
+\index{sala@{sala}!escribeLog@{escribeLog}}
+\index{escribeLog@{escribeLog}!sala@{sala}}
+\subsubsection[escribeLog]{\setlength{\rightskip}{0pt plus 5cm}void sala::escribeLog (ofstream \& {\em f})}}
+\label{classsala_68552d6940a68c2a4cd4351f38acf546}
+
+
+Metodo que escribe en mi registro.log la informacion correspondiente a la clase Sala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_468ec985fcba82e578dd81de0102dede}{
+\index{sala@{sala}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!sala@{sala}}
+\subsubsection[mostrar]{\setlength{\rightskip}{0pt plus 5cm}void sala::mostrar ()}}
+\label{classsala_468ec985fcba82e578dd81de0102dede}
+
+
+Metodo que muestra por pantalla la informacion contenida en mi clase \hyperlink{classsala}{sala} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_43d8051f7213fd82d30b5b7b56043877}{
+\index{sala@{sala}!insertarLista@{insertarLista}}
+\index{insertarLista@{insertarLista}!sala@{sala}}
+\subsubsection[insertarLista]{\setlength{\rightskip}{0pt plus 5cm}void sala::insertarLista ({\bf Llave} $\ast$ {\em l})}}
+\label{classsala_43d8051f7213fd82d30b5b7b56043877}
+
+
+Metodo que inserta en mi atributo lista de mi clase Sala un puntero a una \hyperlink{classLlave}{Llave} l \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]es un parametro de entrada del tipo puntero a instancia de la clase \hyperlink{classLlave}{Llave} que corresponde con la llave a insertar en mi lista \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_83833f513f3f53033e6e8fc3cacded73}{
+\index{sala@{sala}!insertarCola@{insertarCola}}
+\index{insertarCola@{insertarCola}!sala@{sala}}
+\subsubsection[insertarCola]{\setlength{\rightskip}{0pt plus 5cm}void sala::insertarCola ({\bf Personaje} $\ast$ {\em p})}}
+\label{classsala_83833f513f3f53033e6e8fc3cacded73}
+
+
+Metodo que inserta en mi cola de personajes un puntero a personaje \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un parametro de entrada del tipo puntero a instancia de la clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_306fe8573f4ed40792d59a7f9e580b30}{
+\index{sala@{sala}!devolverPrimerPersonaje@{devolverPrimerPersonaje}}
+\index{devolverPrimerPersonaje@{devolverPrimerPersonaje}!sala@{sala}}
+\subsubsection[devolverPrimerPersonaje]{\setlength{\rightskip}{0pt plus 5cm}void sala::devolverPrimerPersonaje ({\bf Personaje} $\ast$\& {\em per})}}
+\label{classsala_306fe8573f4ed40792d59a7f9e580b30}
+
+
+Metodo que devuelve el primer personaje de mi cola de personajes de mi clase Sala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em per}]es un parametro de salida del tipo puntero a instancia de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]no retorna ningun valor \end{Desc}
+\hypertarget{classsala_6bf07428f9bca5ff621845ac18b34ee4}{
+\index{sala@{sala}!borrarElementoCola@{borrarElementoCola}}
+\index{borrarElementoCola@{borrarElementoCola}!sala@{sala}}
+\subsubsection[borrarElementoCola]{\setlength{\rightskip}{0pt plus 5cm}void sala::borrarElementoCola ()}}
+\label{classsala_6bf07428f9bca5ff621845ac18b34ee4}
+
+
+Metodo que desencola un personaje de mi cola colapersonajes \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_0b13578fe6d2a10d6102920dfc9216b0}{
+\index{sala@{sala}!siHayPersonajes@{siHayPersonajes}}
+\index{siHayPersonajes@{siHayPersonajes}!sala@{sala}}
+\subsubsection[siHayPersonajes]{\setlength{\rightskip}{0pt plus 5cm}bool sala::siHayPersonajes ()}}
+\label{classsala_0b13578fe6d2a10d6102920dfc9216b0}
+
+
+Metodo booleano que me devuelve true en caso de que haya personajes en una \hyperlink{classsala}{sala} y false en caso contrario \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve true en caso de que el atributo colapersonajes no se encuentre vacio (es decir, hay personajes) y false en caso de que se encuentre vacia ( es decir , no hay personajes) \end{Desc}
+\hypertarget{classsala_deee4cbad1198682fd86962d35aea256}{
+\index{sala@{sala}!siHayLlaves@{siHayLlaves}}
+\index{siHayLlaves@{siHayLlaves}!sala@{sala}}
+\subsubsection[siHayLlaves]{\setlength{\rightskip}{0pt plus 5cm}bool sala::siHayLlaves ()}}
+\label{classsala_deee4cbad1198682fd86962d35aea256}
+
+
+Metodo booleano que devuelve true en caso de que la lista no este vacia ( es decir, hay alguna llave en mi lista ) y false en caso contrario \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna un booleano ;true, en caso de que la lista no este vacia ( es decir, hay alguna llave en mi lista ) y false en caso contrario \end{Desc}
+\hypertarget{classsala_f02e9b4d4608076a48e51f2c4ddf87d4}{
+\index{sala@{sala}!escribeLogConEspacio@{escribeLogConEspacio}}
+\index{escribeLogConEspacio@{escribeLogConEspacio}!sala@{sala}}
+\subsubsection[escribeLogConEspacio]{\setlength{\rightskip}{0pt plus 5cm}void sala::escribeLogConEspacio (ofstream \& {\em f})}}
+\label{classsala_f02e9b4d4608076a48e51f2c4ddf87d4}
+
+
+Metodo que escribe en mi fichero.log la informacion contenida en la \hyperlink{classsala}{sala} y sus llaves correspondientes \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]no retorna ningun valor \end{Desc}
+\hypertarget{classsala_096e4d5f4a0389e546d97167c3c24f81}{
+\index{sala@{sala}!cuantosPersonajes@{cuantosPersonajes}}
+\index{cuantosPersonajes@{cuantosPersonajes}!sala@{sala}}
+\subsubsection[cuantosPersonajes]{\setlength{\rightskip}{0pt plus 5cm}int sala::cuantosPersonajes ()}}
+\label{classsala_096e4d5f4a0389e546d97167c3c24f81}
+
+
+Metodo que devuelve el tamaño de mi atributo colapersonajes \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna un valor entero correspondiente al tamaño del atributo colapersonajes de mi clase Sala \end{Desc}
+\hypertarget{classsala_3717b76f3e6c98efd83fda02da5a1a06}{
+\index{sala@{sala}!devolverFrente@{devolverFrente}}
+\index{devolverFrente@{devolverFrente}!sala@{sala}}
+\subsubsection[devolverFrente]{\setlength{\rightskip}{0pt plus 5cm}void sala::devolverFrente ({\bf Personaje} $\ast$\& {\em p})}}
+\label{classsala_3717b76f3e6c98efd83fda02da5a1a06}
+
+
+Metodo que devuelve el frente de mi cola colapersonajes de mi clase Sala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un parametro de salida del tipo puntero a instancia de mi clase \hyperlink{classPersonaje}{Personaje} que se corresponde con el frente de la cola colapersonajes \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_0c2411487cc9256b0ce9acfff8d48ded}{
+\index{sala@{sala}!calcularRutaPersonajeSala@{calcularRutaPersonajeSala}}
+\index{calcularRutaPersonajeSala@{calcularRutaPersonajeSala}!sala@{sala}}
+\subsubsection[calcularRutaPersonajeSala]{\setlength{\rightskip}{0pt plus 5cm}void sala::calcularRutaPersonajeSala (ofstream \& {\em f})}}
+\label{classsala_0c2411487cc9256b0ce9acfff8d48ded}
+
+
+Metodo que calcula cada una de las rutas correspondientes a los personajes que se encuentran en mi atributo colapersonajes de mi clase Sala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_18ca39a6c0fea0cc2a0d155304b007fb}{
+\index{sala@{sala}!volcarVectorVecinos@{volcarVectorVecinos}}
+\index{volcarVectorVecinos@{volcarVectorVecinos}!sala@{sala}}
+\subsubsection[volcarVectorVecinos]{\setlength{\rightskip}{0pt plus 5cm}void sala::volcarVectorVecinos (vector$<$ {\bf sala} $\ast$ $>$ \& {\em v})}}
+\label{classsala_18ca39a6c0fea0cc2a0d155304b007fb}
+
+
+Metodo que vuelva el contenido de un vector v a mi vector vecinos \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em v}]es un parametro de entrada salida del tipo puntero a ED del tipo vector de la STL en el que se encuentran las salas que quiero copiar en mi atributo vecinos de mi clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_c6ee6cab664ae4efa88eb4b7779b1498}{
+\index{sala@{sala}!devolverCardinalVecino@{devolverCardinalVecino}}
+\index{devolverCardinalVecino@{devolverCardinalVecino}!sala@{sala}}
+\subsubsection[devolverCardinalVecino]{\setlength{\rightskip}{0pt plus 5cm}void sala::devolverCardinalVecino (char {\em c}, \/  {\bf sala} $\ast$\& {\em v})}}
+\label{classsala_c6ee6cab664ae4efa88eb4b7779b1498}
+
+
+Metodo que devuelve la \hyperlink{classsala}{sala} vecina v correspondiente a la posicion cardinal determinada por el caracter c \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em c}]es un parametro de entrada del tipo char en el que se encuentra la primera letra de las 4 posiciones cardinales que existen (Norte, Sur, Este,Oeste) \item[{\em v}]es un parametro de salida del tipo puntero a instancia de mi clase Sala que va a almacenar el vecino correspondiente a la posicion cardinal c \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classsala_376c8d9684f212f6e8a8d8316f2ab733}{
+\index{sala@{sala}!devolverPimeroLista@{devolverPimeroLista}}
+\index{devolverPimeroLista@{devolverPimeroLista}!sala@{sala}}
+\subsubsection[devolverPimeroLista]{\setlength{\rightskip}{0pt plus 5cm}void sala::devolverPimeroLista ({\bf Llave} $\ast$\& {\em l})}}
+\label{classsala_376c8d9684f212f6e8a8d8316f2ab733}
+
+
+Metodo que devuelve la primera llave de mi lista de llaves de mi clase Sala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]es un parametro de salida del tipo puntero a instancia de mi clase \hyperlink{classLlave}{Llave} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]no retorna ningun valor \end{Desc}
+\hypertarget{classsala_feef4f1219a7a014f58415eae0ff2e2b}{
+\index{sala@{sala}!accionesColaPersonajes@{accionesColaPersonajes}}
+\index{accionesColaPersonajes@{accionesColaPersonajes}!sala@{sala}}
+\subsubsection[accionesColaPersonajes]{\setlength{\rightskip}{0pt plus 5cm}void sala::accionesColaPersonajes ()}}
+\label{classsala_feef4f1219a7a014f58415eae0ff2e2b}
+
+
+Metodo que realiza las acciones de los personajes incluidos en el atributo colapersonajes de mi clase Sala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe ningun parametro \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]no retorna ningun valor \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/sala.h\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/sala.cpp\end{CompactItemize}

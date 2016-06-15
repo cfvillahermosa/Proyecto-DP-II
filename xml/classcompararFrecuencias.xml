@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classcompararFrecuencias" kind="class" prot="public">
+    <compoundname>compararFrecuencias</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcompararFrecuencias_18d0df12288b005ab02faceef30112487" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool compararFrecuencias::operator()</definition>
+        <argsstring>(sala *s1, sala *s2)</argsstring>
+        <name>operator()</name>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="53" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="53" bodyend="70"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="51" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="51" bodyend="71"/>
+    <listofallmembers>
+      <member refid="classcompararFrecuencias_18d0df12288b005ab02faceef30112487" prot="public" virt="non-virtual"><scope>compararFrecuencias</scope><name>operator()</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

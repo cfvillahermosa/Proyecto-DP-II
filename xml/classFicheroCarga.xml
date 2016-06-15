@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classFicheroCarga" kind="class" prot="public">
+    <compoundname>FicheroCarga</compoundname>
+    <includes refid="fichero_8h" local="no">fichero.h</includes>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classFicheroCarga_14ea4334d2fcc5f7a8f54e96c2fa3bbfe" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FicheroCarga::trocearLinea</definition>
+        <argsstring>(string linea, string vCampos[MAXCAMPOS])</argsstring>
+        <name>trocearLinea</name>
+        <param>
+          <type>string</type>
+          <declname>linea</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[MAXCAMPOS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Divide una cadena en los campos que la forman, token de separación &apos;#&apos; <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>linea</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>cadena orgien a dividir </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vCampos[MAXCAMPOS]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>vector que contendrá los valores de los campos </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Número de campos que contenía la cadena origen </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/fichero.h" line="37" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/fichero.cpp" bodystart="19" bodyend="44"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classFicheroCarga_1d7a3e4e6e3eeb749fe151ce6763cc9c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FicheroCarga::procesarFichero</definition>
+        <argsstring>(string nombre, Cargador &amp;cargador)</argsstring>
+        <name>procesarFichero</name>
+        <param>
+          <type>string</type>
+          <declname>nombre</declname>
+        </param>
+        <param>
+          <type><ref refid="classCargador" kindref="compound">Cargador</ref> &amp;</type>
+          <declname>cargador</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Procesa el fichero de configuración para cargar el sistema No procesa las líneas que comienzan por -- <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>nombre</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del fichero de configuración a cargar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve ningún valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/fichero.h" line="39" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/fichero.cpp" bodystart="52" bodyend="81"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase carga el sistema con los elementos indicados en el fichero de configuración. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/fichero.h" line="35" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/fichero.h" bodystart="35" bodyend="40"/>
+    <listofallmembers>
+      <member refid="classFicheroCarga_1d7a3e4e6e3eeb749fe151ce6763cc9c4" prot="public" virt="non-virtual"><scope>FicheroCarga</scope><name>procesarFichero</name></member>
+      <member refid="classFicheroCarga_14ea4334d2fcc5f7a8f54e96c2fa3bbfe" prot="private" virt="non-virtual"><scope>FicheroCarga</scope><name>trocearLinea</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

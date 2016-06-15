@@ -1,0 +1,62 @@
+\hypertarget{classCargador}{
+\section{Cargador Class Reference}
+\label{classCargador}\index{Cargador@{Cargador}}
+}
+La misión de esta clase es cargar el sistema con los elementos del fichero de configuración.  
+
+
+{\tt \#include $<$cargador.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classCargador_4c12f282550e23654dcec70d837a0b7f}{Cargador} (\hyperlink{classEstacion}{Estacion} $\ast$p)
+\item 
+void \hyperlink{classCargador_60d8fe515f1ff623da7bcdd2d842e4fe}{crear} (string elto, int numCampos, string vCampos\mbox{[}MAXCAMPOS\mbox{]})
+\end{CompactItemize}
+\subsection*{Classes}
+\begin{CompactItemize}
+\item 
+struct \textbf{DatoMapeo}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+La misión de esta clase es cargar el sistema con los elementos del fichero de configuración. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classCargador_4c12f282550e23654dcec70d837a0b7f}{
+\index{Cargador@{Cargador}!Cargador@{Cargador}}
+\index{Cargador@{Cargador}!Cargador@{Cargador}}
+\subsubsection[Cargador]{\setlength{\rightskip}{0pt plus 5cm}Cargador::Cargador ({\bf Estacion} $\ast$ {\em p})}}
+\label{classCargador_4c12f282550e23654dcec70d837a0b7f}
+
+
+Constructor de \hyperlink{classCargador}{Cargador} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]Objeto sistema que se va a cargar \end{description}
+\end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classCargador_60d8fe515f1ff623da7bcdd2d842e4fe}{
+\index{Cargador@{Cargador}!crear@{crear}}
+\index{crear@{crear}!Cargador@{Cargador}}
+\subsubsection[crear]{\setlength{\rightskip}{0pt plus 5cm}void Cargador::crear (string {\em elto}, \/  int {\em numCampos}, \/  string {\em vCampos}\mbox{[}MAXCAMPOS\mbox{]})}}
+\label{classCargador_60d8fe515f1ff623da7bcdd2d842e4fe}
+
+
+Método que realiza comprobaciones de datos básicos (existe elemento, número campos correcto, existe localidad...) \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em elto}]nombre del elemento a crear \item[{\em numCampos}]número de campos ocupados del vector vCampos \item[{\em vCampos\mbox{[}MAXCAMPOS\mbox{]}}]valores de configuración del elemento a crear \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No devuelve nada \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/\hyperlink{cargador_8h}{cargador.h}\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/\hyperlink{cargador_8cpp}{cargador.cpp}\end{CompactItemize}

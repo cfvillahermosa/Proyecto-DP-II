@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="lider_8h" kind="file">
+    <compoundname>lider.h</compoundname>
+    <includes refid="miembro_8h" local="no">miembro.h</includes>
+    <includes local="no">stack</includes>
+    <includes local="no">set</includes>
+    <includes local="no">iostream</includes>
+    <includedby refid="cargador_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/cargador.h</includedby>
+    <includedby refid="lider_8cpp" local="yes">Desktop/academia_lp2/EC3_LPII/src/lider.cpp</includedby>
+    <incdepgraph>
+      <node id="317">
+        <label>queue</label>
+      </node>
+      <node id="314">
+        <label>miembro.h</label>
+        <link refid="miembro_8h-source"/>
+        <childnode refid="315" relation="include">
+        </childnode>
+      </node>
+      <node id="313">
+        <label>Desktop/academia_lp2/EC3_LPII/src/lider.h</label>
+        <link refid="lider.h"/>
+        <childnode refid="314" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="322" relation="include">
+        </childnode>
+        <childnode refid="316" relation="include">
+        </childnode>
+      </node>
+      <node id="319">
+        <label>fstream</label>
+      </node>
+      <node id="318">
+        <label>stack</label>
+      </node>
+      <node id="321">
+        <label>cstdlib</label>
+      </node>
+      <node id="320">
+        <label>llave.h</label>
+        <link refid="llave_8h-source"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="321" relation="include">
+        </childnode>
+      </node>
+      <node id="316">
+        <label>iostream</label>
+      </node>
+      <node id="315">
+        <label>personaje.h</label>
+        <link refid="personaje_8h-source"/>
+        <childnode refid="316" relation="include">
+        </childnode>
+        <childnode refid="317" relation="include">
+        </childnode>
+        <childnode refid="318" relation="include">
+        </childnode>
+        <childnode refid="319" relation="include">
+        </childnode>
+        <childnode refid="320" relation="include">
+        </childnode>
+      </node>
+      <node id="322">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="324">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+        <childnode refid="326" relation="include">
+        </childnode>
+        <childnode refid="327" relation="include">
+        </childnode>
+      </node>
+      <node id="323">
+        <label>Desktop/academia_lp2/EC3_LPII/src/lider.h</label>
+        <link refid="lider.h"/>
+        <childnode refid="324" relation="include">
+        </childnode>
+      </node>
+      <node id="326">
+        <label>Desktop/academia_lp2/EC3_LPII/src/estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="325" relation="include">
+        </childnode>
+      </node>
+      <node id="325">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+      <node id="327">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classLider" prot="public">Lider</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>LIDER_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>LIDER_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;miembro.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="12" refid="classLider" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classLider" kindref="compound">Lider</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classMiembro" kindref="compound">Miembro</ref></highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>secuenciaorientaciones;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>movimiento;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>set<sp/>&lt;Personaje*&gt;<sp/>grupo;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLider_1bbdd9719261866f4f316620b4319d7e6" kindref="member">Lider</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLider_1bbdd9719261866f4f316620b4319d7e6" kindref="member">Lider</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ids,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idp,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>sec,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>mov);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_18b7b93efc0b6cecbab4ae82992ebcd11" kindref="member">setMovimiento</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="classLider_12fb77f30c5ebb7bce39dc7ee4711d4d2" kindref="member">getMovimiento</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_184acf3920a695ab792f9bbcb494ea7c8" kindref="member">setSecuenciaOrientaciones</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_138d5268d1d780494277063ce96c52881" kindref="member">getSecuenciaOrientaciones</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>&amp;<sp/>s);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_1125acbb3a1432f217efdc9826a2b8d8f" kindref="member">mostrar</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_1fcd179370f87dbc08bf6619ff9742f66" kindref="member">escribeLog</ref>(ofstream<sp/>&amp;<sp/>f);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_16b98929df0d59cd29b85e6fb8aeb36f1" kindref="member">ruta</ref>(ofstream<sp/>&amp;<sp/>f);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_187a0b4fca538efa5c9b7d01992f362e6" kindref="member">actualizarMovimiento</ref>();</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classLider_19b40d8d989e80fbfd39a17bac209b73e" kindref="member">recorrerVecinos</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ids,<sp/>stack&lt;<sp/>char<sp/>&gt;<sp/>&amp;secorientaciones,<sp/>stack&lt;<sp/>int<sp/>&gt;<sp/>&amp;idvecinos,<sp/>set<sp/>&lt;int&gt;<sp/>&amp;vecinos);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_14643215eb946b9bd002d6882c5a24aeb" kindref="member">escribeLogRuta</ref>(ofstream<sp/>&amp;<sp/>f,stack<sp/>&lt;char&gt;<sp/>&amp;<sp/>s,stack<sp/>&lt;int&gt;<sp/>&amp;idsalas);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_12729cb612e6ca2d2750f48b85743107e" kindref="member">accionUno</ref>();<sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_151fb2d9c6dfe283a13d61b8f546068f3" kindref="member">accionDos</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classLider_1993a29f5a5615bd8a41dfe550dfccb61" kindref="member">accionTres</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLider_164481cdebf71c9b28ec7aef689fed43e" kindref="member">~Lider</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lider.h"/>
+  </compounddef>
+</doxygen>

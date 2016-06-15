@@ -1,0 +1,597 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classpuerta" kind="class" prot="public">
+    <compoundname>puerta</compoundname>
+    <includes refid="puerta_8h" local="no">puerta.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classpuerta_1f8e5946ad72fe1183eb44327b3664609" prot="private" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>Arbol&lt;Llave*&gt;* puerta::arbolCerradura</definition>
+        <argsstring></argsstring>
+        <name>arbolCerradura</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="12" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpuerta_1f62a930f0bc51f3f38e4159adb260e9d" prot="private" static="no" mutable="no">
+        <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>Arbol&lt;Llave*&gt; * puerta::arbolLlavesProbadas</definition>
+        <argsstring></argsstring>
+        <name>arbolLlavesProbadas</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="12" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpuerta_11ab12f1dd5365526d79459ff161e2790" prot="private" static="no" mutable="no">
+        <type>Lista&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>Lista&lt;Llave*&gt;* puerta::lcs</definition>
+        <argsstring></argsstring>
+        <name>lcs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="13" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpuerta_19725b401749b131d6f3e6e1dea391f16" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string puerta::estadoCerradura</definition>
+        <argsstring></argsstring>
+        <name>estadoCerradura</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="14" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classpuerta_11a4b0d7133827b14a29e8992d930d8c2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int puerta::alturaMaxima</definition>
+        <argsstring></argsstring>
+        <name>alturaMaxima</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="15" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classpuerta_1dae189c1b2be845ba10b3335e4c3b91d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>puerta::puerta</definition>
+        <argsstring>()</argsstring>
+        <name>puerta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de mi clase Puerta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="17" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="7" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1237f56c4736c97891edb19aeee750ed2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>puerta::puerta</definition>
+        <argsstring>(string ec, int alt)</argsstring>
+        <name>puerta</name>
+        <param>
+          <type>string</type>
+          <declname>ec</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>alt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de mi clase Puerta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo string asociado al atributo estadoCerradura de mi clase Puerta </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo alturaMaxima de mi clase Puerta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="18" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="35" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1facb52e11a8a2b23437d4d0821187edc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int puerta::getAlturaMaxima</definition>
+        <argsstring>()</argsstring>
+        <name>getAlturaMaxima</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que me devuelve el valor de mi atributo alturaMaxima de mi clase Puerta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna el valor asociado al atributo alturaMaxima de mi clase Puerta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="19" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="45" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_14dbec0518d2dfbf78e636ea18352cfe1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void puerta::setAlturaMaxima</definition>
+        <argsstring>(int a)</argsstring>
+        <name>setAlturaMaxima</name>
+        <param>
+          <type>int</type>
+          <declname>a</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor a al atributo alturaMaxima de mi clase Puerta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al valor del atributo alturaMaxima de mi clase Puerta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="20" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1c7020654ddeefc2cdfd937fd5d3f6749" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void puerta::setEstadoCerradura</definition>
+        <argsstring>(string e)</argsstring>
+        <name>setEstadoCerradura</name>
+        <param>
+          <type>string</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor del atributo estadoCerradura de mi clase Puerta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>e</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo string asociado al atributo estadoCerradura de mi clase Puerta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="21" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_13c87fcb19f24d5348db587f0c6a9b27d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string puerta::getEstadoCerradura</definition>
+        <argsstring>()</argsstring>
+        <name>getEstadoCerradura</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el string asociado al valor del atributo estadoCerradura de mi clase Puerta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna el string asociado al atributo estadoCerradura de mi clase Puerta </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="22" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="72" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1fc919a28f4751159e5109ec43e691e0e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void puerta::configurarPuerta</definition>
+        <argsstring>(Lista&lt; Llave * &gt; *l)</argsstring>
+        <name>configurarPuerta</name>
+        <param>
+          <type>Lista&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que configura la <ref refid="classpuerta" kindref="compound">puerta</ref> insertando todas las llaves de mi lista de llaves de forma ordenada <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de mi clase lista que contiene punteros a instancias de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="23" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="81" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_18c3078b9245cb0fbc37e7f1b662be74b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void puerta::cerrar</definition>
+        <argsstring>()</argsstring>
+        <name>cerrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que cierra mi <ref refid="classpuerta" kindref="compound">puerta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="24" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="94" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1a70c9e4a8a59555d1ba15caff7849497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool puerta::abrir</definition>
+        <argsstring>(Llave *l)</argsstring>
+        <name>abrir</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo booleano que se encarga de probar una llave l para comprobar si puede abrise o no mi <ref refid="classpuerta" kindref="compound">puerta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true en caso de que la llave probada sea valida para abrir mi <ref refid="classpuerta" kindref="compound">puerta</ref> y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="25" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="117" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_19f108f67092846743458195fca60d6ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool puerta::siEstaLlaveProbada</definition>
+        <argsstring>(Llave *l)</argsstring>
+        <name>siEstaLlaveProbada</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo booleano que me indica si la llave l ha sido probada para abrir mi <ref refid="classpuerta" kindref="compound">puerta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true en caso de que la llave l haya sido probada y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="26" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="149" bodyend="155"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1d4d085f48f3b014afbba4113510b63d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void puerta::liberarArbol</definition>
+        <argsstring>(Arbol&lt; Llave * &gt; *&amp;arbol)</argsstring>
+        <name>liberarArbol</name>
+        <param>
+          <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *&amp;</type>
+          <declname>arbol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga de liberar la memoria de mi arbol de llaves arbol <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo puntero a instancia de la clase arbol </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="28" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="161" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1e2bcee3940c85671615c2331bba3b755" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void puerta::eliminarlista</definition>
+        <argsstring>(Lista&lt; Llave * &gt; *&amp;l)</argsstring>
+        <name>eliminarlista</name>
+        <param>
+          <type>Lista&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *&amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que elimina de la lista de llaves la llave l <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo puntero a instancia de la clase llave que corresponde con la llave que se quiere eliminar de la lista </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="29" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="178" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1db48cb6b90ccdc012aa488850ac458b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void puerta::escribirFichero</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>escribirFichero</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga de escribir en mi registro.log la informacion contenida en la <ref refid="classpuerta" kindref="compound">puerta</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="30" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="203" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1be41e285663cf9f509e6fe0583ba4202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void puerta::escribirInordenLlaves</definition>
+        <argsstring>(ofstream &amp;f, Arbol&lt; Llave * &gt; *&amp;a)</argsstring>
+        <name>escribirInordenLlaves</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classArbol" kindref="compound">Arbol</ref>&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *&amp;</type>
+          <declname>a</declname>
+          <defname>arbol</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que se encarga de escribir en mi registro.log de forma ordenada las llaves contenidas en el parametro arbol <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>arbol</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo puntero a instancia de mi clase arbol que contiene las llaves de mi clase <ref refid="classpuerta" kindref="compound">puerta</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="31" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="216" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classpuerta_1207e0983ca66391ee628453dffcf619f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>puerta::~puerta</definition>
+        <argsstring>()</argsstring>
+        <name>~puerta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de mi clase Puerta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="33" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="21" bodyend="28"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classpuerta_1490c20cc328bef002a79831d7d649b47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;f, puerta &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classpuerta" kindref="compound">puerta</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &quot;&lt;&lt;&quot; de mi clase Puerta <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase Puerta </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="27" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.cpp" bodystart="193" bodyend="196"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Carlos Fernández Villahermosa &lt;<ulink url="mailto:cfernandnv@alumnos.unex.es">cfernandnv@alumnos.unex.es</ulink>&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="75">
+        <label>Lista&lt; T &gt;::TipoNodo</label>
+        <childnode refid="75" relation="usage">
+          <edgelabel>siguiente
+anterior</edgelabel>
+        </childnode>
+        <childnode refid="72" relation="usage">
+          <edgelabel>dato</edgelabel>
+        </childnode>
+      </node>
+      <node id="72">
+        <label>T</label>
+      </node>
+      <node id="69">
+        <label>puerta</label>
+        <link refid="classpuerta"/>
+        <childnode refid="70" relation="usage">
+          <edgelabel>arbolLlavesProbadas
+arbolCerradura</edgelabel>
+        </childnode>
+        <childnode refid="74" relation="usage">
+          <edgelabel>lcs</edgelabel>
+        </childnode>
+      </node>
+      <node id="71">
+        <label>Arbol&lt; T &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="71" relation="usage">
+          <edgelabel>hDer
+hIzq</edgelabel>
+        </childnode>
+        <childnode refid="72" relation="usage">
+          <edgelabel>datoRaiz</edgelabel>
+        </childnode>
+      </node>
+      <node id="70">
+        <label>Arbol&lt; Llave * &gt;</label>
+        <link refid="classArbol"/>
+        <childnode refid="71" relation="usage">
+          <edgelabel>hDer
+hIzq</edgelabel>
+        </childnode>
+        <childnode refid="73" relation="usage">
+          <edgelabel>datoRaiz</edgelabel>
+        </childnode>
+      </node>
+      <node id="73">
+        <label>Llave</label>
+        <link refid="classLlave"/>
+      </node>
+      <node id="74">
+        <label>Lista&lt; Llave * &gt;</label>
+        <childnode refid="75" relation="usage">
+          <edgelabel>pInteres
+fin
+inicio</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" line="11" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h" bodystart="11" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classpuerta_1a70c9e4a8a59555d1ba15caff7849497" prot="public" virt="non-virtual"><scope>puerta</scope><name>abrir</name></member>
+      <member refid="classpuerta_11a4b0d7133827b14a29e8992d930d8c2" prot="private" virt="non-virtual"><scope>puerta</scope><name>alturaMaxima</name></member>
+      <member refid="classpuerta_1f8e5946ad72fe1183eb44327b3664609" prot="private" virt="non-virtual"><scope>puerta</scope><name>arbolCerradura</name></member>
+      <member refid="classpuerta_1f62a930f0bc51f3f38e4159adb260e9d" prot="private" virt="non-virtual"><scope>puerta</scope><name>arbolLlavesProbadas</name></member>
+      <member refid="classpuerta_18c3078b9245cb0fbc37e7f1b662be74b" prot="public" virt="non-virtual"><scope>puerta</scope><name>cerrar</name></member>
+      <member refid="classpuerta_1fc919a28f4751159e5109ec43e691e0e" prot="public" virt="non-virtual"><scope>puerta</scope><name>configurarPuerta</name></member>
+      <member refid="classpuerta_1e2bcee3940c85671615c2331bba3b755" prot="public" virt="non-virtual"><scope>puerta</scope><name>eliminarlista</name></member>
+      <member refid="classpuerta_1db48cb6b90ccdc012aa488850ac458b1" prot="public" virt="non-virtual"><scope>puerta</scope><name>escribirFichero</name></member>
+      <member refid="classpuerta_1be41e285663cf9f509e6fe0583ba4202" prot="public" virt="non-virtual"><scope>puerta</scope><name>escribirInordenLlaves</name></member>
+      <member refid="classpuerta_19725b401749b131d6f3e6e1dea391f16" prot="private" virt="non-virtual"><scope>puerta</scope><name>estadoCerradura</name></member>
+      <member refid="classpuerta_1facb52e11a8a2b23437d4d0821187edc" prot="public" virt="non-virtual"><scope>puerta</scope><name>getAlturaMaxima</name></member>
+      <member refid="classpuerta_13c87fcb19f24d5348db587f0c6a9b27d" prot="public" virt="non-virtual"><scope>puerta</scope><name>getEstadoCerradura</name></member>
+      <member refid="classpuerta_11ab12f1dd5365526d79459ff161e2790" prot="private" virt="non-virtual"><scope>puerta</scope><name>lcs</name></member>
+      <member refid="classpuerta_1d4d085f48f3b014afbba4113510b63d8" prot="public" virt="non-virtual"><scope>puerta</scope><name>liberarArbol</name></member>
+      <member refid="classpuerta_1490c20cc328bef002a79831d7d649b47" prot="public" virt="non-virtual"><scope>puerta</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classpuerta_1dae189c1b2be845ba10b3335e4c3b91d" prot="public" virt="non-virtual"><scope>puerta</scope><name>puerta</name></member>
+      <member refid="classpuerta_1237f56c4736c97891edb19aeee750ed2" prot="public" virt="non-virtual"><scope>puerta</scope><name>puerta</name></member>
+      <member refid="classpuerta_14dbec0518d2dfbf78e636ea18352cfe1" prot="public" virt="non-virtual"><scope>puerta</scope><name>setAlturaMaxima</name></member>
+      <member refid="classpuerta_1c7020654ddeefc2cdfd937fd5d3f6749" prot="public" virt="non-virtual"><scope>puerta</scope><name>setEstadoCerradura</name></member>
+      <member refid="classpuerta_19f108f67092846743458195fca60d6ca" prot="public" virt="non-virtual"><scope>puerta</scope><name>siEstaLlaveProbada</name></member>
+      <member refid="classpuerta_1207e0983ca66391ee628453dffcf619f" prot="public" virt="non-virtual"><scope>puerta</scope><name>~puerta</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

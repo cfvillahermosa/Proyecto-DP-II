@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="structLista_3_01T_01_5_01_4_1_1TipoNodo" kind="struct" prot="private">
+    <compoundname>Lista&lt; T * &gt;::TipoNodo</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structLista_3_01T_01_5_01_4_1_1TipoNodo_1fdda6c5cad52745c2345790398793260" prot="public" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* Lista&lt; T * &gt;::TipoNodo::dato</definition>
+        <argsstring></argsstring>
+        <name>dato</name>
+        <briefdescription>
+<para>Dato almacenado en la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="191" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLista_3_01T_01_5_01_4_1_1TipoNodo_1cf172c894faa8f6a403b7ab73cee2aec" prot="public" static="no" mutable="no">
+        <type>TipoNodo *</type>
+        <definition>TipoNodo* Lista&lt; T * &gt;::TipoNodo::siguiente</definition>
+        <argsstring></argsstring>
+        <name>siguiente</name>
+        <briefdescription>
+<para>Puntero al siguiente elemento de la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="192" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structLista_3_01T_01_5_01_4_1_1TipoNodo_1e1734904a697971b8157262a492d6f29" prot="public" static="no" mutable="no">
+        <type>TipoNodo *</type>
+        <definition>TipoNodo* Lista&lt; T * &gt;::TipoNodo::anterior</definition>
+        <argsstring></argsstring>
+        <name>anterior</name>
+        <briefdescription>
+<para>Puntero al anterior elemento de la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="193" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="190" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="190" bodyend="195"/>
+    <listofallmembers>
+      <member refid="structLista_3_01T_01_5_01_4_1_1TipoNodo_1e1734904a697971b8157262a492d6f29" prot="public" virt="non-virtual"><scope>Lista&lt; T * &gt;::TipoNodo</scope><name>anterior</name></member>
+      <member refid="structLista_3_01T_01_5_01_4_1_1TipoNodo_1fdda6c5cad52745c2345790398793260" prot="public" virt="non-virtual"><scope>Lista&lt; T * &gt;::TipoNodo</scope><name>dato</name></member>
+      <member refid="structLista_3_01T_01_5_01_4_1_1TipoNodo_1cf172c894faa8f6a403b7ab73cee2aec" prot="public" virt="non-virtual"><scope>Lista&lt; T * &gt;::TipoNodo</scope><name>siguiente</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

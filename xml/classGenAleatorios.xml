@@ -1,0 +1,186 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classGenAleatorios" kind="class" prot="public">
+    <compoundname>GenAleatorios</compoundname>
+    <includes refid="genaleatorios_8h" local="no">genaleatorios.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classGenAleatorios_1f2256022c2fa2bac2d69de34b7cce118" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int GenAleatorios::SEMILLA</definition>
+        <argsstring></argsstring>
+        <name>SEMILLA</name>
+        <initializer>1976</initializer>
+        <briefdescription>
+<para>Semilla para inicializar la generación de números aleatorios. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" line="26" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGenAleatorios_19e21a6d56c90b371e4374e363e732982" prot="private" static="yes" mutable="no">
+        <type><ref refid="classGenAleatorios" kindref="compound">GenAleatorios</ref> *</type>
+        <definition>GenAleatorios * GenAleatorios::instancia</definition>
+        <argsstring></argsstring>
+        <name>instancia</name>
+        <initializer> NULL</initializer>
+        <briefdescription>
+<para>Instancia de la propia clase (sólo habrá una en el sistema). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" line="28" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGenAleatorios_14782a2f6acffe93e9e1ceb207517fcb5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int GenAleatorios::numGenerados</definition>
+        <argsstring></argsstring>
+        <name>numGenerados</name>
+        <briefdescription>
+<para>Contador de números aleatorios generados. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" line="27" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGenAleatorios_159996556d6966e62952b7f7d872b1096" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GenAleatorios::GenAleatorios</definition>
+        <argsstring>()</argsstring>
+        <name>GenAleatorios</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto. Inicializa un objeto de tipo GenAleatorio <simplesect kind="return"><para>Devuelve un objeto de tipo GenAleatorio inicializado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" line="29" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.cpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenAleatorios_15a1a472e1a690fc90f7ad33ac304e668" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>GenAleatorios::~GenAleatorios</definition>
+        <argsstring>()</argsstring>
+        <name>~GenAleatorios</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor. Destructor de la clase <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parámetros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" line="30" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.cpp" bodystart="63" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classGenAleatorios_1817cbe02b82be9067b94996300b64b9c" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GenAleatorios::generarNumero</definition>
+        <argsstring>(int limiteRango)</argsstring>
+        <name>generarNumero</name>
+        <param>
+          <type>int</type>
+          <declname>limiteRango</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo generarNumero. Genera un número aleatorio entre 0 y (limiteRango-1) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>limiteRango</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Límite del rango entre el que se genera el número aleatorio </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve el número aleatorio generado </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" line="32" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.cpp" bodystart="31" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenAleatorios_11ca28fbc4c69c19d61d147abb04e67fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int GenAleatorios::numerosGenerados</definition>
+        <argsstring>()</argsstring>
+        <name>numerosGenerados</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo numerosGenearados. Devuelve el número de números aleatorios que se han generado <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parámetros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve el contador de números aleatorios generados </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" line="33" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classGenAleatorios_1702ffff747c51573caf3fb29fa16639b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void GenAleatorios::destruir</definition>
+        <argsstring>()</argsstring>
+        <name>destruir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo destruir. Detruye la única instancia de tipo <ref refid="classGenAleatorios" kindref="compound">GenAleatorios</ref> que existe <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parámetros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" line="34" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.cpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Permite generar números aleatorios dentro de un rango determinado. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="20">
+        <label>GenAleatorios</label>
+        <link refid="classGenAleatorios"/>
+        <childnode refid="20" relation="usage">
+          <edgelabel>instancia</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" line="25" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/genaleatorios.h" bodystart="25" bodyend="35"/>
+    <listofallmembers>
+      <member refid="classGenAleatorios_1702ffff747c51573caf3fb29fa16639b" prot="public" virt="non-virtual"><scope>GenAleatorios</scope><name>destruir</name></member>
+      <member refid="classGenAleatorios_159996556d6966e62952b7f7d872b1096" prot="private" virt="non-virtual"><scope>GenAleatorios</scope><name>GenAleatorios</name></member>
+      <member refid="classGenAleatorios_1817cbe02b82be9067b94996300b64b9c" prot="public" virt="non-virtual"><scope>GenAleatorios</scope><name>generarNumero</name></member>
+      <member refid="classGenAleatorios_19e21a6d56c90b371e4374e363e732982" prot="private" virt="non-virtual"><scope>GenAleatorios</scope><name>instancia</name></member>
+      <member refid="classGenAleatorios_11ca28fbc4c69c19d61d147abb04e67fb" prot="public" virt="non-virtual"><scope>GenAleatorios</scope><name>numerosGenerados</name></member>
+      <member refid="classGenAleatorios_14782a2f6acffe93e9e1ceb207517fcb5" prot="private" virt="non-virtual"><scope>GenAleatorios</scope><name>numGenerados</name></member>
+      <member refid="classGenAleatorios_1f2256022c2fa2bac2d69de34b7cce118" prot="private" virt="non-virtual"><scope>GenAleatorios</scope><name>SEMILLA</name></member>
+      <member refid="classGenAleatorios_15a1a472e1a690fc90f7ad33ac304e668" prot="private" virt="non-virtual"><scope>GenAleatorios</scope><name>~GenAleatorios</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

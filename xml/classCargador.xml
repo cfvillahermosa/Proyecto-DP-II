@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classCargador" kind="class" prot="public">
+    <compoundname>Cargador</compoundname>
+    <includes refid="cargador_8h" local="no">cargador.h</includes>
+    <innerclass refid="structCargador_1_1DatoMapeo" prot="private">Cargador::DatoMapeo</innerclass>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classCargador_19965d5c5148afe61501aadf6b1fd08b3" prot="private" static="yes" mutable="no">
+        <type>DatoMapeo</type>
+        <definition>Cargador::mapeo</definition>
+        <argsstring>[NUMELTOSCONF]</argsstring>
+        <name>mapeo</name>
+        <initializer>{
+            
+            {&quot;PLANTA&quot;,8},
+            {&quot;INTRUSO&quot;,5},
+            {&quot;LIDER&quot;,5},
+            {&quot;TRABAJADOR&quot;,4}
+        }</initializer>
+        <briefdescription>
+<para>Vector de Mapeo. Asigna a cada nombre de elemento un valor numérico (posición en el vector) y contiene el número de campos de configuración para cada elemento. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="62" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classCargador_1e8a6830a848d0ce88c2e8dd3dbcbeed2" prot="private" static="no" mutable="no">
+        <type><ref refid="classEstacion" kindref="compound">Estacion</ref> *</type>
+        <definition>Estacion* Cargador::E</definition>
+        <argsstring></argsstring>
+        <name>E</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="64" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classCargador_1cbfc2930aa4a2878f64aaf6ab6f0ce61" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Cargador::queElemento</definition>
+        <argsstring>(string elto)</argsstring>
+        <name>queElemento</name>
+        <param>
+          <type>string</type>
+          <declname>elto</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Devuelve la posición que ocupa el elemento en el vector de mapeo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del elemento </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>posición que ocupa el elemento en el vector de mapeo </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="66" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.cpp" bodystart="38" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classCargador_1b676f259b9bfb1e46f27e87708cad046" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cargador::crearPlanta</definition>
+        <argsstring>(int numCampos, string vCampos[MAXCAMPOS])</argsstring>
+        <name>crearPlanta</name>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[MAXCAMPOS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Método que crea una <ref refid="classplanta" kindref="compound">planta</ref> y la registra en la prisión <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numCampos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de campos ocupados del vector vCampos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vCampos[MAXCAMPOS]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valores de configuración del elemento a crear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="67" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.cpp" bodystart="100" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classCargador_19c35508b98d937c5cda057c66c471024" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cargador::crearIntruso</definition>
+        <argsstring>(int numCampos, string vCampos[MAXCAMPOS])</argsstring>
+        <name>crearIntruso</name>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[MAXCAMPOS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Método que crea un preso y lo registra en la prisión <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numCampos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de campos ocupados del vector vCampos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vCampos[MAXCAMPOS]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valores de configuración del elemento a crear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="68" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.cpp" bodystart="127" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classCargador_175b3c035544b3dea81dfe7fb9fad1f61" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cargador::crearLider</definition>
+        <argsstring>(int numCampos, string vCampos[MAXCAMPOS])</argsstring>
+        <name>crearLider</name>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[MAXCAMPOS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Método que crea un guarda y lo registra en la prisión <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>numCampos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de campos ocupados del vector vCampos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vCampos[MAXCAMPOS]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valores de configuración del elemento a crear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="69" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.cpp" bodystart="153" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classCargador_172a6deb08e687e07b71be0b39caeb08d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cargador::crearTrabajador</definition>
+        <argsstring>(int numCampos, string vCampos[MAXCAMPOS])</argsstring>
+        <name>crearTrabajador</name>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[MAXCAMPOS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="70"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classCargador_14c12f282550e23654dcec70d837a0b7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Cargador::Cargador</definition>
+        <argsstring>(Estacion *p)</argsstring>
+        <name>Cargador</name>
+        <param>
+          <type><ref refid="classEstacion" kindref="compound">Estacion</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor de <ref refid="classCargador" kindref="compound">Cargador</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Objeto sistema que se va a cargar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="73" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.cpp" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classCargador_160d8fe515f1ff623da7bcdd2d842e4fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Cargador::crear</definition>
+        <argsstring>(string elto, int numCampos, string vCampos[MAXCAMPOS])</argsstring>
+        <name>crear</name>
+        <param>
+          <type>string</type>
+          <declname>elto</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numCampos</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>vCampos</declname>
+          <array>[MAXCAMPOS]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Método que realiza comprobaciones de datos básicos (existe elemento, número campos correcto, existe localidad...) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>elto</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>nombre del elemento a crear </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>numCampos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>número de campos ocupados del vector vCampos </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>vCampos[MAXCAMPOS]</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>valores de configuración del elemento a crear </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No devuelve nada </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="74" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.cpp" bodystart="63" bodyend="92"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>La misión de esta clase es cargar el sistema con los elementos del fichero de configuración. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="9">
+        <label>Cargador::DatoMapeo</label>
+      </node>
+      <node id="8">
+        <label>Cargador</label>
+        <link refid="classCargador"/>
+        <childnode refid="9" relation="usage">
+          <edgelabel>mapeo</edgelabel>
+        </childnode>
+        <childnode refid="10" relation="usage">
+          <edgelabel>E</edgelabel>
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Estacion</label>
+        <link refid="classEstacion"/>
+        <childnode refid="10" relation="usage">
+          <edgelabel>miEstacion</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" line="51" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/cargador.h" bodystart="50" bodyend="75"/>
+    <listofallmembers>
+      <member refid="classCargador_14c12f282550e23654dcec70d837a0b7f" prot="public" virt="non-virtual"><scope>Cargador</scope><name>Cargador</name></member>
+      <member refid="classCargador_160d8fe515f1ff623da7bcdd2d842e4fe" prot="public" virt="non-virtual"><scope>Cargador</scope><name>crear</name></member>
+      <member refid="classCargador_19c35508b98d937c5cda057c66c471024" prot="private" virt="non-virtual"><scope>Cargador</scope><name>crearIntruso</name></member>
+      <member refid="classCargador_175b3c035544b3dea81dfe7fb9fad1f61" prot="private" virt="non-virtual"><scope>Cargador</scope><name>crearLider</name></member>
+      <member refid="classCargador_1b676f259b9bfb1e46f27e87708cad046" prot="private" virt="non-virtual"><scope>Cargador</scope><name>crearPlanta</name></member>
+      <member refid="classCargador_172a6deb08e687e07b71be0b39caeb08d" prot="private" virt="non-virtual"><scope>Cargador</scope><name>crearTrabajador</name></member>
+      <member refid="classCargador_1e8a6830a848d0ce88c2e8dd3dbcbeed2" prot="private" virt="non-virtual"><scope>Cargador</scope><name>E</name></member>
+      <member refid="classCargador_19965d5c5148afe61501aadf6b1fd08b3" prot="private" virt="non-virtual"><scope>Cargador</scope><name>mapeo</name></member>
+      <member refid="classCargador_1cbfc2930aa4a2878f64aaf6ab6f0ce61" prot="private" virt="non-virtual"><scope>Cargador</scope><name>queElemento</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classLlave" kind="class" prot="public">
+    <compoundname>Llave</compoundname>
+    <includes refid="llave_8h" local="no">llave.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLlave_1dc04b939beacd406e302128c19d13d19" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Llave::identificador</definition>
+        <argsstring></argsstring>
+        <name>identificador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="11" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLlave_1a2f4f79518899176f8760ce8d0cc6c26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Llave::Llave</definition>
+        <argsstring>()</argsstring>
+        <name>Llave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="13" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="7" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1c80fb30127165c307bc38873545e57fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Llave::setIdentificador</definition>
+        <argsstring>(int n)</argsstring>
+        <name>setIdentificador</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece al atributo identificador de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> el valor n <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="14" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_121a4a576a987126d469a6eecb167aed1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::getIdentificador</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentificador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor entero de mi atributo identificador de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna el valor entero correspondiente al atributo identificador de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="15" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1b3bedc41ed2e5fedbc6d661d625c5cfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Llave::Llave</definition>
+        <argsstring>(int n)</argsstring>
+        <name>Llave</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="16" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_13ed579466201fc80172774d871ece003" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator==</definition>
+        <argsstring>(Llave &amp;l)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador == de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="17" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="52" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1932475670e3d7c9e47ca0837d829a7eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator&lt;</definition>
+        <argsstring>(Llave &amp;l)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &quot;&lt;&quot; de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de la clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="18" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="86" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1be84640478b66d4114fc5995b7981dfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator&gt;</definition>
+        <argsstring>(Llave &amp;l)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sobrecarga del operador &quot;&gt;&quot;de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de la clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="19" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="98" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1da6d6ec0cb9dc0c04b2b39d4a0dd9128" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator!=</definition>
+        <argsstring>(Llave &amp;l)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sobrecarga del operador &quot;!=&quot;de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de la clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="20" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="110" bodyend="116"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_182d40399d2418c8e117f62f7df6ee95c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator&lt;=</definition>
+        <argsstring>(Llave &amp;l)</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sobrecarga del operador &quot;&lt;=&quot;de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de la clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="21" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="122" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1ad93df44517e7d51ceef30182afb8232" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator&gt;=</definition>
+        <argsstring>(Llave &amp;l)</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sobrecarga del operador &quot;&gt;=&quot;de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de la clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="22" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="134" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1635d5c55c24d90520c5460973058b1ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator==</definition>
+        <argsstring>(int n)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador == para los identificadores de los objetos de la clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero correspondiente al identificador de la llave a comparar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="23" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1a6d47e36c8bcd46f7153d00f7ca343d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator&lt;</definition>
+        <argsstring>(int n)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sobrecarga del operador &quot;&lt;&quot;de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="24" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="146" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1c5abd96ecfa2d3e8827fce2710b1cbdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator&gt;</definition>
+        <argsstring>(int n)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sobrecarga del operador &quot;&gt;&quot;de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="25" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="158" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1c4fdcbca296854f56c8ec7606c15ca40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator!=</definition>
+        <argsstring>(int n)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sobrecarga del operador &quot;!=&quot;de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="26" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="170" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_16953a596b1bc6e951ef5ca434b5c1036" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator&lt;=</definition>
+        <argsstring>(int n)</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sobrecarga del operador &quot;&lt;=&quot;de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="27" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="182" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_121d29952725fc8390d668e5ad2094110" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Llave::operator&gt;=</definition>
+        <argsstring>(int n)</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type>int</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sobrecarga del operador &quot;&gt;=&quot;de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="28" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="194" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_17db4b83fa86cc3974ac90c6c34c9c56e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Llave::Llave</definition>
+        <argsstring>(const Llave &amp;l)</argsstring>
+        <name>Llave</name>
+        <param>
+          <type>const <ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por copia de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de la clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="30" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="207" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classLlave_1b0e13e4c7afa757571506ac3d04e5df2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Llave::~Llave</definition>
+        <argsstring>()</argsstring>
+        <name>~Llave</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de mi clase Llav e <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="32" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="17" bodyend="19"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classLlave_1749fde97e089059539e396738c36b7d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend ostream &amp;</type>
+        <definition>ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(ostream &amp;f, Llave &amp;l)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>ostream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> &amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &lt;&lt; de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de la clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="29" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.cpp" bodystart="77" bodyend="80"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Carlos,,, &lt;carlos-linux&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" line="10" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/llave.h" bodystart="10" bodyend="34"/>
+    <listofallmembers>
+      <member refid="classLlave_121a4a576a987126d469a6eecb167aed1" prot="public" virt="non-virtual"><scope>Llave</scope><name>getIdentificador</name></member>
+      <member refid="classLlave_1dc04b939beacd406e302128c19d13d19" prot="private" virt="non-virtual"><scope>Llave</scope><name>identificador</name></member>
+      <member refid="classLlave_1a2f4f79518899176f8760ce8d0cc6c26" prot="public" virt="non-virtual"><scope>Llave</scope><name>Llave</name></member>
+      <member refid="classLlave_1b3bedc41ed2e5fedbc6d661d625c5cfb" prot="public" virt="non-virtual"><scope>Llave</scope><name>Llave</name></member>
+      <member refid="classLlave_17db4b83fa86cc3974ac90c6c34c9c56e" prot="public" virt="non-virtual"><scope>Llave</scope><name>Llave</name></member>
+      <member refid="classLlave_1da6d6ec0cb9dc0c04b2b39d4a0dd9128" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator!=</name></member>
+      <member refid="classLlave_1c4fdcbca296854f56c8ec7606c15ca40" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator!=</name></member>
+      <member refid="classLlave_1932475670e3d7c9e47ca0837d829a7eb" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&lt;</name></member>
+      <member refid="classLlave_1a6d47e36c8bcd46f7153d00f7ca343d5" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&lt;</name></member>
+      <member refid="classLlave_1749fde97e089059539e396738c36b7d3" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&lt;&lt;</name></member>
+      <member refid="classLlave_182d40399d2418c8e117f62f7df6ee95c" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&lt;=</name></member>
+      <member refid="classLlave_16953a596b1bc6e951ef5ca434b5c1036" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&lt;=</name></member>
+      <member refid="classLlave_13ed579466201fc80172774d871ece003" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator==</name></member>
+      <member refid="classLlave_1635d5c55c24d90520c5460973058b1ef" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator==</name></member>
+      <member refid="classLlave_1be84640478b66d4114fc5995b7981dfb" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&gt;</name></member>
+      <member refid="classLlave_1c5abd96ecfa2d3e8827fce2710b1cbdd" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&gt;</name></member>
+      <member refid="classLlave_1ad93df44517e7d51ceef30182afb8232" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&gt;=</name></member>
+      <member refid="classLlave_121d29952725fc8390d668e5ad2094110" prot="public" virt="non-virtual"><scope>Llave</scope><name>operator&gt;=</name></member>
+      <member refid="classLlave_1c80fb30127165c307bc38873545e57fc" prot="public" virt="non-virtual"><scope>Llave</scope><name>setIdentificador</name></member>
+      <member refid="classLlave_1b0e13e4c7afa757571506ac3d04e5df2" prot="public" virt="non-virtual"><scope>Llave</scope><name>~Llave</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

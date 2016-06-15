@@ -1,0 +1,246 @@
+\hypertarget{classEstacion}{
+\section{Estacion Class Reference}
+\label{classEstacion}\index{Estacion@{Estacion}}
+}
+{\tt \#include $<$estacion.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classEstacion_7ccecfbe6a3cea5fd897cfce7851a005}{insertarVector} (\hyperlink{classplanta}{planta} $\ast$p)
+\item 
+void \hyperlink{classEstacion_30787e042212e82f38bd54868a673744}{generar} (ofstream \&f)
+\item 
+void \hyperlink{classEstacion_9cd8459a6f9c14168bd92edb88c68757}{insertarPersonajeEstacion} (\hyperlink{classPersonaje}{Personaje} $\ast$p)
+\item 
+void \hyperlink{classEstacion_846fcf5591b3a021072365cfd7902b4c}{obtenerPlanta} (int idp, \hyperlink{classplanta}{planta} $\ast$\&p)
+\item 
+int \hyperlink{classEstacion_5ab63daf24099fe7f461049191c5f45a}{totalPlantas} ()
+\item 
+void \hyperlink{classEstacion_b823f96e5395cf3b55ddfe2a380066a7}{calcularRutaPlantasEstacion} (ofstream \&f)
+\item 
+void \hyperlink{classEstacion_5e2d125234916b8011eabaf9735fd859}{insertarSalaPrisioneros} (\hyperlink{classPersonaje}{Personaje} $\ast$per)
+\item 
+void \hyperlink{classEstacion_61418af028ef6a48d6ccdd125cd739d6}{setTurnoSimulacion} (int t)
+\item 
+void \hyperlink{classEstacion_d0ea7dfe20aa29bf0dfc984849fbab1f}{accionesPersonajesPlanta} ()
+\item 
+int \hyperlink{classEstacion_e33e40e284a7e35858fef85ab1c13b19}{getTurnoSimulacion} ()
+\item 
+void \hyperlink{classEstacion_b130dedc0129c5a913415d3bacebd529}{insertarDesalojado} (\hyperlink{classPersonaje}{Personaje} $\ast$p)
+\item 
+void \hyperlink{classEstacion_fd81b9f346dce9a850fc2c612949d211}{escribeLogDesalojados} (ofstream \&f)
+\item 
+\hyperlink{classEstacion_c774576e546f622b60b08b0a952e6a55}{$\sim$Estacion} ()
+\end{CompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hypertarget{classEstacion_f0728410da6356cae82e39b90d6eab76}{
+static \hyperlink{classEstacion}{Estacion} $\ast$ \textbf{obtenerMiEstacion} ()}
+\label{classEstacion_f0728410da6356cae82e39b90d6eab76}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[Author:]Carlos,,, $<$carlos-linux$>$ \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEstacion_c774576e546f622b60b08b0a952e6a55}{
+\index{Estacion@{Estacion}!$\sim$Estacion@{$\sim$Estacion}}
+\index{$\sim$Estacion@{$\sim$Estacion}!Estacion@{Estacion}}
+\subsubsection[$\sim$Estacion]{\setlength{\rightskip}{0pt plus 5cm}Estacion::$\sim$Estacion ()}}
+\label{classEstacion_c774576e546f622b60b08b0a952e6a55}
+
+
+Metodo Destructor de la clase \hyperlink{classEstacion}{Estacion} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]No recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEstacion_7ccecfbe6a3cea5fd897cfce7851a005}{
+\index{Estacion@{Estacion}!insertarVector@{insertarVector}}
+\index{insertarVector@{insertarVector}!Estacion@{Estacion}}
+\subsubsection[insertarVector]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::insertarVector ({\bf planta} $\ast$ {\em p})}}
+\label{classEstacion_7ccecfbe6a3cea5fd897cfce7851a005}
+
+
+Metodo que inserta en un vector de plantas una \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un objeto de la clase Planta \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classEstacion_30787e042212e82f38bd54868a673744}{
+\index{Estacion@{Estacion}!generar@{generar}}
+\index{generar@{generar}!Estacion@{Estacion}}
+\subsubsection[generar]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::generar (ofstream \& {\em f})}}
+\label{classEstacion_30787e042212e82f38bd54868a673744}
+
+
+Metodo que genera las plantas,calcula las rutas, controla los turnos...etc \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida que escribe en mi fichero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Hacer el log de los personajes que son prisioneros
+
+log de los personajes que son prisioneros \hypertarget{classEstacion_9cd8459a6f9c14168bd92edb88c68757}{
+\index{Estacion@{Estacion}!insertarPersonajeEstacion@{insertarPersonajeEstacion}}
+\index{insertarPersonajeEstacion@{insertarPersonajeEstacion}!Estacion@{Estacion}}
+\subsubsection[insertarPersonajeEstacion]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::insertarPersonajeEstacion ({\bf Personaje} $\ast$ {\em p})}}
+\label{classEstacion_9cd8459a6f9c14168bd92edb88c68757}
+
+
+Metodo que inserta un personaje en su \hyperlink{classplanta}{planta} correspodiente y dentro de la \hyperlink{classsala}{sala} correspondiente con su idsala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un objeto de la clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classEstacion_846fcf5591b3a021072365cfd7902b4c}{
+\index{Estacion@{Estacion}!obtenerPlanta@{obtenerPlanta}}
+\index{obtenerPlanta@{obtenerPlanta}!Estacion@{Estacion}}
+\subsubsection[obtenerPlanta]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::obtenerPlanta (int {\em idp}, \/  {\bf planta} $\ast$\& {\em p})}}
+\label{classEstacion_846fcf5591b3a021072365cfd7902b4c}
+
+
+Metodo que devuelve la \hyperlink{classplanta}{planta} que se corresponde con el entero idp \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em idp}]es un parametro de entrada que corresponde con la casilla del vector de plantas que quiero obtener \item[{\em p}]es un parametro puntero de entrada salida que devuelve la \hyperlink{classplanta}{planta} correspondiente a la celda del vector idp \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classEstacion_5ab63daf24099fe7f461049191c5f45a}{
+\index{Estacion@{Estacion}!totalPlantas@{totalPlantas}}
+\index{totalPlantas@{totalPlantas}!Estacion@{Estacion}}
+\subsubsection[totalPlantas]{\setlength{\rightskip}{0pt plus 5cm}int Estacion::totalPlantas ()}}
+\label{classEstacion_5ab63daf24099fe7f461049191c5f45a}
+
+
+Metodo que devuelve el entero asociado al tamaño de mi vector de plantas \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no tiene parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve un entero que se corresponde con el tamaño de mi vector de plantas \end{Desc}
+\hypertarget{classEstacion_b823f96e5395cf3b55ddfe2a380066a7}{
+\index{Estacion@{Estacion}!calcularRutaPlantasEstacion@{calcularRutaPlantasEstacion}}
+\index{calcularRutaPlantasEstacion@{calcularRutaPlantasEstacion}!Estacion@{Estacion}}
+\subsubsection[calcularRutaPlantasEstacion]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::calcularRutaPlantasEstacion (ofstream \& {\em f})}}
+\label{classEstacion_b823f96e5395cf3b55ddfe2a380066a7}
+
+
+Metodo que calcula las rutas de las salas de las plantas de mi vector de plantas \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida que escribe en mi fichero todo lo correspondiente a las rutas de los personajes que almacenan las salas de cada una de las plantas de mi vector de plantas \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classEstacion_5e2d125234916b8011eabaf9735fd859}{
+\index{Estacion@{Estacion}!insertarSalaPrisioneros@{insertarSalaPrisioneros}}
+\index{insertarSalaPrisioneros@{insertarSalaPrisioneros}!Estacion@{Estacion}}
+\subsubsection[insertarSalaPrisioneros]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::insertarSalaPrisioneros ({\bf Personaje} $\ast$ {\em per})}}
+\label{classEstacion_5e2d125234916b8011eabaf9735fd859}
+
+
+Metodo que inserta en mi atributo cola salaprisioneros un personaje \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em per}]es un parametro de entrada de la clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classEstacion_61418af028ef6a48d6ccdd125cd739d6}{
+\index{Estacion@{Estacion}!setTurnoSimulacion@{setTurnoSimulacion}}
+\index{setTurnoSimulacion@{setTurnoSimulacion}!Estacion@{Estacion}}
+\subsubsection[setTurnoSimulacion]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::setTurnoSimulacion (int {\em t})}}
+\label{classEstacion_61418af028ef6a48d6ccdd125cd739d6}
+
+
+Metodo que asigna un valor entero a mi atributo turnosimulacion de mi clase estacion \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em t}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classEstacion_d0ea7dfe20aa29bf0dfc984849fbab1f}{
+\index{Estacion@{Estacion}!accionesPersonajesPlanta@{accionesPersonajesPlanta}}
+\index{accionesPersonajesPlanta@{accionesPersonajesPlanta}!Estacion@{Estacion}}
+\subsubsection[accionesPersonajesPlanta]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::accionesPersonajesPlanta ()}}
+\label{classEstacion_d0ea7dfe20aa29bf0dfc984849fbab1f}
+
+
+Metodo que realiza las acciones de los personajes de cada \hyperlink{classplanta}{planta} con sus correspondientes salas \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classEstacion_e33e40e284a7e35858fef85ab1c13b19}{
+\index{Estacion@{Estacion}!getTurnoSimulacion@{getTurnoSimulacion}}
+\index{getTurnoSimulacion@{getTurnoSimulacion}!Estacion@{Estacion}}
+\subsubsection[getTurnoSimulacion]{\setlength{\rightskip}{0pt plus 5cm}int Estacion::getTurnoSimulacion ()}}
+\label{classEstacion_e33e40e284a7e35858fef85ab1c13b19}
+
+
+Metodo que devuelve el entero que se corresponde con el atributo turnosimulacion de mi clase estacion \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna un entero que se corresponde con el atributo turnosimulacion de mi clase estacion \end{Desc}
+\hypertarget{classEstacion_b130dedc0129c5a913415d3bacebd529}{
+\index{Estacion@{Estacion}!insertarDesalojado@{insertarDesalojado}}
+\index{insertarDesalojado@{insertarDesalojado}!Estacion@{Estacion}}
+\subsubsection[insertarDesalojado]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::insertarDesalojado ({\bf Personaje} $\ast$ {\em p})}}
+\label{classEstacion_b130dedc0129c5a913415d3bacebd529}
+
+
+Metodo que inserta un personaje en en el atributo cola desalojados \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un parametro de entrada de la clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classEstacion_fd81b9f346dce9a850fc2c612949d211}{
+\index{Estacion@{Estacion}!escribeLogDesalojados@{escribeLogDesalojados}}
+\index{escribeLogDesalojados@{escribeLogDesalojados}!Estacion@{Estacion}}
+\subsubsection[escribeLogDesalojados]{\setlength{\rightskip}{0pt plus 5cm}void Estacion::escribeLogDesalojados (ofstream \& {\em f})}}
+\label{classEstacion_fd81b9f346dce9a850fc2c612949d211}
+
+
+Metodo que escribe en mi registro.log los personajes contenidos en mi cola desalojados \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida que escribe en mi registro.log la informacion correspondiente a los personajes contenidos en mi atributo cola desalojados. \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/estacion.h\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/estacion.cpp\end{CompactItemize}

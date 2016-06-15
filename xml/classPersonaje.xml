@@ -1,0 +1,1027 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classPersonaje" kind="class" prot="public">
+    <compoundname>Personaje</compoundname>
+    <derivedcompoundref refid="classIntruso" prot="public" virt="non-virtual">Intruso</derivedcompoundref>
+    <derivedcompoundref refid="classMiembro" prot="public" virt="non-virtual">Miembro</derivedcompoundref>
+    <includes refid="personaje_8h" local="no">personaje.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classPersonaje_18f20063ad43d9f85a6d1f0022d32e0b4" prot="protected" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Personaje::marca</definition>
+        <argsstring></argsstring>
+        <name>marca</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="17" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersonaje_10c1fedf7d7ec93a6ca1d38aa6a79b7e2" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Personaje::nombre</definition>
+        <argsstring></argsstring>
+        <name>nombre</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="18" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersonaje_10bce8e11746271ccf72035ea3da1138e" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Personaje::turno</definition>
+        <argsstring></argsstring>
+        <name>turno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="19" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersonaje_131a8a079b785a74622cc8dd51a9f745c" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Personaje::idsala</definition>
+        <argsstring></argsstring>
+        <name>idsala</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="20" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersonaje_18160f258ed0b5836b1173cbef638bde3" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Personaje::idplanta</definition>
+        <argsstring></argsstring>
+        <name>idplanta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="21" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersonaje_1ea1a86738c789e65792ed745039bce46" prot="protected" static="no" mutable="no">
+        <type>queue&lt; int &gt;</type>
+        <definition>queue&lt;int&gt; Personaje::secuencia</definition>
+        <argsstring></argsstring>
+        <name>secuencia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="22" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classPersonaje_1e98a94dc9f84d09e3a62266d5cac700c" prot="protected" static="no" mutable="no">
+        <type>stack&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>stack&lt;Llave*&gt;* Personaje::juegollaves</definition>
+        <argsstring></argsstring>
+        <name>juegollaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="23" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classPersonaje_19238a75aae652b20dd423e85cfa1ee17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Personaje::Personaje</definition>
+        <argsstring>()</argsstring>
+        <name>Personaje</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="26" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="8" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1a86eafddc218e8afa94f989b3642bcbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Personaje::Personaje</definition>
+        <argsstring>(char m, string n, int t, int ids, int idp)</argsstring>
+        <name>Personaje</name>
+        <param>
+          <type>char</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ids</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo char asociado al atributo movimiento de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo string asociado al atributo nombre de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo turno de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo idsala de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo idplanta de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="27" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1475630fe753b7fb80a2472c558d99169" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::setMarca</definition>
+        <argsstring>(char m)</argsstring>
+        <name>setMarca</name>
+        <param>
+          <type>char</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece al atributo movimiento de mi clase personaje el valor de m <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo char </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="28" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_136e1ba57799adb58163bec5a4f0015e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char</type>
+        <definition>char Personaje::getMarca</definition>
+        <argsstring>()</argsstring>
+        <name>getMarca</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el caracter asociado al atributo movimiento de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna el char correspondiente al atributo movimiento de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="29" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_12e84ee485f46b434f1d23558ad3eb7c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::setNombre</definition>
+        <argsstring>(string n)</argsstring>
+        <name>setNombre</name>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor de mi atributo de tipo string, nombre, de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo string asociado al atributo nombre de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="30" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1801e7fe38d0727d3219e51e916e2ce67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::getNombre</definition>
+        <argsstring>(string &amp;n)</argsstring>
+        <name>getNombre</name>
+        <param>
+          <type>string &amp;</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el contenido del atributo nombre de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro salida que devuelve el contenido de mi atributo nombre de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="31" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1de04da7a674a165aeaa09566b219a828" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::setTurno</definition>
+        <argsstring>(int t)</argsstring>
+        <name>setTurno</name>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor de mi atributo turno de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="32" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="96" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1425c743df0309deab48e9575d715eed9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Personaje::getTurno</definition>
+        <argsstring>()</argsstring>
+        <name>getTurno</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor del atributo turno de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve el entero correspondiente al valor de mi atributo turno de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="33" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_143a551a88fe3c6d4458719135992114b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::setIdSala</definition>
+        <argsstring>(int ids)</argsstring>
+        <name>setIdSala</name>
+        <param>
+          <type>int</type>
+          <declname>ids</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor de mi atributo idsala de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="34" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Personaje::getIdSala</definition>
+        <argsstring>()</argsstring>
+        <name>getIdSala</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor asociado a mi atributo idsala de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna el valor correspondiente al atributo idsala de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="35" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="123" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1361e72e69c915f6e0c7d2c5e82ae0744" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::setIdPlanta</definition>
+        <argsstring>(int idp)</argsstring>
+        <name>setIdPlanta</name>
+        <param>
+          <type>int</type>
+          <declname>idp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor de mi atributo idplanta de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>idp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="36" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1f388d329d466b136c60fa26c6c4800a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Personaje::getIdPlanta</definition>
+        <argsstring>()</argsstring>
+        <name>getIdPlanta</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor correspondiente con el atributo idplanta de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="37" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="141" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_11ad939228d858b75826ddb4effa67ceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::liberarMemoriaPila</definition>
+        <argsstring>(stack&lt; Llave * &gt; *&amp;lis)</argsstring>
+        <name>liberarMemoriaPila</name>
+        <param>
+          <type>stack&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *&amp;</type>
+          <declname>lis</declname>
+          <defname>pil</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que libera la memoria de cada <ref refid="classLlave" kindref="compound">Llave</ref> contenida en mi estructura pila pil <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pil</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida (puntero) que almacena punteros a instancias de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="39" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="190" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_16ede7d70599342ba61eb034027a41f2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::insertarPila</definition>
+        <argsstring>(Llave *l)</argsstring>
+        <name>insertarPila</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta en mi atributo juegollaves del tipo pila un puntero a una instancia de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="40" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="181" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_18880afa570d1f919516e2810b2226b08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::cojerLlave</definition>
+        <argsstring>(Llave *&amp;l)</argsstring>
+        <name>cojerLlave</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *&amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve la primera llave de mi atributo del tipo pila juegollaves si la cola no esta vacia y ademas ,desapila esa llave <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="41" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="351" bodyend="357"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_127166f7a52fcfb3570e0dc20f37a2402" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Personaje::pilaVacia</definition>
+        <argsstring>()</argsstring>
+        <name>pilaVacia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo booleano que me indica si mi atributo del tipo pila juegollaves se encuentra vacia o no <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna true si la pila esta vacia y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="42" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="364" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_166ec23478444efc795d29734cc010809" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::insertarCola</definition>
+        <argsstring>(int i)</argsstring>
+        <name>insertarCola</name>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta en mi cola secuencia un valor entero <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="44" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="211" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1786951aff09e227527d3da60338effec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Personaje::TodasAcciones</definition>
+        <argsstring>()</argsstring>
+        <name>TodasAcciones</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza todas las acciones (uno,dos,tres y cuatro) de la clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="46" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="220" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_10454b75ccc8f7e33f03e2cfb2c59e725" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Personaje::accionUno</definition>
+        <argsstring>()</argsstring>
+        <name>accionUno</name>
+        <reimplementedby refid="classTrabajador_1ea6e8089295c87f0b5a5014895f28526">accionUno</reimplementedby>
+        <reimplementedby refid="classLider_12729cb612e6ca2d2750f48b85743107e">accionUno</reimplementedby>
+        <reimplementedby refid="classIntruso_1dee71b00225e294086d8980625a32ab3">accionUno</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza la accion uno de la clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="47" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="240" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1af7763eb6099390038b7833129a1ef9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Personaje::accionDos</definition>
+        <argsstring>()</argsstring>
+        <name>accionDos</name>
+        <reimplementedby refid="classTrabajador_1598df69f74628e4da5d0dc776c98b114">accionDos</reimplementedby>
+        <reimplementedby refid="classLider_151fb2d9c6dfe283a13d61b8f546068f3">accionDos</reimplementedby>
+        <reimplementedby refid="classIntruso_16fef0ae823fdabc05796413f53d073e5">accionDos</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza la accion dos de la clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="48" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="248" bodyend="250"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_185c25ff0362bf4f4f5e69965c1ae4cfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Personaje::accionTres</definition>
+        <argsstring>()</argsstring>
+        <name>accionTres</name>
+        <reimplementedby refid="classTrabajador_19203576ae93a8854b033f1d91e25fee7">accionTres</reimplementedby>
+        <reimplementedby refid="classLider_1993a29f5a5615bd8a41dfe550dfccb61">accionTres</reimplementedby>
+        <reimplementedby refid="classIntruso_152e521cc66983d5a9f20f3424818e6e4">accionTres</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza la accion tres de la clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="49" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="256" bodyend="258"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_13aed5959a6a829819e0b0a6dcca9c2e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Personaje::accionCuatro</definition>
+        <argsstring>()</argsstring>
+        <name>accionCuatro</name>
+        <reimplementedby refid="classMiembro_1b286484cab275d7754c6ce2b513fdc9a">accionCuatro</reimplementedby>
+        <reimplementedby refid="classIntruso_199e215b1df4387b629f25349378d3bbb">accionCuatro</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza la accion cuatro de la clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="50" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="264" bodyend="266"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1f6dc20013805229005dfb87fc6f273b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Personaje::ruta</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>ruta</name>
+        <reimplementedby refid="classTrabajador_16b940e57a18466eafa2dcfe0a60313d3">ruta</reimplementedby>
+        <reimplementedby refid="classLider_16b98929df0d59cd29b85e6fb8aeb36f1">ruta</reimplementedby>
+        <reimplementedby refid="classIntruso_12898ae82386e99d361f6f131122b7be1">ruta</reimplementedby>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza la ruta de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="53" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="202" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_186fe4a1ff708072d98c6be42bbd512ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Personaje::escribeLog</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>escribeLog</name>
+        <reimplementedby refid="classTrabajador_1332796b26094df07fa7b8b39c345f8f4">escribeLog</reimplementedby>
+        <reimplementedby refid="classLider_1fcd179370f87dbc08bf6619ff9742f66">escribeLog</reimplementedby>
+        <reimplementedby refid="classIntruso_1979c89c596d92d8ce69b8af5e556d62d">escribeLog</reimplementedby>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo escribe en mi registro.log de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="54" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="150" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1e9f6bd8027b8a5c2e660a327d9e513ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Personaje::mostrar</definition>
+        <argsstring>()</argsstring>
+        <name>mostrar</name>
+        <reimplementedby refid="classTrabajador_149e5a94181d6a517d9f5213335da1e27">mostrar</reimplementedby>
+        <reimplementedby refid="classMiembro_128498c7229e81e64d0cb7ea69515dca0">mostrar</reimplementedby>
+        <reimplementedby refid="classLider_1125acbb3a1432f217efdc9826a2b8d8f">mostrar</reimplementedby>
+        <reimplementedby refid="classIntruso_106a5d236e669e5add8b1c6472303133e">mostrar</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra por pantalla que el personaje es del tipo personaje <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="55" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_10b3c25862a6081aaee96e77c08edda29" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>Personaje::~Personaje</definition>
+        <argsstring>()</argsstring>
+        <name>~Personaje</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="56" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="23" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_15870893672c215b1d99594233f7f5fd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Personaje::operator==</definition>
+        <argsstring>(Personaje &amp;p)</argsstring>
+        <name>operator==</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &quot;==&quot; de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="58" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="272" bodyend="278"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_17717f9a6ad3d7b68a5c953930510f575" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Personaje::operator&gt;</definition>
+        <argsstring>(Personaje &amp;p)</argsstring>
+        <name>operator&gt;</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &quot;&gt;&quot; de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="59" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="286" bodyend="292"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1e55182c2fd21118b27c5e911f800c1d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Personaje::operator&lt;</definition>
+        <argsstring>(Personaje &amp;p)</argsstring>
+        <name>operator&lt;</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &quot;&lt;&quot; de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="60" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="299" bodyend="305"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_15b7fbb10c092e6f953738fa54a380e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Personaje::operator&gt;=</definition>
+        <argsstring>(Personaje &amp;p)</argsstring>
+        <name>operator&gt;=</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &quot;&gt;=&quot; de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="61" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="312" bodyend="318"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1824156240864cc79a8b7319985eaec58" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Personaje::operator&lt;=</definition>
+        <argsstring>(Personaje &amp;p)</argsstring>
+        <name>operator&lt;=</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &quot;&lt;=&quot; de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="62" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="325" bodyend="331"/>
+      </memberdef>
+      <memberdef kind="function" id="classPersonaje_1be7f26619dd67133806688d4306d877e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Personaje::operator!=</definition>
+        <argsstring>(Personaje &amp;p)</argsstring>
+        <name>operator!=</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sobrecarga del operador &quot;!=&quot; de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="63" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.cpp" bodystart="338" bodyend="344"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Carlos,,, &lt;carlos-linux&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="54">
+        <label>Miembro</label>
+        <link refid="classMiembro"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>Intruso</label>
+        <link refid="classIntruso"/>
+        <childnode refid="52" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>Trabajador</label>
+        <link refid="classTrabajador"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>Lider</label>
+        <link refid="classLider"/>
+        <childnode refid="54" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>Personaje</label>
+        <link refid="classPersonaje"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" line="15" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/personaje.h" bodystart="15" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classPersonaje_13aed5959a6a829819e0b0a6dcca9c2e4" prot="public" virt="virtual"><scope>Personaje</scope><name>accionCuatro</name></member>
+      <member refid="classPersonaje_1af7763eb6099390038b7833129a1ef9f" prot="public" virt="virtual"><scope>Personaje</scope><name>accionDos</name></member>
+      <member refid="classPersonaje_185c25ff0362bf4f4f5e69965c1ae4cfb" prot="public" virt="virtual"><scope>Personaje</scope><name>accionTres</name></member>
+      <member refid="classPersonaje_10454b75ccc8f7e33f03e2cfb2c59e725" prot="public" virt="virtual"><scope>Personaje</scope><name>accionUno</name></member>
+      <member refid="classPersonaje_18880afa570d1f919516e2810b2226b08" prot="public" virt="non-virtual"><scope>Personaje</scope><name>cojerLlave</name></member>
+      <member refid="classPersonaje_186fe4a1ff708072d98c6be42bbd512ea" prot="public" virt="virtual"><scope>Personaje</scope><name>escribeLog</name></member>
+      <member refid="classPersonaje_1f388d329d466b136c60fa26c6c4800a7" prot="public" virt="non-virtual"><scope>Personaje</scope><name>getIdPlanta</name></member>
+      <member refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" prot="public" virt="non-virtual"><scope>Personaje</scope><name>getIdSala</name></member>
+      <member refid="classPersonaje_136e1ba57799adb58163bec5a4f0015e0" prot="public" virt="non-virtual"><scope>Personaje</scope><name>getMarca</name></member>
+      <member refid="classPersonaje_1801e7fe38d0727d3219e51e916e2ce67" prot="public" virt="non-virtual"><scope>Personaje</scope><name>getNombre</name></member>
+      <member refid="classPersonaje_1425c743df0309deab48e9575d715eed9" prot="public" virt="non-virtual"><scope>Personaje</scope><name>getTurno</name></member>
+      <member refid="classPersonaje_18160f258ed0b5836b1173cbef638bde3" prot="protected" virt="non-virtual"><scope>Personaje</scope><name>idplanta</name></member>
+      <member refid="classPersonaje_131a8a079b785a74622cc8dd51a9f745c" prot="protected" virt="non-virtual"><scope>Personaje</scope><name>idsala</name></member>
+      <member refid="classPersonaje_166ec23478444efc795d29734cc010809" prot="public" virt="non-virtual"><scope>Personaje</scope><name>insertarCola</name></member>
+      <member refid="classPersonaje_16ede7d70599342ba61eb034027a41f2a" prot="public" virt="non-virtual"><scope>Personaje</scope><name>insertarPila</name></member>
+      <member refid="classPersonaje_1e98a94dc9f84d09e3a62266d5cac700c" prot="protected" virt="non-virtual"><scope>Personaje</scope><name>juegollaves</name></member>
+      <member refid="classPersonaje_11ad939228d858b75826ddb4effa67ceb" prot="public" virt="non-virtual"><scope>Personaje</scope><name>liberarMemoriaPila</name></member>
+      <member refid="classPersonaje_18f20063ad43d9f85a6d1f0022d32e0b4" prot="protected" virt="non-virtual"><scope>Personaje</scope><name>marca</name></member>
+      <member refid="classPersonaje_1e9f6bd8027b8a5c2e660a327d9e513ca" prot="public" virt="virtual"><scope>Personaje</scope><name>mostrar</name></member>
+      <member refid="classPersonaje_10c1fedf7d7ec93a6ca1d38aa6a79b7e2" prot="protected" virt="non-virtual"><scope>Personaje</scope><name>nombre</name></member>
+      <member refid="classPersonaje_1be7f26619dd67133806688d4306d877e" prot="public" virt="non-virtual"><scope>Personaje</scope><name>operator!=</name></member>
+      <member refid="classPersonaje_1e55182c2fd21118b27c5e911f800c1d6" prot="public" virt="non-virtual"><scope>Personaje</scope><name>operator&lt;</name></member>
+      <member refid="classPersonaje_1824156240864cc79a8b7319985eaec58" prot="public" virt="non-virtual"><scope>Personaje</scope><name>operator&lt;=</name></member>
+      <member refid="classPersonaje_15870893672c215b1d99594233f7f5fd0" prot="public" virt="non-virtual"><scope>Personaje</scope><name>operator==</name></member>
+      <member refid="classPersonaje_17717f9a6ad3d7b68a5c953930510f575" prot="public" virt="non-virtual"><scope>Personaje</scope><name>operator&gt;</name></member>
+      <member refid="classPersonaje_15b7fbb10c092e6f953738fa54a380e33" prot="public" virt="non-virtual"><scope>Personaje</scope><name>operator&gt;=</name></member>
+      <member refid="classPersonaje_19238a75aae652b20dd423e85cfa1ee17" prot="public" virt="non-virtual"><scope>Personaje</scope><name>Personaje</name></member>
+      <member refid="classPersonaje_1a86eafddc218e8afa94f989b3642bcbd" prot="public" virt="non-virtual"><scope>Personaje</scope><name>Personaje</name></member>
+      <member refid="classPersonaje_127166f7a52fcfb3570e0dc20f37a2402" prot="public" virt="non-virtual"><scope>Personaje</scope><name>pilaVacia</name></member>
+      <member refid="classPersonaje_1f6dc20013805229005dfb87fc6f273b5" prot="public" virt="virtual"><scope>Personaje</scope><name>ruta</name></member>
+      <member refid="classPersonaje_1ea1a86738c789e65792ed745039bce46" prot="protected" virt="non-virtual"><scope>Personaje</scope><name>secuencia</name></member>
+      <member refid="classPersonaje_1361e72e69c915f6e0c7d2c5e82ae0744" prot="public" virt="non-virtual"><scope>Personaje</scope><name>setIdPlanta</name></member>
+      <member refid="classPersonaje_143a551a88fe3c6d4458719135992114b" prot="public" virt="non-virtual"><scope>Personaje</scope><name>setIdSala</name></member>
+      <member refid="classPersonaje_1475630fe753b7fb80a2472c558d99169" prot="public" virt="non-virtual"><scope>Personaje</scope><name>setMarca</name></member>
+      <member refid="classPersonaje_12e84ee485f46b434f1d23558ad3eb7c9" prot="public" virt="non-virtual"><scope>Personaje</scope><name>setNombre</name></member>
+      <member refid="classPersonaje_1de04da7a674a165aeaa09566b219a828" prot="public" virt="non-virtual"><scope>Personaje</scope><name>setTurno</name></member>
+      <member refid="classPersonaje_1786951aff09e227527d3da60338effec" prot="public" virt="non-virtual"><scope>Personaje</scope><name>TodasAcciones</name></member>
+      <member refid="classPersonaje_10bce8e11746271ccf72035ea3da1138e" prot="protected" virt="non-virtual"><scope>Personaje</scope><name>turno</name></member>
+      <member refid="classPersonaje_10b3c25862a6081aaee96e77c08edda29" prot="public" virt="virtual"><scope>Personaje</scope><name>~Personaje</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

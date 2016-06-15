@@ -1,0 +1,813 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classsala" kind="class" prot="public">
+    <compoundname>sala</compoundname>
+    <includes refid="sala_8h" local="no">sala.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classsala_10668a38feb652d27853854bb3c63e2f2" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sala::idsala</definition>
+        <argsstring></argsstring>
+        <name>idsala</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="13" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsala_1da6a56ee3499694fe8c3506de7ecf2b1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sala::marca</definition>
+        <argsstring></argsstring>
+        <name>marca</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="14" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsala_1b925bf60110c5c9919e4ac83393d3b02" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int sala::frecuencia</definition>
+        <argsstring></argsstring>
+        <name>frecuencia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="15" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsala_153263d3109c22a61ebd930d0351e874e" prot="private" static="no" mutable="no">
+        <type>Lista&lt; <ref refid="classLlave" kindref="compound">Llave</ref> * &gt; *</type>
+        <definition>Lista&lt;Llave*&gt;* sala::lista</definition>
+        <argsstring></argsstring>
+        <name>lista</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="16" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsala_185ba986359b09c626bdbc6b11903829f" prot="private" static="no" mutable="no">
+        <type>queue&lt; <ref refid="classPersonaje" kindref="compound">Personaje</ref> * &gt; *</type>
+        <definition>queue&lt;Personaje*&gt;* sala::colapersonajes</definition>
+        <argsstring></argsstring>
+        <name>colapersonajes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="18" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classsala_1ad5bdd47e00bec0dd3f0d3b39d4c0e7c" prot="private" static="no" mutable="no">
+        <type>vector&lt; <ref refid="classsala" kindref="compound">sala</ref> * &gt;</type>
+        <definition>vector&lt;sala*&gt; sala::vecinos</definition>
+        <argsstring></argsstring>
+        <name>vecinos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="19" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classsala_1a48720e6448a633e51018e837eb49890" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class compararFrecuencias</definition>
+        <argsstring></argsstring>
+        <name>compararFrecuencias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="17" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classsala_1780a8c359e96eaf55403409c019d536a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sala::sala</definition>
+        <argsstring>()</argsstring>
+        <name>sala</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de mi clase <ref refid="classsala" kindref="compound">sala</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="21" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="8" bodyend="15"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1265933f2f255cbce1f724d1c07957d69" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sala::sala</definition>
+        <argsstring>(int id, int m, int f)</argsstring>
+        <name>sala</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de mi clase Sala <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al valor del atributo idsala de mi clase Sala </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al valor del atributo marca de mi clase <ref refid="classsala" kindref="compound">sala</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al valor del atributo frecuencia de mi clase <ref refid="classsala" kindref="compound">sala</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="22" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="146" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_16e2f990c9e2b6fe2c08ba3853e5299c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::setIdentificadorSala</definition>
+        <argsstring>(int id)</argsstring>
+        <name>setIdentificadorSala</name>
+        <param>
+          <type>int</type>
+          <declname>id</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor de id a mi atributo idsala de mi clase <ref refid="classsala" kindref="compound">sala</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al valor del atributo idsala de mi clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="23" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1d6eb9a00920ec3f7eee7134d478ddf76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sala::getIdentificadorSala</definition>
+        <argsstring>()</argsstring>
+        <name>getIdentificadorSala</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor entero de mi atributo idsala de mi clase <ref refid="classsala" kindref="compound">sala</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>retorna el valor entero correspondiente al atributo idsala de mi clase <ref refid="classsala" kindref="compound">sala</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="24" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="51" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_174d517148cdcaf0aa1a58bc877f9c910" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::setMarcaSala</definition>
+        <argsstring>(int m)</argsstring>
+        <name>setMarcaSala</name>
+        <param>
+          <type>int</type>
+          <declname>m</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor de m a mi atributo marca de mi clase <ref refid="classsala" kindref="compound">sala</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo int asociado al valor del atributo marca de mi clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="25" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1099a7d79e8142f14dacfcc869f5557c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sala::getMarcaSala</definition>
+        <argsstring>()</argsstring>
+        <name>getMarcaSala</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor del atributo marca de mi clase Sala <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna el entero asociado al atributo marca de mi clase <ref refid="classsala" kindref="compound">sala</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="26" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="69" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1ae7603393ce64c66c0d954e7ba452260" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::setFrecuenciaSala</definition>
+        <argsstring>(int f)</argsstring>
+        <name>setFrecuenciaSala</name>
+        <param>
+          <type>int</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que establece el valor de f a mi atributo frecuencia de mi clase <ref refid="classsala" kindref="compound">sala</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al valor del atributo frecuencia de mi clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="27" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="78" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_124c1c2cf672362b9e82d0584cd63af97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sala::getFrecuenciaSala</definition>
+        <argsstring>()</argsstring>
+        <name>getFrecuenciaSala</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el valor entero asociado al atributo frecuencia de mi clase <ref refid="classsala" kindref="compound">sala</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna el valor entero asociado al atributo frecuencia de mi clase <ref refid="classsala" kindref="compound">sala</ref> </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="28" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_168552d6940a68c2a4cd4351f38acf546" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::escribeLog</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>escribeLog</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que escribe en mi registro.log la informacion correspondiente a la clase Sala <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="29" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="96" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1468ec985fcba82e578dd81de0102dede" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::mostrar</definition>
+        <argsstring>()</argsstring>
+        <name>mostrar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra por pantalla la informacion contenida en mi clase <ref refid="classsala" kindref="compound">sala</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="30" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="117" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_143d8051f7213fd82d30b5b7b56043877" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::insertarLista</definition>
+        <argsstring>(Llave *l)</argsstring>
+        <name>insertarLista</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta en mi atributo lista de mi clase Sala un puntero a una <ref refid="classLlave" kindref="compound">Llave</ref> l <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de la clase <ref refid="classLlave" kindref="compound">Llave</ref> que corresponde con la llave a insertar en mi lista </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="31" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="133" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_183833f513f3f53033e6e8fc3cacded73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::insertarCola</definition>
+        <argsstring>(Personaje *p)</argsstring>
+        <name>insertarCola</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta en mi cola de personajes un puntero a personaje <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo puntero a instancia de la clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="32" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1306fe8573f4ed40792d59a7f9e580b30" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::devolverPrimerPersonaje</definition>
+        <argsstring>(Personaje *&amp;per)</argsstring>
+        <name>devolverPrimerPersonaje</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> *&amp;</type>
+          <declname>per</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el primer personaje de mi cola de personajes de mi clase Sala <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>per</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de salida del tipo puntero a instancia de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="33" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="293" bodyend="299"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_16bf07428f9bca5ff621845ac18b34ee4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::borrarElementoCola</definition>
+        <argsstring>()</argsstring>
+        <name>borrarElementoCola</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que desencola un personaje de mi cola colapersonajes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="34" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="258" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_10b13578fe6d2a10d6102920dfc9216b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sala::siHayPersonajes</definition>
+        <argsstring>()</argsstring>
+        <name>siHayPersonajes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo booleano que me devuelve true en caso de que haya personajes en una <ref refid="classsala" kindref="compound">sala</ref> y false en caso contrario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Devuelve true en caso de que el atributo colapersonajes no se encuentre vacio (es decir, hay personajes) y false en caso de que se encuentre vacia ( es decir , no hay personajes) </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="35" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="174" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1deee4cbad1198682fd86962d35aea256" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool sala::siHayLlaves</definition>
+        <argsstring>()</argsstring>
+        <name>siHayLlaves</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo booleano que devuelve true en caso de que la lista no este vacia ( es decir, hay alguna llave en mi lista ) y false en caso contrario <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un booleano ;true, en caso de que la lista no este vacia ( es decir, hay alguna llave en mi lista ) y false en caso contrario </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="36" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="267" bodyend="273"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1f02e9b4d4608076a48e51f2c4ddf87d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::escribeLogConEspacio</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>escribeLogConEspacio</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que escribe en mi fichero.log la informacion contenida en la <ref refid="classsala" kindref="compound">sala</ref> y sus llaves correspondientes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="37" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="330" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1096e4d5f4a0389e546d97167c3c24f81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int sala::cuantosPersonajes</definition>
+        <argsstring>()</argsstring>
+        <name>cuantosPersonajes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el tamaño de mi atributo colapersonajes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un valor entero correspondiente al tamaño del atributo colapersonajes de mi clase Sala </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="39" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="187" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_13717b76f3e6c98efd83fda02da5a1a06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::devolverFrente</definition>
+        <argsstring>(Personaje *&amp;p)</argsstring>
+        <name>devolverFrente</name>
+        <param>
+          <type><ref refid="classPersonaje" kindref="compound">Personaje</ref> *&amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el frente de mi cola colapersonajes de mi clase Sala <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>p</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de salida del tipo puntero a instancia de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> que se corresponde con el frente de la cola colapersonajes </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="40" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="196" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_10c2411487cc9256b0ce9acfff8d48ded" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::calcularRutaPersonajeSala</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>calcularRutaPersonajeSala</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que calcula cada una de las rutas correspondientes a los personajes que se encuentran en mi atributo colapersonajes de mi clase Sala <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="41" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="205" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_118ca39a6c0fea0cc2a0d155304b007fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::volcarVectorVecinos</definition>
+        <argsstring>(vector&lt; sala * &gt; &amp;v)</argsstring>
+        <name>volcarVectorVecinos</name>
+        <param>
+          <type>vector&lt; <ref refid="classsala" kindref="compound">sala</ref> * &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que vuelva el contenido de un vector v a mi vector vecinos <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada salida del tipo puntero a ED del tipo vector de la STL en el que se encuentran las salas que quiero copiar en mi atributo vecinos de mi clase Sala </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="42" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="223" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1c6ee6cab664ae4efa88eb4b7779b1498" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::devolverCardinalVecino</definition>
+        <argsstring>(char c, sala *&amp;v)</argsstring>
+        <name>devolverCardinalVecino</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type><ref refid="classsala" kindref="compound">sala</ref> *&amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve la <ref refid="classsala" kindref="compound">sala</ref> vecina v correspondiente a la posicion cardinal determinada por el caracter c <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo char en el que se encuentra la primera letra de las 4 posiciones cardinales que existen (Norte, Sur, Este,Oeste) </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de salida del tipo puntero a instancia de mi clase Sala que va a almacenar el vecino correspondiente a la posicion cardinal c </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="44" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="236" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1376c8d9684f212f6e8a8d8316f2ab733" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::devolverPimeroLista</definition>
+        <argsstring>(Llave *&amp;l)</argsstring>
+        <name>devolverPimeroLista</name>
+        <param>
+          <type><ref refid="classLlave" kindref="compound">Llave</ref> *&amp;</type>
+          <declname>l</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve la primera llave de mi lista de llaves de mi clase Sala <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>l</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de salida del tipo puntero a instancia de mi clase <ref refid="classLlave" kindref="compound">Llave</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="45" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="279" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1feef4f1219a7a014f58415eae0ff2e2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sala::accionesColaPersonajes</definition>
+        <argsstring>()</argsstring>
+        <name>accionesColaPersonajes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza las acciones de los personajes incluidos en el atributo colapersonajes de mi clase Sala <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe ningun parametro </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="46" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="314" bodyend="324"/>
+      </memberdef>
+      <memberdef kind="function" id="classsala_1108d16054e4c939568ab2c301a5cea83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>sala::~sala</definition>
+        <argsstring>()</argsstring>
+        <name>~sala</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de mi clase <ref refid="classsala" kindref="compound">sala</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="47" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.cpp" bodystart="22" bodyend="35"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Carlos,,, &lt;carlos-linux&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <collaborationgraph>
+      <node id="79">
+        <label>Lista&lt; T &gt;::TipoNodo</label>
+        <childnode refid="79" relation="usage">
+          <edgelabel>siguiente
+anterior</edgelabel>
+        </childnode>
+        <childnode refid="80" relation="usage">
+          <edgelabel>dato</edgelabel>
+        </childnode>
+      </node>
+      <node id="80">
+        <label>T</label>
+      </node>
+      <node id="77">
+        <label>sala</label>
+        <link refid="classsala"/>
+        <childnode refid="78" relation="usage">
+          <edgelabel>lista</edgelabel>
+        </childnode>
+      </node>
+      <node id="78">
+        <label>Lista&lt; Llave * &gt;</label>
+        <childnode refid="79" relation="usage">
+          <edgelabel>pInteres
+fin
+inicio</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" line="12" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/sala.h" bodystart="12" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classsala_1feef4f1219a7a014f58415eae0ff2e2b" prot="public" virt="non-virtual"><scope>sala</scope><name>accionesColaPersonajes</name></member>
+      <member refid="classsala_16bf07428f9bca5ff621845ac18b34ee4" prot="public" virt="non-virtual"><scope>sala</scope><name>borrarElementoCola</name></member>
+      <member refid="classsala_10c2411487cc9256b0ce9acfff8d48ded" prot="public" virt="non-virtual"><scope>sala</scope><name>calcularRutaPersonajeSala</name></member>
+      <member refid="classsala_185ba986359b09c626bdbc6b11903829f" prot="private" virt="non-virtual"><scope>sala</scope><name>colapersonajes</name></member>
+      <member refid="classsala_1a48720e6448a633e51018e837eb49890" prot="private" virt="non-virtual"><scope>sala</scope><name>compararFrecuencias</name></member>
+      <member refid="classsala_1096e4d5f4a0389e546d97167c3c24f81" prot="public" virt="non-virtual"><scope>sala</scope><name>cuantosPersonajes</name></member>
+      <member refid="classsala_1c6ee6cab664ae4efa88eb4b7779b1498" prot="public" virt="non-virtual"><scope>sala</scope><name>devolverCardinalVecino</name></member>
+      <member refid="classsala_13717b76f3e6c98efd83fda02da5a1a06" prot="public" virt="non-virtual"><scope>sala</scope><name>devolverFrente</name></member>
+      <member refid="classsala_1376c8d9684f212f6e8a8d8316f2ab733" prot="public" virt="non-virtual"><scope>sala</scope><name>devolverPimeroLista</name></member>
+      <member refid="classsala_1306fe8573f4ed40792d59a7f9e580b30" prot="public" virt="non-virtual"><scope>sala</scope><name>devolverPrimerPersonaje</name></member>
+      <member refid="classsala_168552d6940a68c2a4cd4351f38acf546" prot="public" virt="non-virtual"><scope>sala</scope><name>escribeLog</name></member>
+      <member refid="classsala_1f02e9b4d4608076a48e51f2c4ddf87d4" prot="public" virt="non-virtual"><scope>sala</scope><name>escribeLogConEspacio</name></member>
+      <member refid="classsala_1b925bf60110c5c9919e4ac83393d3b02" prot="private" virt="non-virtual"><scope>sala</scope><name>frecuencia</name></member>
+      <member refid="classsala_124c1c2cf672362b9e82d0584cd63af97" prot="public" virt="non-virtual"><scope>sala</scope><name>getFrecuenciaSala</name></member>
+      <member refid="classsala_1d6eb9a00920ec3f7eee7134d478ddf76" prot="public" virt="non-virtual"><scope>sala</scope><name>getIdentificadorSala</name></member>
+      <member refid="classsala_1099a7d79e8142f14dacfcc869f5557c3" prot="public" virt="non-virtual"><scope>sala</scope><name>getMarcaSala</name></member>
+      <member refid="classsala_10668a38feb652d27853854bb3c63e2f2" prot="private" virt="non-virtual"><scope>sala</scope><name>idsala</name></member>
+      <member refid="classsala_183833f513f3f53033e6e8fc3cacded73" prot="public" virt="non-virtual"><scope>sala</scope><name>insertarCola</name></member>
+      <member refid="classsala_143d8051f7213fd82d30b5b7b56043877" prot="public" virt="non-virtual"><scope>sala</scope><name>insertarLista</name></member>
+      <member refid="classsala_153263d3109c22a61ebd930d0351e874e" prot="private" virt="non-virtual"><scope>sala</scope><name>lista</name></member>
+      <member refid="classsala_1da6a56ee3499694fe8c3506de7ecf2b1" prot="private" virt="non-virtual"><scope>sala</scope><name>marca</name></member>
+      <member refid="classsala_1468ec985fcba82e578dd81de0102dede" prot="public" virt="non-virtual"><scope>sala</scope><name>mostrar</name></member>
+      <member refid="classsala_1780a8c359e96eaf55403409c019d536a" prot="public" virt="non-virtual"><scope>sala</scope><name>sala</name></member>
+      <member refid="classsala_1265933f2f255cbce1f724d1c07957d69" prot="public" virt="non-virtual"><scope>sala</scope><name>sala</name></member>
+      <member refid="classsala_1ae7603393ce64c66c0d954e7ba452260" prot="public" virt="non-virtual"><scope>sala</scope><name>setFrecuenciaSala</name></member>
+      <member refid="classsala_16e2f990c9e2b6fe2c08ba3853e5299c4" prot="public" virt="non-virtual"><scope>sala</scope><name>setIdentificadorSala</name></member>
+      <member refid="classsala_174d517148cdcaf0aa1a58bc877f9c910" prot="public" virt="non-virtual"><scope>sala</scope><name>setMarcaSala</name></member>
+      <member refid="classsala_1deee4cbad1198682fd86962d35aea256" prot="public" virt="non-virtual"><scope>sala</scope><name>siHayLlaves</name></member>
+      <member refid="classsala_10b13578fe6d2a10d6102920dfc9216b0" prot="public" virt="non-virtual"><scope>sala</scope><name>siHayPersonajes</name></member>
+      <member refid="classsala_1ad5bdd47e00bec0dd3f0d3b39d4c0e7c" prot="private" virt="non-virtual"><scope>sala</scope><name>vecinos</name></member>
+      <member refid="classsala_118ca39a6c0fea0cc2a0d155304b007fb" prot="public" virt="non-virtual"><scope>sala</scope><name>volcarVectorVecinos</name></member>
+      <member refid="classsala_1108d16054e4c939568ab2c301a5cea83" prot="public" virt="non-virtual"><scope>sala</scope><name>~sala</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,294 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classLista" kind="class" prot="public">
+    <compoundname>Lista</compoundname>
+    <innerclass refid="structLista_1_1TipoNodo" prot="private">Lista::TipoNodo</innerclass>
+    <templateparamlist>
+      <param>
+        <type>class</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classLista_151ef3b021604e24c071d9d7fc4fe464c" prot="private" static="no" mutable="no">
+        <type>TipoNodo *</type>
+        <definition>TipoNodo* Lista&lt; T &gt;::inicio</definition>
+        <argsstring></argsstring>
+        <name>inicio</name>
+        <briefdescription>
+<para>Puntero al dato del principio de la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="16" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLista_1980ba832ae372f10c12c45a0b62998a1" prot="private" static="no" mutable="no">
+        <type>TipoNodo *</type>
+        <definition>TipoNodo* Lista&lt; T &gt;::fin</definition>
+        <argsstring></argsstring>
+        <name>fin</name>
+        <briefdescription>
+<para>Puntero al dato del final de la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="17" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classLista_1f1fb04c421ceab618357c72dcb0e54ce" prot="private" static="no" mutable="no">
+        <type>TipoNodo *</type>
+        <definition>TipoNodo* Lista&lt; T &gt;::pInteres</definition>
+        <argsstring></argsstring>
+        <name>pInteres</name>
+        <briefdescription>
+<para>Puntero a un determinado dato de la lista. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="18" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classLista_1dce924e21607848663132290be1a959d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lista&lt; T &gt;::Lista</definition>
+        <argsstring>()</argsstring>
+        <name>Lista</name>
+        <briefdescription>
+<para>inicializa los datos de la lista (punteros a NULL) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="21" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="38" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_1045836581e34db176fa9ea314fb1bbeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Lista&lt; T &gt;::estaVacia</definition>
+        <argsstring>()</argsstring>
+        <name>estaVacia</name>
+        <briefdescription>
+<para>indica si la lista esta vacia o no </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="22" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="44" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_12fd415c8750064cb484e7c14804bba90" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista&lt; T &gt;::moverInicio</definition>
+        <argsstring>()</argsstring>
+        <name>moverInicio</name>
+        <briefdescription>
+<para>mueve el puntero de interés a la posición de inicio (= inicio) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="23" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="51" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_1001dcab41e0de1b4ca927210c925f213" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista&lt; T &gt;::moverFin</definition>
+        <argsstring>()</argsstring>
+        <name>moverFin</name>
+        <briefdescription>
+<para>mueve el puntero de inteŕés a la posición de fin (= fin) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="24" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="55" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_156afa0f4cc4fe8e2777cf723d3d33051" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista&lt; T &gt;::avanzar</definition>
+        <argsstring>()</argsstring>
+        <name>avanzar</name>
+        <briefdescription>
+<para>avanza en una posición el puntero de interés </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="25" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="59" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_131f85f2a80f71ca63f8961c5669016f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista&lt; T &gt;::retroceder</definition>
+        <argsstring>()</argsstring>
+        <name>retroceder</name>
+        <briefdescription>
+<para>retrocede en una posición el puntero de interés </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="26" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="63" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_1b3be68c9b5f42ceda85151272d5b516b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Lista&lt; T &gt;::enInicio</definition>
+        <argsstring>()</argsstring>
+        <name>enInicio</name>
+        <briefdescription>
+<para>devuelve verdadero si el punto de interés está en la posición de inicio (== inicio) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="27" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_1c3faff183e9d650c0257bf1d3a225441" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Lista&lt; T &gt;::enFin</definition>
+        <argsstring>()</argsstring>
+        <name>enFin</name>
+        <briefdescription>
+<para>devuelve verdadero si el punto de interés está en la posición de fin (== fin) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="28" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="74" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_1fb13236e65882f36ff05ab2bf9def266" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Lista&lt; T &gt;::finLista</definition>
+        <argsstring>()</argsstring>
+        <name>finLista</name>
+        <briefdescription>
+<para>devuelve verdadero si el punto de interés alcanza el final de la lista por el principio o por el final (pInteres==NULL ?? ) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="29" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="81" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_1db567d2de384a77c4be2eba2db576a82" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T Lista&lt; T &gt;::consultar</definition>
+        <argsstring>()</argsstring>
+        <name>consultar</name>
+        <briefdescription>
+<para>devuelve el dato apuntado por el puntero de interés </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="30" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="88" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_134139fd96bd52d97eec326cc11fcffca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista&lt; T &gt;::insertar</definition>
+        <argsstring>(T dato)</argsstring>
+        <name>insertar</name>
+        <param>
+          <type>T</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>inserta un dato en la lista (delante del puntero de interés </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="31" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="92" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_150bd114513de3ba1a7eddf201d7e2981" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista&lt; T &gt;::borrar</definition>
+        <argsstring>()</argsstring>
+        <name>borrar</name>
+        <briefdescription>
+<para>borra el dato al que apunta el puntero de interés y avanza el puntero de interés al siguiente dato </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="32" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="130" bodyend="162"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_1937516a29a904ffde578da3b969323a2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Lista&lt; T &gt;::insertarOrdenado</definition>
+        <argsstring>(T dato)</argsstring>
+        <name>insertarOrdenado</name>
+        <param>
+          <type>T</type>
+          <declname>dato</declname>
+        </param>
+        <briefdescription>
+<para>inserta un dato en la lista de manera ordenada </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="34" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="164" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classLista_1f297975e278b0c92cbf67d14b2f08366" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Lista&lt; T &gt;::~Lista</definition>
+        <argsstring>()</argsstring>
+        <name>~Lista</name>
+        <briefdescription>
+<para>libera la memoria de la lista (OJO ¡NO DE LOS DATOS CONTENIDOS!) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="35" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="178" bodyend="183"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="34">
+        <label>Lista&lt; T &gt;</label>
+        <childnode refid="35" relation="usage">
+          <edgelabel>pInteres
+fin
+inicio</edgelabel>
+        </childnode>
+      </node>
+      <node id="35">
+        <label>Lista&lt; T &gt;::TipoNodo</label>
+        <childnode refid="35" relation="usage">
+          <edgelabel>siguiente
+anterior</edgelabel>
+        </childnode>
+        <childnode refid="36" relation="usage">
+          <edgelabel>dato</edgelabel>
+        </childnode>
+      </node>
+      <node id="36">
+        <label>T</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" line="9" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/lista.h" bodystart="9" bodyend="36"/>
+    <listofallmembers>
+      <member refid="classLista_156afa0f4cc4fe8e2777cf723d3d33051" prot="public" virt="non-virtual"><scope>Lista</scope><name>avanzar</name></member>
+      <member refid="classLista_150bd114513de3ba1a7eddf201d7e2981" prot="public" virt="non-virtual"><scope>Lista</scope><name>borrar</name></member>
+      <member refid="classLista_1db567d2de384a77c4be2eba2db576a82" prot="public" virt="non-virtual"><scope>Lista</scope><name>consultar</name></member>
+      <member refid="classLista_1c3faff183e9d650c0257bf1d3a225441" prot="public" virt="non-virtual"><scope>Lista</scope><name>enFin</name></member>
+      <member refid="classLista_1b3be68c9b5f42ceda85151272d5b516b" prot="public" virt="non-virtual"><scope>Lista</scope><name>enInicio</name></member>
+      <member refid="classLista_1045836581e34db176fa9ea314fb1bbeb" prot="public" virt="non-virtual"><scope>Lista</scope><name>estaVacia</name></member>
+      <member refid="classLista_1980ba832ae372f10c12c45a0b62998a1" prot="private" virt="non-virtual"><scope>Lista</scope><name>fin</name></member>
+      <member refid="classLista_1fb13236e65882f36ff05ab2bf9def266" prot="public" virt="non-virtual"><scope>Lista</scope><name>finLista</name></member>
+      <member refid="classLista_151ef3b021604e24c071d9d7fc4fe464c" prot="private" virt="non-virtual"><scope>Lista</scope><name>inicio</name></member>
+      <member refid="classLista_134139fd96bd52d97eec326cc11fcffca" prot="public" virt="non-virtual"><scope>Lista</scope><name>insertar</name></member>
+      <member refid="classLista_1937516a29a904ffde578da3b969323a2" prot="public" virt="non-virtual"><scope>Lista</scope><name>insertarOrdenado</name></member>
+      <member refid="classLista_1dce924e21607848663132290be1a959d" prot="public" virt="non-virtual"><scope>Lista</scope><name>Lista</name></member>
+      <member refid="classLista_1001dcab41e0de1b4ca927210c925f213" prot="public" virt="non-virtual"><scope>Lista</scope><name>moverFin</name></member>
+      <member refid="classLista_12fd415c8750064cb484e7c14804bba90" prot="public" virt="non-virtual"><scope>Lista</scope><name>moverInicio</name></member>
+      <member refid="classLista_1f1fb04c421ceab618357c72dcb0e54ce" prot="private" virt="non-virtual"><scope>Lista</scope><name>pInteres</name></member>
+      <member refid="classLista_131f85f2a80f71ca63f8961c5669016f7" prot="public" virt="non-virtual"><scope>Lista</scope><name>retroceder</name></member>
+      <member refid="classLista_1f297975e278b0c92cbf67d14b2f08366" prot="public" virt="non-virtual"><scope>Lista</scope><name>~Lista</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

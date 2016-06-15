@@ -1,0 +1,122 @@
+#include "trabajador.h"
+#include "estacion.h"
+
+Trabajador::Trabajador()
+ : Miembro()
+{
+}
+
+
+Trabajador::~Trabajador()
+{
+}
+
+void Trabajador::mostrar()
+{
+    cout<<"estoy mostrando un trabajador"<<endl;
+    Miembro::mostrar();
+}
+
+
+
+
+Trabajador::Trabajador(char m, string n, int t, int ids, int idp): Miembro(m,n,t,ids,idp)
+{
+    
+}
+
+void Trabajador::escribeLog(ofstream & f)
+{
+    f<<"(trabajador:";
+    Miembro::escribeLog(f);
+}
+
+void Trabajador::escribeLogRuta(ofstream & f)
+{
+    f<<"(ruta:"<<getMarca()<<":)"<<endl;
+}
+
+void Trabajador::ruta(ofstream & f)
+{
+    escribeLogRuta(f);
+}
+
+void Trabajador::accionUno()
+{
+    Llave *l;
+    planta *p;
+    sala *s;
+    puerta *puer;
+    Estacion *e=Estacion :: obtenerMiEstacion();
+    e->obtenerPlanta(idplanta,p);
+    p->obtenerCeldaVector(idsala,s);
+    if(s->getIdentificadorSala() == p->getSalaSalida()){
+        l=juegollaves->top();
+        p->obtenerPuerta(puer);
+        puer->abrir(l);
+        juegollaves->pop();
+    }
+}
+
+void Trabajador::accionDos()
+{
+    planta *p;
+    sala *s;
+    sala *aux=NULL;
+    Estacion * e = Estacion :: obtenerMiEstacion();
+    e->obtenerPlanta(idplanta,p);
+    p->obtenerCeldaVector(idsala,s);
+    bool puede=false;
+    while(!puede){
+        
+        char c;
+        int naleatorio = GenAleatorios::generarNumero(4);
+        if(naleatorio == 0)
+            c='N';
+        if(naleatorio == 1)
+            c='E';
+        if(naleatorio == 2)
+            c='S';
+        if(naleatorio == 3)
+            c='O';
+        s->devolverCardinalVecino(c,aux);
+        if( aux != NULL)
+            puede= true;
+    }
+    
+    idsala=aux->getIdentificadorSala();
+}
+
+
+void Trabajador::accionTres()
+{
+    queue <Personaje*> *aux=new queue <Personaje*>;
+    Personaje *per;
+    planta *p;
+    sala *s;
+    Llave *l;
+    bool enc=false;
+    Estacion *e = Estacion :: obtenerMiEstacion();
+    e->obtenerPlanta(idplanta,p);
+    p->obtenerCeldaVector(idsala,s);
+    if( s->siHayPersonajes() ){
+        while ( s->siHayPersonajes() ){
+            s->devolverPrimerPersonaje(per);
+            if(typeid (Intruso) == typeid (*per) && !enc){
+                enc=true;
+                if(!per->pilaVacia()){
+                    per->cojerLlave(l);
+                    juegollaves->push(l);
+                }
+            }
+            
+            aux->push(per);
+        }
+        while( !aux->empty() ){
+            s->insertarCola(aux->front());
+            aux->pop();
+        }
+    }
+    delete aux;
+    
+}

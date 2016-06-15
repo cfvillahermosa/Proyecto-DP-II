@@ -1,0 +1,268 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="miembro_8cpp" kind="file">
+    <compoundname>miembro.cpp</compoundname>
+    <includes refid="miembro_8h" local="yes">miembro.h</includes>
+    <includes refid="estacion_8h" local="yes">estacion.h</includes>
+    <incdepgraph>
+      <node id="386">
+        <label>list</label>
+      </node>
+      <node id="361">
+        <label>Desktop/academia_lp2/EC3_LPII/src/miembro.cpp</label>
+        <link refid="miembro.cpp"/>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="370" relation="include">
+        </childnode>
+      </node>
+      <node id="365">
+        <label>queue</label>
+      </node>
+      <node id="362">
+        <label>miembro.h</label>
+        <link refid="miembro_8h-source"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+      </node>
+      <node id="388">
+        <label>trabajador.h</label>
+        <link refid="trabajador_8h-source"/>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+      </node>
+      <node id="375">
+        <label>intruso.h</label>
+        <link refid="intruso_8h-source"/>
+        <childnode refid="363" relation="include">
+        </childnode>
+        <childnode refid="376" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+      </node>
+      <node id="371">
+        <label>cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="372" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="374" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="375" relation="include">
+        </childnode>
+        <childnode refid="387" relation="include">
+        </childnode>
+        <childnode refid="388" relation="include">
+        </childnode>
+      </node>
+      <node id="382">
+        <label>sala.h</label>
+        <link refid="sala_8h-source"/>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="363" relation="include">
+        </childnode>
+      </node>
+      <node id="373">
+        <label>string</label>
+      </node>
+      <node id="379">
+        <label>puerta.h</label>
+        <link refid="puerta_8h-source"/>
+        <childnode refid="380" relation="include">
+        </childnode>
+        <childnode refid="381" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+      </node>
+      <node id="387">
+        <label>lider.h</label>
+        <link refid="lider_8h-source"/>
+        <childnode refid="362" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+      <node id="367">
+        <label>fstream</label>
+      </node>
+      <node id="385">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+      </node>
+      <node id="383">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="384" relation="include">
+        </childnode>
+      </node>
+      <node id="377">
+        <label>planta.h</label>
+        <link refid="planta_8h-source"/>
+        <childnode refid="378" relation="include">
+        </childnode>
+        <childnode refid="379" relation="include">
+        </childnode>
+        <childnode refid="382" relation="include">
+        </childnode>
+        <childnode refid="383" relation="include">
+        </childnode>
+        <childnode refid="385" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="386" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+      <node id="376">
+        <label>typeinfo</label>
+      </node>
+      <node id="378">
+        <label>vector</label>
+      </node>
+      <node id="366">
+        <label>stack</label>
+      </node>
+      <node id="370">
+        <label>estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="371" relation="include">
+        </childnode>
+        <childnode refid="377" relation="include">
+        </childnode>
+      </node>
+      <node id="369">
+        <label>cstdlib</label>
+      </node>
+      <node id="368">
+        <label>llave.h</label>
+        <link refid="llave_8h-source"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+      </node>
+      <node id="364">
+        <label>iostream</label>
+      </node>
+      <node id="363">
+        <label>personaje.h</label>
+        <link refid="personaje_8h-source"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="365" relation="include">
+        </childnode>
+        <childnode refid="366" relation="include">
+        </childnode>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="368" relation="include">
+        </childnode>
+      </node>
+      <node id="380">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+      </node>
+      <node id="384">
+        <label>set</label>
+      </node>
+      <node id="372">
+        <label>fichero.h</label>
+        <link refid="fichero_8h"/>
+        <childnode refid="367" relation="include">
+        </childnode>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="373" relation="include">
+        </childnode>
+      </node>
+      <node id="381">
+        <label>lista.h</label>
+        <link refid="lista_8h-source"/>
+        <childnode refid="364" relation="include">
+        </childnode>
+        <childnode refid="369" relation="include">
+        </childnode>
+      </node>
+      <node id="374">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;miembro.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;estacion.h&quot;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><ref refid="classMiembro_1d5ad341737a1f4631694393c99204d91" kindref="member">Miembro::Miembro</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/>:<sp/><ref refid="classPersonaje" kindref="compound">Personaje</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="classMiembro_1d8af12663ae1b9a195d05b4f700726c3" kindref="member">Miembro::~Miembro</ref>()</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="26"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMiembro_128498c7229e81e64d0cb7ea69515dca0" kindref="member">Miembro::mostrar</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;estoy<sp/>mostrando<sp/>un<sp/>miembro&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPersonaje_1e9f6bd8027b8a5c2e660a327d9e513ca" kindref="member">Personaje :: mostrar</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMiembro_1b286484cab275d7754c6ce2b513fdc9a" kindref="member">Miembro::accionCuatro</ref>()</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classLlave" kindref="compound">Llave</ref><sp/>*l;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsala" kindref="compound">sala</ref><sp/>*s;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classplanta" kindref="compound">planta</ref><sp/>*p;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEstacion" kindref="compound">Estacion</ref><sp/>*e<sp/>=<sp/>Estacion<sp/>::<sp/>obtenerMiEstacion();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="classEstacion_1846fcf5591b3a021072365cfd7902b4c" kindref="member">obtenerPlanta</ref>(idplanta,p);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(idsala!=1111){</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p-&gt;<ref refid="classplanta_1c97835a31f875ecdc01f33517dfc71d4" kindref="member">obtenerCeldaVector</ref>(idsala,s);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(s-&gt;<ref refid="classsala_1deee4cbad1198682fd86962d35aea256" kindref="member">siHayLlaves</ref>()){</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s-&gt;<ref refid="classsala_1376c8d9684f212f6e8a8d8316f2ab733" kindref="member">devolverPimeroLista</ref>(l);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>juegollaves-&gt;push(l);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><ref refid="classMiembro_1d5ad341737a1f4631694393c99204d91" kindref="member">Miembro::Miembro</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ids,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idp):<sp/><ref refid="classPersonaje" kindref="compound">Personaje</ref>(m,n,t,ids,idp)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/miembro.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,288 @@
+\hypertarget{classpuerta}{
+\section{puerta Class Reference}
+\label{classpuerta}\index{puerta@{puerta}}
+}
+{\tt \#include $<$puerta.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classpuerta_dae189c1b2be845ba10b3335e4c3b91d}{puerta} ()
+\item 
+\hyperlink{classpuerta_237f56c4736c97891edb19aeee750ed2}{puerta} (string ec, int alt)
+\item 
+int \hyperlink{classpuerta_facb52e11a8a2b23437d4d0821187edc}{getAlturaMaxima} ()
+\item 
+void \hyperlink{classpuerta_4dbec0518d2dfbf78e636ea18352cfe1}{setAlturaMaxima} (int a)
+\item 
+void \hyperlink{classpuerta_c7020654ddeefc2cdfd937fd5d3f6749}{setEstadoCerradura} (string e)
+\item 
+string \hyperlink{classpuerta_3c87fcb19f24d5348db587f0c6a9b27d}{getEstadoCerradura} ()
+\item 
+void \hyperlink{classpuerta_fc919a28f4751159e5109ec43e691e0e}{configurarPuerta} (Lista$<$ \hyperlink{classLlave}{Llave} $\ast$ $>$ $\ast$l)
+\item 
+void \hyperlink{classpuerta_8c3078b9245cb0fbc37e7f1b662be74b}{cerrar} ()
+\item 
+bool \hyperlink{classpuerta_a70c9e4a8a59555d1ba15caff7849497}{abrir} (\hyperlink{classLlave}{Llave} $\ast$l)
+\item 
+bool \hyperlink{classpuerta_9f108f67092846743458195fca60d6ca}{siEstaLlaveProbada} (\hyperlink{classLlave}{Llave} $\ast$l)
+\item 
+void \hyperlink{classpuerta_d4d085f48f3b014afbba4113510b63d8}{liberarArbol} (\hyperlink{classArbol}{Arbol}$<$ \hyperlink{classLlave}{Llave} $\ast$ $>$ $\ast$\&arbol)
+\item 
+void \hyperlink{classpuerta_e2bcee3940c85671615c2331bba3b755}{eliminarlista} (Lista$<$ \hyperlink{classLlave}{Llave} $\ast$ $>$ $\ast$\&l)
+\item 
+void \hyperlink{classpuerta_db48cb6b90ccdc012aa488850ac458b1}{escribirFichero} (ofstream \&f)
+\item 
+void \hyperlink{classpuerta_be41e285663cf9f509e6fe0583ba4202}{escribirInordenLlaves} (ofstream \&f, \hyperlink{classArbol}{Arbol}$<$ \hyperlink{classLlave}{Llave} $\ast$ $>$ $\ast$\&a)
+\item 
+\hyperlink{classpuerta_207e0983ca66391ee628453dffcf619f}{$\sim$puerta} ()
+\end{CompactItemize}
+\subsection*{Friends}
+\begin{CompactItemize}
+\item 
+ostream \& \hyperlink{classpuerta_490c20cc328bef002a79831d7d649b47}{operator$<$$<$} (ostream \&f, \hyperlink{classpuerta}{puerta} \&p)
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[Author:]Carlos Fernández Villahermosa $<$\href{mailto:cfernandnv@alumnos.unex.es}{\tt cfernandnv@alumnos.unex.es}$>$ \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classpuerta_dae189c1b2be845ba10b3335e4c3b91d}{
+\index{puerta@{puerta}!puerta@{puerta}}
+\index{puerta@{puerta}!puerta@{puerta}}
+\subsubsection[puerta]{\setlength{\rightskip}{0pt plus 5cm}puerta::puerta ()}}
+\label{classpuerta_dae189c1b2be845ba10b3335e4c3b91d}
+
+
+Constructor por defecto de mi clase Puerta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classpuerta_237f56c4736c97891edb19aeee750ed2}{
+\index{puerta@{puerta}!puerta@{puerta}}
+\index{puerta@{puerta}!puerta@{puerta}}
+\subsubsection[puerta]{\setlength{\rightskip}{0pt plus 5cm}puerta::puerta (string {\em ec}, \/  int {\em alt})}}
+\label{classpuerta_237f56c4736c97891edb19aeee750ed2}
+
+
+Constructor parametrizado de mi clase Puerta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ec}]es un parametro de entrada del tipo string asociado al atributo estadoCerradura de mi clase Puerta \item[{\em alt}]es un parametro de entrada del tipo entero asociado al atributo alturaMaxima de mi clase Puerta \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classpuerta_207e0983ca66391ee628453dffcf619f}{
+\index{puerta@{puerta}!$\sim$puerta@{$\sim$puerta}}
+\index{$\sim$puerta@{$\sim$puerta}!puerta@{puerta}}
+\subsubsection[$\sim$puerta]{\setlength{\rightskip}{0pt plus 5cm}puerta::$\sim$puerta ()}}
+\label{classpuerta_207e0983ca66391ee628453dffcf619f}
+
+
+Destructor de mi clase Puerta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classpuerta_facb52e11a8a2b23437d4d0821187edc}{
+\index{puerta@{puerta}!getAlturaMaxima@{getAlturaMaxima}}
+\index{getAlturaMaxima@{getAlturaMaxima}!puerta@{puerta}}
+\subsubsection[getAlturaMaxima]{\setlength{\rightskip}{0pt plus 5cm}int puerta::getAlturaMaxima ()}}
+\label{classpuerta_facb52e11a8a2b23437d4d0821187edc}
+
+
+Metodo que me devuelve el valor de mi atributo alturaMaxima de mi clase Puerta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna el valor asociado al atributo alturaMaxima de mi clase Puerta \end{Desc}
+\hypertarget{classpuerta_4dbec0518d2dfbf78e636ea18352cfe1}{
+\index{puerta@{puerta}!setAlturaMaxima@{setAlturaMaxima}}
+\index{setAlturaMaxima@{setAlturaMaxima}!puerta@{puerta}}
+\subsubsection[setAlturaMaxima]{\setlength{\rightskip}{0pt plus 5cm}void puerta::setAlturaMaxima (int {\em a})}}
+\label{classpuerta_4dbec0518d2dfbf78e636ea18352cfe1}
+
+
+Metodo que establece el valor a al atributo alturaMaxima de mi clase Puerta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em a}]es un parametro de entrada del tipo entero asociado al valor del atributo alturaMaxima de mi clase Puerta \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classpuerta_c7020654ddeefc2cdfd937fd5d3f6749}{
+\index{puerta@{puerta}!setEstadoCerradura@{setEstadoCerradura}}
+\index{setEstadoCerradura@{setEstadoCerradura}!puerta@{puerta}}
+\subsubsection[setEstadoCerradura]{\setlength{\rightskip}{0pt plus 5cm}void puerta::setEstadoCerradura (string {\em e})}}
+\label{classpuerta_c7020654ddeefc2cdfd937fd5d3f6749}
+
+
+Metodo que establece el valor del atributo estadoCerradura de mi clase Puerta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em e}]es un parametro de entrada del tipo string asociado al atributo estadoCerradura de mi clase Puerta \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classpuerta_3c87fcb19f24d5348db587f0c6a9b27d}{
+\index{puerta@{puerta}!getEstadoCerradura@{getEstadoCerradura}}
+\index{getEstadoCerradura@{getEstadoCerradura}!puerta@{puerta}}
+\subsubsection[getEstadoCerradura]{\setlength{\rightskip}{0pt plus 5cm}string puerta::getEstadoCerradura ()}}
+\label{classpuerta_3c87fcb19f24d5348db587f0c6a9b27d}
+
+
+Metodo que devuelve el string asociado al valor del atributo estadoCerradura de mi clase Puerta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna el string asociado al atributo estadoCerradura de mi clase Puerta \end{Desc}
+\hypertarget{classpuerta_fc919a28f4751159e5109ec43e691e0e}{
+\index{puerta@{puerta}!configurarPuerta@{configurarPuerta}}
+\index{configurarPuerta@{configurarPuerta}!puerta@{puerta}}
+\subsubsection[configurarPuerta]{\setlength{\rightskip}{0pt plus 5cm}void puerta::configurarPuerta (Lista$<$ {\bf Llave} $\ast$ $>$ $\ast$ {\em l})}}
+\label{classpuerta_fc919a28f4751159e5109ec43e691e0e}
+
+
+Metodo que configura la \hyperlink{classpuerta}{puerta} insertando todas las llaves de mi lista de llaves de forma ordenada \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]es un parametro de entrada del tipo puntero a instancia de mi clase lista que contiene punteros a instancias de mi clase \hyperlink{classLlave}{Llave} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classpuerta_8c3078b9245cb0fbc37e7f1b662be74b}{
+\index{puerta@{puerta}!cerrar@{cerrar}}
+\index{cerrar@{cerrar}!puerta@{puerta}}
+\subsubsection[cerrar]{\setlength{\rightskip}{0pt plus 5cm}void puerta::cerrar ()}}
+\label{classpuerta_8c3078b9245cb0fbc37e7f1b662be74b}
+
+
+Metodo que cierra mi \hyperlink{classpuerta}{puerta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classpuerta_a70c9e4a8a59555d1ba15caff7849497}{
+\index{puerta@{puerta}!abrir@{abrir}}
+\index{abrir@{abrir}!puerta@{puerta}}
+\subsubsection[abrir]{\setlength{\rightskip}{0pt plus 5cm}bool puerta::abrir ({\bf Llave} $\ast$ {\em l})}}
+\label{classpuerta_a70c9e4a8a59555d1ba15caff7849497}
+
+
+Metodo booleano que se encarga de probar una llave l para comprobar si puede abrise o no mi \hyperlink{classpuerta}{puerta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]es un parametro de entrada del tipo puntero a instancia de mi clase \hyperlink{classLlave}{Llave} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true en caso de que la llave probada sea valida para abrir mi \hyperlink{classpuerta}{puerta} y false en caso contrario \end{Desc}
+\hypertarget{classpuerta_9f108f67092846743458195fca60d6ca}{
+\index{puerta@{puerta}!siEstaLlaveProbada@{siEstaLlaveProbada}}
+\index{siEstaLlaveProbada@{siEstaLlaveProbada}!puerta@{puerta}}
+\subsubsection[siEstaLlaveProbada]{\setlength{\rightskip}{0pt plus 5cm}bool puerta::siEstaLlaveProbada ({\bf Llave} $\ast$ {\em l})}}
+\label{classpuerta_9f108f67092846743458195fca60d6ca}
+
+
+Metodo booleano que me indica si la llave l ha sido probada para abrir mi \hyperlink{classpuerta}{puerta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]es un parametro de entrada del tipo puntero a instancia de mi clase \hyperlink{classLlave}{Llave} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true en caso de que la llave l haya sido probada y false en caso contrario \end{Desc}
+\hypertarget{classpuerta_d4d085f48f3b014afbba4113510b63d8}{
+\index{puerta@{puerta}!liberarArbol@{liberarArbol}}
+\index{liberarArbol@{liberarArbol}!puerta@{puerta}}
+\subsubsection[liberarArbol]{\setlength{\rightskip}{0pt plus 5cm}void puerta::liberarArbol ({\bf Arbol}$<$ {\bf Llave} $\ast$ $>$ $\ast$\& {\em arbol})}}
+\label{classpuerta_d4d085f48f3b014afbba4113510b63d8}
+
+
+Metodo que se encarga de liberar la memoria de mi arbol de llaves arbol \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em arbol}]es un parametro de entrada salida del tipo puntero a instancia de la clase arbol \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classpuerta_e2bcee3940c85671615c2331bba3b755}{
+\index{puerta@{puerta}!eliminarlista@{eliminarlista}}
+\index{eliminarlista@{eliminarlista}!puerta@{puerta}}
+\subsubsection[eliminarlista]{\setlength{\rightskip}{0pt plus 5cm}void puerta::eliminarlista (Lista$<$ {\bf Llave} $\ast$ $>$ $\ast$\& {\em l})}}
+\label{classpuerta_e2bcee3940c85671615c2331bba3b755}
+
+
+Metodo que elimina de la lista de llaves la llave l \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]es un parametro de entrada salida del tipo puntero a instancia de la clase llave que corresponde con la llave que se quiere eliminar de la lista \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classpuerta_db48cb6b90ccdc012aa488850ac458b1}{
+\index{puerta@{puerta}!escribirFichero@{escribirFichero}}
+\index{escribirFichero@{escribirFichero}!puerta@{puerta}}
+\subsubsection[escribirFichero]{\setlength{\rightskip}{0pt plus 5cm}void puerta::escribirFichero (ofstream \& {\em f})}}
+\label{classpuerta_db48cb6b90ccdc012aa488850ac458b1}
+
+
+Metodo que se encarga de escribir en mi registro.log la informacion contenida en la \hyperlink{classpuerta}{puerta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classpuerta_be41e285663cf9f509e6fe0583ba4202}{
+\index{puerta@{puerta}!escribirInordenLlaves@{escribirInordenLlaves}}
+\index{escribirInordenLlaves@{escribirInordenLlaves}!puerta@{puerta}}
+\subsubsection[escribirInordenLlaves]{\setlength{\rightskip}{0pt plus 5cm}void puerta::escribirInordenLlaves (ofstream \& {\em f}, \/  {\bf Arbol}$<$ {\bf Llave} $\ast$ $>$ $\ast$\& {\em arbol})}}
+\label{classpuerta_be41e285663cf9f509e6fe0583ba4202}
+
+
+Metodo que se encarga de escribir en mi registro.log de forma ordenada las llaves contenidas en el parametro arbol \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \item[{\em arbol}]es un parametro de entrada salida del tipo puntero a instancia de mi clase arbol que contiene las llaves de mi clase \hyperlink{classpuerta}{puerta} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classpuerta_490c20cc328bef002a79831d7d649b47}{
+\index{puerta@{puerta}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!puerta@{puerta}}
+\subsubsection[operator$<$$<$]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em f}, \/  {\bf puerta} \& {\em p})\hspace{0.3cm}{\tt  \mbox{[}friend\mbox{]}}}}
+\label{classpuerta_490c20cc328bef002a79831d7d649b47}
+
+
+Sobrecarga del operador \char`\"{}$<$$<$\char`\"{} de mi clase Puerta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \item[{\em p}]es un parametro de entrada salida de mi clase Puerta \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/puerta.h\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/puerta.cpp\end{CompactItemize}

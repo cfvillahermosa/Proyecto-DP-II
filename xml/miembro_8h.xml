@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="miembro_8h" kind="file">
+    <compoundname>miembro.h</compoundname>
+    <includes refid="personaje_8h" local="no">personaje.h</includes>
+    <includedby refid="lider_8h" local="no">Desktop/academia_lp2/EC3_LPII/src/lider.h</includedby>
+    <includedby refid="trabajador_8h" local="no">Desktop/academia_lp2/EC3_LPII/src/trabajador.h</includedby>
+    <includedby refid="miembro_8cpp" local="yes">Desktop/academia_lp2/EC3_LPII/src/miembro.cpp</includedby>
+    <incdepgraph>
+      <node id="393">
+        <label>queue</label>
+      </node>
+      <node id="390">
+        <label>Desktop/academia_lp2/EC3_LPII/src/miembro.h</label>
+        <link refid="miembro.h"/>
+        <childnode refid="391" relation="include">
+        </childnode>
+      </node>
+      <node id="395">
+        <label>fstream</label>
+      </node>
+      <node id="394">
+        <label>stack</label>
+      </node>
+      <node id="397">
+        <label>cstdlib</label>
+      </node>
+      <node id="396">
+        <label>llave.h</label>
+        <link refid="llave_8h-source"/>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="397" relation="include">
+        </childnode>
+      </node>
+      <node id="392">
+        <label>iostream</label>
+      </node>
+      <node id="391">
+        <label>personaje.h</label>
+        <link refid="personaje_8h-source"/>
+        <childnode refid="392" relation="include">
+        </childnode>
+        <childnode refid="393" relation="include">
+        </childnode>
+        <childnode refid="394" relation="include">
+        </childnode>
+        <childnode refid="395" relation="include">
+        </childnode>
+        <childnode refid="396" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="398">
+        <label>Desktop/academia_lp2/EC3_LPII/src/miembro.h</label>
+        <link refid="miembro.h"/>
+        <childnode refid="399" relation="include">
+        </childnode>
+        <childnode refid="404" relation="include">
+        </childnode>
+      </node>
+      <node id="404">
+        <label>Desktop/academia_lp2/EC3_LPII/src/trabajador.h</label>
+        <link refid="trabajador_8h-source"/>
+        <childnode refid="400" relation="include">
+        </childnode>
+      </node>
+      <node id="400">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="401" relation="include">
+        </childnode>
+        <childnode refid="402" relation="include">
+        </childnode>
+        <childnode refid="403" relation="include">
+        </childnode>
+      </node>
+      <node id="399">
+        <label>Desktop/academia_lp2/EC3_LPII/src/lider.h</label>
+        <link refid="lider_8h-source"/>
+        <childnode refid="400" relation="include">
+        </childnode>
+      </node>
+      <node id="402">
+        <label>Desktop/academia_lp2/EC3_LPII/src/estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="401" relation="include">
+        </childnode>
+      </node>
+      <node id="401">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+      <node id="403">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classMiembro" prot="public">Miembro</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>MIEMBRO_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>MIEMBRO_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;personaje.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="classMiembro" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMiembro" kindref="compound">Miembro</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classPersonaje" kindref="compound">Personaje</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMiembro_1d5ad341737a1f4631694393c99204d91" kindref="member">Miembro</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMiembro_1d5ad341737a1f4631694393c99204d91" kindref="member">Miembro</ref><sp/>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ids,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idp);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMiembro_128498c7229e81e64d0cb7ea69515dca0" kindref="member">mostrar</ref>();</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMiembro_1b286484cab275d7754c6ce2b513fdc9a" kindref="member">accionCuatro</ref><sp/>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMiembro_1d8af12663ae1b9a195d05b4f700726c3" kindref="member">~Miembro</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/miembro.h"/>
+  </compounddef>
+</doxygen>

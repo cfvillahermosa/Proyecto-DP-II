@@ -1,0 +1,386 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classTrabajador" kind="class" prot="public">
+    <compoundname>Trabajador</compoundname>
+    <basecompoundref refid="classMiembro" prot="public" virt="non-virtual">Miembro</basecompoundref>
+    <includes refid="trabajador_8h" local="no">trabajador.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTrabajador_13238c3ef60a3e888aa1995399fbee23d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Trabajador::Trabajador</definition>
+        <argsstring>()</argsstring>
+        <name>Trabajador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor por defecto de mi clase trabajador <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="13" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrabajador_10596d6d4ac1eaab49ccabb42dfd2fc68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Trabajador::Trabajador</definition>
+        <argsstring>(char m, string n, int t, int ids, int idp)</argsstring>
+        <name>Trabajador</name>
+        <param>
+          <type>char</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ids</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>idp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor parametrizado de mi clase <ref refid="classTrabajador" kindref="compound">Trabajador</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo char asociado al atributo marca de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo string asociado al atributo Nombre de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>t</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo turno de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ids</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo idsala de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>idp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un parametro de entrada del tipo entero asociado al atributo idplanta de mi clase <ref refid="classPersonaje" kindref="compound">Personaje</ref> </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="14" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrabajador_149e5a94181d6a517d9f5213335da1e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Trabajador::mostrar</definition>
+        <argsstring>()</argsstring>
+        <name>mostrar</name>
+        <reimplements refid="classMiembro_128498c7229e81e64d0cb7ea69515dca0">mostrar</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra por pantalla el tipo de personaje del cual se trata, en este caso, trabajador <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="15" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="26" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrabajador_1332796b26094df07fa7b8b39c345f8f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Trabajador::escribeLog</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>escribeLog</name>
+        <reimplements refid="classPersonaje_186fe4a1ff708072d98c6be42bbd512ea">escribeLog</reimplements>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que escribe en mi registro.log la informacion correspondiente al trabajador <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="16" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="52" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrabajador_16b940e57a18466eafa2dcfe0a60313d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Trabajador::ruta</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>ruta</name>
+        <reimplements refid="classPersonaje_1f6dc20013805229005dfb87fc6f273b5">ruta</reimplements>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que llama al escribelogRuta de mi clase <ref refid="classTrabajador" kindref="compound">Trabajador</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="17" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="71" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrabajador_1ae7afce778764088e53c23b21876ac96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Trabajador::escribeLogRuta</definition>
+        <argsstring>(ofstream &amp;f)</argsstring>
+        <name>escribeLogRuta</name>
+        <param>
+          <type>ofstream &amp;</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que escribe en mi registro.log la informacion correspondiente a la ruta del trabajador <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>f</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es un flujo de entrada salida </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="18" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="62" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrabajador_1ea6e8089295c87f0b5a5014895f28526" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Trabajador::accionUno</definition>
+        <argsstring>()</argsstring>
+        <name>accionUno</name>
+        <reimplements refid="classPersonaje_10454b75ccc8f7e33f03e2cfb2c59e725">accionUno</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo realiza la accion uno correspondiente al trabajador <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="19" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="80" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrabajador_1598df69f74628e4da5d0dc776c98b114" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Trabajador::accionDos</definition>
+        <argsstring>()</argsstring>
+        <name>accionDos</name>
+        <reimplements refid="classPersonaje_1af7763eb6099390038b7833129a1ef9f">accionDos</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo realiza la accion dos correspondiente al trabajador <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="20" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="101" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrabajador_19203576ae93a8854b033f1d91e25fee7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Trabajador::accionTres</definition>
+        <argsstring>()</argsstring>
+        <name>accionTres</name>
+        <reimplements refid="classPersonaje_185c25ff0362bf4f4f5e69965c1ae4cfb">accionTres</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo realiza la accion tres correspondiente al trabajador <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="21" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="135" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classTrabajador_1aa31c7df293b6d054e0e41e4b0e27412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Trabajador::~Trabajador</definition>
+        <argsstring>()</argsstring>
+        <name>~Trabajador</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor de mi clase <ref refid="classTrabajador" kindref="compound">Trabajador</ref> <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>no recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>no retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="24" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.cpp" bodystart="18" bodyend="20"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Carlos,,, &lt;carlos-linux&gt; </para></simplesect>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="84">
+        <label>Miembro</label>
+        <link refid="classMiembro"/>
+        <childnode refid="85" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>Trabajador</label>
+        <link refid="classTrabajador"/>
+        <childnode refid="84" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>Personaje</label>
+        <link refid="classPersonaje"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="87">
+        <label>Miembro</label>
+        <link refid="classMiembro"/>
+        <childnode refid="88" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>Trabajador</label>
+        <link refid="classTrabajador"/>
+        <childnode refid="87" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>Personaje</label>
+        <link refid="classPersonaje"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" line="11" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/trabajador.h" bodystart="10" bodyend="26"/>
+    <listofallmembers>
+      <member refid="classMiembro_1b286484cab275d7754c6ce2b513fdc9a" prot="public" virt="virtual"><scope>Trabajador</scope><name>accionCuatro</name></member>
+      <member refid="classTrabajador_1598df69f74628e4da5d0dc776c98b114" prot="public" virt="virtual"><scope>Trabajador</scope><name>accionDos</name></member>
+      <member refid="classTrabajador_19203576ae93a8854b033f1d91e25fee7" prot="public" virt="virtual"><scope>Trabajador</scope><name>accionTres</name></member>
+      <member refid="classTrabajador_1ea6e8089295c87f0b5a5014895f28526" prot="public" virt="virtual"><scope>Trabajador</scope><name>accionUno</name></member>
+      <member refid="classPersonaje_18880afa570d1f919516e2810b2226b08" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>cojerLlave</name></member>
+      <member refid="classTrabajador_1332796b26094df07fa7b8b39c345f8f4" prot="public" virt="virtual"><scope>Trabajador</scope><name>escribeLog</name></member>
+      <member refid="classTrabajador_1ae7afce778764088e53c23b21876ac96" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>escribeLogRuta</name></member>
+      <member refid="classPersonaje_1f388d329d466b136c60fa26c6c4800a7" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>getIdPlanta</name></member>
+      <member refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>getIdSala</name></member>
+      <member refid="classPersonaje_136e1ba57799adb58163bec5a4f0015e0" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>getMarca</name></member>
+      <member refid="classPersonaje_1801e7fe38d0727d3219e51e916e2ce67" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>getNombre</name></member>
+      <member refid="classPersonaje_1425c743df0309deab48e9575d715eed9" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>getTurno</name></member>
+      <member refid="classPersonaje_18160f258ed0b5836b1173cbef638bde3" prot="protected" virt="non-virtual"><scope>Trabajador</scope><name>idplanta</name></member>
+      <member refid="classPersonaje_131a8a079b785a74622cc8dd51a9f745c" prot="protected" virt="non-virtual"><scope>Trabajador</scope><name>idsala</name></member>
+      <member refid="classPersonaje_166ec23478444efc795d29734cc010809" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>insertarCola</name></member>
+      <member refid="classPersonaje_16ede7d70599342ba61eb034027a41f2a" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>insertarPila</name></member>
+      <member refid="classPersonaje_1e98a94dc9f84d09e3a62266d5cac700c" prot="protected" virt="non-virtual"><scope>Trabajador</scope><name>juegollaves</name></member>
+      <member refid="classPersonaje_11ad939228d858b75826ddb4effa67ceb" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>liberarMemoriaPila</name></member>
+      <member refid="classPersonaje_18f20063ad43d9f85a6d1f0022d32e0b4" prot="protected" virt="non-virtual"><scope>Trabajador</scope><name>marca</name></member>
+      <member refid="classMiembro_1d5ad341737a1f4631694393c99204d91" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>Miembro</name></member>
+      <member refid="classMiembro_1d90b29c63638e16aa8f83f978cb7ec47" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>Miembro</name></member>
+      <member refid="classTrabajador_149e5a94181d6a517d9f5213335da1e27" prot="public" virt="virtual"><scope>Trabajador</scope><name>mostrar</name></member>
+      <member refid="classPersonaje_10c1fedf7d7ec93a6ca1d38aa6a79b7e2" prot="protected" virt="non-virtual"><scope>Trabajador</scope><name>nombre</name></member>
+      <member refid="classPersonaje_1be7f26619dd67133806688d4306d877e" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>operator!=</name></member>
+      <member refid="classPersonaje_1e55182c2fd21118b27c5e911f800c1d6" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>operator&lt;</name></member>
+      <member refid="classPersonaje_1824156240864cc79a8b7319985eaec58" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>operator&lt;=</name></member>
+      <member refid="classPersonaje_15870893672c215b1d99594233f7f5fd0" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>operator==</name></member>
+      <member refid="classPersonaje_17717f9a6ad3d7b68a5c953930510f575" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>operator&gt;</name></member>
+      <member refid="classPersonaje_15b7fbb10c092e6f953738fa54a380e33" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>operator&gt;=</name></member>
+      <member refid="classPersonaje_19238a75aae652b20dd423e85cfa1ee17" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>Personaje</name></member>
+      <member refid="classPersonaje_1a86eafddc218e8afa94f989b3642bcbd" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>Personaje</name></member>
+      <member refid="classPersonaje_127166f7a52fcfb3570e0dc20f37a2402" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>pilaVacia</name></member>
+      <member refid="classTrabajador_16b940e57a18466eafa2dcfe0a60313d3" prot="public" virt="virtual"><scope>Trabajador</scope><name>ruta</name></member>
+      <member refid="classPersonaje_1ea1a86738c789e65792ed745039bce46" prot="protected" virt="non-virtual"><scope>Trabajador</scope><name>secuencia</name></member>
+      <member refid="classPersonaje_1361e72e69c915f6e0c7d2c5e82ae0744" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>setIdPlanta</name></member>
+      <member refid="classPersonaje_143a551a88fe3c6d4458719135992114b" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>setIdSala</name></member>
+      <member refid="classPersonaje_1475630fe753b7fb80a2472c558d99169" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>setMarca</name></member>
+      <member refid="classPersonaje_12e84ee485f46b434f1d23558ad3eb7c9" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>setNombre</name></member>
+      <member refid="classPersonaje_1de04da7a674a165aeaa09566b219a828" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>setTurno</name></member>
+      <member refid="classPersonaje_1786951aff09e227527d3da60338effec" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>TodasAcciones</name></member>
+      <member refid="classTrabajador_13238c3ef60a3e888aa1995399fbee23d" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>Trabajador</name></member>
+      <member refid="classTrabajador_10596d6d4ac1eaab49ccabb42dfd2fc68" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>Trabajador</name></member>
+      <member refid="classPersonaje_10bce8e11746271ccf72035ea3da1138e" prot="protected" virt="non-virtual"><scope>Trabajador</scope><name>turno</name></member>
+      <member refid="classMiembro_1d8af12663ae1b9a195d05b4f700726c3" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>~Miembro</name></member>
+      <member refid="classPersonaje_10b3c25862a6081aaee96e77c08edda29" prot="public" virt="virtual"><scope>Trabajador</scope><name>~Personaje</name></member>
+      <member refid="classTrabajador_1aa31c7df293b6d054e0e41e4b0e27412" prot="public" virt="non-virtual"><scope>Trabajador</scope><name>~Trabajador</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

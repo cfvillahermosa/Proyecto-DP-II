@@ -1,0 +1,698 @@
+\hypertarget{classplanta}{
+\section{planta Class Reference}
+\label{classplanta}\index{planta@{planta}}
+}
+{\tt \#include $<$planta.h$>$}
+
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classplanta_4c93b85a355bf29b1613cc22f0ed0f46}{planta} ()
+\item 
+\hyperlink{classplanta_e6a56480cf07955e354043f1221177fe}{planta} (int idp, int se, int ss, int nll, int anch, int alt)
+\item 
+void \hyperlink{classplanta_cd23abae2d6e377abe25d48d850f7319}{setIdPlanta} (int n)
+\item 
+int \hyperlink{classplanta_6e9b552f6542f68eca605ed69a283980}{getIdPlanta} ()
+\item 
+void \hyperlink{classplanta_b322da5e5360a302601c15c98748213c}{setSalaEntrada} (int n)
+\item 
+int \hyperlink{classplanta_9ea0125af87508895b27bc0c2235e42a}{getSalaEntrada} ()
+\item 
+void \hyperlink{classplanta_3a3256c74ea714e55de672068d05ec4d}{setSalaSalida} (int n)
+\item 
+int \hyperlink{classplanta_dbb3b23569c310dcd01163e09674009c}{getSalaSalida} ()
+\item 
+void \hyperlink{classplanta_4b11a7bc1bd000f01a7af5da1df7a285}{setNLlaves} (int n)
+\item 
+int \hyperlink{classplanta_5087143df250ee8686a3c5387961f01e}{getNLlaves} ()
+\item 
+void \hyperlink{classplanta_aa7dd29c052394b78b67d7be90bbb3c3}{setAnchoPlanta} (int n)
+\item 
+int \hyperlink{classplanta_ef93598d5bca7e2235035a07147f4bbe}{getAnchoPlanta} ()
+\item 
+void \hyperlink{classplanta_935647ba7aa07152ac9a4a5bf0ec92fd}{setAltoPlanta} (int n)
+\item 
+int \hyperlink{classplanta_3d9fad702134aa5718b9d00ae11d7646}{getAltoPlanta} ()
+\item 
+void \hyperlink{classplanta_dd824feb63f74fa79c07b35292b6164d}{calcularPosiblesVecinos} (\hyperlink{classsala}{sala} $\ast$s, list$<$ TipoArco $>$ \&larcos)
+\item 
+void \hyperlink{classplanta_8f751a6905970cdc9922b9662b33f24c}{vecinosTodasSalas} (list$<$ TipoArco $>$ \&larcos)
+\item 
+void \hyperlink{classplanta_878639aab40d24f515031619abbd7a61}{insertarVector} (\hyperlink{classsala}{sala} $\ast$s)
+\item 
+void \hyperlink{classplanta_8ba7df6396d9bad77c0f65a729e85ec6}{insertarNodoGrafo} (TipoNodoGrafo n)
+\item 
+void \hyperlink{classplanta_c97835a31f875ecdc01f33517dfc71d4}{obtenerCeldaVector} (int i, \hyperlink{classsala}{sala} $\ast$\&s)
+\item 
+void \hyperlink{classplanta_af4bebbde71513fa6496c3f60d0214f3}{algoritmoKruskal} (list$<$ TipoArco $>$ \&l)
+\item 
+void \hyperlink{classplanta_b4ffd08f4b41a91e0f1ad667e2e9014f}{pintarEstructura} (ofstream \&f)
+\item 
+void \hyperlink{classplanta_d9f49ae6d392d9f7de7320140c87b285}{generarAtajos} ()
+\item 
+bool \hyperlink{classplanta_894574ebadf95dc0fd29a692f4c8e563}{AtajoNorte} (\hyperlink{classsala}{sala} $\ast$s)
+\item 
+bool \hyperlink{classplanta_6f30a6db1b7f9796a8608348bb438efb}{AtajoSur} (\hyperlink{classsala}{sala} $\ast$s)
+\item 
+bool \hyperlink{classplanta_289d62512ce27210c8d2b065c2e1ad7f}{AtajoOeste} (\hyperlink{classsala}{sala} $\ast$s)
+\item 
+bool \hyperlink{classplanta_9de280e30bde3f6acd5f758567f39ad6}{AtajoEste} (\hyperlink{classsala}{sala} $\ast$s)
+\item 
+bool \hyperlink{classplanta_6420d2f76781945da90ff6187967694d}{siHayAtajo} (\hyperlink{classsala}{sala} $\ast$s)
+\item 
+void \hyperlink{classplanta_8fab738328778b64c683e169a2aa58dc}{generarPlanta} (ofstream \&f)
+\item 
+void \hyperlink{classplanta_99d7ef1836db1ae602104e1878f5f430}{repartoLlaves} (ofstream \&f)
+\item 
+void \hyperlink{classplanta_5a10e66e70a71d957e1dde4a019b8280}{establecerCondicionApertura} (int ap)
+\item 
+void \hyperlink{classplanta_12c7cfe94fb585ff80db86046756e3d9}{salasMasFrecuentadas} (TipoNodoGrafo v, TipoCjtoNodos visitados)
+\item 
+void \hyperlink{classplanta_b2856a872a24f50fb52dd6b35e878c55}{insertarPersonajeSala} (\hyperlink{classPersonaje}{Personaje} $\ast$p)
+\item 
+int \hyperlink{classplanta_9d424f5bb63dbae72f7f3ed6906d7095}{totalSalas} ()
+\item 
+void \hyperlink{classplanta_40ec013e3c503f0675c688c5dce3828a}{pintarPersonajes} (ofstream \&f)
+\item 
+void \hyperlink{classplanta_2e62f6407ca66f91c2ef10647ec5f869}{siguienteGrafo} (int origen, int destino, int \&sig)
+\item 
+void \hyperlink{classplanta_d11674698b9703b7c570643723ced5fd}{calcularRutaSalasPlanta} (ofstream \&f)
+\item 
+void \hyperlink{classplanta_afb5b4511eeaa66b208cb6ec08c60a9e}{calcularVecinosReales} (\hyperlink{classsala}{sala} $\ast$s)
+\item 
+void \hyperlink{classplanta_40af5c175ab9b779d8aceebc0c4361c2}{calcularVecinosRealesTodasSalas} ()
+\item 
+void \hyperlink{classplanta_d66544ed0d0c8f20a98d7c8ce401a43f}{obtenerPuerta} (\hyperlink{classpuerta}{puerta} $\ast$\&puer)
+\item 
+void \hyperlink{classplanta_015d9890a348a62c9680edaec54c3975}{accionesPersonajesSalas} ()
+\item 
+void \hyperlink{classplanta_715eedf1f6fab5d7daa52a2b7cbb2744}{escribeLogPlanta} (ofstream \&f)
+\item 
+\hyperlink{classplanta_a86392313eeb2f2c217454abf0c7e216}{$\sim$planta} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[Author:]Carlos,,, $<$carlos-linux$>$ \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classplanta_4c93b85a355bf29b1613cc22f0ed0f46}{
+\index{planta@{planta}!planta@{planta}}
+\index{planta@{planta}!planta@{planta}}
+\subsubsection[planta]{\setlength{\rightskip}{0pt plus 5cm}planta::planta ()}}
+\label{classplanta_4c93b85a355bf29b1613cc22f0ed0f46}
+
+
+Constructor por defecto de mi clase \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_e6a56480cf07955e354043f1221177fe}{
+\index{planta@{planta}!planta@{planta}}
+\index{planta@{planta}!planta@{planta}}
+\subsubsection[planta]{\setlength{\rightskip}{0pt plus 5cm}planta::planta (int {\em idp}, \/  int {\em se}, \/  int {\em ss}, \/  int {\em nll}, \/  int {\em anch}, \/  int {\em alt})}}
+\label{classplanta_e6a56480cf07955e354043f1221177fe}
+
+
+Constructor parametrizado de mi clase \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em idp}]es un parametro de entrada del tipo entero asociado al atributo idplanta de mi clase Planta \item[{\em se}]es un prametro de entrada del tipo entero asociado al atributo salaentrada de mi clase Planta \item[{\em ss}]es un parametro de entrada del tipo entero asociado al atributo salasalida de mi clase Planta \item[{\em nll}]es un parametro de entrada del tipo entero asociado al atributo nllaves e mi clase \hyperlink{classplanta}{planta} \item[{\em anch}]es un parametro de entrada del tipo entero asociado al atributo anchoplanta de mi clase Planta \item[{\em alt}]es un parametro de entrada del tipo entero asociado al atributo altoplanta de mi clase Planta \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_a86392313eeb2f2c217454abf0c7e216}{
+\index{planta@{planta}!$\sim$planta@{$\sim$planta}}
+\index{$\sim$planta@{$\sim$planta}!planta@{planta}}
+\subsubsection[$\sim$planta]{\setlength{\rightskip}{0pt plus 5cm}planta::$\sim$planta ()}}
+\label{classplanta_a86392313eeb2f2c217454abf0c7e216}
+
+
+Destructor de mi clase \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classplanta_cd23abae2d6e377abe25d48d850f7319}{
+\index{planta@{planta}!setIdPlanta@{setIdPlanta}}
+\index{setIdPlanta@{setIdPlanta}!planta@{planta}}
+\subsubsection[setIdPlanta]{\setlength{\rightskip}{0pt plus 5cm}void planta::setIdPlanta (int {\em n})}}
+\label{classplanta_cd23abae2d6e377abe25d48d850f7319}
+
+
+Metodo que establece el valor n al atributo idplanta de mi clase \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_6e9b552f6542f68eca605ed69a283980}{
+\index{planta@{planta}!getIdPlanta@{getIdPlanta}}
+\index{getIdPlanta@{getIdPlanta}!planta@{planta}}
+\subsubsection[getIdPlanta]{\setlength{\rightskip}{0pt plus 5cm}int planta::getIdPlanta ()}}
+\label{classplanta_6e9b552f6542f68eca605ed69a283980}
+
+
+Metodo que devuelve el valor de mi atributo idplanta de mi clase Planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna un entero correspondiente con el valor del atributo idplanta de mi clase Planta \end{Desc}
+\hypertarget{classplanta_b322da5e5360a302601c15c98748213c}{
+\index{planta@{planta}!setSalaEntrada@{setSalaEntrada}}
+\index{setSalaEntrada@{setSalaEntrada}!planta@{planta}}
+\subsubsection[setSalaEntrada]{\setlength{\rightskip}{0pt plus 5cm}void planta::setSalaEntrada (int {\em n})}}
+\label{classplanta_b322da5e5360a302601c15c98748213c}
+
+
+Metodo que establece el valor n al atributo salaentrada de mi clase \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_9ea0125af87508895b27bc0c2235e42a}{
+\index{planta@{planta}!getSalaEntrada@{getSalaEntrada}}
+\index{getSalaEntrada@{getSalaEntrada}!planta@{planta}}
+\subsubsection[getSalaEntrada]{\setlength{\rightskip}{0pt plus 5cm}int planta::getSalaEntrada ()}}
+\label{classplanta_9ea0125af87508895b27bc0c2235e42a}
+
+
+Metodo que devuelve el entero asociado al valor del atributo salaentrada de mi clase PLanta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna el entero correspondiente al atributo salaentrada de mi clase Planta \end{Desc}
+\hypertarget{classplanta_3a3256c74ea714e55de672068d05ec4d}{
+\index{planta@{planta}!setSalaSalida@{setSalaSalida}}
+\index{setSalaSalida@{setSalaSalida}!planta@{planta}}
+\subsubsection[setSalaSalida]{\setlength{\rightskip}{0pt plus 5cm}void planta::setSalaSalida (int {\em n})}}
+\label{classplanta_3a3256c74ea714e55de672068d05ec4d}
+
+
+Metodo que establece el valor n al atributo salasalida de mi clase \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_dbb3b23569c310dcd01163e09674009c}{
+\index{planta@{planta}!getSalaSalida@{getSalaSalida}}
+\index{getSalaSalida@{getSalaSalida}!planta@{planta}}
+\subsubsection[getSalaSalida]{\setlength{\rightskip}{0pt plus 5cm}int planta::getSalaSalida ()}}
+\label{classplanta_dbb3b23569c310dcd01163e09674009c}
+
+
+Metodo devuelve el valor asociado a mi atributo salasalida de mi clase Planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna el entero correspondiente al atributo salasalida de mi clase Planta \end{Desc}
+\hypertarget{classplanta_4b11a7bc1bd000f01a7af5da1df7a285}{
+\index{planta@{planta}!setNLlaves@{setNLlaves}}
+\index{setNLlaves@{setNLlaves}!planta@{planta}}
+\subsubsection[setNLlaves]{\setlength{\rightskip}{0pt plus 5cm}void planta::setNLlaves (int {\em n})}}
+\label{classplanta_4b11a7bc1bd000f01a7af5da1df7a285}
+
+
+Metodo establece un valor al atributo nllaves de mi clase Planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_5087143df250ee8686a3c5387961f01e}{
+\index{planta@{planta}!getNLlaves@{getNLlaves}}
+\index{getNLlaves@{getNLlaves}!planta@{planta}}
+\subsubsection[getNLlaves]{\setlength{\rightskip}{0pt plus 5cm}int planta::getNLlaves ()}}
+\label{classplanta_5087143df250ee8686a3c5387961f01e}
+
+
+Metodo que devuelve el valor del atributo nllaves de mi clase Planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve el entero correspondiente a mi atributo nllaves de mi clase PLanta \end{Desc}
+\hypertarget{classplanta_aa7dd29c052394b78b67d7be90bbb3c3}{
+\index{planta@{planta}!setAnchoPlanta@{setAnchoPlanta}}
+\index{setAnchoPlanta@{setAnchoPlanta}!planta@{planta}}
+\subsubsection[setAnchoPlanta]{\setlength{\rightskip}{0pt plus 5cm}void planta::setAnchoPlanta (int {\em n})}}
+\label{classplanta_aa7dd29c052394b78b67d7be90bbb3c3}
+
+
+Metodo que establece el valor n al atributo anchoplanta de mi clase \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_ef93598d5bca7e2235035a07147f4bbe}{
+\index{planta@{planta}!getAnchoPlanta@{getAnchoPlanta}}
+\index{getAnchoPlanta@{getAnchoPlanta}!planta@{planta}}
+\subsubsection[getAnchoPlanta]{\setlength{\rightskip}{0pt plus 5cm}int planta::getAnchoPlanta ()}}
+\label{classplanta_ef93598d5bca7e2235035a07147f4bbe}
+
+
+Metodo que devuelve el valor asociado al atributo anchoplanta de mi clase Planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve un valor del tipo entero correspondiente al atributo anchoplanta de mi clase PLanta \end{Desc}
+\hypertarget{classplanta_935647ba7aa07152ac9a4a5bf0ec92fd}{
+\index{planta@{planta}!setAltoPlanta@{setAltoPlanta}}
+\index{setAltoPlanta@{setAltoPlanta}!planta@{planta}}
+\subsubsection[setAltoPlanta]{\setlength{\rightskip}{0pt plus 5cm}void planta::setAltoPlanta (int {\em n})}}
+\label{classplanta_935647ba7aa07152ac9a4a5bf0ec92fd}
+
+
+Metodo que establece el valor n al atributo altoplanta de mi clase \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_3d9fad702134aa5718b9d00ae11d7646}{
+\index{planta@{planta}!getAltoPlanta@{getAltoPlanta}}
+\index{getAltoPlanta@{getAltoPlanta}!planta@{planta}}
+\subsubsection[getAltoPlanta]{\setlength{\rightskip}{0pt plus 5cm}int planta::getAltoPlanta ()}}
+\label{classplanta_3d9fad702134aa5718b9d00ae11d7646}
+
+
+Metodo que devuelve el valor asociado a mi atributo altoplanta de mi clase PLanta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]devuelve el valor correspondiente a mi atributo altoplanta de mi clase Planta \end{Desc}
+\hypertarget{classplanta_dd824feb63f74fa79c07b35292b6164d}{
+\index{planta@{planta}!calcularPosiblesVecinos@{calcularPosiblesVecinos}}
+\index{calcularPosiblesVecinos@{calcularPosiblesVecinos}!planta@{planta}}
+\subsubsection[calcularPosiblesVecinos]{\setlength{\rightskip}{0pt plus 5cm}void planta::calcularPosiblesVecinos ({\bf sala} $\ast$ {\em s}, \/  list$<$ TipoArco $>$ \& {\em larcos})}}
+\label{classplanta_dd824feb63f74fa79c07b35292b6164d}
+
+
+Metodo calcula los posibles vecinos de una \hyperlink{classsala}{sala} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada (puntero) de la clase Sala \item[{\em larcos}]es un parametro de entrada salida del tipo lista (ED STL) que almacena datos del tipo TipoArco \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_8f751a6905970cdc9922b9662b33f24c}{
+\index{planta@{planta}!vecinosTodasSalas@{vecinosTodasSalas}}
+\index{vecinosTodasSalas@{vecinosTodasSalas}!planta@{planta}}
+\subsubsection[vecinosTodasSalas]{\setlength{\rightskip}{0pt plus 5cm}void planta::vecinosTodasSalas (list$<$ TipoArco $>$ \& {\em larcos})}}
+\label{classplanta_8f751a6905970cdc9922b9662b33f24c}
+
+
+Metodo que calcula los vecinos de cada una de las salas de mi vector de salas de mi clase Planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em larcos}]es un parametro de entrada salida del tipo list (ED STL) que almacena datos del tipo TipoArco \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_878639aab40d24f515031619abbd7a61}{
+\index{planta@{planta}!insertarVector@{insertarVector}}
+\index{insertarVector@{insertarVector}!planta@{planta}}
+\subsubsection[insertarVector]{\setlength{\rightskip}{0pt plus 5cm}void planta::insertarVector ({\bf sala} $\ast$ {\em s})}}
+\label{classplanta_878639aab40d24f515031619abbd7a61}
+
+
+Metodo que inserta en mi vector de salas de mi clase \hyperlink{classplanta}{planta} un puntero a una instancia de mi clase Sala \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada puntero a una instancia de la clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_8ba7df6396d9bad77c0f65a729e85ec6}{
+\index{planta@{planta}!insertarNodoGrafo@{insertarNodoGrafo}}
+\index{insertarNodoGrafo@{insertarNodoGrafo}!planta@{planta}}
+\subsubsection[insertarNodoGrafo]{\setlength{\rightskip}{0pt plus 5cm}void planta::insertarNodoGrafo (TipoNodoGrafo {\em n})}}
+\label{classplanta_8ba7df6396d9bad77c0f65a729e85ec6}
+
+
+Metodo que inserta un nodo nuevo en el grafo de mi clase Planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es un parametro de entrada del tipo TipoNodoGrafo \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_c97835a31f875ecdc01f33517dfc71d4}{
+\index{planta@{planta}!obtenerCeldaVector@{obtenerCeldaVector}}
+\index{obtenerCeldaVector@{obtenerCeldaVector}!planta@{planta}}
+\subsubsection[obtenerCeldaVector]{\setlength{\rightskip}{0pt plus 5cm}void planta::obtenerCeldaVector (int {\em i}, \/  {\bf sala} $\ast$\& {\em s})}}
+\label{classplanta_c97835a31f875ecdc01f33517dfc71d4}
+
+
+Metodo me devuelve un puntero a una \hyperlink{classsala}{sala} correspondiente con la posicion i \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em i}]es un parametro de entrada del tipo entero \item[{\em s}]es un parametro de salida del tipo instancia a la clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_af4bebbde71513fa6496c3f60d0214f3}{
+\index{planta@{planta}!algoritmoKruskal@{algoritmoKruskal}}
+\index{algoritmoKruskal@{algoritmoKruskal}!planta@{planta}}
+\subsubsection[algoritmoKruskal]{\setlength{\rightskip}{0pt plus 5cm}void planta::algoritmoKruskal (list$<$ TipoArco $>$ \& {\em l})}}
+\label{classplanta_af4bebbde71513fa6496c3f60d0214f3}
+
+
+Metodo que realiza el algoritmo de kruskal \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]es un parametro de entrada salida del tipo list (ED STL) \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_b4ffd08f4b41a91e0f1ad667e2e9014f}{
+\index{planta@{planta}!pintarEstructura@{pintarEstructura}}
+\index{pintarEstructura@{pintarEstructura}!planta@{planta}}
+\subsubsection[pintarEstructura]{\setlength{\rightskip}{0pt plus 5cm}void planta::pintarEstructura (ofstream \& {\em f})}}
+\label{classplanta_b4ffd08f4b41a91e0f1ad667e2e9014f}
+
+
+Metodo que pinta en mi registro.log la estructura de cada \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_d9f49ae6d392d9f7de7320140c87b285}{
+\index{planta@{planta}!generarAtajos@{generarAtajos}}
+\index{generarAtajos@{generarAtajos}!planta@{planta}}
+\subsubsection[generarAtajos]{\setlength{\rightskip}{0pt plus 5cm}void planta::generarAtajos ()}}
+\label{classplanta_d9f49ae6d392d9f7de7320140c87b285}
+
+
+Metodo que genera los atajos correspondientes hasta llegar al 5\% del total de salas que posee el vector de salas de mi clase PLanta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_894574ebadf95dc0fd29a692f4c8e563}{
+\index{planta@{planta}!AtajoNorte@{AtajoNorte}}
+\index{AtajoNorte@{AtajoNorte}!planta@{planta}}
+\subsubsection[AtajoNorte]{\setlength{\rightskip}{0pt plus 5cm}bool planta::AtajoNorte ({\bf sala} $\ast$ {\em s})}}
+\label{classplanta_894574ebadf95dc0fd29a692f4c8e563}
+
+
+Metodo que calcula los atajos por el norte \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada del tipo puntero a instancia de la clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true en caso de que haya atajo por el norte y false en caso contrario \end{Desc}
+\hypertarget{classplanta_6f30a6db1b7f9796a8608348bb438efb}{
+\index{planta@{planta}!AtajoSur@{AtajoSur}}
+\index{AtajoSur@{AtajoSur}!planta@{planta}}
+\subsubsection[AtajoSur]{\setlength{\rightskip}{0pt plus 5cm}bool planta::AtajoSur ({\bf sala} $\ast$ {\em s})}}
+\label{classplanta_6f30a6db1b7f9796a8608348bb438efb}
+
+
+Metodo que calcula los atajos por el sur \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada del tipo puntero a instancia de la clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true en caso de que haya atajo por el sur y false en caso contrario \end{Desc}
+\hypertarget{classplanta_289d62512ce27210c8d2b065c2e1ad7f}{
+\index{planta@{planta}!AtajoOeste@{AtajoOeste}}
+\index{AtajoOeste@{AtajoOeste}!planta@{planta}}
+\subsubsection[AtajoOeste]{\setlength{\rightskip}{0pt plus 5cm}bool planta::AtajoOeste ({\bf sala} $\ast$ {\em s})}}
+\label{classplanta_289d62512ce27210c8d2b065c2e1ad7f}
+
+
+Metodo que calcula los atajos por el oeste \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada del tipo puntero a instancia de la clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true en caso de que haya atajo por el oeste y false en caso contrario \end{Desc}
+\hypertarget{classplanta_9de280e30bde3f6acd5f758567f39ad6}{
+\index{planta@{planta}!AtajoEste@{AtajoEste}}
+\index{AtajoEste@{AtajoEste}!planta@{planta}}
+\subsubsection[AtajoEste]{\setlength{\rightskip}{0pt plus 5cm}bool planta::AtajoEste ({\bf sala} $\ast$ {\em s})}}
+\label{classplanta_9de280e30bde3f6acd5f758567f39ad6}
+
+
+Metodo que calcula los atajos por el este \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada del tipo puntero a instancia de la clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true en caso de que haya atajo por el este y false en caso contrario \end{Desc}
+\hypertarget{classplanta_6420d2f76781945da90ff6187967694d}{
+\index{planta@{planta}!siHayAtajo@{siHayAtajo}}
+\index{siHayAtajo@{siHayAtajo}!planta@{planta}}
+\subsubsection[siHayAtajo]{\setlength{\rightskip}{0pt plus 5cm}bool planta::siHayAtajo ({\bf sala} $\ast$ {\em s})}}
+\label{classplanta_6420d2f76781945da90ff6187967694d}
+
+
+Metodo booleano que me indica la existencia o no de un atajo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada del tipo puntero a instancia de la clase Sala \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true en caso de que haya atajo y false en caso contrario \end{Desc}
+\hypertarget{classplanta_8fab738328778b64c683e169a2aa58dc}{
+\index{planta@{planta}!generarPlanta@{generarPlanta}}
+\index{generarPlanta@{generarPlanta}!planta@{planta}}
+\subsubsection[generarPlanta]{\setlength{\rightskip}{0pt plus 5cm}void planta::generarPlanta (ofstream \& {\em f})}}
+\label{classplanta_8fab738328778b64c683e169a2aa58dc}
+
+
+Metodo que se encarga de generar todo lo corespondiente a la \hyperlink{classplanta}{planta} en el registro.log \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_99d7ef1836db1ae602104e1878f5f430}{
+\index{planta@{planta}!repartoLlaves@{repartoLlaves}}
+\index{repartoLlaves@{repartoLlaves}!planta@{planta}}
+\subsubsection[repartoLlaves]{\setlength{\rightskip}{0pt plus 5cm}void planta::repartoLlaves (ofstream \& {\em f})}}
+\label{classplanta_99d7ef1836db1ae602104e1878f5f430}
+
+
+Metodo que se encarga de repartir las llaves por las distintas salas \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_5a10e66e70a71d957e1dde4a019b8280}{
+\index{planta@{planta}!establecerCondicionApertura@{establecerCondicionApertura}}
+\index{establecerCondicionApertura@{establecerCondicionApertura}!planta@{planta}}
+\subsubsection[establecerCondicionApertura]{\setlength{\rightskip}{0pt plus 5cm}void planta::establecerCondicionApertura (int {\em ap})}}
+\label{classplanta_5a10e66e70a71d957e1dde4a019b8280}
+
+
+Metodo que establece la condicion de apertura de la \hyperlink{classpuerta}{puerta} de mi clase PLanta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ap}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_12c7cfe94fb585ff80db86046756e3d9}{
+\index{planta@{planta}!salasMasFrecuentadas@{salasMasFrecuentadas}}
+\index{salasMasFrecuentadas@{salasMasFrecuentadas}!planta@{planta}}
+\subsubsection[salasMasFrecuentadas]{\setlength{\rightskip}{0pt plus 5cm}void planta::salasMasFrecuentadas (TipoNodoGrafo {\em f}, \/  TipoCjtoNodos {\em visitados})}}
+\label{classplanta_12c7cfe94fb585ff80db86046756e3d9}
+
+
+Metodo que se encarga de aumentar las frecuencias de las salas de mi vector de salas de mi clase PLanta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un parametro de entrada del tipo TipoNodoGrafo \item[{\em visitados}]es un parametro de entrada del tipo TipoCjtoNodos \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_b2856a872a24f50fb52dd6b35e878c55}{
+\index{planta@{planta}!insertarPersonajeSala@{insertarPersonajeSala}}
+\index{insertarPersonajeSala@{insertarPersonajeSala}!planta@{planta}}
+\subsubsection[insertarPersonajeSala]{\setlength{\rightskip}{0pt plus 5cm}void planta::insertarPersonajeSala ({\bf Personaje} $\ast$ {\em p})}}
+\label{classplanta_b2856a872a24f50fb52dd6b35e878c55}
+
+
+Metodo que se encarga de repartir las llaves por las distintas salas \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_9d424f5bb63dbae72f7f3ed6906d7095}{
+\index{planta@{planta}!totalSalas@{totalSalas}}
+\index{totalSalas@{totalSalas}!planta@{planta}}
+\subsubsection[totalSalas]{\setlength{\rightskip}{0pt plus 5cm}int planta::totalSalas ()}}
+\label{classplanta_9d424f5bb63dbae72f7f3ed6906d7095}
+
+
+Metodo que devuelve el tamaño de mi vector de salas de mi clase PLanta ( es decir, el numero de salas de cada \hyperlink{classplanta}{planta}) \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_40ec013e3c503f0675c688c5dce3828a}{
+\index{planta@{planta}!pintarPersonajes@{pintarPersonajes}}
+\index{pintarPersonajes@{pintarPersonajes}!planta@{planta}}
+\subsubsection[pintarPersonajes]{\setlength{\rightskip}{0pt plus 5cm}void planta::pintarPersonajes (ofstream \& {\em f})}}
+\label{classplanta_40ec013e3c503f0675c688c5dce3828a}
+
+
+Metodo que se encarga de pintar todos los personajes de cada \hyperlink{classsala}{sala} en mi registro.log ( pinta un entero si hay mas de un personaje o su marca en caso de que solo haya un personaje) \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_2e62f6407ca66f91c2ef10647ec5f869}{
+\index{planta@{planta}!siguienteGrafo@{siguienteGrafo}}
+\index{siguienteGrafo@{siguienteGrafo}!planta@{planta}}
+\subsubsection[siguienteGrafo]{\setlength{\rightskip}{0pt plus 5cm}void planta::siguienteGrafo (int {\em origen}, \/  int {\em destino}, \/  int \& {\em sig})}}
+\label{classplanta_2e62f6407ca66f91c2ef10647ec5f869}
+
+
+Metodo que me devuelve el entero correspondiente al nodo siguiente entre los nodos origen y destino \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em origen}]es un parametro de entrada del tipo entero que determina donde empieza mi camino \item[{\em destino}]es un parametro de entrada del tipo entero que determina donde termina mi camino \item[{\em sig}]es un parametro de salida del tipo entero que me devuelve el entero correspondiente al nodo siguiente que se encuentra entre los nodos origen y destino \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_d11674698b9703b7c570643723ced5fd}{
+\index{planta@{planta}!calcularRutaSalasPlanta@{calcularRutaSalasPlanta}}
+\index{calcularRutaSalasPlanta@{calcularRutaSalasPlanta}!planta@{planta}}
+\subsubsection[calcularRutaSalasPlanta]{\setlength{\rightskip}{0pt plus 5cm}void planta::calcularRutaSalasPlanta (ofstream \& {\em f})}}
+\label{classplanta_d11674698b9703b7c570643723ced5fd}
+
+
+Metodo que calcula las rutas de todos los personajes que estan incluidos dentro de cada \hyperlink{classsala}{sala} de mi vector de salas de mi clase PLanta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_afb5b4511eeaa66b208cb6ec08c60a9e}{
+\index{planta@{planta}!calcularVecinosReales@{calcularVecinosReales}}
+\index{calcularVecinosReales@{calcularVecinosReales}!planta@{planta}}
+\subsubsection[calcularVecinosReales]{\setlength{\rightskip}{0pt plus 5cm}void planta::calcularVecinosReales ({\bf sala} $\ast$ {\em s})}}
+\label{classplanta_afb5b4511eeaa66b208cb6ec08c60a9e}
+
+
+Metodo que calcula los vecinos reales correspondientes a la \hyperlink{classsala}{sala} s \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada del tipo puntero a instancia de la clase Sala que es mi \hyperlink{classsala}{sala} de referencia para calcular sus vecinos reales \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_40af5c175ab9b779d8aceebc0c4361c2}{
+\index{planta@{planta}!calcularVecinosRealesTodasSalas@{calcularVecinosRealesTodasSalas}}
+\index{calcularVecinosRealesTodasSalas@{calcularVecinosRealesTodasSalas}!planta@{planta}}
+\subsubsection[calcularVecinosRealesTodasSalas]{\setlength{\rightskip}{0pt plus 5cm}void planta::calcularVecinosRealesTodasSalas ()}}
+\label{classplanta_40af5c175ab9b779d8aceebc0c4361c2}
+
+
+Metodo que repite la funcion anterior para cada una de mis salas de mi vector de salas de mi clase PLanta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_d66544ed0d0c8f20a98d7c8ce401a43f}{
+\index{planta@{planta}!obtenerPuerta@{obtenerPuerta}}
+\index{obtenerPuerta@{obtenerPuerta}!planta@{planta}}
+\subsubsection[obtenerPuerta]{\setlength{\rightskip}{0pt plus 5cm}void planta::obtenerPuerta ({\bf puerta} $\ast$\& {\em puer})}}
+\label{classplanta_d66544ed0d0c8f20a98d7c8ce401a43f}
+
+
+Metodo que me copia en puer el atributo p de mi clase \hyperlink{classplanta}{planta} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em puer}]es un parametro de salida del tipo puntero a instancia de la clase Puerta \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_015d9890a348a62c9680edaec54c3975}{
+\index{planta@{planta}!accionesPersonajesSalas@{accionesPersonajesSalas}}
+\index{accionesPersonajesSalas@{accionesPersonajesSalas}!planta@{planta}}
+\subsubsection[accionesPersonajesSalas]{\setlength{\rightskip}{0pt plus 5cm}void planta::accionesPersonajesSalas ()}}
+\label{classplanta_015d9890a348a62c9680edaec54c3975}
+
+
+Metodo que se encarga de realizar las acciones correspondientes a los personajes de cada \hyperlink{classsala}{sala} de mi vector de salas \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classplanta_715eedf1f6fab5d7daa52a2b7cbb2744}{
+\index{planta@{planta}!escribeLogPlanta@{escribeLogPlanta}}
+\index{escribeLogPlanta@{escribeLogPlanta}!planta@{planta}}
+\subsubsection[escribeLogPlanta]{\setlength{\rightskip}{0pt plus 5cm}void planta::escribeLogPlanta (ofstream \& {\em f})}}
+\label{classplanta_715eedf1f6fab5d7daa52a2b7cbb2744}
+
+
+Metodo que se encarga escribir en mi registro.log la informacion correspondiente a Planta \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/planta.h\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/planta.cpp\end{CompactItemize}

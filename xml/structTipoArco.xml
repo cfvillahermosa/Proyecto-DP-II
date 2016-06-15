@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="structTipoArco" kind="struct" prot="public">
+    <compoundname>TipoArco</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTipoArco_1d653e6a32585c9424c80e370963beb69" prot="public" static="no" mutable="no">
+        <type>TipoArcoGrafo</type>
+        <definition>TipoArcoGrafo TipoArco::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="48" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTipoArco_140ae1c81355a730e015bb407330a951c" prot="public" static="no" mutable="no">
+        <type>TipoArcoGrafo</type>
+        <definition>TipoArcoGrafo TipoArco::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="49" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="47" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="47" bodyend="50"/>
+    <listofallmembers>
+      <member refid="structTipoArco_1d653e6a32585c9424c80e370963beb69" prot="public" virt="non-virtual"><scope>TipoArco</scope><name>x</name></member>
+      <member refid="structTipoArco_140ae1c81355a730e015bb407330a951c" prot="public" virt="non-virtual"><scope>TipoArco</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

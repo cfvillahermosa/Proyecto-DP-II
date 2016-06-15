@@ -1,0 +1,529 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.5.6">
+  <compound refid="classArbol" kind="class"><name>Arbol</name>
+    <member refid="classArbol_14c3a2344872032f3c36a1e8b8837379f" kind="variable"><name>datoRaiz</name></member>
+    <member refid="classArbol_1871d116699f6a404aeee2fde67c0c26d" kind="variable"><name>hIzq</name></member>
+    <member refid="classArbol_11b6f03cd0740e46a17ca5de6c0fc1958" kind="variable"><name>hDer</name></member>
+    <member refid="classArbol_1d7abdeed27bdb42a6aed35a5b177de8d" kind="variable"><name>esVacio</name></member>
+    <member refid="classArbol_1925eeb72223ee175cc9c7620a89461c7" kind="function"><name>borrarOrden</name></member>
+    <member refid="classArbol_15612a2aa65ab954ec9ae442fdadef9de" kind="function"><name>Arbol</name></member>
+    <member refid="classArbol_12487eb1849b924a28ce56ee9b7c34236" kind="function"><name>Arbol</name></member>
+    <member refid="classArbol_1da5f40bff1e6a6a0174a749d309bcb1c" kind="function"><name>hijoIzq</name></member>
+    <member refid="classArbol_1d433925e246961a80e690e46f9977780" kind="function"><name>hijoDer</name></member>
+    <member refid="classArbol_1e7c912144568cd72804c893ffbe06415" kind="function"><name>raiz</name></member>
+    <member refid="classArbol_17eccfbbe02911216fe285138347a8556" kind="function"><name>vacio</name></member>
+    <member refid="classArbol_19f2895622e071f4c6e6ca02c0191d552" kind="function"><name>insertar</name></member>
+    <member refid="classArbol_1315fc4e5ad1b7940acda871feadc82c0" kind="function"><name>pertenece</name></member>
+    <member refid="classArbol_18a14a3c40b5280a03fc17a24f5f005dd" kind="function"><name>borrar</name></member>
+    <member refid="classArbol_1b45032ed929d7b2ea5d0860fb318d944" kind="function"><name>numNodos</name></member>
+    <member refid="classArbol_12b86fa8d1632daa86c9302e16c0a7fd0" kind="function"><name>numHojas</name></member>
+    <member refid="classArbol_108dc2d243b213fe87a8972d60704b398" kind="function"><name>numNodosNoHojas</name></member>
+    <member refid="classArbol_1f1e00998d1764ccc5eb998419855338c" kind="function"><name>altura</name></member>
+    <member refid="classArbol_1079dfb7fbda3ce6bc7c584830948ec55" kind="function"><name>maximo</name></member>
+    <member refid="classArbol_18110e3f6fcd750c5755f8127604b6b7b" kind="function"><name>~Arbol</name></member>
+  </compound>
+  <compound refid="classArbol_3_01T_01_5_01_4" kind="class"><name>Arbol&lt; T * &gt;</name>
+    <member refid="classArbol_3_01T_01_5_01_4_13c61b4237bd45f38ae395bf6e4f088f5" kind="variable"><name>datoRaiz</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_187a3da6b3b3c818b89d649b172736b65" kind="variable"><name>hIzq</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1d945c55bcee8d0234fab8241f6522ea6" kind="variable"><name>hDer</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1f4874d0d534bbffd1d8410d43363b7e7" kind="variable"><name>esVacio</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1061bf1feed06bc6559f20e37254f9116" kind="function"><name>borrarOrden</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1985849313ad317ead374963cb286bc30" kind="function"><name>Arbol</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_18dd7de29b0ab4a09f83f68859adab1c2" kind="function"><name>Arbol</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1749a2d379766355639cfb54b53b380e0" kind="function"><name>hijoIzq</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_108b978b7673342fdefd10305ecf9e051" kind="function"><name>hijoDer</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_18934d183d51b81e002da3f36bd4ccda2" kind="function"><name>raiz</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_12ab377d8d55cf33ef48fc3d26bfaa4b3" kind="function"><name>rotacionSimpleDerecha</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_15ff0886aeafe2be9575ed22b23428fad" kind="function"><name>rotacionSimpleIzquierda</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1aeb74ef9c3bd4120c4259c5801969c19" kind="function"><name>rotacionDobleIzquierdaDerecha</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1fabde49f6792766f28a69a41b77c63d2" kind="function"><name>rotacionDobleDerechaIzquierda</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1b72c00180ab05f46a5d6d0312965bec6" kind="function"><name>balancear</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1c3692f69ca319cfe47992773340d919a" kind="function"><name>vacio</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1c81800f97f3f886c4476286641a9b85b" kind="function"><name>insertar</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_12cdfe78ecc75310e79a8670ecee3432f" kind="function"><name>pertenece</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1b7a0464d8dc0ffcb08d7e4d617e9fa25" kind="function"><name>pertenece</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_160caad0df0dd33ed903c55600bdbeec8" kind="function"><name>borrar</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_116d2e7376c1d58d0c7b8c80e9590552b" kind="function"><name>numNodos</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_18c6c2a54599ec4706360dfc6c0b57de3" kind="function"><name>numHojas</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_1f1606923cd786c5f5a6c6179f98ca0ec" kind="function"><name>numNodosNoHojas</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_18da2dd1419c25d37816b7d4a064388cc" kind="function"><name>altura</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_16ea770927e68a34d35117b3f7a050c84" kind="function"><name>maximo</name></member>
+    <member refid="classArbol_3_01T_01_5_01_4_19f598e253444296b1645459c89c34670" kind="function"><name>~Arbol</name></member>
+  </compound>
+  <compound refid="classCargador" kind="class"><name>Cargador</name>
+    <member refid="classCargador_19965d5c5148afe61501aadf6b1fd08b3" kind="variable"><name>mapeo</name></member>
+    <member refid="classCargador_1e8a6830a848d0ce88c2e8dd3dbcbeed2" kind="variable"><name>E</name></member>
+    <member refid="classCargador_1cbfc2930aa4a2878f64aaf6ab6f0ce61" kind="function"><name>queElemento</name></member>
+    <member refid="classCargador_1b676f259b9bfb1e46f27e87708cad046" kind="function"><name>crearPlanta</name></member>
+    <member refid="classCargador_19c35508b98d937c5cda057c66c471024" kind="function"><name>crearIntruso</name></member>
+    <member refid="classCargador_175b3c035544b3dea81dfe7fb9fad1f61" kind="function"><name>crearLider</name></member>
+    <member refid="classCargador_172a6deb08e687e07b71be0b39caeb08d" kind="function"><name>crearTrabajador</name></member>
+    <member refid="classCargador_14c12f282550e23654dcec70d837a0b7f" kind="function"><name>Cargador</name></member>
+    <member refid="classCargador_160d8fe515f1ff623da7bcdd2d842e4fe" kind="function"><name>crear</name></member>
+  </compound>
+  <compound refid="structCargador_1_1DatoMapeo" kind="struct"><name>Cargador::DatoMapeo</name>
+    <member refid="structCargador_1_1DatoMapeo_1d0f55f3ae583ea2f4a8e6ff13daf5c5d" kind="variable"><name>nombre</name></member>
+    <member refid="structCargador_1_1DatoMapeo_1a56e5ac7164123a67edc77a9fbaf1424" kind="variable"><name>numCampos</name></member>
+  </compound>
+  <compound refid="classcompararFrecuencias" kind="class"><name>compararFrecuencias</name>
+    <member refid="classcompararFrecuencias_18d0df12288b005ab02faceef30112487" kind="function"><name>operator()</name></member>
+  </compound>
+  <compound refid="classEstacion" kind="class"><name>Estacion</name>
+    <member refid="classEstacion_1dc9f5da605c162e97e2714a987e1c51d" kind="variable"><name>vec</name></member>
+    <member refid="classEstacion_13d75dfcb9e611287a941c27a3b4e4876" kind="variable"><name>turnosimulacion</name></member>
+    <member refid="classEstacion_1623f9eab2dc3b079c6b73f22edb2d8a0" kind="variable"><name>salaprisioneros</name></member>
+    <member refid="classEstacion_14347660ccff1be4760f8d696aca1e0a5" kind="variable"><name>desalojados</name></member>
+    <member refid="classEstacion_1eb58e5e8be51f356cf351cb52f160f2d" kind="variable"><name>miEstacion</name></member>
+    <member refid="classEstacion_16607e0576a7342860de2973cca949bb5" kind="function"><name>Estacion</name></member>
+    <member refid="classEstacion_17ccecfbe6a3cea5fd897cfce7851a005" kind="function"><name>insertarVector</name></member>
+    <member refid="classEstacion_130787e042212e82f38bd54868a673744" kind="function"><name>generar</name></member>
+    <member refid="classEstacion_19cd8459a6f9c14168bd92edb88c68757" kind="function"><name>insertarPersonajeEstacion</name></member>
+    <member refid="classEstacion_1846fcf5591b3a021072365cfd7902b4c" kind="function"><name>obtenerPlanta</name></member>
+    <member refid="classEstacion_15ab63daf24099fe7f461049191c5f45a" kind="function"><name>totalPlantas</name></member>
+    <member refid="classEstacion_1b823f96e5395cf3b55ddfe2a380066a7" kind="function"><name>calcularRutaPlantasEstacion</name></member>
+    <member refid="classEstacion_15e2d125234916b8011eabaf9735fd859" kind="function"><name>insertarSalaPrisioneros</name></member>
+    <member refid="classEstacion_161418af028ef6a48d6ccdd125cd739d6" kind="function"><name>setTurnoSimulacion</name></member>
+    <member refid="classEstacion_1d0ea7dfe20aa29bf0dfc984849fbab1f" kind="function"><name>accionesPersonajesPlanta</name></member>
+    <member refid="classEstacion_1e33e40e284a7e35858fef85ab1c13b19" kind="function"><name>getTurnoSimulacion</name></member>
+    <member refid="classEstacion_1b130dedc0129c5a913415d3bacebd529" kind="function"><name>insertarDesalojado</name></member>
+    <member refid="classEstacion_1fd81b9f346dce9a850fc2c612949d211" kind="function"><name>escribeLogDesalojados</name></member>
+    <member refid="classEstacion_1c774576e546f622b60b08b0a952e6a55" kind="function"><name>~Estacion</name></member>
+    <member refid="classEstacion_1f0728410da6356cae82e39b90d6eab76" kind="function"><name>obtenerMiEstacion</name></member>
+  </compound>
+  <compound refid="classFicheroCarga" kind="class"><name>FicheroCarga</name>
+    <member refid="classFicheroCarga_14ea4334d2fcc5f7a8f54e96c2fa3bbfe" kind="function"><name>trocearLinea</name></member>
+    <member refid="classFicheroCarga_1d7a3e4e6e3eeb749fe151ce6763cc9c4" kind="function"><name>procesarFichero</name></member>
+  </compound>
+  <compound refid="classGenAleatorios" kind="class"><name>GenAleatorios</name>
+    <member refid="classGenAleatorios_1f2256022c2fa2bac2d69de34b7cce118" kind="variable"><name>SEMILLA</name></member>
+    <member refid="classGenAleatorios_19e21a6d56c90b371e4374e363e732982" kind="variable"><name>instancia</name></member>
+    <member refid="classGenAleatorios_14782a2f6acffe93e9e1ceb207517fcb5" kind="variable"><name>numGenerados</name></member>
+    <member refid="classGenAleatorios_159996556d6966e62952b7f7d872b1096" kind="function"><name>GenAleatorios</name></member>
+    <member refid="classGenAleatorios_15a1a472e1a690fc90f7ad33ac304e668" kind="function"><name>~GenAleatorios</name></member>
+    <member refid="classGenAleatorios_1817cbe02b82be9067b94996300b64b9c" kind="function"><name>generarNumero</name></member>
+    <member refid="classGenAleatorios_11ca28fbc4c69c19d61d147abb04e67fb" kind="function"><name>numerosGenerados</name></member>
+    <member refid="classGenAleatorios_1702ffff747c51573caf3fb29fa16639b" kind="function"><name>destruir</name></member>
+  </compound>
+  <compound refid="classGrafo" kind="class"><name>Grafo</name>
+    <member refid="classGrafo_1ff48ce4fa7a7845e9656e8fea6411cdf" kind="variable"><name>numNodos</name></member>
+    <member refid="classGrafo_14432c6e8a600e3a1000a490a6f9e9d25" kind="variable"><name>nodos</name></member>
+    <member refid="classGrafo_1a1660e5fa02a12ce2eb93aac7253019d" kind="variable"><name>arcos</name></member>
+    <member refid="classGrafo_11822f1da0f4d0a0f269e24fa1427d298" kind="variable"><name>warshallC</name></member>
+    <member refid="classGrafo_18eb6f90f8bdcf6984952cc56259fd2b7" kind="variable"><name>floydC</name></member>
+    <member refid="classGrafo_16653c7e990c96d00e72d49baf3ab2814" kind="variable"><name>floydP</name></member>
+    <member refid="classGrafo_17b86c2cd9e014eaf972dcd4d2e780c48" kind="function"><name>Grafo</name></member>
+    <member refid="classGrafo_1d1fbc03a4e7ebdde73c0c474fffcc451" kind="function"><name>getNumNodos</name></member>
+    <member refid="classGrafo_1c6b3070591d565cab5efb6b5aac62bef" kind="function"><name>esVacio</name></member>
+    <member refid="classGrafo_1ed8619656de5d16de0add75e3497e23e" kind="function"><name>nuevoArco</name></member>
+    <member refid="classGrafo_1577730ec1abd068092a3c0947756bf3e" kind="function"><name>borraArco</name></member>
+    <member refid="classGrafo_123ead320b4f7eb49a8b470d998ed37c2" kind="function"><name>adyacente</name></member>
+    <member refid="classGrafo_1f657b527f15fdc5c743b1dd1bf965789" kind="function"><name>getArco</name></member>
+    <member refid="classGrafo_105878b3e96fe9d89dc7939187e1d96d2" kind="function"><name>nuevoNodo</name></member>
+    <member refid="classGrafo_1ed70a046c1d864a2e1532cbca4216896" kind="function"><name>borraNodo</name></member>
+    <member refid="classGrafo_144f6f4aca2763cfae2da60a489692423" kind="function"><name>mostrarArcos</name></member>
+    <member refid="classGrafo_184b7da0227f81b94681bc3cb629f3035" kind="function"><name>mostrarNodos</name></member>
+    <member refid="classGrafo_14c7af7b8f7cb4423836f45dd62d9fff2" kind="function"><name>mostrarPW</name></member>
+    <member refid="classGrafo_13ca9a9b3ad1c598442d05a528a75a5da" kind="function"><name>mostrarFloydC</name></member>
+    <member refid="classGrafo_18cbe645ba4ee198c1777186bf2b2a2d7" kind="function"><name>warshall</name></member>
+    <member refid="classGrafo_1fb0510598fcefea15428e0f2cf1144dc" kind="function"><name>floyd</name></member>
+    <member refid="classGrafo_1c1517bf52e85a5dd1052f6f2b6f5b9a3" kind="function"><name>siguiente</name></member>
+    <member refid="classGrafo_1416d9891de5c525d84875a922cf66a5a" kind="function"><name>adyacentes</name></member>
+    <member refid="classGrafo_12446def9aec3af9e6c7153bb7a5e8e8f" kind="function"><name>anchura</name></member>
+    <member refid="classGrafo_1fc1e329960921eef323e53995ffebe9c" kind="function"><name>profundidad</name></member>
+    <member refid="classGrafo_18a8a0ae579d4a09086310e7e0af04e91" kind="function"><name>prof</name></member>
+    <member refid="classGrafo_1155d72a8aa6b3580129c06c45ee8e848" kind="function"><name>caminoMinimoEntero</name></member>
+    <member refid="classGrafo_1b4b15e8634d278300fdda38022888670" kind="function"><name>vueltaAtras</name></member>
+  </compound>
+  <compound refid="classIntruso" kind="class"><name>Intruso</name>
+    <member refid="classIntruso_1f36bc9ec8ef7b46e9335c6842908a527" kind="function"><name>Intruso</name></member>
+    <member refid="classIntruso_1c8f76c5d9e67549e75cb816820867e7f" kind="function"><name>Intruso</name></member>
+    <member refid="classIntruso_106a5d236e669e5add8b1c6472303133e" kind="function"><name>mostrar</name></member>
+    <member refid="classIntruso_1979c89c596d92d8ce69b8af5e556d62d" kind="function"><name>escribeLog</name></member>
+    <member refid="classIntruso_16d239cda2dc32af27e50ba84524e4179" kind="function"><name>caminoMinimo</name></member>
+    <member refid="classIntruso_12898ae82386e99d361f6f131122b7be1" kind="function"><name>ruta</name></member>
+    <member refid="classIntruso_10f0142b1852ed9f0431af335d3ff6f14" kind="function"><name>escribeLogRuta</name></member>
+    <member refid="classIntruso_1dee71b00225e294086d8980625a32ab3" kind="function"><name>accionUno</name></member>
+    <member refid="classIntruso_16fef0ae823fdabc05796413f53d073e5" kind="function"><name>accionDos</name></member>
+    <member refid="classIntruso_152e521cc66983d5a9f20f3424818e6e4" kind="function"><name>accionTres</name></member>
+    <member refid="classIntruso_199e215b1df4387b629f25349378d3bbb" kind="function"><name>accionCuatro</name></member>
+    <member refid="classIntruso_1947673866dbb60c76b40eff5ab139bcd" kind="function"><name>~Intruso</name></member>
+  </compound>
+  <compound refid="classLider" kind="class"><name>Lider</name>
+    <member refid="classLider_170eb8e22a6ee992547300cdda4bb50bf" kind="variable"><name>secuenciaorientaciones</name></member>
+    <member refid="classLider_1752a83ebb773db5090bc192591a5814a" kind="variable"><name>movimiento</name></member>
+    <member refid="classLider_18b51b94a25f0c234a2f42a525e38a394" kind="variable"><name>grupo</name></member>
+    <member refid="classLider_1bbdd9719261866f4f316620b4319d7e6" kind="function"><name>Lider</name></member>
+    <member refid="classLider_116da42712d18eb29d78b81613f3d916d" kind="function"><name>Lider</name></member>
+    <member refid="classLider_18b7b93efc0b6cecbab4ae82992ebcd11" kind="function"><name>setMovimiento</name></member>
+    <member refid="classLider_12fb77f30c5ebb7bce39dc7ee4711d4d2" kind="function"><name>getMovimiento</name></member>
+    <member refid="classLider_184acf3920a695ab792f9bbcb494ea7c8" kind="function"><name>setSecuenciaOrientaciones</name></member>
+    <member refid="classLider_138d5268d1d780494277063ce96c52881" kind="function"><name>getSecuenciaOrientaciones</name></member>
+    <member refid="classLider_1125acbb3a1432f217efdc9826a2b8d8f" kind="function"><name>mostrar</name></member>
+    <member refid="classLider_1fcd179370f87dbc08bf6619ff9742f66" kind="function"><name>escribeLog</name></member>
+    <member refid="classLider_16b98929df0d59cd29b85e6fb8aeb36f1" kind="function"><name>ruta</name></member>
+    <member refid="classLider_187a0b4fca538efa5c9b7d01992f362e6" kind="function"><name>actualizarMovimiento</name></member>
+    <member refid="classLider_19b40d8d989e80fbfd39a17bac209b73e" kind="function"><name>recorrerVecinos</name></member>
+    <member refid="classLider_14643215eb946b9bd002d6882c5a24aeb" kind="function"><name>escribeLogRuta</name></member>
+    <member refid="classLider_12729cb612e6ca2d2750f48b85743107e" kind="function"><name>accionUno</name></member>
+    <member refid="classLider_151fb2d9c6dfe283a13d61b8f546068f3" kind="function"><name>accionDos</name></member>
+    <member refid="classLider_1993a29f5a5615bd8a41dfe550dfccb61" kind="function"><name>accionTres</name></member>
+    <member refid="classLider_164481cdebf71c9b28ec7aef689fed43e" kind="function"><name>~Lider</name></member>
+  </compound>
+  <compound refid="classLista" kind="class"><name>Lista</name>
+    <member refid="classLista_151ef3b021604e24c071d9d7fc4fe464c" kind="variable"><name>inicio</name></member>
+    <member refid="classLista_1980ba832ae372f10c12c45a0b62998a1" kind="variable"><name>fin</name></member>
+    <member refid="classLista_1f1fb04c421ceab618357c72dcb0e54ce" kind="variable"><name>pInteres</name></member>
+    <member refid="classLista_1dce924e21607848663132290be1a959d" kind="function"><name>Lista</name></member>
+    <member refid="classLista_1045836581e34db176fa9ea314fb1bbeb" kind="function"><name>estaVacia</name></member>
+    <member refid="classLista_12fd415c8750064cb484e7c14804bba90" kind="function"><name>moverInicio</name></member>
+    <member refid="classLista_1001dcab41e0de1b4ca927210c925f213" kind="function"><name>moverFin</name></member>
+    <member refid="classLista_156afa0f4cc4fe8e2777cf723d3d33051" kind="function"><name>avanzar</name></member>
+    <member refid="classLista_131f85f2a80f71ca63f8961c5669016f7" kind="function"><name>retroceder</name></member>
+    <member refid="classLista_1b3be68c9b5f42ceda85151272d5b516b" kind="function"><name>enInicio</name></member>
+    <member refid="classLista_1c3faff183e9d650c0257bf1d3a225441" kind="function"><name>enFin</name></member>
+    <member refid="classLista_1fb13236e65882f36ff05ab2bf9def266" kind="function"><name>finLista</name></member>
+    <member refid="classLista_1db567d2de384a77c4be2eba2db576a82" kind="function"><name>consultar</name></member>
+    <member refid="classLista_134139fd96bd52d97eec326cc11fcffca" kind="function"><name>insertar</name></member>
+    <member refid="classLista_150bd114513de3ba1a7eddf201d7e2981" kind="function"><name>borrar</name></member>
+    <member refid="classLista_1937516a29a904ffde578da3b969323a2" kind="function"><name>insertarOrdenado</name></member>
+    <member refid="classLista_1f297975e278b0c92cbf67d14b2f08366" kind="function"><name>~Lista</name></member>
+  </compound>
+  <compound refid="structLista_1_1TipoNodo" kind="struct"><name>Lista::TipoNodo</name>
+    <member refid="structLista_1_1TipoNodo_1a753282af8cb24fb3d698606bc7a6b75" kind="variable"><name>dato</name></member>
+    <member refid="structLista_1_1TipoNodo_10d333de079a035b6da79c8e134e8d882" kind="variable"><name>siguiente</name></member>
+    <member refid="structLista_1_1TipoNodo_18b2740085a51787f07e676a508746517" kind="variable"><name>anterior</name></member>
+  </compound>
+  <compound refid="classLista_3_01T_01_5_01_4" kind="class"><name>Lista&lt; T * &gt;</name>
+    <member refid="classLista_3_01T_01_5_01_4_13c8100adb26a82ea237ea01f307b9006" kind="variable"><name>inicio</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1d090c4bdcee14c006ee3d542abe3da7d" kind="variable"><name>fin</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1d731a8be8397c65ac1a41d2bee06cb30" kind="variable"><name>pInteres</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_144b4f6e5d41dd227d592c80c20d4e892" kind="function"><name>Lista</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_185d734adac3062d726f4f66973639625" kind="function"><name>estaVacia</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1ee67bd96e50144040f416326f005b713" kind="function"><name>moverInicio</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1b1cfc8a64d56d677bd1cb5bca458224f" kind="function"><name>moverFin</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_135a51536128c69a1699bdecc4f3bf334" kind="function"><name>avanzar</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1d0239771a75010c57c9100518b99ad24" kind="function"><name>retroceder</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1256a625938cc5245398fd6b2eedc5b62" kind="function"><name>enInicio</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_15d7c2e84edb85f3837501751a8ad93d6" kind="function"><name>enFin</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1bb095fd4bd0b38902aab3cf418c9464c" kind="function"><name>finLista</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1762553566ba4c533d9ed4a96272137c3" kind="function"><name>consultar</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1cad3a12f003de3c3e4e0ed1987c2d373" kind="function"><name>insertar</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_12e7d19eae68e77248a307fc40e3591d9" kind="function"><name>borrar</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1e7ca79dc1ab4c56433bcc11bcdd034b9" kind="function"><name>insertarOrdenado</name></member>
+    <member refid="classLista_3_01T_01_5_01_4_1d4e4677c8f4bcbae00e03b114b32fc0f" kind="function"><name>~Lista</name></member>
+  </compound>
+  <compound refid="structLista_3_01T_01_5_01_4_1_1TipoNodo" kind="struct"><name>Lista&lt; T * &gt;::TipoNodo</name>
+    <member refid="structLista_3_01T_01_5_01_4_1_1TipoNodo_1fdda6c5cad52745c2345790398793260" kind="variable"><name>dato</name></member>
+    <member refid="structLista_3_01T_01_5_01_4_1_1TipoNodo_1cf172c894faa8f6a403b7ab73cee2aec" kind="variable"><name>siguiente</name></member>
+    <member refid="structLista_3_01T_01_5_01_4_1_1TipoNodo_1e1734904a697971b8157262a492d6f29" kind="variable"><name>anterior</name></member>
+  </compound>
+  <compound refid="classLlave" kind="class"><name>Llave</name>
+    <member refid="classLlave_1dc04b939beacd406e302128c19d13d19" kind="variable"><name>identificador</name></member>
+    <member refid="classLlave_1a2f4f79518899176f8760ce8d0cc6c26" kind="function"><name>Llave</name></member>
+    <member refid="classLlave_1c80fb30127165c307bc38873545e57fc" kind="function"><name>setIdentificador</name></member>
+    <member refid="classLlave_121a4a576a987126d469a6eecb167aed1" kind="function"><name>getIdentificador</name></member>
+    <member refid="classLlave_1b3bedc41ed2e5fedbc6d661d625c5cfb" kind="function"><name>Llave</name></member>
+    <member refid="classLlave_13ed579466201fc80172774d871ece003" kind="function"><name>operator==</name></member>
+    <member refid="classLlave_1932475670e3d7c9e47ca0837d829a7eb" kind="function"><name>operator&lt;</name></member>
+    <member refid="classLlave_1be84640478b66d4114fc5995b7981dfb" kind="function"><name>operator&gt;</name></member>
+    <member refid="classLlave_1da6d6ec0cb9dc0c04b2b39d4a0dd9128" kind="function"><name>operator!=</name></member>
+    <member refid="classLlave_182d40399d2418c8e117f62f7df6ee95c" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classLlave_1ad93df44517e7d51ceef30182afb8232" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classLlave_1635d5c55c24d90520c5460973058b1ef" kind="function"><name>operator==</name></member>
+    <member refid="classLlave_1a6d47e36c8bcd46f7153d00f7ca343d5" kind="function"><name>operator&lt;</name></member>
+    <member refid="classLlave_1c5abd96ecfa2d3e8827fce2710b1cbdd" kind="function"><name>operator&gt;</name></member>
+    <member refid="classLlave_1c4fdcbca296854f56c8ec7606c15ca40" kind="function"><name>operator!=</name></member>
+    <member refid="classLlave_16953a596b1bc6e951ef5ca434b5c1036" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classLlave_121d29952725fc8390d668e5ad2094110" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classLlave_17db4b83fa86cc3974ac90c6c34c9c56e" kind="function"><name>Llave</name></member>
+    <member refid="classLlave_1b0e13e4c7afa757571506ac3d04e5df2" kind="function"><name>~Llave</name></member>
+    <member refid="classLlave_1749fde97e089059539e396738c36b7d3" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="classMiembro" kind="class"><name>Miembro</name>
+    <member refid="classMiembro_1d5ad341737a1f4631694393c99204d91" kind="function"><name>Miembro</name></member>
+    <member refid="classMiembro_1d90b29c63638e16aa8f83f978cb7ec47" kind="function"><name>Miembro</name></member>
+    <member refid="classMiembro_128498c7229e81e64d0cb7ea69515dca0" kind="function"><name>mostrar</name></member>
+    <member refid="classMiembro_1b286484cab275d7754c6ce2b513fdc9a" kind="function"><name>accionCuatro</name></member>
+    <member refid="classMiembro_1d8af12663ae1b9a195d05b4f700726c3" kind="function"><name>~Miembro</name></member>
+  </compound>
+  <compound refid="classPersonaje" kind="class"><name>Personaje</name>
+    <member refid="classPersonaje_18f20063ad43d9f85a6d1f0022d32e0b4" kind="variable"><name>marca</name></member>
+    <member refid="classPersonaje_10c1fedf7d7ec93a6ca1d38aa6a79b7e2" kind="variable"><name>nombre</name></member>
+    <member refid="classPersonaje_10bce8e11746271ccf72035ea3da1138e" kind="variable"><name>turno</name></member>
+    <member refid="classPersonaje_131a8a079b785a74622cc8dd51a9f745c" kind="variable"><name>idsala</name></member>
+    <member refid="classPersonaje_18160f258ed0b5836b1173cbef638bde3" kind="variable"><name>idplanta</name></member>
+    <member refid="classPersonaje_1ea1a86738c789e65792ed745039bce46" kind="variable"><name>secuencia</name></member>
+    <member refid="classPersonaje_1e98a94dc9f84d09e3a62266d5cac700c" kind="variable"><name>juegollaves</name></member>
+    <member refid="classPersonaje_19238a75aae652b20dd423e85cfa1ee17" kind="function"><name>Personaje</name></member>
+    <member refid="classPersonaje_1a86eafddc218e8afa94f989b3642bcbd" kind="function"><name>Personaje</name></member>
+    <member refid="classPersonaje_1475630fe753b7fb80a2472c558d99169" kind="function"><name>setMarca</name></member>
+    <member refid="classPersonaje_136e1ba57799adb58163bec5a4f0015e0" kind="function"><name>getMarca</name></member>
+    <member refid="classPersonaje_12e84ee485f46b434f1d23558ad3eb7c9" kind="function"><name>setNombre</name></member>
+    <member refid="classPersonaje_1801e7fe38d0727d3219e51e916e2ce67" kind="function"><name>getNombre</name></member>
+    <member refid="classPersonaje_1de04da7a674a165aeaa09566b219a828" kind="function"><name>setTurno</name></member>
+    <member refid="classPersonaje_1425c743df0309deab48e9575d715eed9" kind="function"><name>getTurno</name></member>
+    <member refid="classPersonaje_143a551a88fe3c6d4458719135992114b" kind="function"><name>setIdSala</name></member>
+    <member refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" kind="function"><name>getIdSala</name></member>
+    <member refid="classPersonaje_1361e72e69c915f6e0c7d2c5e82ae0744" kind="function"><name>setIdPlanta</name></member>
+    <member refid="classPersonaje_1f388d329d466b136c60fa26c6c4800a7" kind="function"><name>getIdPlanta</name></member>
+    <member refid="classPersonaje_11ad939228d858b75826ddb4effa67ceb" kind="function"><name>liberarMemoriaPila</name></member>
+    <member refid="classPersonaje_16ede7d70599342ba61eb034027a41f2a" kind="function"><name>insertarPila</name></member>
+    <member refid="classPersonaje_18880afa570d1f919516e2810b2226b08" kind="function"><name>cojerLlave</name></member>
+    <member refid="classPersonaje_127166f7a52fcfb3570e0dc20f37a2402" kind="function"><name>pilaVacia</name></member>
+    <member refid="classPersonaje_166ec23478444efc795d29734cc010809" kind="function"><name>insertarCola</name></member>
+    <member refid="classPersonaje_1786951aff09e227527d3da60338effec" kind="function"><name>TodasAcciones</name></member>
+    <member refid="classPersonaje_10454b75ccc8f7e33f03e2cfb2c59e725" kind="function"><name>accionUno</name></member>
+    <member refid="classPersonaje_1af7763eb6099390038b7833129a1ef9f" kind="function"><name>accionDos</name></member>
+    <member refid="classPersonaje_185c25ff0362bf4f4f5e69965c1ae4cfb" kind="function"><name>accionTres</name></member>
+    <member refid="classPersonaje_13aed5959a6a829819e0b0a6dcca9c2e4" kind="function"><name>accionCuatro</name></member>
+    <member refid="classPersonaje_1f6dc20013805229005dfb87fc6f273b5" kind="function"><name>ruta</name></member>
+    <member refid="classPersonaje_186fe4a1ff708072d98c6be42bbd512ea" kind="function"><name>escribeLog</name></member>
+    <member refid="classPersonaje_1e9f6bd8027b8a5c2e660a327d9e513ca" kind="function"><name>mostrar</name></member>
+    <member refid="classPersonaje_10b3c25862a6081aaee96e77c08edda29" kind="function"><name>~Personaje</name></member>
+    <member refid="classPersonaje_15870893672c215b1d99594233f7f5fd0" kind="function"><name>operator==</name></member>
+    <member refid="classPersonaje_17717f9a6ad3d7b68a5c953930510f575" kind="function"><name>operator&gt;</name></member>
+    <member refid="classPersonaje_1e55182c2fd21118b27c5e911f800c1d6" kind="function"><name>operator&lt;</name></member>
+    <member refid="classPersonaje_15b7fbb10c092e6f953738fa54a380e33" kind="function"><name>operator&gt;=</name></member>
+    <member refid="classPersonaje_1824156240864cc79a8b7319985eaec58" kind="function"><name>operator&lt;=</name></member>
+    <member refid="classPersonaje_1be7f26619dd67133806688d4306d877e" kind="function"><name>operator!=</name></member>
+  </compound>
+  <compound refid="classplanta" kind="class"><name>planta</name>
+    <member refid="classplanta_14568b1074c34ab26aae103614cdae979" kind="variable"><name>v</name></member>
+    <member refid="classplanta_11567e74077230f7c3b927ca55cd18257" kind="variable"><name>p</name></member>
+    <member refid="classplanta_172f3cf37b38e369aa834714b4cb77864" kind="variable"><name>g</name></member>
+    <member refid="classplanta_14c59fb46ec3dcb661c6b340037da3ad6" kind="variable"><name>idplanta</name></member>
+    <member refid="classplanta_171d9c8459763d1e9b51af9868c0621fd" kind="variable"><name>salaentrada</name></member>
+    <member refid="classplanta_12437aa05b9a6efa0821017352df9b6c2" kind="variable"><name>salasalida</name></member>
+    <member refid="classplanta_10c335bb0d8978a79c2d250992aa75b10" kind="variable"><name>nllaves</name></member>
+    <member refid="classplanta_1bfbe315d1244a9e2b4664a7055371a71" kind="variable"><name>anchoplanta</name></member>
+    <member refid="classplanta_1c9d2d41714b7b75cfeddcd8484568f78" kind="variable"><name>altoplanta</name></member>
+    <member refid="classplanta_14c93b85a355bf29b1613cc22f0ed0f46" kind="function"><name>planta</name></member>
+    <member refid="classplanta_1e6a56480cf07955e354043f1221177fe" kind="function"><name>planta</name></member>
+    <member refid="classplanta_1cd23abae2d6e377abe25d48d850f7319" kind="function"><name>setIdPlanta</name></member>
+    <member refid="classplanta_16e9b552f6542f68eca605ed69a283980" kind="function"><name>getIdPlanta</name></member>
+    <member refid="classplanta_1b322da5e5360a302601c15c98748213c" kind="function"><name>setSalaEntrada</name></member>
+    <member refid="classplanta_19ea0125af87508895b27bc0c2235e42a" kind="function"><name>getSalaEntrada</name></member>
+    <member refid="classplanta_13a3256c74ea714e55de672068d05ec4d" kind="function"><name>setSalaSalida</name></member>
+    <member refid="classplanta_1dbb3b23569c310dcd01163e09674009c" kind="function"><name>getSalaSalida</name></member>
+    <member refid="classplanta_14b11a7bc1bd000f01a7af5da1df7a285" kind="function"><name>setNLlaves</name></member>
+    <member refid="classplanta_15087143df250ee8686a3c5387961f01e" kind="function"><name>getNLlaves</name></member>
+    <member refid="classplanta_1aa7dd29c052394b78b67d7be90bbb3c3" kind="function"><name>setAnchoPlanta</name></member>
+    <member refid="classplanta_1ef93598d5bca7e2235035a07147f4bbe" kind="function"><name>getAnchoPlanta</name></member>
+    <member refid="classplanta_1935647ba7aa07152ac9a4a5bf0ec92fd" kind="function"><name>setAltoPlanta</name></member>
+    <member refid="classplanta_13d9fad702134aa5718b9d00ae11d7646" kind="function"><name>getAltoPlanta</name></member>
+    <member refid="classplanta_1dd824feb63f74fa79c07b35292b6164d" kind="function"><name>calcularPosiblesVecinos</name></member>
+    <member refid="classplanta_18f751a6905970cdc9922b9662b33f24c" kind="function"><name>vecinosTodasSalas</name></member>
+    <member refid="classplanta_1878639aab40d24f515031619abbd7a61" kind="function"><name>insertarVector</name></member>
+    <member refid="classplanta_18ba7df6396d9bad77c0f65a729e85ec6" kind="function"><name>insertarNodoGrafo</name></member>
+    <member refid="classplanta_1c97835a31f875ecdc01f33517dfc71d4" kind="function"><name>obtenerCeldaVector</name></member>
+    <member refid="classplanta_1af4bebbde71513fa6496c3f60d0214f3" kind="function"><name>algoritmoKruskal</name></member>
+    <member refid="classplanta_1b4ffd08f4b41a91e0f1ad667e2e9014f" kind="function"><name>pintarEstructura</name></member>
+    <member refid="classplanta_1d9f49ae6d392d9f7de7320140c87b285" kind="function"><name>generarAtajos</name></member>
+    <member refid="classplanta_1894574ebadf95dc0fd29a692f4c8e563" kind="function"><name>AtajoNorte</name></member>
+    <member refid="classplanta_16f30a6db1b7f9796a8608348bb438efb" kind="function"><name>AtajoSur</name></member>
+    <member refid="classplanta_1289d62512ce27210c8d2b065c2e1ad7f" kind="function"><name>AtajoOeste</name></member>
+    <member refid="classplanta_19de280e30bde3f6acd5f758567f39ad6" kind="function"><name>AtajoEste</name></member>
+    <member refid="classplanta_16420d2f76781945da90ff6187967694d" kind="function"><name>siHayAtajo</name></member>
+    <member refid="classplanta_18fab738328778b64c683e169a2aa58dc" kind="function"><name>generarPlanta</name></member>
+    <member refid="classplanta_199d7ef1836db1ae602104e1878f5f430" kind="function"><name>repartoLlaves</name></member>
+    <member refid="classplanta_15a10e66e70a71d957e1dde4a019b8280" kind="function"><name>establecerCondicionApertura</name></member>
+    <member refid="classplanta_112c7cfe94fb585ff80db86046756e3d9" kind="function"><name>salasMasFrecuentadas</name></member>
+    <member refid="classplanta_1b2856a872a24f50fb52dd6b35e878c55" kind="function"><name>insertarPersonajeSala</name></member>
+    <member refid="classplanta_19d424f5bb63dbae72f7f3ed6906d7095" kind="function"><name>totalSalas</name></member>
+    <member refid="classplanta_140ec013e3c503f0675c688c5dce3828a" kind="function"><name>pintarPersonajes</name></member>
+    <member refid="classplanta_12e62f6407ca66f91c2ef10647ec5f869" kind="function"><name>siguienteGrafo</name></member>
+    <member refid="classplanta_1d11674698b9703b7c570643723ced5fd" kind="function"><name>calcularRutaSalasPlanta</name></member>
+    <member refid="classplanta_1afb5b4511eeaa66b208cb6ec08c60a9e" kind="function"><name>calcularVecinosReales</name></member>
+    <member refid="classplanta_140af5c175ab9b779d8aceebc0c4361c2" kind="function"><name>calcularVecinosRealesTodasSalas</name></member>
+    <member refid="classplanta_1d66544ed0d0c8f20a98d7c8ce401a43f" kind="function"><name>obtenerPuerta</name></member>
+    <member refid="classplanta_1015d9890a348a62c9680edaec54c3975" kind="function"><name>accionesPersonajesSalas</name></member>
+    <member refid="classplanta_1715eedf1f6fab5d7daa52a2b7cbb2744" kind="function"><name>escribeLogPlanta</name></member>
+    <member refid="classplanta_1a86392313eeb2f2c217454abf0c7e216" kind="function"><name>~planta</name></member>
+  </compound>
+  <compound refid="classpuerta" kind="class"><name>puerta</name>
+    <member refid="classpuerta_1f8e5946ad72fe1183eb44327b3664609" kind="variable"><name>arbolCerradura</name></member>
+    <member refid="classpuerta_1f62a930f0bc51f3f38e4159adb260e9d" kind="variable"><name>arbolLlavesProbadas</name></member>
+    <member refid="classpuerta_11ab12f1dd5365526d79459ff161e2790" kind="variable"><name>lcs</name></member>
+    <member refid="classpuerta_19725b401749b131d6f3e6e1dea391f16" kind="variable"><name>estadoCerradura</name></member>
+    <member refid="classpuerta_11a4b0d7133827b14a29e8992d930d8c2" kind="variable"><name>alturaMaxima</name></member>
+    <member refid="classpuerta_1dae189c1b2be845ba10b3335e4c3b91d" kind="function"><name>puerta</name></member>
+    <member refid="classpuerta_1237f56c4736c97891edb19aeee750ed2" kind="function"><name>puerta</name></member>
+    <member refid="classpuerta_1facb52e11a8a2b23437d4d0821187edc" kind="function"><name>getAlturaMaxima</name></member>
+    <member refid="classpuerta_14dbec0518d2dfbf78e636ea18352cfe1" kind="function"><name>setAlturaMaxima</name></member>
+    <member refid="classpuerta_1c7020654ddeefc2cdfd937fd5d3f6749" kind="function"><name>setEstadoCerradura</name></member>
+    <member refid="classpuerta_13c87fcb19f24d5348db587f0c6a9b27d" kind="function"><name>getEstadoCerradura</name></member>
+    <member refid="classpuerta_1fc919a28f4751159e5109ec43e691e0e" kind="function"><name>configurarPuerta</name></member>
+    <member refid="classpuerta_18c3078b9245cb0fbc37e7f1b662be74b" kind="function"><name>cerrar</name></member>
+    <member refid="classpuerta_1a70c9e4a8a59555d1ba15caff7849497" kind="function"><name>abrir</name></member>
+    <member refid="classpuerta_19f108f67092846743458195fca60d6ca" kind="function"><name>siEstaLlaveProbada</name></member>
+    <member refid="classpuerta_1d4d085f48f3b014afbba4113510b63d8" kind="function"><name>liberarArbol</name></member>
+    <member refid="classpuerta_1e2bcee3940c85671615c2331bba3b755" kind="function"><name>eliminarlista</name></member>
+    <member refid="classpuerta_1db48cb6b90ccdc012aa488850ac458b1" kind="function"><name>escribirFichero</name></member>
+    <member refid="classpuerta_1be41e285663cf9f509e6fe0583ba4202" kind="function"><name>escribirInordenLlaves</name></member>
+    <member refid="classpuerta_1207e0983ca66391ee628453dffcf619f" kind="function"><name>~puerta</name></member>
+    <member refid="classpuerta_1490c20cc328bef002a79831d7d649b47" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="classsala" kind="class"><name>sala</name>
+    <member refid="classsala_10668a38feb652d27853854bb3c63e2f2" kind="variable"><name>idsala</name></member>
+    <member refid="classsala_1da6a56ee3499694fe8c3506de7ecf2b1" kind="variable"><name>marca</name></member>
+    <member refid="classsala_1b925bf60110c5c9919e4ac83393d3b02" kind="variable"><name>frecuencia</name></member>
+    <member refid="classsala_153263d3109c22a61ebd930d0351e874e" kind="variable"><name>lista</name></member>
+    <member refid="classsala_185ba986359b09c626bdbc6b11903829f" kind="variable"><name>colapersonajes</name></member>
+    <member refid="classsala_1ad5bdd47e00bec0dd3f0d3b39d4c0e7c" kind="variable"><name>vecinos</name></member>
+    <member refid="classsala_1a48720e6448a633e51018e837eb49890" kind="friend"><name>compararFrecuencias</name></member>
+    <member refid="classsala_1780a8c359e96eaf55403409c019d536a" kind="function"><name>sala</name></member>
+    <member refid="classsala_1265933f2f255cbce1f724d1c07957d69" kind="function"><name>sala</name></member>
+    <member refid="classsala_16e2f990c9e2b6fe2c08ba3853e5299c4" kind="function"><name>setIdentificadorSala</name></member>
+    <member refid="classsala_1d6eb9a00920ec3f7eee7134d478ddf76" kind="function"><name>getIdentificadorSala</name></member>
+    <member refid="classsala_174d517148cdcaf0aa1a58bc877f9c910" kind="function"><name>setMarcaSala</name></member>
+    <member refid="classsala_1099a7d79e8142f14dacfcc869f5557c3" kind="function"><name>getMarcaSala</name></member>
+    <member refid="classsala_1ae7603393ce64c66c0d954e7ba452260" kind="function"><name>setFrecuenciaSala</name></member>
+    <member refid="classsala_124c1c2cf672362b9e82d0584cd63af97" kind="function"><name>getFrecuenciaSala</name></member>
+    <member refid="classsala_168552d6940a68c2a4cd4351f38acf546" kind="function"><name>escribeLog</name></member>
+    <member refid="classsala_1468ec985fcba82e578dd81de0102dede" kind="function"><name>mostrar</name></member>
+    <member refid="classsala_143d8051f7213fd82d30b5b7b56043877" kind="function"><name>insertarLista</name></member>
+    <member refid="classsala_183833f513f3f53033e6e8fc3cacded73" kind="function"><name>insertarCola</name></member>
+    <member refid="classsala_1306fe8573f4ed40792d59a7f9e580b30" kind="function"><name>devolverPrimerPersonaje</name></member>
+    <member refid="classsala_16bf07428f9bca5ff621845ac18b34ee4" kind="function"><name>borrarElementoCola</name></member>
+    <member refid="classsala_10b13578fe6d2a10d6102920dfc9216b0" kind="function"><name>siHayPersonajes</name></member>
+    <member refid="classsala_1deee4cbad1198682fd86962d35aea256" kind="function"><name>siHayLlaves</name></member>
+    <member refid="classsala_1f02e9b4d4608076a48e51f2c4ddf87d4" kind="function"><name>escribeLogConEspacio</name></member>
+    <member refid="classsala_1096e4d5f4a0389e546d97167c3c24f81" kind="function"><name>cuantosPersonajes</name></member>
+    <member refid="classsala_13717b76f3e6c98efd83fda02da5a1a06" kind="function"><name>devolverFrente</name></member>
+    <member refid="classsala_10c2411487cc9256b0ce9acfff8d48ded" kind="function"><name>calcularRutaPersonajeSala</name></member>
+    <member refid="classsala_118ca39a6c0fea0cc2a0d155304b007fb" kind="function"><name>volcarVectorVecinos</name></member>
+    <member refid="classsala_1c6ee6cab664ae4efa88eb4b7779b1498" kind="function"><name>devolverCardinalVecino</name></member>
+    <member refid="classsala_1376c8d9684f212f6e8a8d8316f2ab733" kind="function"><name>devolverPimeroLista</name></member>
+    <member refid="classsala_1feef4f1219a7a014f58415eae0ff2e2b" kind="function"><name>accionesColaPersonajes</name></member>
+    <member refid="classsala_1108d16054e4c939568ab2c301a5cea83" kind="function"><name>~sala</name></member>
+  </compound>
+  <compound refid="structTipoArco" kind="struct"><name>TipoArco</name>
+    <member refid="structTipoArco_1d653e6a32585c9424c80e370963beb69" kind="variable"><name>x</name></member>
+    <member refid="structTipoArco_140ae1c81355a730e015bb407330a951c" kind="variable"><name>y</name></member>
+  </compound>
+  <compound refid="classTrabajador" kind="class"><name>Trabajador</name>
+    <member refid="classTrabajador_13238c3ef60a3e888aa1995399fbee23d" kind="function"><name>Trabajador</name></member>
+    <member refid="classTrabajador_10596d6d4ac1eaab49ccabb42dfd2fc68" kind="function"><name>Trabajador</name></member>
+    <member refid="classTrabajador_149e5a94181d6a517d9f5213335da1e27" kind="function"><name>mostrar</name></member>
+    <member refid="classTrabajador_1332796b26094df07fa7b8b39c345f8f4" kind="function"><name>escribeLog</name></member>
+    <member refid="classTrabajador_16b940e57a18466eafa2dcfe0a60313d3" kind="function"><name>ruta</name></member>
+    <member refid="classTrabajador_1ae7afce778764088e53c23b21876ac96" kind="function"><name>escribeLogRuta</name></member>
+    <member refid="classTrabajador_1ea6e8089295c87f0b5a5014895f28526" kind="function"><name>accionUno</name></member>
+    <member refid="classTrabajador_1598df69f74628e4da5d0dc776c98b114" kind="function"><name>accionDos</name></member>
+    <member refid="classTrabajador_19203576ae93a8854b033f1d91e25fee7" kind="function"><name>accionTres</name></member>
+    <member refid="classTrabajador_1aa31c7df293b6d054e0e41e4b0e27412" kind="function"><name>~Trabajador</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="config_8h" kind="file"><name>config.h</name>
+    <member refid="config_8h_10ee1617ff2f6885ef384a3dd46f9b9d7" kind="define"><name>HAVE_DLFCN_H</name></member>
+    <member refid="config_8h_1b90a030ff2790ebdc176660a6dd2a478" kind="define"><name>HAVE_INTTYPES_H</name></member>
+    <member refid="config_8h_1e93a78f9d076138897af441c9f86f285" kind="define"><name>HAVE_MEMORY_H</name></member>
+    <member refid="config_8h_1b6cd6d1c63c1e26ea2d4537b77148354" kind="define"><name>HAVE_STDINT_H</name></member>
+    <member refid="config_8h_19e0e434ec1a6ddbd97db12b5a32905e0" kind="define"><name>HAVE_STDLIB_H</name></member>
+    <member refid="config_8h_1405d10d46190bcb0320524c54eafc850" kind="define"><name>HAVE_STRINGS_H</name></member>
+    <member refid="config_8h_1d4c234dd1625255dc626a15886306e7d" kind="define"><name>HAVE_STRING_H</name></member>
+    <member refid="config_8h_1ce156430ba007d19b4348a950d0c692b" kind="define"><name>HAVE_SYS_STAT_H</name></member>
+    <member refid="config_8h_169dc70bea5d1f8bd2be9740e974fa666" kind="define"><name>HAVE_SYS_TYPES_H</name></member>
+    <member refid="config_8h_1219b06937831d0da94d801ab13987639" kind="define"><name>HAVE_UNISTD_H</name></member>
+    <member refid="config_8h_1ca8570fb706c81df371b7f9bc454ae03" kind="define"><name>PACKAGE</name></member>
+    <member refid="config_8h_11d1d2d7f8d2f95b376954d649ab03233" kind="define"><name>PACKAGE_BUGREPORT</name></member>
+    <member refid="config_8h_11c0439e4355794c09b64274849eb0279" kind="define"><name>PACKAGE_NAME</name></member>
+    <member refid="config_8h_1c73e6f903c16eca7710f92e36e1c6fbf" kind="define"><name>PACKAGE_STRING</name></member>
+    <member refid="config_8h_1f415af6bfede0e8d5453708afe68651c" kind="define"><name>PACKAGE_TARNAME</name></member>
+    <member refid="config_8h_1a326a05d5e30f9e9a4bb0b4469d5d0c0" kind="define"><name>PACKAGE_VERSION</name></member>
+    <member refid="config_8h_1550e5c272cc3cf3814651721167dcd23" kind="define"><name>STDC_HEADERS</name></member>
+    <member refid="config_8h_11c6d5de492ac61ad29aec7aa9a436bbf" kind="define"><name>VERSION</name></member>
+  </compound>
+  <compound refid="arbol_8h" kind="file"><name>arbol.h</name>
+    <member refid="arbol_8h_19eeb8ade5c948220247864bf58da2272" kind="define"><name>DEPURAR</name></member>
+    <member refid="arbol_8h_14c758869d4ed860db7c6a48f88601c67" kind="define"><name>DEPURAR_MSG</name></member>
+  </compound>
+  <compound refid="cargador_8cpp" kind="file"><name>cargador.cpp</name>
+  </compound>
+  <compound refid="cargador_8h" kind="file"><name>cargador.h</name>
+    <member refid="cargador_8h_19eeb8ade5c948220247864bf58da2272" kind="define"><name>DEPURAR</name></member>
+    <member refid="cargador_8h_14c758869d4ed860db7c6a48f88601c67" kind="define"><name>DEPURAR_MSG</name></member>
+    <member refid="cargador_8h_1741e5457b26889702f43172b789f32da" kind="define"><name>NUMELTOSCONF</name></member>
+  </compound>
+  <compound refid="ec3__lpii_8cpp" kind="file"><name>ec3_lpii.cpp</name>
+    <member refid="ec3__lpii_8cpp_10ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="estacion_8cpp" kind="file"><name>estacion.cpp</name>
+  </compound>
+  <compound refid="estacion_8h" kind="file"><name>estacion.h</name>
+  </compound>
+  <compound refid="fichero_8cpp" kind="file"><name>fichero.cpp</name>
+  </compound>
+  <compound refid="fichero_8h" kind="file"><name>fichero.h</name>
+    <member refid="fichero_8h_136e4c5a07c063f5e1dff1855dfedca71" kind="define"><name>MAXCAMPOS</name></member>
+  </compound>
+  <compound refid="genaleatorios_8cpp" kind="file"><name>genaleatorios.cpp</name>
+  </compound>
+  <compound refid="genaleatorios_8h" kind="file"><name>genaleatorios.h</name>
+  </compound>
+  <compound refid="grafo_8cpp" kind="file"><name>grafo.cpp</name>
+  </compound>
+  <compound refid="grafo_8h" kind="file"><name>grafo.h</name>
+    <member refid="grafo_8h_1729057a178ee98af9ded64aaabc786be" kind="define"><name>MAXVERT</name></member>
+    <member refid="grafo_8h_1f076440f216f5a40a11563e489f04932" kind="define"><name>INFINITO</name></member>
+    <member refid="grafo_8h_1eff54931f8088d31b7efb96f3ec47098" kind="define"><name>NO_VALOR</name></member>
+    <member refid="grafo_8h_19eeb8ade5c948220247864bf58da2272" kind="define"><name>DEPURAR</name></member>
+    <member refid="grafo_8h_14c758869d4ed860db7c6a48f88601c67" kind="define"><name>DEPURAR_MSG</name></member>
+    <member refid="grafo_8h_16a99a7ad424f10e03cd56b48dc4c695e" kind="typedef"><name>TipoNodoGrafo</name></member>
+    <member refid="grafo_8h_12e8af4d6cbb1eabfbff65a59a9df8516" kind="typedef"><name>TipoArcoGrafo</name></member>
+    <member refid="grafo_8h_1bed687de7008e513fbbb6a508534e56b" kind="typedef"><name>TipoMatrizAdyacencia</name></member>
+    <member refid="grafo_8h_19edce5941c20ba5daf42809231fb1a27" kind="typedef"><name>TipoVectorNodos</name></member>
+    <member refid="grafo_8h_162d8e454f77fac83210e8afb8ed27919" kind="typedef"><name>TipoCjtoNodos</name></member>
+  </compound>
+  <compound refid="intruso_8cpp" kind="file"><name>intruso.cpp</name>
+  </compound>
+  <compound refid="intruso_8h" kind="file"><name>intruso.h</name>
+  </compound>
+  <compound refid="lider_8cpp" kind="file"><name>lider.cpp</name>
+  </compound>
+  <compound refid="lider_8h" kind="file"><name>lider.h</name>
+  </compound>
+  <compound refid="lista_8h" kind="file"><name>lista.h</name>
+  </compound>
+  <compound refid="llave_8cpp" kind="file"><name>llave.cpp</name>
+    <member refid="llave_8cpp_1749fde97e089059539e396738c36b7d3" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="llave_8h" kind="file"><name>llave.h</name>
+  </compound>
+  <compound refid="miembro_8cpp" kind="file"><name>miembro.cpp</name>
+  </compound>
+  <compound refid="miembro_8h" kind="file"><name>miembro.h</name>
+  </compound>
+  <compound refid="personaje_8cpp" kind="file"><name>personaje.cpp</name>
+  </compound>
+  <compound refid="personaje_8h" kind="file"><name>personaje.h</name>
+  </compound>
+  <compound refid="planta_8cpp" kind="file"><name>planta.cpp</name>
+  </compound>
+  <compound refid="planta_8h" kind="file"><name>planta.h</name>
+  </compound>
+  <compound refid="puerta_8cpp" kind="file"><name>puerta.cpp</name>
+    <member refid="puerta_8cpp_1490c20cc328bef002a79831d7d649b47" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="puerta_8h" kind="file"><name>puerta.h</name>
+  </compound>
+  <compound refid="sala_8cpp" kind="file"><name>sala.cpp</name>
+  </compound>
+  <compound refid="sala_8h" kind="file"><name>sala.h</name>
+  </compound>
+  <compound refid="trabajador_8cpp" kind="file"><name>trabajador.cpp</name>
+  </compound>
+  <compound refid="trabajador_8h" kind="file"><name>trabajador.h</name>
+  </compound>
+  <compound refid="dir_ff61d139f2f86d4a83056998368190a5" kind="dir"><name>Desktop/academia_lp2/</name>
+  </compound>
+  <compound refid="dir_0a0eb09863ecebe85bea4cf4108bc6ce" kind="dir"><name>Desktop/academia_lp2/EC3_LPII/debug/</name>
+  </compound>
+  <compound refid="dir_12c146d35398e16f2fa01b8054e60272" kind="dir"><name>Desktop/</name>
+  </compound>
+  <compound refid="dir_f5019c013b584dc2c926c66028e22f24" kind="dir"><name>Desktop/academia_lp2/EC3_LPII/</name>
+  </compound>
+  <compound refid="dir_ab605d764bc8c612a414531b4c309451" kind="dir"><name>Desktop/academia_lp2/EC3_LPII/src/</name>
+  </compound>
+</doxygenindex>

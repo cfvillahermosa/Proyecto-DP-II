@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="grafo_8h" kind="file">
+    <compoundname>grafo.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes local="no">cstdlib</includes>
+    <includes local="no">queue</includes>
+    <includes local="no">set</includes>
+    <includedby refid="planta_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/planta.h</includedby>
+    <includedby refid="grafo_8cpp" local="yes">Desktop/academia_lp2/EC3_LPII/src/grafo.cpp</includedby>
+    <incdepgraph>
+      <node id="221">
+        <label>queue</label>
+      </node>
+      <node id="218">
+        <label>Desktop/academia_lp2/EC3_LPII/src/grafo.h</label>
+        <link refid="grafo.h"/>
+        <childnode refid="219" relation="include">
+        </childnode>
+        <childnode refid="220" relation="include">
+        </childnode>
+        <childnode refid="221" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
+        </childnode>
+      </node>
+      <node id="220">
+        <label>cstdlib</label>
+      </node>
+      <node id="219">
+        <label>iostream</label>
+      </node>
+      <node id="222">
+        <label>set</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="225">
+        <label>Desktop/academia_lp2/EC3_LPII/src/intruso.h</label>
+        <link refid="intruso_8h-source"/>
+        <childnode refid="226" relation="include">
+        </childnode>
+      </node>
+      <node id="226">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+      </node>
+      <node id="223">
+        <label>Desktop/academia_lp2/EC3_LPII/src/grafo.h</label>
+        <link refid="grafo.h"/>
+        <childnode refid="224" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+      </node>
+      <node id="224">
+        <label>Desktop/academia_lp2/EC3_LPII/src/planta.h</label>
+        <link refid="planta_8h-source"/>
+        <childnode refid="225" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+      </node>
+      <node id="230">
+        <label>Desktop/academia_lp2/EC3_LPII/src/grafo.cpp</label>
+        <link refid="grafo_8cpp"/>
+      </node>
+      <node id="228">
+        <label>Desktop/academia_lp2/EC3_LPII/src/estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="227" relation="include">
+        </childnode>
+      </node>
+      <node id="227">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+      <node id="229">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structTipoArco" prot="public">TipoArco</innerclass>
+    <innerclass refid="classGrafo" prot="public">Grafo</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="grafo_8h_1729057a178ee98af9ded64aaabc786be" prot="public" static="no">
+        <name>MAXVERT</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="13" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grafo_8h_1f076440f216f5a40a11563e489f04932" prot="public" static="no">
+        <name>INFINITO</name>
+        <initializer>9999</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="14" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grafo_8h_1eff54931f8088d31b7efb96f3ec47098" prot="public" static="no">
+        <name>NO_VALOR</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="15" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grafo_8h_19eeb8ade5c948220247864bf58da2272" prot="public" static="no">
+        <name>DEPURAR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Variable constante utilizada para mostrar o no mensajes de depuracion de programa </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="27" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="grafo_8h_14c758869d4ed860db7c6a48f88601c67" prot="public" static="no">
+        <name>DEPURAR_MSG</name>
+        <param><defname>msg</defname></param>
+        <initializer>if (DEPURAR){ cout&lt;&lt;msg; cin.get();}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Macro utilizada para mostrar mensajes de depuracion de programa y retener los mensajes en pantalla </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="33" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="grafo_8h_16a99a7ad424f10e03cd56b48dc4c695e" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int TipoNodoGrafo</definition>
+        <argsstring></argsstring>
+        <name>TipoNodoGrafo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="35" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="grafo_8h_12e8af4d6cbb1eabfbff65a59a9df8516" prot="public" static="no">
+        <type>int</type>
+        <definition>typedef int TipoArcoGrafo</definition>
+        <argsstring></argsstring>
+        <name>TipoArcoGrafo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="36" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="grafo_8h_1bed687de7008e513fbbb6a508534e56b" prot="public" static="no">
+        <type>TipoArcoGrafo</type>
+        <definition>typedef TipoArcoGrafo TipoMatrizAdyacencia[MAXVERT][MAXVERT]</definition>
+        <argsstring>[MAXVERT][MAXVERT]</argsstring>
+        <name>TipoMatrizAdyacencia</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="37" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="grafo_8h_19edce5941c20ba5daf42809231fb1a27" prot="public" static="no">
+        <type>TipoNodoGrafo</type>
+        <definition>typedef TipoNodoGrafo TipoVectorNodos[MAXVERT]</definition>
+        <argsstring>[MAXVERT]</argsstring>
+        <name>TipoVectorNodos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="38" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="grafo_8h_162d8e454f77fac83210e8afb8ed27919" prot="public" static="no">
+        <type>set&lt; TipoNodoGrafo &gt;</type>
+        <definition>typedef set&lt;TipoNodoGrafo&gt; TipoCjtoNodos</definition>
+        <argsstring></argsstring>
+        <name>TipoCjtoNodos</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="44" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Declaracion de la clase grafo. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para><bold>Profesores</bold> LPII <linebreak/>
+ <bold>Asignatura</bold> Laboratorio de Programacion II <linebreak/>
+ <bold>Curso</bold> 07/08 (revisado 08/09) </para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="10"><highlight class="preprocessor">#ifndef<sp/>GRAFO_H</highlight></codeline>
+<codeline lineno="11"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GRAFO_H</highlight></codeline>
+<codeline lineno="12"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAXVERT<sp/>200<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>INFINITO<sp/>9999</highlight></codeline>
+<codeline lineno="15"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>NO_VALOR<sp/>-1</highlight></codeline>
+<codeline lineno="16"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdlib&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;queue&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//MAXVERT<sp/><sp/>es<sp/>el<sp/>numero<sp/>maximo<sp/>de<sp/>vertices<sp/>que<sp/>puede<sp/>tener<sp/>el<sp/>grafo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="grafo_8h_19eeb8ade5c948220247864bf58da2272" refkind="member"><highlight class="preprocessor">#define<sp/>DEPURAR<sp/>0</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="33" refid="grafo_8h_14c758869d4ed860db7c6a48f88601c67" refkind="member"><highlight class="preprocessor">#define<sp/>DEPURAR_MSG(msg)<sp/>if<sp/>(DEPURAR){<sp/>cout&lt;&lt;msg;<sp/>cin.get();}</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TipoNodoGrafo;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>TipoArcoGrafo;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TipoArcoGrafo<sp/>TipoMatrizAdyacencia<sp/>[MAXVERT][MAXVERT];</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TipoNodoGrafo<sp/>TipoVectorNodos[MAXVERT];</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Para<sp/>calcular<sp/>los<sp/>adyacentes<sp/>a<sp/>un<sp/>nodo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;set&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>set&lt;TipoNodoGrafo&gt;<sp/>TipoCjtoNodos;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">TipoArco{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TipoArcoGrafo<sp/>x;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TipoArcoGrafo<sp/>y;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="classGrafo" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo.">Grafo</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numNodos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>TipoVectorNodos<sp/>nodos;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>TipoMatrizAdyacencia<sp/>arcos;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>TipoMatrizAdyacencia<sp/>warshallC;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>TipoMatrizAdyacencia<sp/>floydC;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>TipoMatrizAdyacencia<sp/>floydP;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGrafo_17b86c2cd9e014eaf972dcd4d2e780c48" kindref="member">Grafo</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>getNumNodos(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>numNodos;<sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1c6b3070591d565cab5efb6b5aac62bef" kindref="member">esVacio</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1ed8619656de5d16de0add75e3497e23e" kindref="member">nuevoArco</ref>(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>valor);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1577730ec1abd068092a3c0947756bf3e" kindref="member">borraArco</ref>(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_123ead320b4f7eb49a8b470d998ed37c2" kindref="member">adyacente</ref><sp/>(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/><ref refid="classGrafo_1f657b527f15fdc5c743b1dd1bf965789" kindref="member">getArco</ref><sp/><sp/>(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_105878b3e96fe9d89dc7939187e1d96d2" kindref="member">nuevoNodo</ref>(TipoNodoGrafo<sp/>n);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1ed70a046c1d864a2e1532cbca4216896" kindref="member">borraNodo</ref>(TipoNodoGrafo<sp/>nodo);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------<sp/>Metodos<sp/>para<sp/>mostrar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_144f6f4aca2763cfae2da60a489692423" kindref="member">mostrarArcos</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_184b7da0227f81b94681bc3cb629f3035" kindref="member">mostrarNodos</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_14c7af7b8f7cb4423836f45dd62d9fff2" kindref="member">mostrarPW</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_13ca9a9b3ad1c598442d05a528a75a5da" kindref="member">mostrarFloydC</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-------<sp/>Algoritmos<sp/>sobre<sp/>Grafos</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_18cbe645ba4ee198c1777186bf2b2a2d7" kindref="member">warshall</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1fb0510598fcefea15428e0f2cf1144dc" kindref="member">floyd</ref><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1c1517bf52e85a5dd1052f6f2b6f5b9a3" kindref="member">siguiente</ref>(TipoNodoGrafo<sp/>origen,<sp/>TipoNodoGrafo<sp/>destino,<sp/>TipoNodoGrafo<sp/>&amp;sig);</highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGrafo_1416d9891de5c525d84875a922cf66a5a" kindref="member">adyacentes</ref>(TipoNodoGrafo<sp/>origen,<sp/>TipoCjtoNodos<sp/>&amp;ady);</highlight><highlight class="comment">//inserta<sp/>en<sp/>un<sp/>conjunto<sp/>todos<sp/>sus<sp/>adyacentes,<sp/>para<sp/>insertar<sp/>en<sp/>un<sp/>conjunto<sp/>la<sp/>funcion<sp/>&quot;insert(dato)&quot;<sp/>y<sp/>por<sp/>si<sp/>queremos<sp/>borrar<sp/>&quot;erase(dato)&quot;<sp/><sp/>también<sp/>tenemos<sp/>la<sp/>funcion<sp/>empty()<sp/>que<sp/>nos<sp/>dice<sp/>si<sp/>esta<sp/>vacia<sp/>o<sp/>no<sp/>y<sp/>la<sp/>funcion<sp/>size()<sp/>que<sp/>nos<sp/>dice<sp/>cuantos<sp/>elementos<sp/>tiene<sp/>y<sp/>la<sp/>funcion<sp/>count(dato)<sp/>que<sp/>nos<sp/>dice<sp/>si<sp/>el<sp/>elemento<sp/>que<sp/>le<sp/>metemos<sp/>por<sp/>parentesis<sp/>pertenece<sp/>al<sp/>conjunto</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//-------<sp/>Métodos<sp/>para<sp/>recorrer<sp/>el<sp/>grafo</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>anchura(<ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo.">Grafo</ref><sp/>g,<sp/>TipoNodoGrafo<sp/>v,TipoCjtoNodos<sp/>&amp;<sp/>visitados);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>profundidad(<ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo.">Grafo</ref><sp/>g,<sp/>TipoNodoGrafo<sp/>v,TipoCjtoNodos<sp/>&amp;<sp/>visitados);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>prof(<ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo.">Grafo</ref><sp/>g,<sp/>TipoNodoGrafo<sp/>v,TipoCjtoNodos<sp/>&amp;<sp/>visitados);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>caminoMinimoEntero(TipoNodoGrafo<sp/>origen,TipoNodoGrafo<sp/>destino);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>vueltaAtras(<ref refid="classGrafo" kindref="compound" tooltip="Esta clase define un grafo.">Grafo</ref><sp/>g,<sp/>TipoNodoGrafo<sp/>v,<sp/>TipoCjtoNodos<sp/>&amp;<sp/>visitados);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h"/>
+  </compounddef>
+</doxygen>

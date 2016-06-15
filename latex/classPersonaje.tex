@@ -1,0 +1,596 @@
+\hypertarget{classPersonaje}{
+\section{Personaje Class Reference}
+\label{classPersonaje}\index{Personaje@{Personaje}}
+}
+{\tt \#include $<$personaje.h$>$}
+
+Inheritance diagram for Personaje::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classPersonaje}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classPersonaje_9238a75aae652b20dd423e85cfa1ee17}{Personaje} ()
+\item 
+\hyperlink{classPersonaje_a86eafddc218e8afa94f989b3642bcbd}{Personaje} (char m, string n, int t, int ids, int idp)
+\item 
+void \hyperlink{classPersonaje_475630fe753b7fb80a2472c558d99169}{setMarca} (char m)
+\item 
+char \hyperlink{classPersonaje_36e1ba57799adb58163bec5a4f0015e0}{getMarca} ()
+\item 
+void \hyperlink{classPersonaje_2e84ee485f46b434f1d23558ad3eb7c9}{setNombre} (string n)
+\item 
+void \hyperlink{classPersonaje_801e7fe38d0727d3219e51e916e2ce67}{getNombre} (string \&n)
+\item 
+void \hyperlink{classPersonaje_de04da7a674a165aeaa09566b219a828}{setTurno} (int t)
+\item 
+int \hyperlink{classPersonaje_425c743df0309deab48e9575d715eed9}{getTurno} ()
+\item 
+void \hyperlink{classPersonaje_43a551a88fe3c6d4458719135992114b}{setIdSala} (int ids)
+\item 
+int \hyperlink{classPersonaje_5266df5bdfa75df5dfc631d94be2993d}{getIdSala} ()
+\item 
+void \hyperlink{classPersonaje_361e72e69c915f6e0c7d2c5e82ae0744}{setIdPlanta} (int idp)
+\item 
+int \hyperlink{classPersonaje_f388d329d466b136c60fa26c6c4800a7}{getIdPlanta} ()
+\item 
+void \hyperlink{classPersonaje_1ad939228d858b75826ddb4effa67ceb}{liberarMemoriaPila} (stack$<$ \hyperlink{classLlave}{Llave} $\ast$ $>$ $\ast$\&lis)
+\item 
+void \hyperlink{classPersonaje_6ede7d70599342ba61eb034027a41f2a}{insertarPila} (\hyperlink{classLlave}{Llave} $\ast$l)
+\item 
+void \hyperlink{classPersonaje_8880afa570d1f919516e2810b2226b08}{cojerLlave} (\hyperlink{classLlave}{Llave} $\ast$\&l)
+\item 
+bool \hyperlink{classPersonaje_27166f7a52fcfb3570e0dc20f37a2402}{pilaVacia} ()
+\item 
+void \hyperlink{classPersonaje_66ec23478444efc795d29734cc010809}{insertarCola} (int i)
+\item 
+void \hyperlink{classPersonaje_786951aff09e227527d3da60338effec}{TodasAcciones} ()
+\item 
+virtual void \hyperlink{classPersonaje_0454b75ccc8f7e33f03e2cfb2c59e725}{accionUno} ()
+\item 
+virtual void \hyperlink{classPersonaje_af7763eb6099390038b7833129a1ef9f}{accionDos} ()
+\item 
+virtual void \hyperlink{classPersonaje_85c25ff0362bf4f4f5e69965c1ae4cfb}{accionTres} ()
+\item 
+virtual void \hyperlink{classPersonaje_3aed5959a6a829819e0b0a6dcca9c2e4}{accionCuatro} ()
+\item 
+virtual void \hyperlink{classPersonaje_f6dc20013805229005dfb87fc6f273b5}{ruta} (ofstream \&f)
+\item 
+virtual void \hyperlink{classPersonaje_86fe4a1ff708072d98c6be42bbd512ea}{escribeLog} (ofstream \&f)
+\item 
+virtual void \hyperlink{classPersonaje_e9f6bd8027b8a5c2e660a327d9e513ca}{mostrar} ()
+\item 
+virtual \hyperlink{classPersonaje_0b3c25862a6081aaee96e77c08edda29}{$\sim$Personaje} ()
+\item 
+int \hyperlink{classPersonaje_5870893672c215b1d99594233f7f5fd0}{operator==} (\hyperlink{classPersonaje}{Personaje} \&p)
+\item 
+int \hyperlink{classPersonaje_7717f9a6ad3d7b68a5c953930510f575}{operator$>$} (\hyperlink{classPersonaje}{Personaje} \&p)
+\item 
+int \hyperlink{classPersonaje_e55182c2fd21118b27c5e911f800c1d6}{operator$<$} (\hyperlink{classPersonaje}{Personaje} \&p)
+\item 
+int \hyperlink{classPersonaje_5b7fbb10c092e6f953738fa54a380e33}{operator$>$=} (\hyperlink{classPersonaje}{Personaje} \&p)
+\item 
+int \hyperlink{classPersonaje_824156240864cc79a8b7319985eaec58}{operator$<$=} (\hyperlink{classPersonaje}{Personaje} \&p)
+\item 
+int \hyperlink{classPersonaje_be7f26619dd67133806688d4306d877e}{operator!=} (\hyperlink{classPersonaje}{Personaje} \&p)
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+\hypertarget{classPersonaje_8f20063ad43d9f85a6d1f0022d32e0b4}{
+char \textbf{marca}}
+\label{classPersonaje_8f20063ad43d9f85a6d1f0022d32e0b4}
+
+\item 
+\hypertarget{classPersonaje_0c1fedf7d7ec93a6ca1d38aa6a79b7e2}{
+string \textbf{nombre}}
+\label{classPersonaje_0c1fedf7d7ec93a6ca1d38aa6a79b7e2}
+
+\item 
+\hypertarget{classPersonaje_0bce8e11746271ccf72035ea3da1138e}{
+int \textbf{turno}}
+\label{classPersonaje_0bce8e11746271ccf72035ea3da1138e}
+
+\item 
+\hypertarget{classPersonaje_31a8a079b785a74622cc8dd51a9f745c}{
+int \textbf{idsala}}
+\label{classPersonaje_31a8a079b785a74622cc8dd51a9f745c}
+
+\item 
+\hypertarget{classPersonaje_8160f258ed0b5836b1173cbef638bde3}{
+int \textbf{idplanta}}
+\label{classPersonaje_8160f258ed0b5836b1173cbef638bde3}
+
+\item 
+\hypertarget{classPersonaje_ea1a86738c789e65792ed745039bce46}{
+queue$<$ int $>$ \textbf{secuencia}}
+\label{classPersonaje_ea1a86738c789e65792ed745039bce46}
+
+\item 
+\hypertarget{classPersonaje_e98a94dc9f84d09e3a62266d5cac700c}{
+stack$<$ \hyperlink{classLlave}{Llave} $\ast$ $>$ $\ast$ \textbf{juegollaves}}
+\label{classPersonaje_e98a94dc9f84d09e3a62266d5cac700c}
+
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[Author:]Carlos,,, $<$carlos-linux$>$ \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPersonaje_9238a75aae652b20dd423e85cfa1ee17}{
+\index{Personaje@{Personaje}!Personaje@{Personaje}}
+\index{Personaje@{Personaje}!Personaje@{Personaje}}
+\subsubsection[Personaje]{\setlength{\rightskip}{0pt plus 5cm}Personaje::Personaje ()}}
+\label{classPersonaje_9238a75aae652b20dd423e85cfa1ee17}
+
+
+Constructor por defecto de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_a86eafddc218e8afa94f989b3642bcbd}{
+\index{Personaje@{Personaje}!Personaje@{Personaje}}
+\index{Personaje@{Personaje}!Personaje@{Personaje}}
+\subsubsection[Personaje]{\setlength{\rightskip}{0pt plus 5cm}Personaje::Personaje (char {\em m}, \/  string {\em n}, \/  int {\em t}, \/  int {\em ids}, \/  int {\em idp})}}
+\label{classPersonaje_a86eafddc218e8afa94f989b3642bcbd}
+
+
+Constructor parametrizado de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em m}]es un parametro de entrada del tipo char asociado al atributo movimiento de mi clase \hyperlink{classPersonaje}{Personaje} \item[{\em n}]es un parametro de entrada del tipo string asociado al atributo nombre de mi clase \hyperlink{classPersonaje}{Personaje} \item[{\em t}]es un parametro de entrada del tipo entero asociado al atributo turno de mi clase \hyperlink{classPersonaje}{Personaje} \item[{\em ids}]es un parametro de entrada del tipo entero asociado al atributo idsala de mi clase \hyperlink{classPersonaje}{Personaje} \item[{\em idp}]es un parametro de entrada del tipo entero asociado al atributo idplanta de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_0b3c25862a6081aaee96e77c08edda29}{
+\index{Personaje@{Personaje}!$\sim$Personaje@{$\sim$Personaje}}
+\index{$\sim$Personaje@{$\sim$Personaje}!Personaje@{Personaje}}
+\subsubsection[$\sim$Personaje]{\setlength{\rightskip}{0pt plus 5cm}Personaje::$\sim$Personaje ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPersonaje_0b3c25862a6081aaee96e77c08edda29}
+
+
+Destructor de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPersonaje_475630fe753b7fb80a2472c558d99169}{
+\index{Personaje@{Personaje}!setMarca@{setMarca}}
+\index{setMarca@{setMarca}!Personaje@{Personaje}}
+\subsubsection[setMarca]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::setMarca (char {\em m})}}
+\label{classPersonaje_475630fe753b7fb80a2472c558d99169}
+
+
+Metodo que establece al atributo movimiento de mi clase personaje el valor de m \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em m}]es un parametro de entrada del tipo char \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_36e1ba57799adb58163bec5a4f0015e0}{
+\index{Personaje@{Personaje}!getMarca@{getMarca}}
+\index{getMarca@{getMarca}!Personaje@{Personaje}}
+\subsubsection[getMarca]{\setlength{\rightskip}{0pt plus 5cm}char Personaje::getMarca ()}}
+\label{classPersonaje_36e1ba57799adb58163bec5a4f0015e0}
+
+
+Metodo que devuelve el caracter asociado al atributo movimiento de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna el char correspondiente al atributo movimiento de mi clase \hyperlink{classPersonaje}{Personaje} \end{Desc}
+\hypertarget{classPersonaje_2e84ee485f46b434f1d23558ad3eb7c9}{
+\index{Personaje@{Personaje}!setNombre@{setNombre}}
+\index{setNombre@{setNombre}!Personaje@{Personaje}}
+\subsubsection[setNombre]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::setNombre (string {\em n})}}
+\label{classPersonaje_2e84ee485f46b434f1d23558ad3eb7c9}
+
+
+Metodo que establece el valor de mi atributo de tipo string, nombre, de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es un parametro de entrada del tipo string asociado al atributo nombre de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_801e7fe38d0727d3219e51e916e2ce67}{
+\index{Personaje@{Personaje}!getNombre@{getNombre}}
+\index{getNombre@{getNombre}!Personaje@{Personaje}}
+\subsubsection[getNombre]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::getNombre (string \& {\em n})}}
+\label{classPersonaje_801e7fe38d0727d3219e51e916e2ce67}
+
+
+Metodo que devuelve el contenido del atributo nombre de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em n}]es un parametro salida que devuelve el contenido de mi atributo nombre de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_de04da7a674a165aeaa09566b219a828}{
+\index{Personaje@{Personaje}!setTurno@{setTurno}}
+\index{setTurno@{setTurno}!Personaje@{Personaje}}
+\subsubsection[setTurno]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::setTurno (int {\em t})}}
+\label{classPersonaje_de04da7a674a165aeaa09566b219a828}
+
+
+Metodo que establece el valor de mi atributo turno de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em t}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_425c743df0309deab48e9575d715eed9}{
+\index{Personaje@{Personaje}!getTurno@{getTurno}}
+\index{getTurno@{getTurno}!Personaje@{Personaje}}
+\subsubsection[getTurno]{\setlength{\rightskip}{0pt plus 5cm}int Personaje::getTurno ()}}
+\label{classPersonaje_425c743df0309deab48e9575d715eed9}
+
+
+Metodo que devuelve el valor del atributo turno de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Devuelve el entero correspondiente al valor de mi atributo turno de mi clase \hyperlink{classPersonaje}{Personaje} \end{Desc}
+\hypertarget{classPersonaje_43a551a88fe3c6d4458719135992114b}{
+\index{Personaje@{Personaje}!setIdSala@{setIdSala}}
+\index{setIdSala@{setIdSala}!Personaje@{Personaje}}
+\subsubsection[setIdSala]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::setIdSala (int {\em ids})}}
+\label{classPersonaje_43a551a88fe3c6d4458719135992114b}
+
+
+Metodo que establece el valor de mi atributo idsala de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ids}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_5266df5bdfa75df5dfc631d94be2993d}{
+\index{Personaje@{Personaje}!getIdSala@{getIdSala}}
+\index{getIdSala@{getIdSala}!Personaje@{Personaje}}
+\subsubsection[getIdSala]{\setlength{\rightskip}{0pt plus 5cm}int Personaje::getIdSala ()}}
+\label{classPersonaje_5266df5bdfa75df5dfc631d94be2993d}
+
+
+Metodo que devuelve el valor asociado a mi atributo idsala de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna el valor correspondiente al atributo idsala de mi clase \hyperlink{classPersonaje}{Personaje} \end{Desc}
+\hypertarget{classPersonaje_361e72e69c915f6e0c7d2c5e82ae0744}{
+\index{Personaje@{Personaje}!setIdPlanta@{setIdPlanta}}
+\index{setIdPlanta@{setIdPlanta}!Personaje@{Personaje}}
+\subsubsection[setIdPlanta]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::setIdPlanta (int {\em idp})}}
+\label{classPersonaje_361e72e69c915f6e0c7d2c5e82ae0744}
+
+
+Metodo que establece el valor de mi atributo idplanta de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em idp}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_f388d329d466b136c60fa26c6c4800a7}{
+\index{Personaje@{Personaje}!getIdPlanta@{getIdPlanta}}
+\index{getIdPlanta@{getIdPlanta}!Personaje@{Personaje}}
+\subsubsection[getIdPlanta]{\setlength{\rightskip}{0pt plus 5cm}int Personaje::getIdPlanta ()}}
+\label{classPersonaje_f388d329d466b136c60fa26c6c4800a7}
+
+
+Metodo que devuelve el valor correspondiente con el atributo idplanta de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_1ad939228d858b75826ddb4effa67ceb}{
+\index{Personaje@{Personaje}!liberarMemoriaPila@{liberarMemoriaPila}}
+\index{liberarMemoriaPila@{liberarMemoriaPila}!Personaje@{Personaje}}
+\subsubsection[liberarMemoriaPila]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::liberarMemoriaPila (stack$<$ {\bf Llave} $\ast$ $>$ $\ast$\& {\em pil})}}
+\label{classPersonaje_1ad939228d858b75826ddb4effa67ceb}
+
+
+Metodo que libera la memoria de cada \hyperlink{classLlave}{Llave} contenida en mi estructura pila pil \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em pil}]es un parametro de entrada salida (puntero) que almacena punteros a instancias de mi clase \hyperlink{classLlave}{Llave} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_6ede7d70599342ba61eb034027a41f2a}{
+\index{Personaje@{Personaje}!insertarPila@{insertarPila}}
+\index{insertarPila@{insertarPila}!Personaje@{Personaje}}
+\subsubsection[insertarPila]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::insertarPila ({\bf Llave} $\ast$ {\em l})}}
+\label{classPersonaje_6ede7d70599342ba61eb034027a41f2a}
+
+
+Metodo que inserta en mi atributo juegollaves del tipo pila un puntero a una instancia de mi clase \hyperlink{classLlave}{Llave} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]es un parametro de entrada de mi clase \hyperlink{classLlave}{Llave} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_8880afa570d1f919516e2810b2226b08}{
+\index{Personaje@{Personaje}!cojerLlave@{cojerLlave}}
+\index{cojerLlave@{cojerLlave}!Personaje@{Personaje}}
+\subsubsection[cojerLlave]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::cojerLlave ({\bf Llave} $\ast$\& {\em l})}}
+\label{classPersonaje_8880afa570d1f919516e2810b2226b08}
+
+
+Metodo que devuelve la primera llave de mi atributo del tipo pila juegollaves si la cola no esta vacia y ademas ,desapila esa llave \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em l}]es un parametro de entrada salida de mi clase \hyperlink{classLlave}{Llave} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_27166f7a52fcfb3570e0dc20f37a2402}{
+\index{Personaje@{Personaje}!pilaVacia@{pilaVacia}}
+\index{pilaVacia@{pilaVacia}!Personaje@{Personaje}}
+\subsubsection[pilaVacia]{\setlength{\rightskip}{0pt plus 5cm}bool Personaje::pilaVacia ()}}
+\label{classPersonaje_27166f7a52fcfb3570e0dc20f37a2402}
+
+
+Metodo booleano que me indica si mi atributo del tipo pila juegollaves se encuentra vacia o no \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true si la pila esta vacia y false en caso contrario \end{Desc}
+\hypertarget{classPersonaje_66ec23478444efc795d29734cc010809}{
+\index{Personaje@{Personaje}!insertarCola@{insertarCola}}
+\index{insertarCola@{insertarCola}!Personaje@{Personaje}}
+\subsubsection[insertarCola]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::insertarCola (int {\em i})}}
+\label{classPersonaje_66ec23478444efc795d29734cc010809}
+
+
+Metodo que inserta en mi cola secuencia un valor entero \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em i}]es un parametro de entrada del tipo entero \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_786951aff09e227527d3da60338effec}{
+\index{Personaje@{Personaje}!TodasAcciones@{TodasAcciones}}
+\index{TodasAcciones@{TodasAcciones}!Personaje@{Personaje}}
+\subsubsection[TodasAcciones]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::TodasAcciones ()}}
+\label{classPersonaje_786951aff09e227527d3da60338effec}
+
+
+Metodo que realiza todas las acciones (uno,dos,tres y cuatro) de la clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_0454b75ccc8f7e33f03e2cfb2c59e725}{
+\index{Personaje@{Personaje}!accionUno@{accionUno}}
+\index{accionUno@{accionUno}!Personaje@{Personaje}}
+\subsubsection[accionUno]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::accionUno ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPersonaje_0454b75ccc8f7e33f03e2cfb2c59e725}
+
+
+Metodo que realiza la accion uno de la clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented in \hyperlink{classIntruso_dee71b00225e294086d8980625a32ab3}{Intruso}, \hyperlink{classLider_2729cb612e6ca2d2750f48b85743107e}{Lider}, and \hyperlink{classTrabajador_ea6e8089295c87f0b5a5014895f28526}{Trabajador}.\hypertarget{classPersonaje_af7763eb6099390038b7833129a1ef9f}{
+\index{Personaje@{Personaje}!accionDos@{accionDos}}
+\index{accionDos@{accionDos}!Personaje@{Personaje}}
+\subsubsection[accionDos]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::accionDos ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPersonaje_af7763eb6099390038b7833129a1ef9f}
+
+
+Metodo que realiza la accion dos de la clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented in \hyperlink{classIntruso_6fef0ae823fdabc05796413f53d073e5}{Intruso}, \hyperlink{classLider_51fb2d9c6dfe283a13d61b8f546068f3}{Lider}, and \hyperlink{classTrabajador_598df69f74628e4da5d0dc776c98b114}{Trabajador}.\hypertarget{classPersonaje_85c25ff0362bf4f4f5e69965c1ae4cfb}{
+\index{Personaje@{Personaje}!accionTres@{accionTres}}
+\index{accionTres@{accionTres}!Personaje@{Personaje}}
+\subsubsection[accionTres]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::accionTres ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPersonaje_85c25ff0362bf4f4f5e69965c1ae4cfb}
+
+
+Metodo que realiza la accion tres de la clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented in \hyperlink{classIntruso_52e521cc66983d5a9f20f3424818e6e4}{Intruso}, \hyperlink{classLider_993a29f5a5615bd8a41dfe550dfccb61}{Lider}, and \hyperlink{classTrabajador_9203576ae93a8854b033f1d91e25fee7}{Trabajador}.\hypertarget{classPersonaje_3aed5959a6a829819e0b0a6dcca9c2e4}{
+\index{Personaje@{Personaje}!accionCuatro@{accionCuatro}}
+\index{accionCuatro@{accionCuatro}!Personaje@{Personaje}}
+\subsubsection[accionCuatro]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::accionCuatro ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPersonaje_3aed5959a6a829819e0b0a6dcca9c2e4}
+
+
+Metodo que realiza la accion cuatro de la clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented in \hyperlink{classIntruso_99e215b1df4387b629f25349378d3bbb}{Intruso}, and \hyperlink{classMiembro_b286484cab275d7754c6ce2b513fdc9a}{Miembro}.\hypertarget{classPersonaje_f6dc20013805229005dfb87fc6f273b5}{
+\index{Personaje@{Personaje}!ruta@{ruta}}
+\index{ruta@{ruta}!Personaje@{Personaje}}
+\subsubsection[ruta]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::ruta (ofstream \& {\em f})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPersonaje_f6dc20013805229005dfb87fc6f273b5}
+
+
+Metodo que realiza la ruta de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented in \hyperlink{classIntruso_2898ae82386e99d361f6f131122b7be1}{Intruso}, \hyperlink{classLider_6b98929df0d59cd29b85e6fb8aeb36f1}{Lider}, and \hyperlink{classTrabajador_6b940e57a18466eafa2dcfe0a60313d3}{Trabajador}.\hypertarget{classPersonaje_86fe4a1ff708072d98c6be42bbd512ea}{
+\index{Personaje@{Personaje}!escribeLog@{escribeLog}}
+\index{escribeLog@{escribeLog}!Personaje@{Personaje}}
+\subsubsection[escribeLog]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::escribeLog (ofstream \& {\em f})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPersonaje_86fe4a1ff708072d98c6be42bbd512ea}
+
+
+Metodo escribe en mi registro.log de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented in \hyperlink{classIntruso_979c89c596d92d8ce69b8af5e556d62d}{Intruso}, \hyperlink{classLider_fcd179370f87dbc08bf6619ff9742f66}{Lider}, and \hyperlink{classTrabajador_332796b26094df07fa7b8b39c345f8f4}{Trabajador}.\hypertarget{classPersonaje_e9f6bd8027b8a5c2e660a327d9e513ca}{
+\index{Personaje@{Personaje}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!Personaje@{Personaje}}
+\subsubsection[mostrar]{\setlength{\rightskip}{0pt plus 5cm}void Personaje::mostrar ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classPersonaje_e9f6bd8027b8a5c2e660a327d9e513ca}
+
+
+Metodo que muestra por pantalla que el personaje es del tipo personaje \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented in \hyperlink{classIntruso_06a5d236e669e5add8b1c6472303133e}{Intruso}, \hyperlink{classLider_125acbb3a1432f217efdc9826a2b8d8f}{Lider}, \hyperlink{classMiembro_28498c7229e81e64d0cb7ea69515dca0}{Miembro}, and \hyperlink{classTrabajador_49e5a94181d6a517d9f5213335da1e27}{Trabajador}.\hypertarget{classPersonaje_5870893672c215b1d99594233f7f5fd0}{
+\index{Personaje@{Personaje}!operator==@{operator==}}
+\index{operator==@{operator==}!Personaje@{Personaje}}
+\subsubsection[operator==]{\setlength{\rightskip}{0pt plus 5cm}int Personaje::operator== ({\bf Personaje} \& {\em p})}}
+\label{classPersonaje_5870893672c215b1d99594233f7f5fd0}
+
+
+Sobrecarga del operador \char`\"{}==\char`\"{} de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un parametro de entrada salida de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_7717f9a6ad3d7b68a5c953930510f575}{
+\index{Personaje@{Personaje}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Personaje@{Personaje}}
+\subsubsection[operator$>$]{\setlength{\rightskip}{0pt plus 5cm}int Personaje::operator$>$ ({\bf Personaje} \& {\em p})}}
+\label{classPersonaje_7717f9a6ad3d7b68a5c953930510f575}
+
+
+Sobrecarga del operador \char`\"{}$>$\char`\"{} de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un parametro de entrada salida de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_e55182c2fd21118b27c5e911f800c1d6}{
+\index{Personaje@{Personaje}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Personaje@{Personaje}}
+\subsubsection[operator$<$]{\setlength{\rightskip}{0pt plus 5cm}int Personaje::operator$<$ ({\bf Personaje} \& {\em p})}}
+\label{classPersonaje_e55182c2fd21118b27c5e911f800c1d6}
+
+
+Sobrecarga del operador \char`\"{}$<$\char`\"{} de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un parametro de entrada salida de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_5b7fbb10c092e6f953738fa54a380e33}{
+\index{Personaje@{Personaje}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!Personaje@{Personaje}}
+\subsubsection[operator$>$=]{\setlength{\rightskip}{0pt plus 5cm}int Personaje::operator$>$= ({\bf Personaje} \& {\em p})}}
+\label{classPersonaje_5b7fbb10c092e6f953738fa54a380e33}
+
+
+Sobrecarga del operador \char`\"{}$>$=\char`\"{} de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un parametro de entrada salida de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_824156240864cc79a8b7319985eaec58}{
+\index{Personaje@{Personaje}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!Personaje@{Personaje}}
+\subsubsection[operator$<$=]{\setlength{\rightskip}{0pt plus 5cm}int Personaje::operator$<$= ({\bf Personaje} \& {\em p})}}
+\label{classPersonaje_824156240864cc79a8b7319985eaec58}
+
+
+Sobrecarga del operador \char`\"{}$<$=\char`\"{} de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un parametro de entrada salida de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classPersonaje_be7f26619dd67133806688d4306d877e}{
+\index{Personaje@{Personaje}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Personaje@{Personaje}}
+\subsubsection[operator"!=]{\setlength{\rightskip}{0pt plus 5cm}int Personaje::operator!= ({\bf Personaje} \& {\em p})}}
+\label{classPersonaje_be7f26619dd67133806688d4306d877e}
+
+
+Sobrecarga del operador \char`\"{}!=\char`\"{} de mi clase \hyperlink{classPersonaje}{Personaje} \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em p}]es un parametro de entrada salida de mi clase \hyperlink{classPersonaje}{Personaje} \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/personaje.h\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/personaje.cpp\end{CompactItemize}

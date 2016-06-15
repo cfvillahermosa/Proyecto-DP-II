@@ -1,0 +1,757 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="classGrafo" kind="class" prot="public">
+    <compoundname>Grafo</compoundname>
+    <includes refid="grafo_8h" local="no">grafo.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGrafo_1ff48ce4fa7a7845e9656e8fea6411cdf" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Grafo::numNodos</definition>
+        <argsstring></argsstring>
+        <name>numNodos</name>
+        <briefdescription>
+<para>Numero de nodos del grafo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="61" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_14432c6e8a600e3a1000a490a6f9e9d25" prot="private" static="no" mutable="no">
+        <type>TipoVectorNodos</type>
+        <definition>TipoVectorNodos Grafo::nodos</definition>
+        <argsstring></argsstring>
+        <name>nodos</name>
+        <briefdescription>
+<para>Vector que almacena los nodos del grafo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="62" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_1a1660e5fa02a12ce2eb93aac7253019d" prot="private" static="no" mutable="no">
+        <type>TipoMatrizAdyacencia</type>
+        <definition>TipoMatrizAdyacencia Grafo::arcos</definition>
+        <argsstring></argsstring>
+        <name>arcos</name>
+        <briefdescription>
+<para>Matriz de adyacencia, para almacenar los arcos del grafo. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="63" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_11822f1da0f4d0a0f269e24fa1427d298" prot="private" static="no" mutable="no">
+        <type>TipoMatrizAdyacencia</type>
+        <definition>TipoMatrizAdyacencia Grafo::warshallC</definition>
+        <argsstring></argsstring>
+        <name>warshallC</name>
+        <briefdescription>
+<para>Matriz de Camino (Warshall - Path). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="65" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_18eb6f90f8bdcf6984952cc56259fd2b7" prot="private" static="no" mutable="no">
+        <type>TipoMatrizAdyacencia</type>
+        <definition>TipoMatrizAdyacencia Grafo::floydC</definition>
+        <argsstring></argsstring>
+        <name>floydC</name>
+        <briefdescription>
+<para>Matriz de Costes (Floyd - Cost). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="66" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGrafo_16653c7e990c96d00e72d49baf3ab2814" prot="private" static="no" mutable="no">
+        <type>TipoMatrizAdyacencia</type>
+        <definition>TipoMatrizAdyacencia Grafo::floydP</definition>
+        <argsstring></argsstring>
+        <name>floydP</name>
+        <briefdescription>
+<para>Matriz de Camino (Floyd - Path). </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="67" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGrafo_17b86c2cd9e014eaf972dcd4d2e780c48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Grafo::Grafo</definition>
+        <argsstring>(void)</argsstring>
+        <name>Grafo</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo constructor por defecto de la clase grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="71" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="17" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1d1fbc03a4e7ebdde73c0c474fffcc451" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grafo::getNumNodos</definition>
+        <argsstring>(void)</argsstring>
+        <name>getNumNodos</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="72" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1c6b3070591d565cab5efb6b5aac62bef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::esVacio</definition>
+        <argsstring>(void)</argsstring>
+        <name>esVacio</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que comprueba si el grafo esta vacio <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un valor booleano que indica si el grafo esta o no vacio </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="73" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1ed8619656de5d16de0add75e3497e23e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::nuevoArco</definition>
+        <argsstring>(TipoNodoGrafo origen, TipoNodoGrafo destino, int valor)</argsstring>
+        <name>nuevoArco</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>destino</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>valor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta un nuevo arco en el grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo de origen del arco nuevo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo de destino del arco nuevo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>valor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el peso del arco nuevo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se pudo insertar </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="74" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="64" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1577730ec1abd068092a3c0947756bf3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::borraArco</definition>
+        <argsstring>(TipoNodoGrafo origen, TipoNodoGrafo destino)</argsstring>
+        <name>borraArco</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>destino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que borra un arco del grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo de origen del arco nuevo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo de destino del arco nuevo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se pudo borrar </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="75" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="84" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_123ead320b4f7eb49a8b470d998ed37c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::adyacente</definition>
+        <argsstring>(TipoNodoGrafo origen, TipoNodoGrafo destino)</argsstring>
+        <name>adyacente</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>destino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que comprueba si dos nodos son adyacentes <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el primer nodo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el segundo nodo </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un valor booleano que indica si los dos nodos son adyacentes </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="76" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="105" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1f657b527f15fdc5c743b1dd1bf965789" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Grafo::getArco</definition>
+        <argsstring>(TipoNodoGrafo origen, TipoNodoGrafo destino)</argsstring>
+        <name>getArco</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>destino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que retorna el peso de un arco <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el primer nodo del arco </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el segundo nodo del arco </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Retorna un valor entero que contiene el peso del arco </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="77" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="125" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_105878b3e96fe9d89dc7939187e1d96d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::nuevoNodo</definition>
+        <argsstring>(TipoNodoGrafo n)</argsstring>
+        <name>nuevoNodo</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que inserta un nuevo nodo en el grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo que se desea insertar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se pudo insertar </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="78" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="146" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1ed70a046c1d864a2e1532cbca4216896" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::borraNodo</definition>
+        <argsstring>(TipoNodoGrafo nodo)</argsstring>
+        <name>borraNodo</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>nodo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que elimina un nodo del grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es la posición que ocupa el nodo que se desea eliminar </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true si se pudo borrar </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="79" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="167" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_144f6f4aca2763cfae2da60a489692423" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::mostrarArcos</definition>
+        <argsstring>(void)</argsstring>
+        <name>mostrarArcos</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra los arcos del grafo (la matriz de adyacencia) <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="82" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="227" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_184b7da0227f81b94681bc3cb629f3035" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::mostrarNodos</definition>
+        <argsstring>(void)</argsstring>
+        <name>mostrarNodos</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra el vector de nodos del grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="83" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="210" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_14c7af7b8f7cb4423836f45dd62d9fff2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::mostrarPW</definition>
+        <argsstring>(void)</argsstring>
+        <name>mostrarPW</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra la matriz de Warshall <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="84" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="253" bodyend="268"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_13ca9a9b3ad1c598442d05a528a75a5da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::mostrarFloydC</definition>
+        <argsstring>(void)</argsstring>
+        <name>mostrarFloydC</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que muestra las matrices de coste y camino de Floyd <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="85" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="275" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_18cbe645ba4ee198c1777186bf2b2a2d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::warshall</definition>
+        <argsstring>(void)</argsstring>
+        <name>warshall</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza el algoritmo de Warshall sobre el grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="88" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="310" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1fb0510598fcefea15428e0f2cf1144dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::floyd</definition>
+        <argsstring>(void)</argsstring>
+        <name>floyd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que realiza el algoritmo de Floyd sobre el grafo <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>&quot;&quot;</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>No recibe parametros </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="89" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="338" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1c1517bf52e85a5dd1052f6f2b6f5b9a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::siguiente</definition>
+        <argsstring>(TipoNodoGrafo origen, TipoNodoGrafo destino, TipoNodoGrafo &amp;sig)</argsstring>
+        <name>siguiente</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>destino</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo &amp;</type>
+          <declname>sig</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el siguiente nodo en la ruta entre un origen y un destino <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el primer nodo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>destino</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el segundo nodo </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parametro de entrada salida que devuelve el siguiente nodo en la ruta entre origen y destino </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="90" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="367" bodyend="383"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1416d9891de5c525d84875a922cf66a5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::adyacentes</definition>
+        <argsstring>(TipoNodoGrafo origen, TipoCjtoNodos &amp;ady)</argsstring>
+        <name>adyacentes</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>TipoCjtoNodos &amp;</type>
+          <declname>ady</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Metodo que devuelve el conjunto (en una cola) de nodos adyacentes al nodo actual <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origen</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>es el nodo actual </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sig</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>parametro de entrada salida que devuelve el conjunto de nodos adyacentes (en una cola) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>No retorna ningun valor </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="91" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.cpp" bodystart="393" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_12446def9aec3af9e6c7153bb7a5e8e8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::anchura</definition>
+        <argsstring>(Grafo g, TipoNodoGrafo v, TipoCjtoNodos &amp;visitados)</argsstring>
+        <name>anchura</name>
+        <param>
+          <type><ref refid="classGrafo" kindref="compound">Grafo</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>TipoCjtoNodos &amp;</type>
+          <declname>visitados</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1fc1e329960921eef323e53995ffebe9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::profundidad</definition>
+        <argsstring>(Grafo g, TipoNodoGrafo v, TipoCjtoNodos &amp;visitados)</argsstring>
+        <name>profundidad</name>
+        <param>
+          <type><ref refid="classGrafo" kindref="compound">Grafo</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>TipoCjtoNodos &amp;</type>
+          <declname>visitados</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_18a8a0ae579d4a09086310e7e0af04e91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::prof</definition>
+        <argsstring>(Grafo g, TipoNodoGrafo v, TipoCjtoNodos &amp;visitados)</argsstring>
+        <name>prof</name>
+        <param>
+          <type><ref refid="classGrafo" kindref="compound">Grafo</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>TipoCjtoNodos &amp;</type>
+          <declname>visitados</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1155d72a8aa6b3580129c06c45ee8e848" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Grafo::caminoMinimoEntero</definition>
+        <argsstring>(TipoNodoGrafo origen, TipoNodoGrafo destino)</argsstring>
+        <name>caminoMinimoEntero</name>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>origen</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>destino</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classGrafo_1b4b15e8634d278300fdda38022888670" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Grafo::vueltaAtras</definition>
+        <argsstring>(Grafo g, TipoNodoGrafo v, TipoCjtoNodos &amp;visitados)</argsstring>
+        <name>vueltaAtras</name>
+        <param>
+          <type><ref refid="classGrafo" kindref="compound">Grafo</ref></type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>TipoNodoGrafo</type>
+          <declname>v</declname>
+        </param>
+        <param>
+          <type>TipoCjtoNodos &amp;</type>
+          <declname>visitados</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="98"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Esta clase define un grafo. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" line="60" bodyfile="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/grafo.h" bodystart="59" bodyend="101"/>
+    <listofallmembers>
+      <member refid="classGrafo_123ead320b4f7eb49a8b470d998ed37c2" prot="public" virt="non-virtual"><scope>Grafo</scope><name>adyacente</name></member>
+      <member refid="classGrafo_1416d9891de5c525d84875a922cf66a5a" prot="public" virt="non-virtual"><scope>Grafo</scope><name>adyacentes</name></member>
+      <member refid="classGrafo_12446def9aec3af9e6c7153bb7a5e8e8f" prot="public" virt="non-virtual"><scope>Grafo</scope><name>anchura</name></member>
+      <member refid="classGrafo_1a1660e5fa02a12ce2eb93aac7253019d" prot="private" virt="non-virtual"><scope>Grafo</scope><name>arcos</name></member>
+      <member refid="classGrafo_1577730ec1abd068092a3c0947756bf3e" prot="public" virt="non-virtual"><scope>Grafo</scope><name>borraArco</name></member>
+      <member refid="classGrafo_1ed70a046c1d864a2e1532cbca4216896" prot="public" virt="non-virtual"><scope>Grafo</scope><name>borraNodo</name></member>
+      <member refid="classGrafo_1155d72a8aa6b3580129c06c45ee8e848" prot="public" virt="non-virtual"><scope>Grafo</scope><name>caminoMinimoEntero</name></member>
+      <member refid="classGrafo_1c6b3070591d565cab5efb6b5aac62bef" prot="public" virt="non-virtual"><scope>Grafo</scope><name>esVacio</name></member>
+      <member refid="classGrafo_1fb0510598fcefea15428e0f2cf1144dc" prot="public" virt="non-virtual"><scope>Grafo</scope><name>floyd</name></member>
+      <member refid="classGrafo_18eb6f90f8bdcf6984952cc56259fd2b7" prot="private" virt="non-virtual"><scope>Grafo</scope><name>floydC</name></member>
+      <member refid="classGrafo_16653c7e990c96d00e72d49baf3ab2814" prot="private" virt="non-virtual"><scope>Grafo</scope><name>floydP</name></member>
+      <member refid="classGrafo_1f657b527f15fdc5c743b1dd1bf965789" prot="public" virt="non-virtual"><scope>Grafo</scope><name>getArco</name></member>
+      <member refid="classGrafo_1d1fbc03a4e7ebdde73c0c474fffcc451" prot="public" virt="non-virtual"><scope>Grafo</scope><name>getNumNodos</name></member>
+      <member refid="classGrafo_17b86c2cd9e014eaf972dcd4d2e780c48" prot="public" virt="non-virtual"><scope>Grafo</scope><name>Grafo</name></member>
+      <member refid="classGrafo_144f6f4aca2763cfae2da60a489692423" prot="public" virt="non-virtual"><scope>Grafo</scope><name>mostrarArcos</name></member>
+      <member refid="classGrafo_13ca9a9b3ad1c598442d05a528a75a5da" prot="public" virt="non-virtual"><scope>Grafo</scope><name>mostrarFloydC</name></member>
+      <member refid="classGrafo_184b7da0227f81b94681bc3cb629f3035" prot="public" virt="non-virtual"><scope>Grafo</scope><name>mostrarNodos</name></member>
+      <member refid="classGrafo_14c7af7b8f7cb4423836f45dd62d9fff2" prot="public" virt="non-virtual"><scope>Grafo</scope><name>mostrarPW</name></member>
+      <member refid="classGrafo_14432c6e8a600e3a1000a490a6f9e9d25" prot="private" virt="non-virtual"><scope>Grafo</scope><name>nodos</name></member>
+      <member refid="classGrafo_1ed8619656de5d16de0add75e3497e23e" prot="public" virt="non-virtual"><scope>Grafo</scope><name>nuevoArco</name></member>
+      <member refid="classGrafo_105878b3e96fe9d89dc7939187e1d96d2" prot="public" virt="non-virtual"><scope>Grafo</scope><name>nuevoNodo</name></member>
+      <member refid="classGrafo_1ff48ce4fa7a7845e9656e8fea6411cdf" prot="private" virt="non-virtual"><scope>Grafo</scope><name>numNodos</name></member>
+      <member refid="classGrafo_18a8a0ae579d4a09086310e7e0af04e91" prot="public" virt="non-virtual"><scope>Grafo</scope><name>prof</name></member>
+      <member refid="classGrafo_1fc1e329960921eef323e53995ffebe9c" prot="public" virt="non-virtual"><scope>Grafo</scope><name>profundidad</name></member>
+      <member refid="classGrafo_1c1517bf52e85a5dd1052f6f2b6f5b9a3" prot="public" virt="non-virtual"><scope>Grafo</scope><name>siguiente</name></member>
+      <member refid="classGrafo_1b4b15e8634d278300fdda38022888670" prot="public" virt="non-virtual"><scope>Grafo</scope><name>vueltaAtras</name></member>
+      <member refid="classGrafo_18cbe645ba4ee198c1777186bf2b2a2d7" prot="public" virt="non-virtual"><scope>Grafo</scope><name>warshall</name></member>
+      <member refid="classGrafo_11822f1da0f4d0a0f269e24fa1427d298" prot="private" virt="non-virtual"><scope>Grafo</scope><name>warshallC</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

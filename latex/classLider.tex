@@ -1,0 +1,306 @@
+\hypertarget{classLider}{
+\section{Lider Class Reference}
+\label{classLider}\index{Lider@{Lider}}
+}
+{\tt \#include $<$lider.h$>$}
+
+Inheritance diagram for Lider::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classLider}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classLider_bbdd9719261866f4f316620b4319d7e6}{Lider} ()
+\item 
+\hyperlink{classLider_16da42712d18eb29d78b81613f3d916d}{Lider} (char m, string n, int t, int ids, int idp, string sec, char mov)
+\item 
+void \hyperlink{classLider_8b7b93efc0b6cecbab4ae82992ebcd11}{setMovimiento} (char m)
+\item 
+char \hyperlink{classLider_2fb77f30c5ebb7bce39dc7ee4711d4d2}{getMovimiento} ()
+\item 
+void \hyperlink{classLider_84acf3920a695ab792f9bbcb494ea7c8}{setSecuenciaOrientaciones} (string s)
+\item 
+void \hyperlink{classLider_38d5268d1d780494277063ce96c52881}{getSecuenciaOrientaciones} (string \&s)
+\item 
+void \hyperlink{classLider_125acbb3a1432f217efdc9826a2b8d8f}{mostrar} ()
+\item 
+void \hyperlink{classLider_fcd179370f87dbc08bf6619ff9742f66}{escribeLog} (ofstream \&f)
+\item 
+void \hyperlink{classLider_6b98929df0d59cd29b85e6fb8aeb36f1}{ruta} (ofstream \&f)
+\item 
+void \hyperlink{classLider_87a0b4fca538efa5c9b7d01992f362e6}{actualizarMovimiento} ()
+\item 
+bool \hyperlink{classLider_9b40d8d989e80fbfd39a17bac209b73e}{recorrerVecinos} (int ids, stack$<$ char $>$ \&secorientaciones, stack$<$ int $>$ \&idvecinos, set$<$ int $>$ \&vecinos)
+\item 
+void \hyperlink{classLider_4643215eb946b9bd002d6882c5a24aeb}{escribeLogRuta} (ofstream \&f, stack$<$ char $>$ \&s, stack$<$ int $>$ \&idsalas)
+\item 
+void \hyperlink{classLider_2729cb612e6ca2d2750f48b85743107e}{accionUno} ()
+\item 
+void \hyperlink{classLider_51fb2d9c6dfe283a13d61b8f546068f3}{accionDos} ()
+\item 
+void \hyperlink{classLider_993a29f5a5615bd8a41dfe550dfccb61}{accionTres} ()
+\item 
+\hyperlink{classLider_64481cdebf71c9b28ec7aef689fed43e}{$\sim$Lider} ()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{Desc}
+\item[Author:]Carlos,,, $<$carlos-linux$>$ \end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classLider_bbdd9719261866f4f316620b4319d7e6}{
+\index{Lider@{Lider}!Lider@{Lider}}
+\index{Lider@{Lider}!Lider@{Lider}}
+\subsubsection[Lider]{\setlength{\rightskip}{0pt plus 5cm}Lider::Lider ()}}
+\label{classLider_bbdd9719261866f4f316620b4319d7e6}
+
+
+Constructor por defecto de mi clase lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classLider_16da42712d18eb29d78b81613f3d916d}{
+\index{Lider@{Lider}!Lider@{Lider}}
+\index{Lider@{Lider}!Lider@{Lider}}
+\subsubsection[Lider]{\setlength{\rightskip}{0pt plus 5cm}Lider::Lider (char {\em m}, \/  string {\em n}, \/  int {\em t}, \/  int {\em ids}, \/  int {\em idp}, \/  string {\em sec}, \/  char {\em mov})}}
+\label{classLider_16da42712d18eb29d78b81613f3d916d}
+
+
+Constructor parametrizado de mi clase lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em m}]es un caracter correspondiente a la marca de mi personaje de tipo lider \item[{\em n}]es una cadena correspondiente al nombre de mi personaje del tipo lider \item[{\em t}]es un entero correspondiente al turno de mi personaje del tipo lider \item[{\em ids}]es un entero correspondiente al identificador de la \hyperlink{classsala}{sala} de mi personaje del tipo lider \item[{\em idp}]es un entero correspondiente al identificador de la \hyperlink{classplanta}{planta} de mi personaje del tipo lider \item[{\em sec}]es una cadena que se corresponde con la secuencia de orientaciones que sigue mi personaje del tipo lider \item[{\em mov}]es un caracter que se corresponde con el movimiento asociado a mi personaje del tipo lider \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classLider_64481cdebf71c9b28ec7aef689fed43e}{
+\index{Lider@{Lider}!$\sim$Lider@{$\sim$Lider}}
+\index{$\sim$Lider@{$\sim$Lider}!Lider@{Lider}}
+\subsubsection[$\sim$Lider]{\setlength{\rightskip}{0pt plus 5cm}Lider::$\sim$Lider ()}}
+\label{classLider_64481cdebf71c9b28ec7aef689fed43e}
+
+
+Destructor de mi clase lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classLider_8b7b93efc0b6cecbab4ae82992ebcd11}{
+\index{Lider@{Lider}!setMovimiento@{setMovimiento}}
+\index{setMovimiento@{setMovimiento}!Lider@{Lider}}
+\subsubsection[setMovimiento]{\setlength{\rightskip}{0pt plus 5cm}void Lider::setMovimiento (char {\em m})}}
+\label{classLider_8b7b93efc0b6cecbab4ae82992ebcd11}
+
+
+Metodo que establece a mi atributo movimiento el valor de m \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em m}]es un parametro de entrada del tipo caracter que establece el movimiento de mi personaje de tipo lider \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classLider_2fb77f30c5ebb7bce39dc7ee4711d4d2}{
+\index{Lider@{Lider}!getMovimiento@{getMovimiento}}
+\index{getMovimiento@{getMovimiento}!Lider@{Lider}}
+\subsubsection[getMovimiento]{\setlength{\rightskip}{0pt plus 5cm}char Lider::getMovimiento ()}}
+\label{classLider_2fb77f30c5ebb7bce39dc7ee4711d4d2}
+
+
+Metodo que devuelve el caracter correspondiente al movimiento de mi personaje de tipo lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna un caracter que se corresponde con el movimiento asociado a mi personaje de tipo lider \end{Desc}
+\hypertarget{classLider_84acf3920a695ab792f9bbcb494ea7c8}{
+\index{Lider@{Lider}!setSecuenciaOrientaciones@{setSecuenciaOrientaciones}}
+\index{setSecuenciaOrientaciones@{setSecuenciaOrientaciones}!Lider@{Lider}}
+\subsubsection[setSecuenciaOrientaciones]{\setlength{\rightskip}{0pt plus 5cm}void Lider::setSecuenciaOrientaciones (string {\em s})}}
+\label{classLider_84acf3920a695ab792f9bbcb494ea7c8}
+
+
+Metodo que asigna a mi atributo secuenciaorientaciones la cadena s \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada del tipo string \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classLider_38d5268d1d780494277063ce96c52881}{
+\index{Lider@{Lider}!getSecuenciaOrientaciones@{getSecuenciaOrientaciones}}
+\index{getSecuenciaOrientaciones@{getSecuenciaOrientaciones}!Lider@{Lider}}
+\subsubsection[getSecuenciaOrientaciones]{\setlength{\rightskip}{0pt plus 5cm}void Lider::getSecuenciaOrientaciones (string \& {\em s})}}
+\label{classLider_38d5268d1d780494277063ce96c52881}
+
+
+Metodo que devuelve en s la cadena correspondiente a mi atributo secuenciaorientaciones \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em s}]es un parametro de entrada salida que almacena la cadena secuenciaorientaciones \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classLider_125acbb3a1432f217efdc9826a2b8d8f}{
+\index{Lider@{Lider}!mostrar@{mostrar}}
+\index{mostrar@{mostrar}!Lider@{Lider}}
+\subsubsection[mostrar]{\setlength{\rightskip}{0pt plus 5cm}void Lider::mostrar ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classLider_125acbb3a1432f217efdc9826a2b8d8f}
+
+
+Metodo que muestra por pantalla el tipo de personaje que se trata, en este caso , es un lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented from \hyperlink{classMiembro_28498c7229e81e64d0cb7ea69515dca0}{Miembro}.\hypertarget{classLider_fcd179370f87dbc08bf6619ff9742f66}{
+\index{Lider@{Lider}!escribeLog@{escribeLog}}
+\index{escribeLog@{escribeLog}!Lider@{Lider}}
+\subsubsection[escribeLog]{\setlength{\rightskip}{0pt plus 5cm}void Lider::escribeLog (ofstream \& {\em f})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classLider_fcd179370f87dbc08bf6619ff9742f66}
+
+
+Metodo que escribe en mi registro.log la informacion de mi personaje de tipo lider y además escribo la informacion correspondiente a los personajes que se encuentran en el atributo grupo \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+aqui hago el log de cada miembro que hay en su grupo 
+
+Reimplemented from \hyperlink{classPersonaje_86fe4a1ff708072d98c6be42bbd512ea}{Personaje}.\hypertarget{classLider_6b98929df0d59cd29b85e6fb8aeb36f1}{
+\index{Lider@{Lider}!ruta@{ruta}}
+\index{ruta@{ruta}!Lider@{Lider}}
+\subsubsection[ruta]{\setlength{\rightskip}{0pt plus 5cm}void Lider::ruta (ofstream \& {\em f})\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classLider_6b98929df0d59cd29b85e6fb8aeb36f1}
+
+
+Metodo que calcula la ruta de mi personaje de tipo lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented from \hyperlink{classPersonaje_f6dc20013805229005dfb87fc6f273b5}{Personaje}.\hypertarget{classLider_87a0b4fca538efa5c9b7d01992f362e6}{
+\index{Lider@{Lider}!actualizarMovimiento@{actualizarMovimiento}}
+\index{actualizarMovimiento@{actualizarMovimiento}!Lider@{Lider}}
+\subsubsection[actualizarMovimiento]{\setlength{\rightskip}{0pt plus 5cm}void Lider::actualizarMovimiento ()}}
+\label{classLider_87a0b4fca538efa5c9b7d01992f362e6}
+
+
+Metodo actualiza el movimiento de mi personaje de tipo lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classLider_9b40d8d989e80fbfd39a17bac209b73e}{
+\index{Lider@{Lider}!recorrerVecinos@{recorrerVecinos}}
+\index{recorrerVecinos@{recorrerVecinos}!Lider@{Lider}}
+\subsubsection[recorrerVecinos]{\setlength{\rightskip}{0pt plus 5cm}bool Lider::recorrerVecinos (int {\em ids}, \/  stack$<$ char $>$ \& {\em secorientaciones}, \/  stack$<$ int $>$ \& {\em idsalas}, \/  set$<$ int $>$ \& {\em vecinos})}}
+\label{classLider_9b40d8d989e80fbfd39a17bac209b73e}
+
+
+Metodo booleano que calcula los vecinos de mi personaje de tipo lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em ids}]es un parametro de entrada del tipo entero correspondiente al identificador de la \hyperlink{classsala}{sala} \item[{\em secorientaciones}]es un parametro de entrada salida del tipo stack (pila) que almacena los caracteres correspondiente a la posicion cardinal de los vecinos que se van obteniendo \item[{\em idsalas}]es un parametro de entrada salida del tipo stack(pila) que almacena los enteros correspondientes a los identificadores de las salas de los vecinos donde se mueve mi personaje de tipo lider \item[{\em vecinos}]es un parametro de entrada salida del tipo set (conjunto) de enteros que almacena los enteros correspondientes a los identificadores de las salas de los vecinos de mi personaje de tipo lider\end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]Retorna true si el personaje del tipo lider alcanza la \hyperlink{classsala}{sala} de salida de la \hyperlink{classplanta}{planta} y false en caso contrario \end{Desc}
+\hypertarget{classLider_4643215eb946b9bd002d6882c5a24aeb}{
+\index{Lider@{Lider}!escribeLogRuta@{escribeLogRuta}}
+\index{escribeLogRuta@{escribeLogRuta}!Lider@{Lider}}
+\subsubsection[escribeLogRuta]{\setlength{\rightskip}{0pt plus 5cm}void Lider::escribeLogRuta (ofstream \& {\em f}, \/  stack$<$ char $>$ \& {\em sec}, \/  stack$<$ int $>$ \& {\em idsalas})}}
+\label{classLider_4643215eb946b9bd002d6882c5a24aeb}
+
+
+Metodo que escribe en mi registro.log toda la informacion correspondiente a la ruta de mi personaje del tipo lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em f}]es un flujo de entrada salida \item[{\em sec}]es un parametro de entrada salida del tipo stack(pila) de caracteres que almacena las posiciones cardinales del movimiento de mi personaje del tipo lider \item[{\em idsalas}]es un parametro de entrada salida del tipo stack (pila) que almacena los enteros correspondientes a los identificadores de las salas donde se mueve mi personaje del tipo lider \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+\hypertarget{classLider_2729cb612e6ca2d2750f48b85743107e}{
+\index{Lider@{Lider}!accionUno@{accionUno}}
+\index{accionUno@{accionUno}!Lider@{Lider}}
+\subsubsection[accionUno]{\setlength{\rightskip}{0pt plus 5cm}void Lider::accionUno ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classLider_2729cb612e6ca2d2750f48b85743107e}
+
+
+Metodo que realiza la accion uno del lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+aqui pruebo con cada una de las llaves que llevan los miembros en el grupo (sólo con la 1ª de cada uno) 
+
+Reimplemented from \hyperlink{classPersonaje_0454b75ccc8f7e33f03e2cfb2c59e725}{Personaje}.\hypertarget{classLider_51fb2d9c6dfe283a13d61b8f546068f3}{
+\index{Lider@{Lider}!accionDos@{accionDos}}
+\index{accionDos@{accionDos}!Lider@{Lider}}
+\subsubsection[accionDos]{\setlength{\rightskip}{0pt plus 5cm}void Lider::accionDos ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classLider_51fb2d9c6dfe283a13d61b8f546068f3}
+
+
+Metodo realiza la accion dos del lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Si estoy en la \hyperlink{classsala}{sala} de salida y la \hyperlink{classpuerta}{puerta} está cerrada NO me puedo mover 
+
+Reimplemented from \hyperlink{classPersonaje_af7763eb6099390038b7833129a1ef9f}{Personaje}.\hypertarget{classLider_993a29f5a5615bd8a41dfe550dfccb61}{
+\index{Lider@{Lider}!accionTres@{accionTres}}
+\index{accionTres@{accionTres}!Lider@{Lider}}
+\subsubsection[accionTres]{\setlength{\rightskip}{0pt plus 5cm}void Lider::accionTres ()\hspace{0.3cm}{\tt  \mbox{[}virtual\mbox{]}}}}
+\label{classLider_993a29f5a5615bd8a41dfe550dfccb61}
+
+
+Metodo realiza la accion tres del lider \begin{Desc}
+\item[Parameters:]
+\begin{description}
+\item[{\em \char`\"{}\char`\"{}}]no recibe parametros \end{description}
+\end{Desc}
+\begin{Desc}
+\item[Returns:]No retorna ningun valor \end{Desc}
+
+
+Reimplemented from \hyperlink{classPersonaje_85c25ff0362bf4f4f5e69965c1ae4cfb}{Personaje}.
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/lider.h\item 
+Desktop/academia\_\-lp2/EC3\_\-LPII/src/lider.cpp\end{CompactItemize}

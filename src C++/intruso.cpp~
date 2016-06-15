@@ -1,0 +1,185 @@
+#include "intruso.h"
+
+#include "estacion.h"
+
+Intruso::Intruso()
+ : Personaje()
+{
+}
+
+
+Intruso::~Intruso()
+{
+}
+
+void Intruso::mostrar()
+{
+    cout<<"estoy mostrando un intruso"<<endl;
+    Personaje::mostrar();
+    
+}
+
+Intruso::Intruso(char m, string n, int t, int ids, int idp): Personaje (m,n,t,ids,idp)
+{
+    Estacion *e = Estacion :: obtenerMiEstacion();
+    planta *p;
+    e->obtenerPlanta(idplanta,p);
+    for(int i=0;i<=p->getNLlaves();i++){
+        if(i%2 == 1){
+            Llave *l= new Llave(i);
+            juegollaves->push(l);
+        }        
+    }
+                
+}
+
+void Intruso::escribeLog(ofstream & f)
+{
+
+    f<<"(intruso:";
+    Personaje::escribeLog(f);
+
+}
+
+void Intruso::ruta(ofstream & f)
+{
+    Estacion * e = Estacion :: obtenerMiEstacion();
+    planta *aux;
+    
+    e->obtenerPlanta(getIdPlanta(),aux);
+    //movimiento de esquina inferior derecha a esquina inferior izquierda
+    caminoMinimo(this->getIdSala(), ( this->getIdSala() - aux->getAnchoPlanta()+1),aux);
+    
+    caminoMinimo(this->getIdSala(), 0, aux);
+    
+    caminoMinimo(0, ( this->getIdSala() + aux->getAnchoPlanta()-1),aux);
+    
+    caminoMinimo(this->getIdSala(),aux->getAltoPlanta()*aux->getAnchoPlanta()-1, aux);
+    escribeLogRuta(f);
+    
+}
+
+void Intruso::caminoMinimo(int origen, int destino, planta * pl)
+{
+    int i=-1;
+    int aux=origen;
+    
+    while( i!= destino){
+        pl->siguienteGrafo(aux,destino,i);
+        this->setIdSala(i);
+        secuencia.push(i);
+        aux=i;
+    }
+}
+
+void Intruso::escribeLogRuta(ofstream & f)
+{
+    Estacion *estacion = Estacion :: obtenerMiEstacion();
+    planta *aux;
+    estacion->obtenerPlanta(idplanta,aux);
+    queue<int> aux2;
+    
+    int inicio=this->idsala;
+    f<<"(ruta:"<<marca<<":";
+    while( !secuencia.empty() ){
+        if( inicio-1 == secuencia.front())
+            f<<" O";
+        if( inicio+1 == secuencia.front())
+            f<<" E";
+        if( inicio+aux->getAnchoPlanta() == secuencia.front() )
+            f<<" S";
+        if( inicio-aux->getAnchoPlanta() == secuencia.front() )
+            f<<" N";
+        inicio=secuencia.front();
+        
+        aux2.push(inicio);
+        
+        secuencia.pop();
+    }
+    
+    while( !aux2.empty() ){
+        inicio=aux2.front();
+        secuencia.push(inicio);
+        aux2.pop();
+    }
+    
+    f<<")"<<endl;
+}
+
+
+
+
+void Intruso::accionUno()
+{
+    sala *s;
+    planta *p;
+    puerta *puer;
+    Estacion * e = Estacion :: obtenerMiEstacion();
+    e->obtenerPlanta(idplanta,p);
+    p->obtenerCeldaVector(idsala,s);  
+    if(s->getIdentificadorSala() == p->getSalaSalida()){
+        //si no está ya abierta
+        p->obtenerPuerta(puer);
+        puer->cerrar();
+    }
+}
+
+void Intruso::accionDos()
+{
+    sala *s;
+    planta *p;
+    Estacion *e=Estacion :: obtenerMiEstacion();
+    e->obtenerPlanta(idplanta,p);
+    p->obtenerCeldaVector(idsala,s);
+
+    idsala=secuencia.front();
+    secuencia.pop();
+    secuencia.push(idsala);
+}
+
+void Intruso::accionCuatro()
+{
+    sala *s;
+    planta *p;
+    Estacion *e=Estacion :: obtenerMiEstacion();
+    e->obtenerPlanta(idplanta,p);
+    p->obtenerCeldaVector(idsala,s);
+
+    if(!juegollaves->empty()){
+        if(idsala % 2 == 0){
+            s->insertarLista(juegollaves->top());
+            juegollaves->pop();
+        }
+    }
+}
+
+void Intruso::accionTres()
+{
+    queue <Personaje*> *aux= new queue <Personaje*>;
+    Personaje *per;
+    planta *p;
+    bool enc=false;
+    Estacion *e = Estacion :: obtenerMiEstacion();
+    e->obtenerPlanta(idplanta,p);
+    sala *s;
+    p->obtenerCeldaVector(idsala,s);
+    if(s->siHayPersonajes()){
+    while( s->siHayPersonajes()){
+        s->devolverPrimerPersonaje(per);
+        if( typeid (Trabajador) == typeid (*per) && !enc ){
+            e->insertarSalaPrisioneros(per);
+            per->setIdSala(1101);
+            enc=true;
+            
+        }
+        else
+            aux->push(per);
+    }
+    while(!aux->empty()){
+        s->insertarCola(aux->front());
+        aux->pop();
+    }
+    }
+    
+    delete aux;
+}

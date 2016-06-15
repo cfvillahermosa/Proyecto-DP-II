@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="intruso_8cpp" kind="file">
+    <compoundname>intruso.cpp</compoundname>
+    <includes refid="intruso_8h" local="yes">intruso.h</includes>
+    <includes refid="estacion_8h" local="yes">estacion.h</includes>
+    <incdepgraph>
+      <node id="250">
+        <label>list</label>
+      </node>
+      <node id="235">
+        <label>queue</label>
+      </node>
+      <node id="257">
+        <label>miembro.h</label>
+        <link refid="miembro_8h-source"/>
+        <childnode refid="233" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>trabajador.h</label>
+        <link refid="trabajador_8h-source"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+      </node>
+      <node id="232">
+        <label>intruso.h</label>
+        <link refid="intruso_8h-source"/>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="240" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+      </node>
+      <node id="252">
+        <label>cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="255" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="256" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
+      </node>
+      <node id="246">
+        <label>sala.h</label>
+        <link refid="sala_8h-source"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>string</label>
+      </node>
+      <node id="243">
+        <label>puerta.h</label>
+        <link refid="puerta_8h-source"/>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+      </node>
+      <node id="256">
+        <label>lider.h</label>
+        <link refid="lider_8h-source"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
+        <label>fstream</label>
+      </node>
+      <node id="249">
+        <label>genaleatorios.h</label>
+        <link refid="genaleatorios_8h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="247">
+        <label>grafo.h</label>
+        <link refid="grafo_8h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+      </node>
+      <node id="241">
+        <label>planta.h</label>
+        <link refid="planta_8h-source"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+        <childnode refid="243" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="250" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="240">
+        <label>typeinfo</label>
+      </node>
+      <node id="242">
+        <label>vector</label>
+      </node>
+      <node id="236">
+        <label>stack</label>
+      </node>
+      <node id="251">
+        <label>estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="252" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+      </node>
+      <node id="231">
+        <label>Desktop/academia_lp2/EC3_LPII/src/intruso.cpp</label>
+        <link refid="intruso.cpp"/>
+        <childnode refid="232" relation="include">
+        </childnode>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="239">
+        <label>cstdlib</label>
+      </node>
+      <node id="238">
+        <label>llave.h</label>
+        <link refid="llave_8h-source"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="234">
+        <label>iostream</label>
+      </node>
+      <node id="233">
+        <label>personaje.h</label>
+        <link refid="personaje_8h-source"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
+        </childnode>
+      </node>
+      <node id="244">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+      </node>
+      <node id="248">
+        <label>set</label>
+      </node>
+      <node id="253">
+        <label>fichero.h</label>
+        <link refid="fichero_8h"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+      </node>
+      <node id="245">
+        <label>lista.h</label>
+        <link refid="lista_8h-source"/>
+        <childnode refid="234" relation="include">
+        </childnode>
+        <childnode refid="239" relation="include">
+        </childnode>
+      </node>
+      <node id="255">
+        <label>cstring</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;intruso.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;estacion.h&quot;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><ref refid="classIntruso_1f36bc9ec8ef7b46e9335c6842908a527" kindref="member">Intruso::Intruso</ref>()</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/>:<sp/><ref refid="classPersonaje" kindref="compound">Personaje</ref>()</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><ref refid="classIntruso_1947673866dbb60c76b40eff5ab139bcd" kindref="member">Intruso::~Intruso</ref>()</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_106a5d236e669e5add8b1c6472303133e" kindref="member">Intruso::mostrar</ref>()</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;estoy<sp/>mostrando<sp/>un<sp/>intruso&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPersonaje_1e9f6bd8027b8a5c2e660a327d9e513ca" kindref="member">Personaje::mostrar</ref>();</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><ref refid="classIntruso_1f36bc9ec8ef7b46e9335c6842908a527" kindref="member">Intruso::Intruso</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>n,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>t,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ids,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>idp):<sp/><ref refid="classPersonaje" kindref="compound">Personaje</ref><sp/>(m,n,t,ids,idp)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEstacion" kindref="compound">Estacion</ref><sp/>*e<sp/>=<sp/>Estacion<sp/>::<sp/>obtenerMiEstacion();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classplanta" kindref="compound">planta</ref><sp/>*p;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="classEstacion_1846fcf5591b3a021072365cfd7902b4c" kindref="member">obtenerPlanta</ref>(idplanta,p);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;i&lt;=p-&gt;<ref refid="classplanta_15087143df250ee8686a3c5387961f01e" kindref="member">getNLlaves</ref>();i++){</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(i%2<sp/>==<sp/>1){</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classLlave" kindref="compound">Llave</ref><sp/>*l=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/><ref refid="classLlave" kindref="compound">Llave</ref>(i);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>juegollaves-&gt;push(l);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_1979c89c596d92d8ce69b8af5e556d62d" kindref="member">Intruso::escribeLog</ref>(ofstream<sp/>&amp;<sp/>f)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;(intruso:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPersonaje_186fe4a1ff708072d98c6be42bbd512ea" kindref="member">Personaje::escribeLog</ref>(f);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_12898ae82386e99d361f6f131122b7be1" kindref="member">Intruso::ruta</ref>(ofstream<sp/>&amp;<sp/>f)</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEstacion" kindref="compound">Estacion</ref><sp/>*<sp/>e<sp/>=<sp/>Estacion<sp/>::<sp/>obtenerMiEstacion();</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classplanta" kindref="compound">planta</ref><sp/>*aux;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="classEstacion_1846fcf5591b3a021072365cfd7902b4c" kindref="member">obtenerPlanta</ref>(<ref refid="classPersonaje_1f388d329d466b136c60fa26c6c4800a7" kindref="member">getIdPlanta</ref>(),aux);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//movimiento<sp/>de<sp/>esquina<sp/>inferior<sp/>derecha<sp/>a<sp/>esquina<sp/>inferior<sp/>izquierda</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntruso_16d239cda2dc32af27e50ba84524e4179" kindref="member">caminoMinimo</ref>(this-&gt;<ref refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" kindref="member">getIdSala</ref>(),<sp/>(<sp/>this-&gt;<ref refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" kindref="member">getIdSala</ref>()<sp/>-<sp/>aux-&gt;<ref refid="classplanta_1ef93598d5bca7e2235035a07147f4bbe" kindref="member">getAnchoPlanta</ref>()+1),aux);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntruso_16d239cda2dc32af27e50ba84524e4179" kindref="member">caminoMinimo</ref>(this-&gt;<ref refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" kindref="member">getIdSala</ref>(),<sp/>0,<sp/>aux);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntruso_16d239cda2dc32af27e50ba84524e4179" kindref="member">caminoMinimo</ref>(0,<sp/>(<sp/>this-&gt;<ref refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" kindref="member">getIdSala</ref>()<sp/>+<sp/>aux-&gt;<ref refid="classplanta_1ef93598d5bca7e2235035a07147f4bbe" kindref="member">getAnchoPlanta</ref>()-1),aux);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntruso_16d239cda2dc32af27e50ba84524e4179" kindref="member">caminoMinimo</ref>(this-&gt;<ref refid="classPersonaje_15266df5bdfa75df5dfc631d94be2993d" kindref="member">getIdSala</ref>(),aux-&gt;<ref refid="classplanta_13d9fad702134aa5718b9d00ae11d7646" kindref="member">getAltoPlanta</ref>()*aux-&gt;<ref refid="classplanta_1ef93598d5bca7e2235035a07147f4bbe" kindref="member">getAnchoPlanta</ref>()-1,<sp/>aux);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classIntruso_10f0142b1852ed9f0431af335d3ff6f14" kindref="member">escribeLogRuta</ref>(f);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_16d239cda2dc32af27e50ba84524e4179" kindref="member">Intruso::caminoMinimo</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>origen,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>destino,<sp/><ref refid="classplanta" kindref="compound">planta</ref><sp/>*<sp/>pl)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=-1;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>aux=origen;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>i!=<sp/>destino){</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pl-&gt;<ref refid="classplanta_12e62f6407ca66f91c2ef10647ec5f869" kindref="member">siguienteGrafo</ref>(aux,destino,i);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;<ref refid="classPersonaje_143a551a88fe3c6d4458719135992114b" kindref="member">setIdSala</ref>(i);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>secuencia.push(i);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aux=i;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_10f0142b1852ed9f0431af335d3ff6f14" kindref="member">Intruso::escribeLogRuta</ref>(ofstream<sp/>&amp;<sp/>f)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEstacion" kindref="compound">Estacion</ref><sp/>*estacion<sp/>=<sp/>Estacion<sp/>::<sp/>obtenerMiEstacion();</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classplanta" kindref="compound">planta</ref><sp/>*aux;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>estacion-&gt;<ref refid="classEstacion_1846fcf5591b3a021072365cfd7902b4c" kindref="member">obtenerPlanta</ref>(idplanta,aux);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>queue&lt;int&gt;<sp/>aux2;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inicio=this-&gt;idsala;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;(ruta:&quot;</highlight><highlight class="normal">&lt;&lt;marca&lt;&lt;</highlight><highlight class="stringliteral">&quot;:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>!secuencia.empty()<sp/>){</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>inicio-1<sp/>==<sp/>secuencia.front())</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>O&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>inicio+1<sp/>==<sp/>secuencia.front())</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>E&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>inicio+aux-&gt;<ref refid="classplanta_1ef93598d5bca7e2235035a07147f4bbe" kindref="member">getAnchoPlanta</ref>()<sp/>==<sp/>secuencia.front()<sp/>)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>S&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>inicio-aux-&gt;<ref refid="classplanta_1ef93598d5bca7e2235035a07147f4bbe" kindref="member">getAnchoPlanta</ref>()<sp/>==<sp/>secuencia.front()<sp/>)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;<sp/>N&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inicio=secuencia.front();</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aux2.push(inicio);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>secuencia.pop();</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>!aux2.empty()<sp/>){</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>inicio=aux2.front();</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>secuencia.push(inicio);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aux2.pop();</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>f&lt;&lt;</highlight><highlight class="stringliteral">&quot;)&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_1dee71b00225e294086d8980625a32ab3" kindref="member">Intruso::accionUno</ref>()</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsala" kindref="compound">sala</ref><sp/>*s;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classplanta" kindref="compound">planta</ref><sp/>*p;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpuerta" kindref="compound">puerta</ref><sp/>*puer;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEstacion" kindref="compound">Estacion</ref><sp/>*<sp/>e<sp/>=<sp/>Estacion<sp/>::<sp/>obtenerMiEstacion();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="classEstacion_1846fcf5591b3a021072365cfd7902b4c" kindref="member">obtenerPlanta</ref>(idplanta,p);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>p-&gt;<ref refid="classplanta_1c97835a31f875ecdc01f33517dfc71d4" kindref="member">obtenerCeldaVector</ref>(idsala,s);<sp/><sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(s-&gt;<ref refid="classsala_1d6eb9a00920ec3f7eee7134d478ddf76" kindref="member">getIdentificadorSala</ref>()<sp/>==<sp/>p-&gt;<ref refid="classplanta_1dbb3b23569c310dcd01163e09674009c" kindref="member">getSalaSalida</ref>()){</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//si<sp/>no<sp/>está<sp/>ya<sp/>abierta</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>p-&gt;<ref refid="classplanta_1d66544ed0d0c8f20a98d7c8ce401a43f" kindref="member">obtenerPuerta</ref>(puer);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>puer-&gt;<ref refid="classpuerta_18c3078b9245cb0fbc37e7f1b662be74b" kindref="member">cerrar</ref>();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="175"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_16fef0ae823fdabc05796413f53d073e5" kindref="member">Intruso::accionDos</ref>()</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsala" kindref="compound">sala</ref><sp/>*s;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classplanta" kindref="compound">planta</ref><sp/>*p;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEstacion" kindref="compound">Estacion</ref><sp/>*e=Estacion<sp/>::<sp/>obtenerMiEstacion();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="classEstacion_1846fcf5591b3a021072365cfd7902b4c" kindref="member">obtenerPlanta</ref>(idplanta,p);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>p-&gt;<ref refid="classplanta_1c97835a31f875ecdc01f33517dfc71d4" kindref="member">obtenerCeldaVector</ref>(idsala,s);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>idsala=secuencia.front();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>secuencia.pop();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>secuencia.push(idsala);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="192"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_199e215b1df4387b629f25349378d3bbb" kindref="member">Intruso::accionCuatro</ref>()</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsala" kindref="compound">sala</ref><sp/>*s;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classplanta" kindref="compound">planta</ref><sp/>*p;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEstacion" kindref="compound">Estacion</ref><sp/>*e=Estacion<sp/>::<sp/>obtenerMiEstacion();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="classEstacion_1846fcf5591b3a021072365cfd7902b4c" kindref="member">obtenerPlanta</ref>(idplanta,p);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>p-&gt;<ref refid="classplanta_1c97835a31f875ecdc01f33517dfc71d4" kindref="member">obtenerCeldaVector</ref>(idsala,s);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!juegollaves-&gt;empty()){</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(idsala<sp/>%<sp/>2<sp/>==<sp/>0){</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s-&gt;<ref refid="classsala_143d8051f7213fd82d30b5b7b56043877" kindref="member">insertarLista</ref>(juegollaves-&gt;top());</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>juegollaves-&gt;pop();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classIntruso_152e521cc66983d5a9f20f3424818e6e4" kindref="member">Intruso::accionTres</ref>()</highlight></codeline>
+<codeline lineno="214"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>queue<sp/>&lt;Personaje*&gt;<sp/>*aux=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>queue<sp/>&lt;Personaje*&gt;;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classPersonaje" kindref="compound">Personaje</ref><sp/>*per;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classplanta" kindref="compound">planta</ref><sp/>*p;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enc=</highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classEstacion" kindref="compound">Estacion</ref><sp/>*e<sp/>=<sp/>Estacion<sp/>::<sp/>obtenerMiEstacion();</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>e-&gt;<ref refid="classEstacion_1846fcf5591b3a021072365cfd7902b4c" kindref="member">obtenerPlanta</ref>(idplanta,p);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classsala" kindref="compound">sala</ref><sp/>*s;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/>p-&gt;<ref refid="classplanta_1c97835a31f875ecdc01f33517dfc71d4" kindref="member">obtenerCeldaVector</ref>(idsala,s);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(s-&gt;<ref refid="classsala_10b13578fe6d2a10d6102920dfc9216b0" kindref="member">siHayPersonajes</ref>()){</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/>s-&gt;<ref refid="classsala_10b13578fe6d2a10d6102920dfc9216b0" kindref="member">siHayPersonajes</ref>()){</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s-&gt;<ref refid="classsala_1306fe8573f4ed40792d59a7f9e580b30" kindref="member">devolverPrimerPersonaje</ref>(per);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal"><sp/>(<ref refid="classTrabajador" kindref="compound">Trabajador</ref>)<sp/>==<sp/></highlight><highlight class="keyword">typeid</highlight><highlight class="normal"><sp/>(*per)<sp/>&amp;&amp;<sp/>!enc<sp/>){</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e-&gt;<ref refid="classEstacion_15e2d125234916b8011eabaf9735fd859" kindref="member">insertarSalaPrisioneros</ref>(per);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>per-&gt;<ref refid="classPersonaje_143a551a88fe3c6d4458719135992114b" kindref="member">setIdSala</ref>(1101);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>enc=</highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aux-&gt;push(per);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(!aux-&gt;empty()){</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s-&gt;<ref refid="classsala_183833f513f3f53033e6e8fc3cacded73" kindref="member">insertarCola</ref>(aux-&gt;front());</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>aux-&gt;pop();</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>aux;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/intruso.cpp"/>
+  </compounddef>
+</doxygen>

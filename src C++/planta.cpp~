@@ -1,0 +1,694 @@
+#include "planta.h"
+
+planta::planta()
+{
+    p=new puerta;
+    idplanta=0;
+    salaentrada=0;
+    salasalida=0;
+    nllaves=0;
+    altoplanta=0;
+    anchoplanta=0;
+    for(int i=0;i<altoplanta*anchoplanta;i++){
+        insertarVector(new sala(i,i,0));
+    }
+    for(int i=0;i<anchoplanta*altoplanta;i++){
+        insertarNodoGrafo(i);
+    }
+}
+planta::planta(int idp, int se, int ss, int nll, int anch, int alt)
+{
+    p=new puerta;
+    idplanta=idp;
+    salaentrada=se;
+    salasalida=ss;
+    nllaves=nll;
+    anchoplanta=anch;
+    altoplanta=alt;
+    for(int i=0;i<altoplanta*anchoplanta;i++){
+        insertarVector(new sala(i,i,0));
+    }
+    for(int i=0;i<anchoplanta*altoplanta;i++){
+        insertarNodoGrafo(i);
+    }
+   
+}
+
+
+planta::~planta()
+{
+    for(int i=0;i<v.size();i++){
+        delete v[i];
+    }
+    delete p;
+}
+
+
+
+
+void planta::setIdPlanta(int n)
+{
+    idplanta=n;
+}
+
+int planta::getIdPlanta()
+{
+    return idplanta;
+}
+
+void planta::setSalaEntrada(int n)
+{
+    salaentrada=n;
+}
+
+int planta::getSalaEntrada()
+{
+    return salaentrada;
+}
+
+void planta::setSalaSalida(int n)
+{
+    salasalida=n;
+}
+
+int planta::getSalaSalida()
+{
+    return salasalida;
+    
+}
+
+void planta::calcularPosiblesVecinos(sala *s, list< TipoArco > & larcos)
+{
+    TipoArco A;
+    if( (s->getIdentificadorSala() - anchoplanta) >=0){//norte
+        A.x=s->getIdentificadorSala();
+        A.y=s->getIdentificadorSala()-anchoplanta;
+        larcos.push_back(A);
+    }
+    if( (s->getIdentificadorSala() % anchoplanta) < (anchoplanta-1) ){//este
+        A.x=s->getIdentificadorSala();
+        A.y=s->getIdentificadorSala()+1;
+        larcos.push_back(A);
+    }
+    if( (s->getIdentificadorSala() + anchoplanta ) < (anchoplanta*altoplanta) ){//sur
+        A.x=s->getIdentificadorSala();
+        A.y=s->getIdentificadorSala()+anchoplanta;
+        larcos.push_back(A);
+    }
+    if( (s->getIdentificadorSala() % anchoplanta) > 0 ){//oeste
+        A.x=s->getIdentificadorSala();
+        A.y=s->getIdentificadorSala()-1;
+        larcos.push_back(A);
+    }
+    
+}
+
+void planta::vecinosTodasSalas(list< TipoArco > & larcos)
+{
+    for(int i=0;i<altoplanta*anchoplanta;i++){
+        calcularPosiblesVecinos(v[i],larcos);
+    }
+    
+}
+
+void planta::insertarVector(sala * s)
+{
+    v.push_back(s);
+}
+
+void planta::setNLlaves(int n)
+{
+    nllaves=n;
+}
+
+int planta::getNLlaves()
+{
+    return nllaves;
+}
+
+void planta::setAnchoPlanta(int n)
+{
+    anchoplanta=n;
+}
+
+int planta::getAnchoPlanta()
+{
+    return anchoplanta;
+}
+
+void planta::setAltoPlanta(int n)
+{
+    altoplanta=n;
+}
+
+int planta::getAltoPlanta()
+{
+    return altoplanta;
+}
+
+void planta::insertarNodoGrafo(TipoNodoGrafo n)
+{
+    g.nuevoNodo(n);
+}
+
+void planta::obtenerCeldaVector(int i, sala *& s)
+{
+    s=v[i];
+}
+
+void planta::algoritmoKruskal(list< TipoArco > & l)
+{
+    TipoArco aux;
+    int naleatorio;
+    for(int i=0;i<anchoplanta*altoplanta;i++){
+        g.nuevoNodo(i);
+    }
+    list <TipoArco> ::iterator it;
+    while(!l.empty()){
+        naleatorio=GenAleatorios::generarNumero(l.size());
+        it=l.begin();
+        for(int i=0;i<naleatorio;i++)
+            it++;
+        aux=*it;
+        sala *x=v[aux.x];
+        sala *y=v[aux.y];
+        sala *a;
+        int marcay=y->getMarcaSala();
+        if(x->getMarcaSala() != y->getMarcaSala()){
+            g.nuevoArco(aux.x,aux.y,1);
+            g.nuevoArco(aux.y,aux.x,1); 
+            for(int i=0;i<v.size();i++){ 
+                a=v[i];
+                if(a->getMarcaSala()==marcay){
+                    a->setMarcaSala(x->getMarcaSala());
+                }
+            }
+        }
+        
+        l.erase(it);   
+    }
+}
+
+void planta::pintarEstructura(ofstream & f)
+{
+    sala*s;
+    if(f.good()){
+        f<<" ";
+        for(int i=0;i<anchoplanta;i++)
+            f<<"_ ";
+        f<<endl;
+        for(int i=0;i<anchoplanta*altoplanta;i++){
+            s=v[i];
+            if( (s->getIdentificadorSala()%anchoplanta)==0 ){//si estoy en el limite de la izquierda
+                f<<"|";
+            }
+            else{
+                if(g.adyacente(s->getIdentificadorSala(),s->getIdentificadorSala()-1))
+                    f<<" ";
+                
+                else
+                    f<<"|";
+                    
+            }
+            if( (s->getIdentificadorSala()+anchoplanta)>=(anchoplanta*altoplanta) ){//si estoy en el limite de abajo
+                f<<"_";
+            }
+            else{
+                if(g.adyacente(s->getIdentificadorSala(),s->getIdentificadorSala()+anchoplanta)){
+                    //aquiiiii
+                        f<<" ";
+                }
+                
+                else
+                    f<<"_";
+            }
+            if( (s->getIdentificadorSala()%anchoplanta) == (anchoplanta-1) ){
+                f<<"|"<<endl;
+            }
+        }
+    }
+}
+
+void planta::generarAtajos()
+{
+    int nporcientosalas= ( (5*v.size())/100 );
+    int cont=0;
+    int naleatorio;
+    sala *s; 
+    while( cont!=nporcientosalas ){
+        naleatorio=GenAleatorios::generarNumero(anchoplanta*altoplanta);
+        s=v[naleatorio];
+        if(siHayAtajo(s)){
+            cont++;
+        }
+    }
+    
+    g.floyd();
+    g.warshall();
+}
+
+bool planta::AtajoNorte(sala * s)
+{
+    if( (s->getIdentificadorSala()-anchoplanta ) >= 0 ){
+        if( !g.adyacente( s->getIdentificadorSala(), (s->getIdentificadorSala()-anchoplanta) ) ){
+            bool condicion1=false,condicion2=false;
+            if( g.adyacente( s->getIdentificadorSala(), (s->getIdentificadorSala()-1) ) ){
+                if( g.adyacente( (s->getIdentificadorSala()-1), ((s->getIdentificadorSala()-1)-anchoplanta) ) ){
+                    if( g.adyacente( ((s->getIdentificadorSala()-1)-anchoplanta), ((s->getIdentificadorSala()-1)-anchoplanta)+1) ){
+                        condicion1=true;
+                    }
+                }
+            }
+            if(  g.adyacente( s->getIdentificadorSala(), (s->getIdentificadorSala()+1) )  ){
+                if( g.adyacente( (s->getIdentificadorSala()+1), ((s->getIdentificadorSala()+1)-anchoplanta) ) ){
+                    if( g.adyacente( ((s->getIdentificadorSala()+1)-anchoplanta),(((s->getIdentificadorSala()+1)-anchoplanta)-1) ) ){
+                        condicion2=true;
+                    }
+                }
+            }
+            if(!condicion1 && !condicion2)
+                return true;
+            else
+                return false;  
+        }
+        else
+            return false;
+    }
+    else
+        return false;  
+}
+
+bool planta::AtajoSur(sala * s)
+{
+    if( (s->getIdentificadorSala() + anchoplanta ) < (anchoplanta*altoplanta) ){
+        if( !g.adyacente( s->getIdentificadorSala(), (s->getIdentificadorSala()+anchoplanta) ) ){
+            bool condicion1=false,condicion2=false;
+            if( g.adyacente( s->getIdentificadorSala(), (s->getIdentificadorSala()-1) ) ){
+                if( g.adyacente( (s->getIdentificadorSala()-1), ((s->getIdentificadorSala()-1)+anchoplanta) ) ){
+                    if( g.adyacente( ((s->getIdentificadorSala()-1)+anchoplanta),((s->getIdentificadorSala()-1)+anchoplanta)+1) ){
+                        condicion1=true;
+                    }
+                }
+            }
+            if( g.adyacente( s->getIdentificadorSala(), (s->getIdentificadorSala()+1) ) ){
+                if( g.adyacente((s->getIdentificadorSala()+1), ((s->getIdentificadorSala()+1)+anchoplanta) ) ){
+                    if( g.adyacente( ((s->getIdentificadorSala()+1)+anchoplanta), ((s->getIdentificadorSala()+1)+anchoplanta)-1) ){
+                        condicion2=true;
+                    }
+                }
+            }
+            if( !condicion1 && !condicion2)
+                return true;
+            else
+                return false;
+        }
+        else
+            return false;
+    }
+    else
+        return false;
+}
+
+bool planta::AtajoOeste(sala * s)
+{
+    if( (s->getIdentificadorSala() % anchoplanta) > 0 ){
+        if(!g.adyacente( s->getIdentificadorSala(),s->getIdentificadorSala()-1 ) ){
+            bool condicion1=false,condicion2=false;
+            if( g.adyacente( s->getIdentificadorSala(),(s->getIdentificadorSala()-anchoplanta) ) ){
+                if(g.adyacente( (s->getIdentificadorSala()-altoplanta),((s->getIdentificadorSala()-anchoplanta)-1) ) ){
+                    if( g.adyacente( ((s->getIdentificadorSala()-anchoplanta)-1),((s->getIdentificadorSala()-anchoplanta)-1)+anchoplanta) ){
+                        condicion1=true;
+                    }
+                }
+            }
+            if( g.adyacente( s->getIdentificadorSala(), (s->getIdentificadorSala()+anchoplanta) ) ){
+                if( g.adyacente( (s->getIdentificadorSala()+anchoplanta), ((s->getIdentificadorSala()+anchoplanta)-1) ) ){
+                    if( g.adyacente( ((s->getIdentificadorSala()+anchoplanta)-1), ((s->getIdentificadorSala()+anchoplanta)-1)-anchoplanta) ){
+                        condicion2=true;
+                    }
+                }
+            }
+            if( !condicion1 && !condicion2)
+                return true;
+            else
+                return false;
+        }
+        else 
+            return false;
+    }
+    else
+        return false;
+}
+
+bool planta::AtajoEste(sala * s)
+{
+    if( (s->getIdentificadorSala() % anchoplanta) < (anchoplanta-1) ){
+        if( !g.adyacente( s->getIdentificadorSala(), s->getIdentificadorSala()+1) ){
+            bool condicion1=false,condicion2=false;
+            if( g.adyacente( s->getIdentificadorSala(), (s->getIdentificadorSala()-anchoplanta) ) ){
+                if( g.adyacente( (s->getIdentificadorSala()-anchoplanta), ((s->getIdentificadorSala()-anchoplanta)+1) ) ){
+                    if( g.adyacente( ((s->getIdentificadorSala()-anchoplanta)+1), (((s->getIdentificadorSala()-anchoplanta)+1)+anchoplanta) ) ){
+                        condicion1=true;
+                    }
+                }
+            }
+            if( g.adyacente( s->getIdentificadorSala(), (s->getIdentificadorSala()+anchoplanta) ) ){
+                if( g.adyacente( (s->getIdentificadorSala()+anchoplanta), ((s->getIdentificadorSala()+anchoplanta)+1) ) ){
+                    if( g.adyacente( ((s->getIdentificadorSala()+anchoplanta)+1),((s->getIdentificadorSala()+anchoplanta)+1)-anchoplanta) ){
+                        condicion2=true;
+                    }
+                }
+            }
+            if( !condicion1 && !condicion2 )
+                return true;
+            else
+                return false;
+        }
+        else 
+            return false;
+    }
+    else
+        return false;
+}
+
+bool planta::siHayAtajo(sala * s)
+{
+    if( AtajoNorte(s) ){
+        g.nuevoArco(s->getIdentificadorSala(),s->getIdentificadorSala()-anchoplanta,1);
+        g.nuevoArco(s->getIdentificadorSala()-anchoplanta,s->getIdentificadorSala(),1);
+        cout<<"tiro pared por el norte en: "<<s->getIdentificadorSala()<<" "<<s->getIdentificadorSala()-anchoplanta<<endl;
+        return true;
+    }
+    else{
+        if( AtajoSur(s) ){
+            g.nuevoArco(s->getIdentificadorSala(),s->getIdentificadorSala()+anchoplanta,1);
+            g.nuevoArco(s->getIdentificadorSala()+anchoplanta,s->getIdentificadorSala(),1);
+            cout<<"tiro pared por el sur en: "<<s->getIdentificadorSala()<<" "<<s->getIdentificadorSala()+anchoplanta<<endl;
+            return true;
+        }
+        else{
+            if( AtajoOeste(s) ){
+                g.nuevoArco( s->getIdentificadorSala(),s->getIdentificadorSala()-1,1);
+                g.nuevoArco( s->getIdentificadorSala()-1,s->getIdentificadorSala(),1);
+                cout<<"tiro pared por el oeste en: "<<s->getIdentificadorSala()<<"  "<<s->getIdentificadorSala()-1<<endl;
+                return true;
+            }
+            else{
+                if( AtajoEste(s) ){
+                    g.nuevoArco( s->getIdentificadorSala(),s->getIdentificadorSala()+1,1);
+                    g.nuevoArco( s->getIdentificadorSala()+1,s->getIdentificadorSala(),1);
+                    cout<<"tiro pared por el este en: "<<s->getIdentificadorSala()<<" "<<s->getIdentificadorSala()+1<<endl;
+                    return true;
+                }
+                else
+                    return false;
+            }
+        }
+    }
+}
+
+void planta::generarPlanta(ofstream & f)
+{
+    list <TipoArco> l;
+    vecinosTodasSalas(l);
+    algoritmoKruskal(l);
+    pintarEstructura(f);
+    f<<"(planta con ciclos)"<<endl;
+    generarAtajos();
+    pintarEstructura(f);
+    f<<"(distribucion llaves)"<<endl;
+    repartoLlaves(f);
+    calcularVecinosRealesTodasSalas();
+    
+}
+
+void planta::repartoLlaves(ofstream & f)
+{
+    Lista <Llave*> *combinacion, *llaves_recogidas;
+    combinacion=new Lista<Llave*>;
+    llaves_recogidas=new Lista<Llave*>;
+// Generar la combinación secreta y la lista de llaves a probar
+    for (int i=0; i<nllaves; i++) {
+        llaves_recogidas->insertarOrdenado(new Llave(i));
+        if ((i % 2) != 0)       {
+            llaves_recogidas->insertarOrdenado(new Llave(i));
+            combinacion->insertarOrdenado(new Llave(i));
+        }
+    }
+    
+    sala *aux2;
+    
+    p->configurarPuerta(combinacion);
+    p->cerrar();
+    TipoCjtoNodos visitados;
+    salasMasFrecuentadas(salaentrada,visitados);
+    priority_queue <sala*,vector<sala*>,compararFrecuencias> c;
+    for(int i=0;i<altoplanta*anchoplanta;i++){
+        c.push(v[i]);
+        aux2=v[i];
+    }
+    int contexterno=0;
+    int continterno;
+    sala *aux;
+    Llave *l;
+    llaves_recogidas->moverInicio();
+    while(contexterno!=nllaves+nllaves/2){
+        continterno=0;
+        while (continterno!=5){
+            aux=c.top();
+            c.pop();
+            if(aux->getIdentificadorSala()!=salaentrada && aux->getIdentificadorSala()!=salasalida)
+                for(int i=0;i<5;i++){
+                    l=llaves_recogidas->consultar();
+                    aux->insertarLista(l);
+                    llaves_recogidas->avanzar();
+                    continterno++;
+                }
+             if(aux->getIdentificadorSala()!=salaentrada && aux->getIdentificadorSala()!=salasalida)
+                    aux->escribeLog(f);
+        }
+        
+        
+        contexterno=contexterno+5;
+    }
+    delete combinacion;
+    delete llaves_recogidas;
+}
+
+void planta::salasMasFrecuentadas(TipoNodoGrafo f,TipoCjtoNodos  visitados)
+{
+    sala *aux;
+    TipoCjtoNodos ady;
+    TipoNodoGrafo w;
+    TipoNodoGrafo a;
+    visitados.insert(f);
+    TipoCjtoNodos :: iterator it;
+    if( f== salasalida){
+        TipoCjtoNodos :: iterator it2=visitados.begin();
+        for(it2=visitados.begin();it2!=visitados.end();it2++){
+            a=*it2;
+            aux=this->v[a];
+            aux->setFrecuenciaSala(aux->getFrecuenciaSala()+1);
+        }
+    }
+    g.adyacentes(f,ady);
+    
+    
+    for(it=ady.begin(); it!=ady.end();it++){
+        w=*it;
+        if(!visitados.count(w)){
+            salasMasFrecuentadas(w,visitados);
+        }
+    }
+}
+
+void planta::establecerCondicionApertura(int ap)
+{
+    p->setAlturaMaxima(ap);
+}
+
+void planta::insertarPersonajeSala(Personaje * p)
+{
+    if(p->getIdSala()!=1111)
+        v[p->getIdSala()]->insertarCola(p);
+    
+}
+
+int planta::totalSalas()
+{
+    return v.size();
+}
+
+
+
+void planta::pintarPersonajes(ofstream & f)
+{
+    sala*s;
+    
+        for(int i=0;i<anchoplanta;i++)
+            f<<" _";
+        f<<endl;
+        for(int i=0;i<anchoplanta*altoplanta;i++){
+            s=v[i];
+            if( (s->getIdentificadorSala()%anchoplanta)==0 ){//si estoy en el limite de la izquierda
+                f<<"|";
+            }
+            else{
+                if(g.adyacente(s->getIdentificadorSala(),s->getIdentificadorSala()-1))
+                    f<<" ";
+                
+                else
+                    f<<"|";
+                    
+            }
+            if(s->siHayPersonajes()){
+                if(s->cuantosPersonajes() ==1){
+                    Personaje *aux;
+                    s->devolverFrente(aux);
+                    f<<aux->getMarca();
+                }
+                else{
+                    int cuantos=s->cuantosPersonajes();
+                    f<<s->cuantosPersonajes();
+                }
+            }
+            else{
+            
+            
+                if( (s->getIdentificadorSala()+anchoplanta)>=(anchoplanta*altoplanta) ){//si estoy en el limite de abajo
+                    f<<"_";
+                }
+                else{
+                    if(g.adyacente(s->getIdentificadorSala(),s->getIdentificadorSala()+anchoplanta)){
+                    
+                            f<<" ";
+                    
+                    }
+                
+                    else
+                        f<<"_";
+                }
+            }
+            if( (s->getIdentificadorSala()%anchoplanta) == (anchoplanta-1) ){
+                f<<"|"<<endl;
+            }
+        }
+    
+
+}
+
+void planta::siguienteGrafo(int origen, int destino, int & sig)
+{
+    g.siguiente(origen,destino,sig);
+}
+
+void planta::calcularRutaSalasPlanta(ofstream & f)
+{
+    for(int i=0;i<v.size();i++){
+        v[i]->calcularRutaPersonajeSala(f);
+    }
+}
+
+void planta::calcularVecinosReales(sala * s)
+{
+    vector <sala*> aux;
+    if( (s->getIdentificadorSala() - anchoplanta) >=0){//norte
+        if( g.adyacente(s->getIdentificadorSala(), s->getIdentificadorSala()-anchoplanta) ){
+            aux.push_back(v[s->getIdentificadorSala()-anchoplanta]);
+        }
+        else{
+            aux.push_back(NULL);
+        }
+    }
+    else{
+        aux.push_back(NULL);
+    }
+    
+    if( (s->getIdentificadorSala() % anchoplanta) < (anchoplanta-1) ){//este
+        if( g.adyacente(s->getIdentificadorSala(), s->getIdentificadorSala()+1) ){
+            aux.push_back(v[s->getIdentificadorSala()+1]);
+        }
+        else{
+            aux.push_back(NULL);
+        }
+    }
+    else{
+        aux.push_back(NULL);
+    }
+    
+    if( (s->getIdentificadorSala() + anchoplanta ) < (anchoplanta*altoplanta) ){//sur
+        if( g.adyacente(s->getIdentificadorSala(), s->getIdentificadorSala()+anchoplanta) ){
+            aux.push_back(v[s->getIdentificadorSala()+anchoplanta]);
+        }
+        else{
+            aux.push_back(NULL);
+        }
+    }
+    else{
+        aux.push_back(NULL);
+    }
+    if( (s->getIdentificadorSala() % anchoplanta) > 0 ){//oeste
+        if( g.adyacente(s->getIdentificadorSala(), s->getIdentificadorSala()-1) ){
+            aux.push_back(v[s->getIdentificadorSala()-1]);
+        }
+        else{
+            aux.push_back(NULL);
+        }
+    }
+    else{
+        aux.push_back(NULL);
+    }
+    s->volcarVectorVecinos(aux);
+}
+
+void planta::calcularVecinosRealesTodasSalas()
+{
+    for(int i=0;i<v.size();i++)
+        calcularVecinosReales(v[i]);
+}
+
+
+void planta::obtenerPuerta(puerta *& puer)
+{
+    puer=p;
+}
+
+void planta::accionesPersonajesSalas()
+{
+    for(int i=0; i<v.size();i++){
+        v[i]->accionesColaPersonajes();
+    }
+}
+
+void planta::escribeLogPlanta(ofstream & f)
+{
+    f<<"(planta:"<<idplanta<<":"<<salaentrada<<":"<<salasalida<<":"<<nllaves<<")"<<endl;
+    p->escribirFichero(f);
+    queue <Personaje*> *aux= new queue <Personaje*>;
+    Personaje *per;
+    pintarPersonajes(f);
+    for(int i=0;i<v.size();i++){
+        if(v[i]->siHayLlaves()){
+            v[i]->escribeLogConEspacio(f);
+        }
+        
+    }
+    for(int i=0;i<v.size();i++){
+        if(v[i]->siHayPersonajes()){
+            while(v[i]->siHayPersonajes()){
+                v[i]->devolverPrimerPersonaje(per);
+                per->escribeLog(f);
+                aux->push(per);
+            }
+            while(!aux->empty()){
+                v[i]->insertarCola(aux->front());
+                aux->pop();
+            }
+        }
+    }
+    delete aux;
+     //   f<<endl;
+    
+    
+    
+}

@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.5.6">
+  <compounddef id="puerta_8h" kind="file">
+    <compoundname>puerta.h</compoundname>
+    <includes refid="arbol_8h" local="yes">arbol.h</includes>
+    <includes refid="lista_8h" local="yes">lista.h</includes>
+    <includes refid="llave_8h" local="yes">llave.h</includes>
+    <includes local="no">fstream</includes>
+    <includedby refid="planta_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/planta.h</includedby>
+    <includedby refid="intruso_8h" local="yes">Desktop/academia_lp2/EC3_LPII/src/intruso.h</includedby>
+    <includedby refid="puerta_8cpp" local="yes">Desktop/academia_lp2/EC3_LPII/src/puerta.cpp</includedby>
+    <incdepgraph>
+      <node id="503">
+        <label>Desktop/academia_lp2/EC3_LPII/src/puerta.h</label>
+        <link refid="puerta.h"/>
+        <childnode refid="504" relation="include">
+        </childnode>
+        <childnode refid="506" relation="include">
+        </childnode>
+        <childnode refid="508" relation="include">
+        </childnode>
+        <childnode refid="509" relation="include">
+        </childnode>
+      </node>
+      <node id="509">
+        <label>fstream</label>
+      </node>
+      <node id="507">
+        <label>cstdlib</label>
+      </node>
+      <node id="508">
+        <label>llave.h</label>
+        <link refid="llave_8h-source"/>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+      </node>
+      <node id="505">
+        <label>iostream</label>
+      </node>
+      <node id="504">
+        <label>arbol.h</label>
+        <link refid="arbol_8h"/>
+        <childnode refid="505" relation="include">
+        </childnode>
+      </node>
+      <node id="506">
+        <label>lista.h</label>
+        <link refid="lista_8h-source"/>
+        <childnode refid="505" relation="include">
+        </childnode>
+        <childnode refid="507" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="512">
+        <label>Desktop/academia_lp2/EC3_LPII/src/intruso.h</label>
+        <link refid="intruso_8h-source"/>
+        <childnode refid="513" relation="include">
+        </childnode>
+      </node>
+      <node id="513">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.h</label>
+        <link refid="cargador_8h"/>
+        <childnode refid="514" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+        <childnode refid="516" relation="include">
+        </childnode>
+      </node>
+      <node id="510">
+        <label>Desktop/academia_lp2/EC3_LPII/src/puerta.h</label>
+        <link refid="puerta.h"/>
+        <childnode refid="511" relation="include">
+        </childnode>
+        <childnode refid="512" relation="include">
+        </childnode>
+      </node>
+      <node id="511">
+        <label>Desktop/academia_lp2/EC3_LPII/src/planta.h</label>
+        <link refid="planta_8h-source"/>
+        <childnode refid="512" relation="include">
+        </childnode>
+        <childnode refid="515" relation="include">
+        </childnode>
+      </node>
+      <node id="515">
+        <label>Desktop/academia_lp2/EC3_LPII/src/estacion.h</label>
+        <link refid="estacion_8h-source"/>
+        <childnode refid="514" relation="include">
+        </childnode>
+      </node>
+      <node id="514">
+        <label>Desktop/academia_lp2/EC3_LPII/src/cargador.cpp</label>
+        <link refid="cargador_8cpp"/>
+      </node>
+      <node id="516">
+        <label>Desktop/academia_lp2/EC3_LPII/src/fichero.cpp</label>
+        <link refid="fichero_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classpuerta" prot="public">puerta</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PUERTA_H</highlight></codeline>
+<codeline lineno="2"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>PUERTA_H</highlight></codeline>
+<codeline lineno="3"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="arbol_8h" kindref="compound" tooltip="Declaración de la clase Árbol Binario de Búsqueda.">arbol.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;lista.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;llave.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="classpuerta" refkind="compound"><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classpuerta" kindref="compound">puerta</ref>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>Arbol<sp/>&lt;Llave*&gt;<sp/>*arbolCerradura,*arbolLlavesProbadas;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>Lista<sp/>&lt;Llave*&gt;<sp/>*lcs;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>estadoCerradura;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>alturaMaxima;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpuerta_1dae189c1b2be845ba10b3335e4c3b91d" kindref="member">puerta</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpuerta_1dae189c1b2be845ba10b3335e4c3b91d" kindref="member">puerta</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><sp/>ec,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><sp/>alt);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1facb52e11a8a2b23437d4d0821187edc" kindref="member">getAlturaMaxima</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_14dbec0518d2dfbf78e636ea18352cfe1" kindref="member">setAlturaMaxima</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1c7020654ddeefc2cdfd937fd5d3f6749" kindref="member">setEstadoCerradura</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>e);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classpuerta_13c87fcb19f24d5348db587f0c6a9b27d" kindref="member">getEstadoCerradura</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1fc919a28f4751159e5109ec43e691e0e" kindref="member">configurarPuerta</ref>(Lista<sp/>&lt;Llave*&gt;<sp/>*l);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_18c3078b9245cb0fbc37e7f1b662be74b" kindref="member">cerrar</ref>();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1a70c9e4a8a59555d1ba15caff7849497" kindref="member">abrir</ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>*l);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classpuerta_19f108f67092846743458195fca60d6ca" kindref="member">siEstaLlaveProbada</ref>(<ref refid="classLlave" kindref="compound">Llave</ref><sp/>*<sp/>l);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">friend</highlight><highlight class="normal"><sp/>ostream<sp/>&amp;<sp/><ref refid="classpuerta_1490c20cc328bef002a79831d7d649b47" kindref="member">operator &lt;&lt; </ref>(ostream<sp/>&amp;<sp/>f,<sp/><ref refid="classpuerta" kindref="compound">puerta</ref><sp/>&amp;<sp/>p);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1d4d085f48f3b014afbba4113510b63d8" kindref="member">liberarArbol</ref><sp/>(Arbol<sp/>&lt;Llave*&gt;<sp/><sp/>*&amp;<sp/>arbol);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1e2bcee3940c85671615c2331bba3b755" kindref="member">eliminarlista</ref>(Lista<sp/>&lt;Llave*&gt;<sp/>*&amp;<sp/>l);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1db48cb6b90ccdc012aa488850ac458b1" kindref="member">escribirFichero</ref>(ofstream<sp/>&amp;<sp/>f);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classpuerta_1be41e285663cf9f509e6fe0583ba4202" kindref="member">escribirInordenLlaves</ref>(ofstream<sp/>&amp;<sp/>f,Arbol<sp/>&lt;Llave*&gt;<sp/>*&amp;<sp/>a);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classpuerta_1207e0983ca66391ee628453dffcf619f" kindref="member">~puerta</ref>();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="/home/carlos/Desktop/academia_lp2/EC3_LPII/src/puerta.h"/>
+  </compounddef>
+</doxygen>

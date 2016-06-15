@@ -1,0 +1,233 @@
+#include "personaje.h"
+#include "estacion.h"
+Personaje::Personaje()
+{
+    marca='0';
+    nombre=" ";
+    turno=-1;
+    idsala=-1;
+    idplanta=-1;
+    juegollaves=new stack <Llave*>;
+}
+
+
+Personaje::~Personaje()
+{
+    liberarMemoriaPila(this->juegollaves);
+    delete juegollaves;
+}
+
+Personaje::Personaje(char m, string n,int t, int ids, int idp)
+{
+    marca=m;
+    nombre=n;
+    turno=t;
+    idsala=ids;
+    idplanta=idp;
+    juegollaves=new stack <Llave*>;
+}
+
+void Personaje::mostrar()
+{
+    cout<<"estoy mostrando un personaje"<<endl;
+}
+
+void Personaje::setMarca(char m)
+{
+    marca=m;
+}
+
+char Personaje::getMarca()
+{
+    return marca;
+}
+
+void Personaje::setNombre(string n)
+{
+    nombre=n;
+}
+
+void Personaje::getNombre(string & n)
+{
+    n=nombre;
+}
+
+void Personaje::setTurno(int t)
+{
+    turno=t;
+}
+
+int Personaje::getTurno()
+{
+    return turno;
+}
+
+void Personaje::setIdSala(int ids)
+{
+    idsala=ids;
+}
+
+int Personaje::getIdSala()
+{
+    return idsala;
+}
+
+void Personaje::setIdPlanta(int idp)
+{
+    idplanta=idp;
+}
+
+int Personaje::getIdPlanta()
+{
+    return idplanta;
+}
+
+void Personaje::escribeLog(ofstream & f)
+{
+    stack <Llave*> *aux;
+    aux=new stack <Llave*>;
+    Llave *l;
+    f<<marca<<":"<<idsala<<":"<<turno<<":";
+    
+    if(!juegollaves->empty())
+        f<<" ";
+    while(!juegollaves->empty()){
+        l=juegollaves->top();
+        aux->push(l);
+        juegollaves->pop();
+        f<<l->getIdentificador();
+        if(!juegollaves->empty())
+            f<<" ";
+    }
+    f<<")"<<endl;
+    while(!aux->empty()){
+        l=aux->top();
+        juegollaves->push(l);
+        aux->pop();
+    }
+    liberarMemoriaPila(aux);
+    delete aux;
+}
+
+void Personaje::insertarPila(Llave * l)
+{
+    juegollaves->push(l);
+}
+
+void Personaje::liberarMemoriaPila(stack< Llave * > *& pil)
+{
+    while(!pil->empty()){
+        delete pil->top();
+        pil->pop();
+    }
+}
+
+void Personaje::ruta(ofstream & f)
+{
+    
+}
+
+void Personaje::insertarCola(int i)
+{
+    secuencia.push(i);
+}
+
+void Personaje::TodasAcciones()
+{
+    Estacion *e = Estacion :: obtenerMiEstacion();
+    if (turno==e->getTurnoSimulacion()){
+        
+        turno++;
+        
+        accionUno();
+        accionDos();
+        accionTres();
+        accionCuatro();
+    }
+    
+    e->insertarPersonajeEstacion(this);
+}
+
+void Personaje::accionUno()
+{
+}
+
+void Personaje::accionDos()
+{
+}
+
+void Personaje::accionTres()
+{
+}
+
+void Personaje::accionCuatro()
+{
+}
+
+int Personaje::operator ==(Personaje & p)
+{
+    if(marca == p.marca)
+        return true;
+    else
+        return false;
+}
+
+
+
+
+
+
+
+
+int Personaje::operator >(Personaje & p)
+{
+    if(marca > p.marca)
+        return true;
+    else
+        return false;
+}
+
+int Personaje::operator <(Personaje & p)
+{
+    if(marca < p.marca)
+        return true;
+    else
+        return false;
+}
+
+int Personaje::operator >=(Personaje & p)
+{
+    if(marca >= p.marca)
+        return true;
+    else
+        return false;
+}
+
+int Personaje::operator <=(Personaje & p)
+{
+    if(marca <= p.marca)
+        return true;
+    else
+        return false;
+}
+
+int Personaje::operator !=(Personaje & p)
+{
+    if(marca != p.marca)
+        return true;
+    else
+        return false;
+}
+
+void Personaje::cojerLlave(Llave * &l)
+{
+    if(!juegollaves->empty()){
+        l=juegollaves->top();
+        juegollaves->pop();
+    }
+}
+
+bool Personaje::pilaVacia()
+{
+    return juegollaves->empty();
+}
